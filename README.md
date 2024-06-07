@@ -5,7 +5,7 @@
 备注：内容收集基于[developer-hotspots-summary](https://github.com/Xiaoxie1994/developer-hotspots-summary)，文章摘要生成基于[kimi](https://kimi.moonshot.cn/)，最后经人工删减校验后发布。
 
 ## 往期内容
-- [【2024W23】肖恩技术周刊](./article/【2024W23】肖恩技术周刊.md)
+- [【2024W23】肖恩技术周刊（第1期）](./article/【2024W23】肖恩技术周刊（第1期）.md)
 
 License
 ---
