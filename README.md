@@ -7,6 +7,13 @@
 ## 往期内容
 - [【2024W23】肖恩技术周刊（第1期）](./article/【2024W23】肖恩技术周刊（第1期）.md)
 
+## 订阅方式
+避免错过每期内容，可以通过以下方式订阅：
+- 个人博客：[肖恩技术周刊](https://www.shawnxie.top/categories/tf-weekly), [RSS订阅](https://www.shawnxie.top/feed.xml)
+- 公众号：肖恩杂谈
+
+<img src="./picture/image-1.png" alt="公众号二维码" width="400">
+
 License
 ---
 
