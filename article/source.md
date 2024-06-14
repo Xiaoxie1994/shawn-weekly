@@ -3,6 +3,8 @@
 ### 日聚合
 - [8点1氪](https://36kr.com/user/5652071)
 - [派早报](https://sspai.com/u/ee0vj778/updates)
+- [开源日报](https://www.oschina.net/news/industry)
+- [CSDN资讯-极客头条](https://csdnnews.blog.csdn.net/?type=blog)
 
 #### 周聚合
 - [博客园上周热点回顾（6.3-6.9）](https://www.cnblogs.com/cmt/p/18240585)
@@ -15,6 +17,11 @@
 - [AIGC Weekly](https://quail.ink/op7418)
 - [老胡的周刊](https://github.com/howie6879/weekly)
 - [偷懒爱好者周刊](https://toolight.zhubai.love/)
+- [产品变现周刊](https://www.ezindie.com/weekly)
+
+#### 月聚合
+- [技术雷达](https://www.thoughtworks.com/zh-cn/radar)
+- [HelloGitHub 月刊](https://hellogithub.com/periodical)
 
 #### 实时热榜
 - [36Kr 48h热榜](https://36kr.com/hot-list/catalog)

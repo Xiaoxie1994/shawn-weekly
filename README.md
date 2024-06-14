@@ -1,11 +1,8 @@
 # shawn-weekly
 ## 声明
-肖恩的技术周刊，记录一些业界资讯或技术内容，没有明确分类全凭个人喜好。<br>
-更新时间：每周六（无特殊情况）<br>
-备注：内容收集基于[developer-hotspots-summary](https://github.com/Xiaoxie1994/developer-hotspots-summary)，文章摘要生成基于[kimi](https://kimi.moonshot.cn/)，最后经人工删减校验后发布。
-
-## 往期内容
-- [【2024W23】肖恩技术周刊（第1期）](./article/【2024W23】肖恩技术周刊（第1期）.md)
+- **周刊内容**: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具分享”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
+- **更新时间**: 每周六（无特殊情况）<br>
+- **备注**: 内容收集基于[developer-hotspots-summary](https://github.com/Xiaoxie1994/developer-hotspots-summary)，文章摘要生成基于[kimi](https://kimi.moonshot.cn/)，最后经人工删减、补充和校验后发布。
 
 ## 订阅方式
 避免错过每期内容，可以通过以下方式订阅：
@@ -13,6 +10,9 @@
 - 公众号：肖恩杂谈
 
 <img src="./picture/image-1.png" alt="公众号二维码" width="400">
+
+## 往期内容
+- [【2024W23】肖恩技术周刊（第1期）](./article/【2024W23】肖恩技术周刊（第1期）.md)
 
 License
 ---
