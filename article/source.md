@@ -10,7 +10,6 @@
 - [博客园上周热点回顾（6.3-6.9）](https://www.cnblogs.com/cmt/p/18240585)
 - [博客园本周热门新闻](https://news.cnblogs.com/n/digg)
 - [infoq每周精要](https://www.infoq.cn/weekly/landing)
-- [python潮流周刊](https://www.cnblogs.com/pythonista)
 - [segmentfault周榜](https://segmentfault.com/questions/hottest/weekly)
 - [科技爱好者周刊](https://www.ruanyifeng.com/blog/archives.html)
 - [信息差周刊](https://gapis.money/)
@@ -18,6 +17,9 @@
 - [老胡的周刊](https://github.com/howie6879/weekly)
 - [偷懒爱好者周刊](https://toolight.zhubai.love/)
 - [产品变现周刊](https://www.ezindie.com/weekly)
+- [潮流周刊](https://weekly.tw93.fun/)
+- [python潮流周刊](https://www.cnblogs.com/pythonista)
+- [Github开源项目精选周刊](https://github.com/OpenGithubs/weekly)
 
 #### 月聚合
 - [技术雷达](https://www.thoughtworks.com/zh-cn/radar)
