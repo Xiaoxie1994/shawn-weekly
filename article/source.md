@@ -20,6 +20,7 @@
 - [潮流周刊](https://weekly.tw93.fun/)
 - [python潮流周刊](https://www.cnblogs.com/pythonista)
 - [Github开源项目精选周刊](https://github.com/OpenGithubs/weekly)
+- [独立产品灵感周刊](https://www.decohack.com/decohack%e5%91%a8%e5%88%8a)
 
 #### 月聚合
 - [技术雷达](https://www.thoughtworks.com/zh-cn/radar)
