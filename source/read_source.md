@@ -37,3 +37,8 @@
 - 蚂蚁技术
 
 ### 周刊
+- [54321](https://versun.me/54321-weekly/)
+- [1Link.Fun科技周刊](https://xiaobot.net/p/1link)
+- [科技爱好者周刊](https://www.ruanyifeng.com/blog/)
+- [AIGC Weekly](https://quail.ink/op7418)
+- [聚合周刊](https://www.fre321.com/weekly)
