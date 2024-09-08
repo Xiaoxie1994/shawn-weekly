@@ -8,7 +8,6 @@
 - [开源日报](https://www.oschina.net/news/industry)
 - [51cto](https://www.51cto.com/)
 - [IT之家](https://it.ithome.com/)
-- [博客园上周热点回顾（6.3-6.9）](https://www.cnblogs.com/cmt/p/18240585)
 - [博客园本周热门新闻](https://news.cnblogs.com/n/digg)
 - [oschina热门资讯](https://www.oschina.net/news/industry)
 - [机器之心](https://www.jiqizhixin.com/)
