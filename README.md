@@ -6,7 +6,7 @@
 ## 订阅方式
 更新shi避免错过每期内容，可以通过以下方式订阅：
 - 个人博客：[肖恩技术周刊](https://www.shawnxie.top/categories/tf-weekly), [RSS订阅](https://www.shawnxie.top/feed.xml)
-- 公众号：肖恩杂谈
+- 公众号：肖恩聊技术
 
 <img src="./picture/image-1.png" alt="公众号二维码" width="400">
 
@@ -14,6 +14,7 @@
 使用AI工具将图文信息生成了视频，方便没时间阅读文字的朋友快速了解周刊内容，查看方式：
 
 <img src="./picture/WechatIMG182.jpg" alt="公众号二维码" width="300">
+![alt text](image.png)
 
 
 ## 往期内容
