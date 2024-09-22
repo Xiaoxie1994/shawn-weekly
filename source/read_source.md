@@ -14,7 +14,7 @@
 - [量子位](https://www.qbitai.com/)
 - [麻省理工科技评论](https://www.mittrchina.com/)
 - [InfoQ](https://www.infoq.cn/)
-- [掘金排行榜](https://juejin.cn/hot/articles)
+- [MOY](https://blog.youtube/news-and-events/made-on-youtube-2024/)
 
 ### 开源工具
 - [github趋势](https://github.com/trending?since=weekly)
