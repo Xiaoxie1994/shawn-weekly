@@ -6,15 +6,14 @@
 - [36Kr 48h热榜](https://36kr.com/hot-list/catalog)
 - [派早报](https://sspai.com/u/ee0vj778/updates)
 - [开源日报](https://www.oschina.net/news/industry)
-- [51cto](https://www.51cto.com/)
-- [IT之家](https://it.ithome.com/)
 - [博客园本周热门新闻](https://news.cnblogs.com/n/digg)
 - [oschina热门资讯](https://www.oschina.net/news/industry)
 - [机器之心](https://www.jiqizhixin.com/)
 - [量子位](https://www.qbitai.com/)
 - [麻省理工科技评论](https://www.mittrchina.com/)
 - [InfoQ](https://www.infoq.cn/)
-- [MOY](https://blog.youtube/news-and-events/made-on-youtube-2024/)
+- [今日三句半](https://www.threenhalf.com/)
+
 
 ### 开源工具
 - [github趋势](https://github.com/trending?since=weekly)
