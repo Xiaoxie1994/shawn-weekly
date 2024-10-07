@@ -7,12 +7,12 @@
 - [派早报](https://sspai.com/u/ee0vj778/updates)
 - [开源日报](https://www.oschina.net/news/industry)
 - [博客园本周热门新闻](https://news.cnblogs.com/n/digg)
-- [oschina热门资讯](https://www.oschina.net/news/industry)
 - [机器之心](https://www.jiqizhixin.com/)
 - [量子位](https://www.qbitai.com/)
 - [麻省理工科技评论](https://www.mittrchina.com/)
 - [InfoQ](https://www.infoq.cn/)
 - [今日三句半](https://www.threenhalf.com/)
+- [ifanrnews](https://www.ifanr.com/category/ifanrnews)
 
 
 ### 开源工具
