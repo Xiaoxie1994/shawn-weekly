@@ -40,6 +40,8 @@
 - [科技爱好者周刊](https://www.ruanyifeng.com/blog/)
 - [AIGC Weekly](https://quail.ink/op7418)
 - [聚合周刊](https://www.fre321.com/weekly)
+- [潮流周刊](https://weekly.tw93.fun/)
+- [老胡的周刊](https://weekly.howie6879.com/)
 
 ### 榜单
 - [tiobe](https://www.tiobe.com/tiobe-index/)
