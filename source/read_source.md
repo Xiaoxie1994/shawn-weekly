@@ -6,7 +6,6 @@
 - [派早报](https://sspai.com/u/ee0vj778/updates)
 - [开源日报](https://www.oschina.net/search/?q=%E5%BC%80%E6%BA%90%E6%97%A5%E6%8A%A5&sort_by_f=%E5%8F%91%E5%B8%83%E6%97%B6%E9%97%B4)
 - [博客园新闻日历](https://news.cnblogs.com/n/date/)
-- [今日三句半](https://www.threenhalf.com/)
 - [ifanrnews](https://www.ifanr.com/category/ifanrnews)
 
 ### 综合资讯
