@@ -16,6 +16,7 @@
 - [麻省理工科技评论](https://www.mittrchina.com/)
 - [InfoQ](https://www.infoq.cn/)
 - [readhub](https://readhub.cn/hot?type=weekly)
+- [人人都是产品经理 周榜](https://www.woshipm.com/)
 
 ### 开源工具
 - [github趋势](https://github.com/trending?since=weekly)
