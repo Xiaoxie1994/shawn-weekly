@@ -11,12 +11,14 @@
             "id": "59d5d6d03fafdd54",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "picture/WechatIMG182.jpg"
+                "file": "article/【2024W45】肖恩技术周刊（第 23 期）.md",
+                "mode": "source",
+                "source": true
               },
-              "icon": "lucide-image",
-              "title": "WechatIMG182"
+              "icon": "lucide-file",
+              "title": "【2024W45】肖恩技术周刊（第 23 期）"
             }
           }
         ]
@@ -137,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "article/【2024W44】肖恩技术周刊（第 22 期）.md"
+                "file": "article/【2024W45】肖恩技术周刊（第 23 期）.md"
               },
               "icon": "lucide-list",
-              "title": "【2024W44】肖恩技术周刊（第 22 期） 的大纲"
+              "title": "【2024W45】肖恩技术周刊（第 23 期） 的大纲"
             }
           },
           {
@@ -171,8 +173,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "59d5d6d03fafdd54",
+  "active": "62196a9aacfdb958",
   "lastOpenFiles": [
+    "picture/WechatIMG182.jpg",
     "picture/WechatIMG65.jpg",
     "picture/intro-w26.png",
     "picture/intro-w25.png",
@@ -186,7 +189,6 @@
     "picture/w43/image.png",
     "picture/w42/0A5CB0B2-1F09-4D12-B46F-8D6E38CF3BCC_1_201_a.jpeg",
     "picture/w42/640.gif",
-    "picture/w42/image.png",
     "README.md",
     "SUMMARY.md",
     "article/【2024W45】肖恩技术周刊（第 23 期）.md",
