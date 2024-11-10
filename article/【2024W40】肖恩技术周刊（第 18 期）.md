@@ -2,7 +2,7 @@
 > **更新时间**: 周一<br>
 > **历史收录**: [shawn-weekly](https://github.com/Xiaoxie1994/shawn-weekly) <br>
 > **订阅方式**: 微信公众号“**肖恩聊技术**”，除周刊外还有更多原创技术博文~<br>
-> <img src="../picture/image-1.png" alt="公众号二维码" width="300">
+> <img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300">
 
 ## 内容速览
 > **业界资讯**

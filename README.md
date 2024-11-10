@@ -7,7 +7,7 @@
 避免错过每期内容，可通过公众号订阅：
 - 公众号：肖恩聊技术
 
-<img src="./picture/image-1.png" alt="公众号二维码" width="400">
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="400">
 
 ## 往期内容
 网页阅读推荐点击[shawn-weekly](https://weekly.shawnxie.top)，获得更好阅读体验。
