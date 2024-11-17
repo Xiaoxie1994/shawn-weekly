@@ -4,21 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "bdd19d900320a0ad",
+        "id": "6d9eaf515dc0c8a4",
         "type": "tabs",
         "children": [
           {
-            "id": "59d5d6d03fafdd54",
+            "id": "ec7cc093331156b8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/【2024W45】肖恩技术周刊（第 23 期）.md",
+                "file": "article/【2024W46】肖恩技术周刊（第 24 期）.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "【2024W46】肖恩技术周刊（第 24 期）"
+            }
+          },
+          {
+            "id": "bb868b5c55b293c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/read_source.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "【2024W45】肖恩技术周刊（第 23 期）"
+              "title": "read_source"
             }
           }
         ]
@@ -77,7 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 310.5
   },
   "right": {
     "id": "a90bf4c0fdb7c687",
@@ -138,11 +152,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "article/【2024W45】肖恩技术周刊（第 23 期）.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "【2024W45】肖恩技术周刊（第 23 期） 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -173,13 +185,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "62196a9aacfdb958",
+  "active": "ec7cc093331156b8",
   "lastOpenFiles": [
+    "article/【2024W31】肖恩技术周刊（第 9 期）.md",
+    "article/【2024W46】肖恩技术周刊（第 24 期）.md",
+    "SUMMARY.md",
+    "source/read_source.md",
+    "source/template.md",
+    "README.md",
+    "article/【2024W45】肖恩技术周刊（第 23 期）.md",
     "picture/WechatIMG182.jpg",
     "picture/WechatIMG65.jpg",
     "picture/intro-w26.png",
     "picture/intro-w25.png",
-    "source/read_source.md",
     "picture/image-1.png",
     "article/【2024W43】肖恩技术周刊（第 21 期）.md",
     "article/【2024W44】肖恩技术周刊（第 22 期）.md",
@@ -188,13 +206,8 @@
     "picture/w43/image-2.png",
     "picture/w43/image.png",
     "picture/w42/0A5CB0B2-1F09-4D12-B46F-8D6E38CF3BCC_1_201_a.jpeg",
-    "picture/w42/640.gif",
-    "README.md",
-    "SUMMARY.md",
-    "article/【2024W45】肖恩技术周刊（第 23 期）.md",
     "().md",
     "文章链接.md",
-    "source/template.md",
     "article/【2024W24】肖恩技术周刊（第 2 期）.md",
     "article/【2024W23】肖恩技术周刊（第 1 期）.md",
     "未命名.canvas"

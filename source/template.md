@@ -1,7 +1,7 @@
-> **周刊内容**: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
+> **周刊内容**: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资料”等。<br>
 > **更新时间**: 周一<br>
-> **历史收录**: [shawn-weekly](https://github.com/Xiaoxie1994/shawn-weekly) <br>
-> **订阅方式**: 微信公众号“**肖恩聊技术**”，除周刊外还有更多原创技术博文~<br>
+> **历史收录**: [技术周刊合集](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwODY0ODQzOQ==&action=getalbum&album_id=3492416248238096386#wechat_redirect) <br>
+> **订阅方式**: 微信公众号“**肖恩聊技术**”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~<br>
 > <img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300">
 
 ## 内容速览
