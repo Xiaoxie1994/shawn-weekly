@@ -3,13 +3,13 @@
   "uploader": "PicGo",
   "uploadServer": "http://127.0.0.1:36677/upload",
   "deleteServer": "http://127.0.0.1:36677/delete",
-  "imageSizeSuffix": "|500",
+  "imageSizeSuffix": "",
   "picgoCorePath": "",
   "workOnNetWork": false,
   "fixPath": false,
   "applyImage": true,
   "newWorkBlackDomains": "",
-  "deleteSource": false,
+  "deleteSource": true,
   "imageDesc": "none",
   "remoteServerMode": false
 }

@@ -10,7 +10,7 @@
 <img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="400">
 
 ## 往期内容
-网页阅读推荐点击[shawn-weekly](https://weekly.shawnxie.top)，获得更好阅读体验。
+网页阅读推荐点击[shawn-weekly](https://weekly.shawnxie.top)，可获得更好阅读体验。
 
 ## 信息源
 内容信息源：[阅读信息源](./source/read_source.md)
