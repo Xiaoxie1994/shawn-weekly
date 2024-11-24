@@ -4,20 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8786bbc7aca56609",
+        "id": "55d9b3b306892eb8",
         "type": "tabs",
         "children": [
           {
-            "id": "768288311f40a161",
+            "id": "3c9843c64680cbe1",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
-                "file": "SUMMARY.md",
-                "staged": false
+                "file": "article/【2024W47】肖恩技术周刊（第 25 期）.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "git-pull-request",
-              "title": "Diff View (SUMMARY)"
+              "icon": "lucide-file",
+              "title": "【2024W47】肖恩技术周刊（第 25 期）"
             }
           }
         ]
@@ -76,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 416.5
+    "width": 416.5,
+    "collapsed": true
   },
   "right": {
     "id": "a90bf4c0fdb7c687",
@@ -169,9 +171,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "768288311f40a161",
+  "active": "3c9843c64680cbe1",
   "lastOpenFiles": [
     "SUMMARY.md",
+    "article/【2024W47】肖恩技术周刊（第 25 期）.md",
+    "source/read_source.md",
+    "未命名 1.canvas",
+    "未命名.canvas",
+    "article/【2024W26】肖恩技术周刊（第 4 期）.md",
+    "图片链接.md",
+    "source/template.md",
+    "article/【2024W46】肖恩技术周刊（第 24 期）.md",
+    "README.md",
     "article/【2024W42】肖恩技术周刊（第 20 期）.md",
     "picture/w42/WechatIMG348.jpg",
     "picture/w42/up-6574b2aba161b2d6a1f8a5489d855ecf680.gif",
@@ -184,19 +195,14 @@
     "picture/w42/28114452_VX00.webp",
     "picture/w42/0A5CB0B2-1F09-4D12-B46F-8D6E38CF3BCC_1_201_a.jpeg",
     "article/【2024W43】肖恩技术周刊（第 21 期）.md",
-    "README.md",
-    "source/read_source.md",
-    "article/【2024W46】肖恩技术周刊（第 24 期）.md",
     "article/【2024W23】肖恩技术周刊（第 1 期）.md",
     "article/【2024W45】肖恩技术周刊（第 23 期）.md",
     "article/【2024W38】肖恩技术周刊（第 16 期）.md",
     "collection",
-    "source/template.md",
     "article/【2024W44】肖恩技术周刊（第 22 期）.md",
     "article/【2024W31】肖恩技术周刊（第 9 期）.md",
     "().md",
     "文章链接.md",
-    "article/【2024W24】肖恩技术周刊（第 2 期）.md",
-    "未命名.canvas"
+    "article/【2024W24】肖恩技术周刊（第 2 期）.md"
   ]
 }

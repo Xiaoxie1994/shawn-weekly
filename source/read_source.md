@@ -20,7 +20,7 @@
 ### 开源工具
 - [github趋势](https://github.com/trending?since=weekly)
 
-### 技术公众号
+### 技术博客
 - 美团技术团队
 - 大淘宝技术
 - 阿里云云原生
@@ -35,6 +35,7 @@
 - 小红书技术
 - 京东技术
 - 蚂蚁技术
+- [medium](https://medium.com/)
 
 ### 周刊
 - [54321](https://versun.me/54321-weekly/)
