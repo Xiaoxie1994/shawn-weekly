@@ -4,18 +4,20 @@
 ### 每日快讯
 - [8点1氪](https://36kr.com/user/5652071)
 - [派早报](https://sspai.com/u/ee0vj778/updates)
-- [开源日报](https://www.oschina.net/search/?q=%E5%BC%80%E6%BA%90%E6%97%A5%E6%8A%A5&sort_by_f=%E5%8F%91%E5%B8%83%E6%97%B6%E9%97%B4)
+- [开源日报](https://my.oschina.net/hardbone?tab=news)
 - [博客园新闻日历](https://news.cnblogs.com/n/date/)
-- [ifanrnews](https://www.ifanr.com/category/ifanrnews)
+- [ifanrnews每日早报](https://www.ifanr.com/)
 
 ### 综合资讯
-- [36Kr 48h热榜](https://36kr.com/hot-list/catalog)
-- [机器之心](https://www.jiqizhixin.com/)
-- [量子位](https://www.qbitai.com/)
 - [麻省理工科技评论](https://www.mittrchina.com/)
 - [InfoQ](https://www.infoq.cn/)
 - [readhub](https://readhub.cn/hot?type=weekly)
 - [人人都是产品经理 周榜](https://www.woshipm.com/)
+- [betterdev](https://betterdev.link/)
+- [ycombinator](https://news.ycombinator.com/)
+- [36Kr 48h热榜](https://36kr.com/hot-list/catalog)
+- [机器之心](https://www.jiqizhixin.com/)
+- [量子位](https://www.qbitai.com/)
 
 ### 开源工具
 - [github趋势](https://github.com/trending?since=weekly)
