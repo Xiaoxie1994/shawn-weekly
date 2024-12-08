@@ -1,9 +1,9 @@
 'use strict';
 
 var obsidian = require('obsidian');
-var require$$0$1 = require('path');
 var require$$0 = require('fs');
 var process$2 = require('node:process');
+var require$$0$1 = require('path');
 var require$$0$2 = require('child_process');
 var require$$0$3 = require('os');
 var require$$0$4 = require('assert');
@@ -12,130 +12,516 @@ var require$$0$6 = require('buffer');
 var require$$0$5 = require('stream');
 var require$$2$1 = require('util');
 var node_os = require('node:os');
-var node_buffer = require('node:buffer');
 require('electron');
-
-/******************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-/* global Reflect, Promise */
-
-var extendStatics = function(d, b) {
-    extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-    return extendStatics(d, b);
-};
-
-function __extends(d, b) {
-    if (typeof b !== "function" && b !== null)
-        throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-    extendStatics(d, b);
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
-
-function __awaiter(thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-}
-
-function __generator(thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (g && (g = 0, op[0] && (_ = 0)), _) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-}
-
-function __values(o) {
-    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
-    if (m) return m.call(o);
-    if (o && typeof o.length === "number") return {
-        next: function () {
-            if (o && i >= o.length) o = void 0;
-            return { value: o && o[i++], done: !o };
-        }
-    };
-    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
-}
-
-function __read(o, n) {
-    var m = typeof Symbol === "function" && o[Symbol.iterator];
-    if (!m) return o;
-    var i = m.call(o), r, ar = [], e;
-    try {
-        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
-    }
-    catch (error) { e = { error: error }; }
-    finally {
-        try {
-            if (r && !r.done && (m = i["return"])) m.call(i);
-        }
-        finally { if (e) throw e.error; }
-    }
-    return ar;
-}
-
-function __spreadArray(to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
-        }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
-}
-
-function __asyncValues(o) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var m = o[Symbol.asyncIterator], i;
-    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
-    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
-    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
-}
+var node_buffer = require('node:buffer');
 
 var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
 function getDefaultExportFromCjs (x) {
 	return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
 }
+
+function assertPath(path) {
+  if (typeof path !== 'string') {
+    throw new TypeError('Path must be a string. Received ' + JSON.stringify(path));
+  }
+}
+
+// Resolves . and .. elements in a path with directory names
+function normalizeStringPosix(path, allowAboveRoot) {
+  var res = '';
+  var lastSegmentLength = 0;
+  var lastSlash = -1;
+  var dots = 0;
+  var code;
+  for (var i = 0; i <= path.length; ++i) {
+    if (i < path.length)
+      code = path.charCodeAt(i);
+    else if (code === 47 /*/*/)
+      break;
+    else
+      code = 47 /*/*/;
+    if (code === 47 /*/*/) {
+      if (lastSlash === i - 1 || dots === 1) ; else if (lastSlash !== i - 1 && dots === 2) {
+        if (res.length < 2 || lastSegmentLength !== 2 || res.charCodeAt(res.length - 1) !== 46 /*.*/ || res.charCodeAt(res.length - 2) !== 46 /*.*/) {
+          if (res.length > 2) {
+            var lastSlashIndex = res.lastIndexOf('/');
+            if (lastSlashIndex !== res.length - 1) {
+              if (lastSlashIndex === -1) {
+                res = '';
+                lastSegmentLength = 0;
+              } else {
+                res = res.slice(0, lastSlashIndex);
+                lastSegmentLength = res.length - 1 - res.lastIndexOf('/');
+              }
+              lastSlash = i;
+              dots = 0;
+              continue;
+            }
+          } else if (res.length === 2 || res.length === 1) {
+            res = '';
+            lastSegmentLength = 0;
+            lastSlash = i;
+            dots = 0;
+            continue;
+          }
+        }
+        if (allowAboveRoot) {
+          if (res.length > 0)
+            res += '/..';
+          else
+            res = '..';
+          lastSegmentLength = 2;
+        }
+      } else {
+        if (res.length > 0)
+          res += '/' + path.slice(lastSlash + 1, i);
+        else
+          res = path.slice(lastSlash + 1, i);
+        lastSegmentLength = i - lastSlash - 1;
+      }
+      lastSlash = i;
+      dots = 0;
+    } else if (code === 46 /*.*/ && dots !== -1) {
+      ++dots;
+    } else {
+      dots = -1;
+    }
+  }
+  return res;
+}
+
+function _format(sep, pathObject) {
+  var dir = pathObject.dir || pathObject.root;
+  var base = pathObject.base || (pathObject.name || '') + (pathObject.ext || '');
+  if (!dir) {
+    return base;
+  }
+  if (dir === pathObject.root) {
+    return dir + base;
+  }
+  return dir + sep + base;
+}
+
+var posix = {
+  // path.resolve([from ...], to)
+  resolve: function resolve() {
+    var resolvedPath = '';
+    var resolvedAbsolute = false;
+    var cwd;
+
+    for (var i = arguments.length - 1; i >= -1 && !resolvedAbsolute; i--) {
+      var path;
+      if (i >= 0)
+        path = arguments[i];
+      else {
+        if (cwd === undefined)
+          cwd = process.cwd();
+        path = cwd;
+      }
+
+      assertPath(path);
+
+      // Skip empty entries
+      if (path.length === 0) {
+        continue;
+      }
+
+      resolvedPath = path + '/' + resolvedPath;
+      resolvedAbsolute = path.charCodeAt(0) === 47 /*/*/;
+    }
+
+    // At this point the path should be resolved to a full absolute path, but
+    // handle relative paths to be safe (might happen when process.cwd() fails)
+
+    // Normalize the path
+    resolvedPath = normalizeStringPosix(resolvedPath, !resolvedAbsolute);
+
+    if (resolvedAbsolute) {
+      if (resolvedPath.length > 0)
+        return '/' + resolvedPath;
+      else
+        return '/';
+    } else if (resolvedPath.length > 0) {
+      return resolvedPath;
+    } else {
+      return '.';
+    }
+  },
+
+  normalize: function normalize(path) {
+    assertPath(path);
+
+    if (path.length === 0) return '.';
+
+    var isAbsolute = path.charCodeAt(0) === 47 /*/*/;
+    var trailingSeparator = path.charCodeAt(path.length - 1) === 47 /*/*/;
+
+    // Normalize the path
+    path = normalizeStringPosix(path, !isAbsolute);
+
+    if (path.length === 0 && !isAbsolute) path = '.';
+    if (path.length > 0 && trailingSeparator) path += '/';
+
+    if (isAbsolute) return '/' + path;
+    return path;
+  },
+
+  isAbsolute: function isAbsolute(path) {
+    assertPath(path);
+    return path.length > 0 && path.charCodeAt(0) === 47 /*/*/;
+  },
+
+  join: function join() {
+    if (arguments.length === 0)
+      return '.';
+    var joined;
+    for (var i = 0; i < arguments.length; ++i) {
+      var arg = arguments[i];
+      assertPath(arg);
+      if (arg.length > 0) {
+        if (joined === undefined)
+          joined = arg;
+        else
+          joined += '/' + arg;
+      }
+    }
+    if (joined === undefined)
+      return '.';
+    return posix.normalize(joined);
+  },
+
+  relative: function relative(from, to) {
+    assertPath(from);
+    assertPath(to);
+
+    if (from === to) return '';
+
+    from = posix.resolve(from);
+    to = posix.resolve(to);
+
+    if (from === to) return '';
+
+    // Trim any leading backslashes
+    var fromStart = 1;
+    for (; fromStart < from.length; ++fromStart) {
+      if (from.charCodeAt(fromStart) !== 47 /*/*/)
+        break;
+    }
+    var fromEnd = from.length;
+    var fromLen = fromEnd - fromStart;
+
+    // Trim any leading backslashes
+    var toStart = 1;
+    for (; toStart < to.length; ++toStart) {
+      if (to.charCodeAt(toStart) !== 47 /*/*/)
+        break;
+    }
+    var toEnd = to.length;
+    var toLen = toEnd - toStart;
+
+    // Compare paths to find the longest common path from root
+    var length = fromLen < toLen ? fromLen : toLen;
+    var lastCommonSep = -1;
+    var i = 0;
+    for (; i <= length; ++i) {
+      if (i === length) {
+        if (toLen > length) {
+          if (to.charCodeAt(toStart + i) === 47 /*/*/) {
+            // We get here if `from` is the exact base path for `to`.
+            // For example: from='/foo/bar'; to='/foo/bar/baz'
+            return to.slice(toStart + i + 1);
+          } else if (i === 0) {
+            // We get here if `from` is the root
+            // For example: from='/'; to='/foo'
+            return to.slice(toStart + i);
+          }
+        } else if (fromLen > length) {
+          if (from.charCodeAt(fromStart + i) === 47 /*/*/) {
+            // We get here if `to` is the exact base path for `from`.
+            // For example: from='/foo/bar/baz'; to='/foo/bar'
+            lastCommonSep = i;
+          } else if (i === 0) {
+            // We get here if `to` is the root.
+            // For example: from='/foo'; to='/'
+            lastCommonSep = 0;
+          }
+        }
+        break;
+      }
+      var fromCode = from.charCodeAt(fromStart + i);
+      var toCode = to.charCodeAt(toStart + i);
+      if (fromCode !== toCode)
+        break;
+      else if (fromCode === 47 /*/*/)
+        lastCommonSep = i;
+    }
+
+    var out = '';
+    // Generate the relative path based on the path difference between `to`
+    // and `from`
+    for (i = fromStart + lastCommonSep + 1; i <= fromEnd; ++i) {
+      if (i === fromEnd || from.charCodeAt(i) === 47 /*/*/) {
+        if (out.length === 0)
+          out += '..';
+        else
+          out += '/..';
+      }
+    }
+
+    // Lastly, append the rest of the destination (`to`) path that comes after
+    // the common path parts
+    if (out.length > 0)
+      return out + to.slice(toStart + lastCommonSep);
+    else {
+      toStart += lastCommonSep;
+      if (to.charCodeAt(toStart) === 47 /*/*/)
+        ++toStart;
+      return to.slice(toStart);
+    }
+  },
+
+  _makeLong: function _makeLong(path) {
+    return path;
+  },
+
+  dirname: function dirname(path) {
+    assertPath(path);
+    if (path.length === 0) return '.';
+    var code = path.charCodeAt(0);
+    var hasRoot = code === 47 /*/*/;
+    var end = -1;
+    var matchedSlash = true;
+    for (var i = path.length - 1; i >= 1; --i) {
+      code = path.charCodeAt(i);
+      if (code === 47 /*/*/) {
+          if (!matchedSlash) {
+            end = i;
+            break;
+          }
+        } else {
+        // We saw the first non-path separator
+        matchedSlash = false;
+      }
+    }
+
+    if (end === -1) return hasRoot ? '/' : '.';
+    if (hasRoot && end === 1) return '//';
+    return path.slice(0, end);
+  },
+
+  basename: function basename(path, ext) {
+    if (ext !== undefined && typeof ext !== 'string') throw new TypeError('"ext" argument must be a string');
+    assertPath(path);
+
+    var start = 0;
+    var end = -1;
+    var matchedSlash = true;
+    var i;
+
+    if (ext !== undefined && ext.length > 0 && ext.length <= path.length) {
+      if (ext.length === path.length && ext === path) return '';
+      var extIdx = ext.length - 1;
+      var firstNonSlashEnd = -1;
+      for (i = path.length - 1; i >= 0; --i) {
+        var code = path.charCodeAt(i);
+        if (code === 47 /*/*/) {
+            // If we reached a path separator that was not part of a set of path
+            // separators at the end of the string, stop now
+            if (!matchedSlash) {
+              start = i + 1;
+              break;
+            }
+          } else {
+          if (firstNonSlashEnd === -1) {
+            // We saw the first non-path separator, remember this index in case
+            // we need it if the extension ends up not matching
+            matchedSlash = false;
+            firstNonSlashEnd = i + 1;
+          }
+          if (extIdx >= 0) {
+            // Try to match the explicit extension
+            if (code === ext.charCodeAt(extIdx)) {
+              if (--extIdx === -1) {
+                // We matched the extension, so mark this as the end of our path
+                // component
+                end = i;
+              }
+            } else {
+              // Extension does not match, so our result is the entire path
+              // component
+              extIdx = -1;
+              end = firstNonSlashEnd;
+            }
+          }
+        }
+      }
+
+      if (start === end) end = firstNonSlashEnd;else if (end === -1) end = path.length;
+      return path.slice(start, end);
+    } else {
+      for (i = path.length - 1; i >= 0; --i) {
+        if (path.charCodeAt(i) === 47 /*/*/) {
+            // If we reached a path separator that was not part of a set of path
+            // separators at the end of the string, stop now
+            if (!matchedSlash) {
+              start = i + 1;
+              break;
+            }
+          } else if (end === -1) {
+          // We saw the first non-path separator, mark this as the end of our
+          // path component
+          matchedSlash = false;
+          end = i + 1;
+        }
+      }
+
+      if (end === -1) return '';
+      return path.slice(start, end);
+    }
+  },
+
+  extname: function extname(path) {
+    assertPath(path);
+    var startDot = -1;
+    var startPart = 0;
+    var end = -1;
+    var matchedSlash = true;
+    // Track the state of characters (if any) we see before our first dot and
+    // after any path separator we find
+    var preDotState = 0;
+    for (var i = path.length - 1; i >= 0; --i) {
+      var code = path.charCodeAt(i);
+      if (code === 47 /*/*/) {
+          // If we reached a path separator that was not part of a set of path
+          // separators at the end of the string, stop now
+          if (!matchedSlash) {
+            startPart = i + 1;
+            break;
+          }
+          continue;
+        }
+      if (end === -1) {
+        // We saw the first non-path separator, mark this as the end of our
+        // extension
+        matchedSlash = false;
+        end = i + 1;
+      }
+      if (code === 46 /*.*/) {
+          // If this is our first dot, mark it as the start of our extension
+          if (startDot === -1)
+            startDot = i;
+          else if (preDotState !== 1)
+            preDotState = 1;
+      } else if (startDot !== -1) {
+        // We saw a non-dot and non-path separator before our dot, so we should
+        // have a good chance at having a non-empty extension
+        preDotState = -1;
+      }
+    }
+
+    if (startDot === -1 || end === -1 ||
+        // We saw a non-dot character immediately before the dot
+        preDotState === 0 ||
+        // The (right-most) trimmed path component is exactly '..'
+        preDotState === 1 && startDot === end - 1 && startDot === startPart + 1) {
+      return '';
+    }
+    return path.slice(startDot, end);
+  },
+
+  format: function format(pathObject) {
+    if (pathObject === null || typeof pathObject !== 'object') {
+      throw new TypeError('The "pathObject" argument must be of type Object. Received type ' + typeof pathObject);
+    }
+    return _format('/', pathObject);
+  },
+
+  parse: function parse(path) {
+    assertPath(path);
+
+    var ret = { root: '', dir: '', base: '', ext: '', name: '' };
+    if (path.length === 0) return ret;
+    var code = path.charCodeAt(0);
+    var isAbsolute = code === 47 /*/*/;
+    var start;
+    if (isAbsolute) {
+      ret.root = '/';
+      start = 1;
+    } else {
+      start = 0;
+    }
+    var startDot = -1;
+    var startPart = 0;
+    var end = -1;
+    var matchedSlash = true;
+    var i = path.length - 1;
+
+    // Track the state of characters (if any) we see before our first dot and
+    // after any path separator we find
+    var preDotState = 0;
+
+    // Get non-dir info
+    for (; i >= start; --i) {
+      code = path.charCodeAt(i);
+      if (code === 47 /*/*/) {
+          // If we reached a path separator that was not part of a set of path
+          // separators at the end of the string, stop now
+          if (!matchedSlash) {
+            startPart = i + 1;
+            break;
+          }
+          continue;
+        }
+      if (end === -1) {
+        // We saw the first non-path separator, mark this as the end of our
+        // extension
+        matchedSlash = false;
+        end = i + 1;
+      }
+      if (code === 46 /*.*/) {
+          // If this is our first dot, mark it as the start of our extension
+          if (startDot === -1) startDot = i;else if (preDotState !== 1) preDotState = 1;
+        } else if (startDot !== -1) {
+        // We saw a non-dot and non-path separator before our dot, so we should
+        // have a good chance at having a non-empty extension
+        preDotState = -1;
+      }
+    }
+
+    if (startDot === -1 || end === -1 ||
+    // We saw a non-dot character immediately before the dot
+    preDotState === 0 ||
+    // The (right-most) trimmed path component is exactly '..'
+    preDotState === 1 && startDot === end - 1 && startDot === startPart + 1) {
+      if (end !== -1) {
+        if (startPart === 0 && isAbsolute) ret.base = ret.name = path.slice(1, end);else ret.base = ret.name = path.slice(startPart, end);
+      }
+    } else {
+      if (startPart === 0 && isAbsolute) {
+        ret.name = path.slice(1, startDot);
+        ret.base = path.slice(1, end);
+      } else {
+        ret.name = path.slice(startPart, startDot);
+        ret.base = path.slice(startPart, end);
+      }
+      ret.ext = path.slice(startDot, end);
+    }
+
+    if (startPart > 0) ret.dir = path.slice(0, startPart - 1);else if (isAbsolute) ret.dir = '/';
+
+    return ret;
+  },
+
+  sep: '/',
+  delimiter: ':',
+  win32: null,
+  posix: null
+};
+
+posix.posix = posix;
+
+var pathBrowserify = posix;
 
 var execa$2 = {exports: {}};
 
@@ -1925,11 +2311,11 @@ var bufferStream$1 = options => {
 };
 
 const {constants: BufferConstants} = require$$0$6;
-const stream$2 = require$$0$5;
+const stream$1 = require$$0$5;
 const {promisify} = require$$2$1;
 const bufferStream = bufferStream$1;
 
-const streamPipelinePromisified = promisify(stream$2.pipeline);
+const streamPipelinePromisified = promisify(stream$1.pipeline);
 
 class MaxBufferError extends Error {
 	constructor() {
@@ -2116,7 +2502,7 @@ const validateInputSync$1 = ({input}) => {
 	}
 };
 
-var stream$1 = {
+var stream = {
 	handleInput: handleInput$1,
 	makeAllStream: makeAllStream$1,
 	getSpawnedResult: getSpawnedResult$1,
@@ -2228,7 +2614,7 @@ const onetime = onetimeExports;
 const makeError = error;
 const normalizeStdio = stdioExports;
 const {spawnedKill, spawnedCancel, setupTimeout, validateTimeout, setExitHandler} = kill;
-const {handleInput, getSpawnedResult, makeAllStream, validateInputSync} = stream$1;
+const {handleInput, getSpawnedResult, makeAllStream, validateInputSync} = stream;
 const {mergePromise, getSpawnedPromise} = promise;
 const {joinCommand, parseCommand, getEscapedCommand} = command;
 
@@ -2491,20 +2877,27 @@ var execaExports = execa$2.exports;
 var execa$1 = /*@__PURE__*/getDefaultExportFromCjs(execaExports);
 
 function ansiRegex({onlyFirst = false} = {}) {
+	// Valid string terminator sequences are BEL, ESC\, and 0x9c
+	const ST = '(?:\\u0007|\\u001B\\u005C|\\u009C)';
 	const pattern = [
-	    '[\\u001B\\u009B][[\\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\\d\\/#&.:=?%@~_]+)*|[a-zA-Z\\d]+(?:;[-a-zA-Z\\d\\/#&.:=?%@~_]*)*)?\\u0007)',
-		'(?:(?:\\d{1,4}(?:;\\d{0,4})*)?[\\dA-PR-TZcf-ntqry=><~]))'
+		`[\\u001B\\u009B][[\\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\\d\\/#&.:=?%@~_]+)*|[a-zA-Z\\d]+(?:;[-a-zA-Z\\d\\/#&.:=?%@~_]*)*)?${ST})`,
+		'(?:(?:\\d{1,4}(?:;\\d{0,4})*)?[\\dA-PR-TZcf-nq-uy=><~]))',
 	].join('|');
 
 	return new RegExp(pattern, onlyFirst ? undefined : 'g');
 }
+
+const regex = ansiRegex();
 
 function stripAnsi(string) {
 	if (typeof string !== 'string') {
 		throw new TypeError(`Expected a \`string\`, got \`${typeof string}\``);
 	}
 
-	return string.replace(ansiRegex(), '');
+	// Even though the regex is global, we don't need to reset the `.lastIndex`
+	// because unlike `.exec()` and `.test()`, `.replace()` does it automatically
+	// and doing it manually has a performance penalty.
+	return string.replace(regex, '');
 }
 
 const detectDefaultShell = () => {
@@ -2588,3312 +2981,78 @@ function fixPath() {
 	].join(':');
 }
 
-var lib = {};
-
-var readable = {exports: {}};
-
-var stream;
-var hasRequiredStream;
-
-function requireStream () {
-	if (hasRequiredStream) return stream;
-	hasRequiredStream = 1;
-	stream = require$$0$5;
-	return stream;
+const IMAGE_EXT_LIST = [
+    ".png",
+    ".jpg",
+    ".jpeg",
+    ".bmp",
+    ".gif",
+    ".svg",
+    ".tiff",
+    ".webp",
+    ".avif",
+];
+function isAnImage(ext) {
+    return IMAGE_EXT_LIST.includes(ext.toLowerCase());
 }
-
-var buffer_list;
-var hasRequiredBuffer_list;
-
-function requireBuffer_list () {
-	if (hasRequiredBuffer_list) return buffer_list;
-	hasRequiredBuffer_list = 1;
-
-	function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-	function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-	function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
-	function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-	function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return typeof key === "symbol" ? key : String(key); }
-	function _toPrimitive(input, hint) { if (typeof input !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (typeof res !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-	var _require = require$$0$6,
-	  Buffer = _require.Buffer;
-	var _require2 = require$$2$1,
-	  inspect = _require2.inspect;
-	var custom = inspect && inspect.custom || 'inspect';
-	function copyBuffer(src, target, offset) {
-	  Buffer.prototype.copy.call(src, target, offset);
-	}
-	buffer_list = /*#__PURE__*/function () {
-	  function BufferList() {
-	    _classCallCheck(this, BufferList);
-	    this.head = null;
-	    this.tail = null;
-	    this.length = 0;
-	  }
-	  _createClass(BufferList, [{
-	    key: "push",
-	    value: function push(v) {
-	      var entry = {
-	        data: v,
-	        next: null
-	      };
-	      if (this.length > 0) this.tail.next = entry;else this.head = entry;
-	      this.tail = entry;
-	      ++this.length;
-	    }
-	  }, {
-	    key: "unshift",
-	    value: function unshift(v) {
-	      var entry = {
-	        data: v,
-	        next: this.head
-	      };
-	      if (this.length === 0) this.tail = entry;
-	      this.head = entry;
-	      ++this.length;
-	    }
-	  }, {
-	    key: "shift",
-	    value: function shift() {
-	      if (this.length === 0) return;
-	      var ret = this.head.data;
-	      if (this.length === 1) this.head = this.tail = null;else this.head = this.head.next;
-	      --this.length;
-	      return ret;
-	    }
-	  }, {
-	    key: "clear",
-	    value: function clear() {
-	      this.head = this.tail = null;
-	      this.length = 0;
-	    }
-	  }, {
-	    key: "join",
-	    value: function join(s) {
-	      if (this.length === 0) return '';
-	      var p = this.head;
-	      var ret = '' + p.data;
-	      while (p = p.next) ret += s + p.data;
-	      return ret;
-	    }
-	  }, {
-	    key: "concat",
-	    value: function concat(n) {
-	      if (this.length === 0) return Buffer.alloc(0);
-	      var ret = Buffer.allocUnsafe(n >>> 0);
-	      var p = this.head;
-	      var i = 0;
-	      while (p) {
-	        copyBuffer(p.data, ret, i);
-	        i += p.data.length;
-	        p = p.next;
-	      }
-	      return ret;
-	    }
-
-	    // Consumes a specified amount of bytes or characters from the buffered data.
-	  }, {
-	    key: "consume",
-	    value: function consume(n, hasStrings) {
-	      var ret;
-	      if (n < this.head.data.length) {
-	        // `slice` is the same for buffers and strings.
-	        ret = this.head.data.slice(0, n);
-	        this.head.data = this.head.data.slice(n);
-	      } else if (n === this.head.data.length) {
-	        // First chunk is a perfect match.
-	        ret = this.shift();
-	      } else {
-	        // Result spans more than one buffer.
-	        ret = hasStrings ? this._getString(n) : this._getBuffer(n);
-	      }
-	      return ret;
-	    }
-	  }, {
-	    key: "first",
-	    value: function first() {
-	      return this.head.data;
-	    }
-
-	    // Consumes a specified amount of characters from the buffered data.
-	  }, {
-	    key: "_getString",
-	    value: function _getString(n) {
-	      var p = this.head;
-	      var c = 1;
-	      var ret = p.data;
-	      n -= ret.length;
-	      while (p = p.next) {
-	        var str = p.data;
-	        var nb = n > str.length ? str.length : n;
-	        if (nb === str.length) ret += str;else ret += str.slice(0, n);
-	        n -= nb;
-	        if (n === 0) {
-	          if (nb === str.length) {
-	            ++c;
-	            if (p.next) this.head = p.next;else this.head = this.tail = null;
-	          } else {
-	            this.head = p;
-	            p.data = str.slice(nb);
-	          }
-	          break;
-	        }
-	        ++c;
-	      }
-	      this.length -= c;
-	      return ret;
-	    }
-
-	    // Consumes a specified amount of bytes from the buffered data.
-	  }, {
-	    key: "_getBuffer",
-	    value: function _getBuffer(n) {
-	      var ret = Buffer.allocUnsafe(n);
-	      var p = this.head;
-	      var c = 1;
-	      p.data.copy(ret);
-	      n -= p.data.length;
-	      while (p = p.next) {
-	        var buf = p.data;
-	        var nb = n > buf.length ? buf.length : n;
-	        buf.copy(ret, ret.length - n, 0, nb);
-	        n -= nb;
-	        if (n === 0) {
-	          if (nb === buf.length) {
-	            ++c;
-	            if (p.next) this.head = p.next;else this.head = this.tail = null;
-	          } else {
-	            this.head = p;
-	            p.data = buf.slice(nb);
-	          }
-	          break;
-	        }
-	        ++c;
-	      }
-	      this.length -= c;
-	      return ret;
-	    }
-
-	    // Make sure the linked list only shows the minimal necessary information.
-	  }, {
-	    key: custom,
-	    value: function value(_, options) {
-	      return inspect(this, _objectSpread(_objectSpread({}, options), {}, {
-	        // Only inspect one level.
-	        depth: 0,
-	        // It should not recurse.
-	        customInspect: false
-	      }));
-	    }
-	  }]);
-	  return BufferList;
-	}();
-	return buffer_list;
+function isAssetTypeAnImage(path) {
+    return isAnImage(pathBrowserify.extname(path));
 }
-
-var destroy_1;
-var hasRequiredDestroy;
-
-function requireDestroy () {
-	if (hasRequiredDestroy) return destroy_1;
-	hasRequiredDestroy = 1;
-
-	// undocumented cb() API, needed for core, not for public API
-	function destroy(err, cb) {
-	  var _this = this;
-	  var readableDestroyed = this._readableState && this._readableState.destroyed;
-	  var writableDestroyed = this._writableState && this._writableState.destroyed;
-	  if (readableDestroyed || writableDestroyed) {
-	    if (cb) {
-	      cb(err);
-	    } else if (err) {
-	      if (!this._writableState) {
-	        process.nextTick(emitErrorNT, this, err);
-	      } else if (!this._writableState.errorEmitted) {
-	        this._writableState.errorEmitted = true;
-	        process.nextTick(emitErrorNT, this, err);
-	      }
-	    }
-	    return this;
-	  }
-
-	  // we set destroyed to true before firing error callbacks in order
-	  // to make it re-entrance safe in case destroy() is called within callbacks
-
-	  if (this._readableState) {
-	    this._readableState.destroyed = true;
-	  }
-
-	  // if this is a duplex stream mark the writable part as destroyed as well
-	  if (this._writableState) {
-	    this._writableState.destroyed = true;
-	  }
-	  this._destroy(err || null, function (err) {
-	    if (!cb && err) {
-	      if (!_this._writableState) {
-	        process.nextTick(emitErrorAndCloseNT, _this, err);
-	      } else if (!_this._writableState.errorEmitted) {
-	        _this._writableState.errorEmitted = true;
-	        process.nextTick(emitErrorAndCloseNT, _this, err);
-	      } else {
-	        process.nextTick(emitCloseNT, _this);
-	      }
-	    } else if (cb) {
-	      process.nextTick(emitCloseNT, _this);
-	      cb(err);
-	    } else {
-	      process.nextTick(emitCloseNT, _this);
-	    }
-	  });
-	  return this;
-	}
-	function emitErrorAndCloseNT(self, err) {
-	  emitErrorNT(self, err);
-	  emitCloseNT(self);
-	}
-	function emitCloseNT(self) {
-	  if (self._writableState && !self._writableState.emitClose) return;
-	  if (self._readableState && !self._readableState.emitClose) return;
-	  self.emit('close');
-	}
-	function undestroy() {
-	  if (this._readableState) {
-	    this._readableState.destroyed = false;
-	    this._readableState.reading = false;
-	    this._readableState.ended = false;
-	    this._readableState.endEmitted = false;
-	  }
-	  if (this._writableState) {
-	    this._writableState.destroyed = false;
-	    this._writableState.ended = false;
-	    this._writableState.ending = false;
-	    this._writableState.finalCalled = false;
-	    this._writableState.prefinished = false;
-	    this._writableState.finished = false;
-	    this._writableState.errorEmitted = false;
-	  }
-	}
-	function emitErrorNT(self, err) {
-	  self.emit('error', err);
-	}
-	function errorOrDestroy(stream, err) {
-	  // We have tests that rely on errors being emitted
-	  // in the same tick, so changing this is semver major.
-	  // For now when you opt-in to autoDestroy we allow
-	  // the error to be emitted nextTick. In a future
-	  // semver major update we should change the default to this.
-
-	  var rState = stream._readableState;
-	  var wState = stream._writableState;
-	  if (rState && rState.autoDestroy || wState && wState.autoDestroy) stream.destroy(err);else stream.emit('error', err);
-	}
-	destroy_1 = {
-	  destroy: destroy,
-	  undestroy: undestroy,
-	  errorOrDestroy: errorOrDestroy
-	};
-	return destroy_1;
-}
-
-var errors = {};
-
-var hasRequiredErrors;
-
-function requireErrors () {
-	if (hasRequiredErrors) return errors;
-	hasRequiredErrors = 1;
-
-	const codes = {};
-
-	function createErrorType(code, message, Base) {
-	  if (!Base) {
-	    Base = Error;
-	  }
-
-	  function getMessage (arg1, arg2, arg3) {
-	    if (typeof message === 'string') {
-	      return message
-	    } else {
-	      return message(arg1, arg2, arg3)
-	    }
-	  }
-
-	  class NodeError extends Base {
-	    constructor (arg1, arg2, arg3) {
-	      super(getMessage(arg1, arg2, arg3));
-	    }
-	  }
-
-	  NodeError.prototype.name = Base.name;
-	  NodeError.prototype.code = code;
-
-	  codes[code] = NodeError;
-	}
-
-	// https://github.com/nodejs/node/blob/v10.8.0/lib/internal/errors.js
-	function oneOf(expected, thing) {
-	  if (Array.isArray(expected)) {
-	    const len = expected.length;
-	    expected = expected.map((i) => String(i));
-	    if (len > 2) {
-	      return `one of ${thing} ${expected.slice(0, len - 1).join(', ')}, or ` +
-	             expected[len - 1];
-	    } else if (len === 2) {
-	      return `one of ${thing} ${expected[0]} or ${expected[1]}`;
-	    } else {
-	      return `of ${thing} ${expected[0]}`;
-	    }
-	  } else {
-	    return `of ${thing} ${String(expected)}`;
-	  }
-	}
-
-	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith
-	function startsWith(str, search, pos) {
-		return str.substr(!pos || pos < 0 ? 0 : +pos, search.length) === search;
-	}
-
-	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith
-	function endsWith(str, search, this_len) {
-		if (this_len === undefined || this_len > str.length) {
-			this_len = str.length;
-		}
-		return str.substring(this_len - search.length, this_len) === search;
-	}
-
-	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
-	function includes(str, search, start) {
-	  if (typeof start !== 'number') {
-	    start = 0;
-	  }
-
-	  if (start + search.length > str.length) {
-	    return false;
-	  } else {
-	    return str.indexOf(search, start) !== -1;
-	  }
-	}
-
-	createErrorType('ERR_INVALID_OPT_VALUE', function (name, value) {
-	  return 'The value "' + value + '" is invalid for option "' + name + '"'
-	}, TypeError);
-	createErrorType('ERR_INVALID_ARG_TYPE', function (name, expected, actual) {
-	  // determiner: 'must be' or 'must not be'
-	  let determiner;
-	  if (typeof expected === 'string' && startsWith(expected, 'not ')) {
-	    determiner = 'must not be';
-	    expected = expected.replace(/^not /, '');
-	  } else {
-	    determiner = 'must be';
-	  }
-
-	  let msg;
-	  if (endsWith(name, ' argument')) {
-	    // For cases like 'first argument'
-	    msg = `The ${name} ${determiner} ${oneOf(expected, 'type')}`;
-	  } else {
-	    const type = includes(name, '.') ? 'property' : 'argument';
-	    msg = `The "${name}" ${type} ${determiner} ${oneOf(expected, 'type')}`;
-	  }
-
-	  msg += `. Received type ${typeof actual}`;
-	  return msg;
-	}, TypeError);
-	createErrorType('ERR_STREAM_PUSH_AFTER_EOF', 'stream.push() after EOF');
-	createErrorType('ERR_METHOD_NOT_IMPLEMENTED', function (name) {
-	  return 'The ' + name + ' method is not implemented'
-	});
-	createErrorType('ERR_STREAM_PREMATURE_CLOSE', 'Premature close');
-	createErrorType('ERR_STREAM_DESTROYED', function (name) {
-	  return 'Cannot call ' + name + ' after a stream was destroyed';
-	});
-	createErrorType('ERR_MULTIPLE_CALLBACK', 'Callback called multiple times');
-	createErrorType('ERR_STREAM_CANNOT_PIPE', 'Cannot pipe, not readable');
-	createErrorType('ERR_STREAM_WRITE_AFTER_END', 'write after end');
-	createErrorType('ERR_STREAM_NULL_VALUES', 'May not write null values to stream', TypeError);
-	createErrorType('ERR_UNKNOWN_ENCODING', function (arg) {
-	  return 'Unknown encoding: ' + arg
-	}, TypeError);
-	createErrorType('ERR_STREAM_UNSHIFT_AFTER_END_EVENT', 'stream.unshift() after end event');
-
-	errors.codes = codes;
-	return errors;
-}
-
-var state;
-var hasRequiredState;
-
-function requireState () {
-	if (hasRequiredState) return state;
-	hasRequiredState = 1;
-
-	var ERR_INVALID_OPT_VALUE = requireErrors().codes.ERR_INVALID_OPT_VALUE;
-	function highWaterMarkFrom(options, isDuplex, duplexKey) {
-	  return options.highWaterMark != null ? options.highWaterMark : isDuplex ? options[duplexKey] : null;
-	}
-	function getHighWaterMark(state, options, duplexKey, isDuplex) {
-	  var hwm = highWaterMarkFrom(options, isDuplex, duplexKey);
-	  if (hwm != null) {
-	    if (!(isFinite(hwm) && Math.floor(hwm) === hwm) || hwm < 0) {
-	      var name = isDuplex ? duplexKey : 'highWaterMark';
-	      throw new ERR_INVALID_OPT_VALUE(name, hwm);
-	    }
-	    return Math.floor(hwm);
-	  }
-
-	  // Default value
-	  return state.objectMode ? 16 : 16 * 1024;
-	}
-	state = {
-	  getHighWaterMark: getHighWaterMark
-	};
-	return state;
-}
-
-var inherits = {exports: {}};
-
-var inherits_browser = {exports: {}};
-
-var hasRequiredInherits_browser;
-
-function requireInherits_browser () {
-	if (hasRequiredInherits_browser) return inherits_browser.exports;
-	hasRequiredInherits_browser = 1;
-	if (typeof Object.create === 'function') {
-	  // implementation from standard node.js 'util' module
-	  inherits_browser.exports = function inherits(ctor, superCtor) {
-	    if (superCtor) {
-	      ctor.super_ = superCtor;
-	      ctor.prototype = Object.create(superCtor.prototype, {
-	        constructor: {
-	          value: ctor,
-	          enumerable: false,
-	          writable: true,
-	          configurable: true
-	        }
-	      });
-	    }
-	  };
-	} else {
-	  // old school shim for old browsers
-	  inherits_browser.exports = function inherits(ctor, superCtor) {
-	    if (superCtor) {
-	      ctor.super_ = superCtor;
-	      var TempCtor = function () {};
-	      TempCtor.prototype = superCtor.prototype;
-	      ctor.prototype = new TempCtor();
-	      ctor.prototype.constructor = ctor;
-	    }
-	  };
-	}
-	return inherits_browser.exports;
-}
-
-var hasRequiredInherits;
-
-function requireInherits () {
-	if (hasRequiredInherits) return inherits.exports;
-	hasRequiredInherits = 1;
-	try {
-	  var util = require('util');
-	  /* istanbul ignore next */
-	  if (typeof util.inherits !== 'function') throw '';
-	  inherits.exports = util.inherits;
-	} catch (e) {
-	  /* istanbul ignore next */
-	  inherits.exports = requireInherits_browser();
-	}
-	return inherits.exports;
-}
-
-var node;
-var hasRequiredNode;
-
-function requireNode () {
-	if (hasRequiredNode) return node;
-	hasRequiredNode = 1;
-	/**
-	 * For Node.js, simply re-export the core `util.deprecate` function.
-	 */
-
-	node = require$$2$1.deprecate;
-	return node;
-}
-
-var _stream_writable;
-var hasRequired_stream_writable;
-
-function require_stream_writable () {
-	if (hasRequired_stream_writable) return _stream_writable;
-	hasRequired_stream_writable = 1;
-
-	_stream_writable = Writable;
-
-	// It seems a linked list but it is not
-	// there will be only 2 of these for each stream
-	function CorkedRequest(state) {
-	  var _this = this;
-	  this.next = null;
-	  this.entry = null;
-	  this.finish = function () {
-	    onCorkedFinish(_this, state);
-	  };
-	}
-	/* </replacement> */
-
-	/*<replacement>*/
-	var Duplex;
-	/*</replacement>*/
-
-	Writable.WritableState = WritableState;
-
-	/*<replacement>*/
-	var internalUtil = {
-	  deprecate: requireNode()
-	};
-	/*</replacement>*/
-
-	/*<replacement>*/
-	var Stream = requireStream();
-	/*</replacement>*/
-
-	var Buffer = require$$0$6.Buffer;
-	var OurUint8Array = (typeof commonjsGlobal !== 'undefined' ? commonjsGlobal : typeof window !== 'undefined' ? window : typeof self !== 'undefined' ? self : {}).Uint8Array || function () {};
-	function _uint8ArrayToBuffer(chunk) {
-	  return Buffer.from(chunk);
-	}
-	function _isUint8Array(obj) {
-	  return Buffer.isBuffer(obj) || obj instanceof OurUint8Array;
-	}
-	var destroyImpl = requireDestroy();
-	var _require = requireState(),
-	  getHighWaterMark = _require.getHighWaterMark;
-	var _require$codes = requireErrors().codes,
-	  ERR_INVALID_ARG_TYPE = _require$codes.ERR_INVALID_ARG_TYPE,
-	  ERR_METHOD_NOT_IMPLEMENTED = _require$codes.ERR_METHOD_NOT_IMPLEMENTED,
-	  ERR_MULTIPLE_CALLBACK = _require$codes.ERR_MULTIPLE_CALLBACK,
-	  ERR_STREAM_CANNOT_PIPE = _require$codes.ERR_STREAM_CANNOT_PIPE,
-	  ERR_STREAM_DESTROYED = _require$codes.ERR_STREAM_DESTROYED,
-	  ERR_STREAM_NULL_VALUES = _require$codes.ERR_STREAM_NULL_VALUES,
-	  ERR_STREAM_WRITE_AFTER_END = _require$codes.ERR_STREAM_WRITE_AFTER_END,
-	  ERR_UNKNOWN_ENCODING = _require$codes.ERR_UNKNOWN_ENCODING;
-	var errorOrDestroy = destroyImpl.errorOrDestroy;
-	requireInherits()(Writable, Stream);
-	function nop() {}
-	function WritableState(options, stream, isDuplex) {
-	  Duplex = Duplex || require_stream_duplex();
-	  options = options || {};
-
-	  // Duplex streams are both readable and writable, but share
-	  // the same options object.
-	  // However, some cases require setting options to different
-	  // values for the readable and the writable sides of the duplex stream,
-	  // e.g. options.readableObjectMode vs. options.writableObjectMode, etc.
-	  if (typeof isDuplex !== 'boolean') isDuplex = stream instanceof Duplex;
-
-	  // object stream flag to indicate whether or not this stream
-	  // contains buffers or objects.
-	  this.objectMode = !!options.objectMode;
-	  if (isDuplex) this.objectMode = this.objectMode || !!options.writableObjectMode;
-
-	  // the point at which write() starts returning false
-	  // Note: 0 is a valid value, means that we always return false if
-	  // the entire buffer is not flushed immediately on write()
-	  this.highWaterMark = getHighWaterMark(this, options, 'writableHighWaterMark', isDuplex);
-
-	  // if _final has been called
-	  this.finalCalled = false;
-
-	  // drain event flag.
-	  this.needDrain = false;
-	  // at the start of calling end()
-	  this.ending = false;
-	  // when end() has been called, and returned
-	  this.ended = false;
-	  // when 'finish' is emitted
-	  this.finished = false;
-
-	  // has it been destroyed
-	  this.destroyed = false;
-
-	  // should we decode strings into buffers before passing to _write?
-	  // this is here so that some node-core streams can optimize string
-	  // handling at a lower level.
-	  var noDecode = options.decodeStrings === false;
-	  this.decodeStrings = !noDecode;
-
-	  // Crypto is kind of old and crusty.  Historically, its default string
-	  // encoding is 'binary' so we have to make this configurable.
-	  // Everything else in the universe uses 'utf8', though.
-	  this.defaultEncoding = options.defaultEncoding || 'utf8';
-
-	  // not an actual buffer we keep track of, but a measurement
-	  // of how much we're waiting to get pushed to some underlying
-	  // socket or file.
-	  this.length = 0;
-
-	  // a flag to see when we're in the middle of a write.
-	  this.writing = false;
-
-	  // when true all writes will be buffered until .uncork() call
-	  this.corked = 0;
-
-	  // a flag to be able to tell if the onwrite cb is called immediately,
-	  // or on a later tick.  We set this to true at first, because any
-	  // actions that shouldn't happen until "later" should generally also
-	  // not happen before the first write call.
-	  this.sync = true;
-
-	  // a flag to know if we're processing previously buffered items, which
-	  // may call the _write() callback in the same tick, so that we don't
-	  // end up in an overlapped onwrite situation.
-	  this.bufferProcessing = false;
-
-	  // the callback that's passed to _write(chunk,cb)
-	  this.onwrite = function (er) {
-	    onwrite(stream, er);
-	  };
-
-	  // the callback that the user supplies to write(chunk,encoding,cb)
-	  this.writecb = null;
-
-	  // the amount that is being written when _write is called.
-	  this.writelen = 0;
-	  this.bufferedRequest = null;
-	  this.lastBufferedRequest = null;
-
-	  // number of pending user-supplied write callbacks
-	  // this must be 0 before 'finish' can be emitted
-	  this.pendingcb = 0;
-
-	  // emit prefinish if the only thing we're waiting for is _write cbs
-	  // This is relevant for synchronous Transform streams
-	  this.prefinished = false;
-
-	  // True if the error was already emitted and should not be thrown again
-	  this.errorEmitted = false;
-
-	  // Should close be emitted on destroy. Defaults to true.
-	  this.emitClose = options.emitClose !== false;
-
-	  // Should .destroy() be called after 'finish' (and potentially 'end')
-	  this.autoDestroy = !!options.autoDestroy;
-
-	  // count buffered requests
-	  this.bufferedRequestCount = 0;
-
-	  // allocate the first CorkedRequest, there is always
-	  // one allocated and free to use, and we maintain at most two
-	  this.corkedRequestsFree = new CorkedRequest(this);
-	}
-	WritableState.prototype.getBuffer = function getBuffer() {
-	  var current = this.bufferedRequest;
-	  var out = [];
-	  while (current) {
-	    out.push(current);
-	    current = current.next;
-	  }
-	  return out;
-	};
-	(function () {
-	  try {
-	    Object.defineProperty(WritableState.prototype, 'buffer', {
-	      get: internalUtil.deprecate(function writableStateBufferGetter() {
-	        return this.getBuffer();
-	      }, '_writableState.buffer is deprecated. Use _writableState.getBuffer ' + 'instead.', 'DEP0003')
-	    });
-	  } catch (_) {}
-	})();
-
-	// Test _writableState for inheritance to account for Duplex streams,
-	// whose prototype chain only points to Readable.
-	var realHasInstance;
-	if (typeof Symbol === 'function' && Symbol.hasInstance && typeof Function.prototype[Symbol.hasInstance] === 'function') {
-	  realHasInstance = Function.prototype[Symbol.hasInstance];
-	  Object.defineProperty(Writable, Symbol.hasInstance, {
-	    value: function value(object) {
-	      if (realHasInstance.call(this, object)) return true;
-	      if (this !== Writable) return false;
-	      return object && object._writableState instanceof WritableState;
-	    }
-	  });
-	} else {
-	  realHasInstance = function realHasInstance(object) {
-	    return object instanceof this;
-	  };
-	}
-	function Writable(options) {
-	  Duplex = Duplex || require_stream_duplex();
-
-	  // Writable ctor is applied to Duplexes, too.
-	  // `realHasInstance` is necessary because using plain `instanceof`
-	  // would return false, as no `_writableState` property is attached.
-
-	  // Trying to use the custom `instanceof` for Writable here will also break the
-	  // Node.js LazyTransform implementation, which has a non-trivial getter for
-	  // `_writableState` that would lead to infinite recursion.
-
-	  // Checking for a Stream.Duplex instance is faster here instead of inside
-	  // the WritableState constructor, at least with V8 6.5
-	  var isDuplex = this instanceof Duplex;
-	  if (!isDuplex && !realHasInstance.call(Writable, this)) return new Writable(options);
-	  this._writableState = new WritableState(options, this, isDuplex);
-
-	  // legacy.
-	  this.writable = true;
-	  if (options) {
-	    if (typeof options.write === 'function') this._write = options.write;
-	    if (typeof options.writev === 'function') this._writev = options.writev;
-	    if (typeof options.destroy === 'function') this._destroy = options.destroy;
-	    if (typeof options.final === 'function') this._final = options.final;
-	  }
-	  Stream.call(this);
-	}
-
-	// Otherwise people can pipe Writable streams, which is just wrong.
-	Writable.prototype.pipe = function () {
-	  errorOrDestroy(this, new ERR_STREAM_CANNOT_PIPE());
-	};
-	function writeAfterEnd(stream, cb) {
-	  var er = new ERR_STREAM_WRITE_AFTER_END();
-	  // TODO: defer error events consistently everywhere, not just the cb
-	  errorOrDestroy(stream, er);
-	  process.nextTick(cb, er);
-	}
-
-	// Checks that a user-supplied chunk is valid, especially for the particular
-	// mode the stream is in. Currently this means that `null` is never accepted
-	// and undefined/non-string values are only allowed in object mode.
-	function validChunk(stream, state, chunk, cb) {
-	  var er;
-	  if (chunk === null) {
-	    er = new ERR_STREAM_NULL_VALUES();
-	  } else if (typeof chunk !== 'string' && !state.objectMode) {
-	    er = new ERR_INVALID_ARG_TYPE('chunk', ['string', 'Buffer'], chunk);
-	  }
-	  if (er) {
-	    errorOrDestroy(stream, er);
-	    process.nextTick(cb, er);
-	    return false;
-	  }
-	  return true;
-	}
-	Writable.prototype.write = function (chunk, encoding, cb) {
-	  var state = this._writableState;
-	  var ret = false;
-	  var isBuf = !state.objectMode && _isUint8Array(chunk);
-	  if (isBuf && !Buffer.isBuffer(chunk)) {
-	    chunk = _uint8ArrayToBuffer(chunk);
-	  }
-	  if (typeof encoding === 'function') {
-	    cb = encoding;
-	    encoding = null;
-	  }
-	  if (isBuf) encoding = 'buffer';else if (!encoding) encoding = state.defaultEncoding;
-	  if (typeof cb !== 'function') cb = nop;
-	  if (state.ending) writeAfterEnd(this, cb);else if (isBuf || validChunk(this, state, chunk, cb)) {
-	    state.pendingcb++;
-	    ret = writeOrBuffer(this, state, isBuf, chunk, encoding, cb);
-	  }
-	  return ret;
-	};
-	Writable.prototype.cork = function () {
-	  this._writableState.corked++;
-	};
-	Writable.prototype.uncork = function () {
-	  var state = this._writableState;
-	  if (state.corked) {
-	    state.corked--;
-	    if (!state.writing && !state.corked && !state.bufferProcessing && state.bufferedRequest) clearBuffer(this, state);
-	  }
-	};
-	Writable.prototype.setDefaultEncoding = function setDefaultEncoding(encoding) {
-	  // node::ParseEncoding() requires lower case.
-	  if (typeof encoding === 'string') encoding = encoding.toLowerCase();
-	  if (!(['hex', 'utf8', 'utf-8', 'ascii', 'binary', 'base64', 'ucs2', 'ucs-2', 'utf16le', 'utf-16le', 'raw'].indexOf((encoding + '').toLowerCase()) > -1)) throw new ERR_UNKNOWN_ENCODING(encoding);
-	  this._writableState.defaultEncoding = encoding;
-	  return this;
-	};
-	Object.defineProperty(Writable.prototype, 'writableBuffer', {
-	  // making it explicit this property is not enumerable
-	  // because otherwise some prototype manipulation in
-	  // userland will fail
-	  enumerable: false,
-	  get: function get() {
-	    return this._writableState && this._writableState.getBuffer();
-	  }
-	});
-	function decodeChunk(state, chunk, encoding) {
-	  if (!state.objectMode && state.decodeStrings !== false && typeof chunk === 'string') {
-	    chunk = Buffer.from(chunk, encoding);
-	  }
-	  return chunk;
-	}
-	Object.defineProperty(Writable.prototype, 'writableHighWaterMark', {
-	  // making it explicit this property is not enumerable
-	  // because otherwise some prototype manipulation in
-	  // userland will fail
-	  enumerable: false,
-	  get: function get() {
-	    return this._writableState.highWaterMark;
-	  }
-	});
-
-	// if we're already writing something, then just put this
-	// in the queue, and wait our turn.  Otherwise, call _write
-	// If we return false, then we need a drain event, so set that flag.
-	function writeOrBuffer(stream, state, isBuf, chunk, encoding, cb) {
-	  if (!isBuf) {
-	    var newChunk = decodeChunk(state, chunk, encoding);
-	    if (chunk !== newChunk) {
-	      isBuf = true;
-	      encoding = 'buffer';
-	      chunk = newChunk;
-	    }
-	  }
-	  var len = state.objectMode ? 1 : chunk.length;
-	  state.length += len;
-	  var ret = state.length < state.highWaterMark;
-	  // we must ensure that previous needDrain will not be reset to false.
-	  if (!ret) state.needDrain = true;
-	  if (state.writing || state.corked) {
-	    var last = state.lastBufferedRequest;
-	    state.lastBufferedRequest = {
-	      chunk: chunk,
-	      encoding: encoding,
-	      isBuf: isBuf,
-	      callback: cb,
-	      next: null
-	    };
-	    if (last) {
-	      last.next = state.lastBufferedRequest;
-	    } else {
-	      state.bufferedRequest = state.lastBufferedRequest;
-	    }
-	    state.bufferedRequestCount += 1;
-	  } else {
-	    doWrite(stream, state, false, len, chunk, encoding, cb);
-	  }
-	  return ret;
-	}
-	function doWrite(stream, state, writev, len, chunk, encoding, cb) {
-	  state.writelen = len;
-	  state.writecb = cb;
-	  state.writing = true;
-	  state.sync = true;
-	  if (state.destroyed) state.onwrite(new ERR_STREAM_DESTROYED('write'));else if (writev) stream._writev(chunk, state.onwrite);else stream._write(chunk, encoding, state.onwrite);
-	  state.sync = false;
-	}
-	function onwriteError(stream, state, sync, er, cb) {
-	  --state.pendingcb;
-	  if (sync) {
-	    // defer the callback if we are being called synchronously
-	    // to avoid piling up things on the stack
-	    process.nextTick(cb, er);
-	    // this can emit finish, and it will always happen
-	    // after error
-	    process.nextTick(finishMaybe, stream, state);
-	    stream._writableState.errorEmitted = true;
-	    errorOrDestroy(stream, er);
-	  } else {
-	    // the caller expect this to happen before if
-	    // it is async
-	    cb(er);
-	    stream._writableState.errorEmitted = true;
-	    errorOrDestroy(stream, er);
-	    // this can emit finish, but finish must
-	    // always follow error
-	    finishMaybe(stream, state);
-	  }
-	}
-	function onwriteStateUpdate(state) {
-	  state.writing = false;
-	  state.writecb = null;
-	  state.length -= state.writelen;
-	  state.writelen = 0;
-	}
-	function onwrite(stream, er) {
-	  var state = stream._writableState;
-	  var sync = state.sync;
-	  var cb = state.writecb;
-	  if (typeof cb !== 'function') throw new ERR_MULTIPLE_CALLBACK();
-	  onwriteStateUpdate(state);
-	  if (er) onwriteError(stream, state, sync, er, cb);else {
-	    // Check if we're actually ready to finish, but don't emit yet
-	    var finished = needFinish(state) || stream.destroyed;
-	    if (!finished && !state.corked && !state.bufferProcessing && state.bufferedRequest) {
-	      clearBuffer(stream, state);
-	    }
-	    if (sync) {
-	      process.nextTick(afterWrite, stream, state, finished, cb);
-	    } else {
-	      afterWrite(stream, state, finished, cb);
-	    }
-	  }
-	}
-	function afterWrite(stream, state, finished, cb) {
-	  if (!finished) onwriteDrain(stream, state);
-	  state.pendingcb--;
-	  cb();
-	  finishMaybe(stream, state);
-	}
-
-	// Must force callback to be called on nextTick, so that we don't
-	// emit 'drain' before the write() consumer gets the 'false' return
-	// value, and has a chance to attach a 'drain' listener.
-	function onwriteDrain(stream, state) {
-	  if (state.length === 0 && state.needDrain) {
-	    state.needDrain = false;
-	    stream.emit('drain');
-	  }
-	}
-
-	// if there's something in the buffer waiting, then process it
-	function clearBuffer(stream, state) {
-	  state.bufferProcessing = true;
-	  var entry = state.bufferedRequest;
-	  if (stream._writev && entry && entry.next) {
-	    // Fast case, write everything using _writev()
-	    var l = state.bufferedRequestCount;
-	    var buffer = new Array(l);
-	    var holder = state.corkedRequestsFree;
-	    holder.entry = entry;
-	    var count = 0;
-	    var allBuffers = true;
-	    while (entry) {
-	      buffer[count] = entry;
-	      if (!entry.isBuf) allBuffers = false;
-	      entry = entry.next;
-	      count += 1;
-	    }
-	    buffer.allBuffers = allBuffers;
-	    doWrite(stream, state, true, state.length, buffer, '', holder.finish);
-
-	    // doWrite is almost always async, defer these to save a bit of time
-	    // as the hot path ends with doWrite
-	    state.pendingcb++;
-	    state.lastBufferedRequest = null;
-	    if (holder.next) {
-	      state.corkedRequestsFree = holder.next;
-	      holder.next = null;
-	    } else {
-	      state.corkedRequestsFree = new CorkedRequest(state);
-	    }
-	    state.bufferedRequestCount = 0;
-	  } else {
-	    // Slow case, write chunks one-by-one
-	    while (entry) {
-	      var chunk = entry.chunk;
-	      var encoding = entry.encoding;
-	      var cb = entry.callback;
-	      var len = state.objectMode ? 1 : chunk.length;
-	      doWrite(stream, state, false, len, chunk, encoding, cb);
-	      entry = entry.next;
-	      state.bufferedRequestCount--;
-	      // if we didn't call the onwrite immediately, then
-	      // it means that we need to wait until it does.
-	      // also, that means that the chunk and cb are currently
-	      // being processed, so move the buffer counter past them.
-	      if (state.writing) {
-	        break;
-	      }
-	    }
-	    if (entry === null) state.lastBufferedRequest = null;
-	  }
-	  state.bufferedRequest = entry;
-	  state.bufferProcessing = false;
-	}
-	Writable.prototype._write = function (chunk, encoding, cb) {
-	  cb(new ERR_METHOD_NOT_IMPLEMENTED('_write()'));
-	};
-	Writable.prototype._writev = null;
-	Writable.prototype.end = function (chunk, encoding, cb) {
-	  var state = this._writableState;
-	  if (typeof chunk === 'function') {
-	    cb = chunk;
-	    chunk = null;
-	    encoding = null;
-	  } else if (typeof encoding === 'function') {
-	    cb = encoding;
-	    encoding = null;
-	  }
-	  if (chunk !== null && chunk !== undefined) this.write(chunk, encoding);
-
-	  // .end() fully uncorks
-	  if (state.corked) {
-	    state.corked = 1;
-	    this.uncork();
-	  }
-
-	  // ignore unnecessary end() calls.
-	  if (!state.ending) endWritable(this, state, cb);
-	  return this;
-	};
-	Object.defineProperty(Writable.prototype, 'writableLength', {
-	  // making it explicit this property is not enumerable
-	  // because otherwise some prototype manipulation in
-	  // userland will fail
-	  enumerable: false,
-	  get: function get() {
-	    return this._writableState.length;
-	  }
-	});
-	function needFinish(state) {
-	  return state.ending && state.length === 0 && state.bufferedRequest === null && !state.finished && !state.writing;
-	}
-	function callFinal(stream, state) {
-	  stream._final(function (err) {
-	    state.pendingcb--;
-	    if (err) {
-	      errorOrDestroy(stream, err);
-	    }
-	    state.prefinished = true;
-	    stream.emit('prefinish');
-	    finishMaybe(stream, state);
-	  });
-	}
-	function prefinish(stream, state) {
-	  if (!state.prefinished && !state.finalCalled) {
-	    if (typeof stream._final === 'function' && !state.destroyed) {
-	      state.pendingcb++;
-	      state.finalCalled = true;
-	      process.nextTick(callFinal, stream, state);
-	    } else {
-	      state.prefinished = true;
-	      stream.emit('prefinish');
-	    }
-	  }
-	}
-	function finishMaybe(stream, state) {
-	  var need = needFinish(state);
-	  if (need) {
-	    prefinish(stream, state);
-	    if (state.pendingcb === 0) {
-	      state.finished = true;
-	      stream.emit('finish');
-	      if (state.autoDestroy) {
-	        // In case of duplex streams we need a way to detect
-	        // if the readable side is ready for autoDestroy as well
-	        var rState = stream._readableState;
-	        if (!rState || rState.autoDestroy && rState.endEmitted) {
-	          stream.destroy();
-	        }
-	      }
-	    }
-	  }
-	  return need;
-	}
-	function endWritable(stream, state, cb) {
-	  state.ending = true;
-	  finishMaybe(stream, state);
-	  if (cb) {
-	    if (state.finished) process.nextTick(cb);else stream.once('finish', cb);
-	  }
-	  state.ended = true;
-	  stream.writable = false;
-	}
-	function onCorkedFinish(corkReq, state, err) {
-	  var entry = corkReq.entry;
-	  corkReq.entry = null;
-	  while (entry) {
-	    var cb = entry.callback;
-	    state.pendingcb--;
-	    cb(err);
-	    entry = entry.next;
-	  }
-
-	  // reuse the free corkReq.
-	  state.corkedRequestsFree.next = corkReq;
-	}
-	Object.defineProperty(Writable.prototype, 'destroyed', {
-	  // making it explicit this property is not enumerable
-	  // because otherwise some prototype manipulation in
-	  // userland will fail
-	  enumerable: false,
-	  get: function get() {
-	    if (this._writableState === undefined) {
-	      return false;
-	    }
-	    return this._writableState.destroyed;
-	  },
-	  set: function set(value) {
-	    // we ignore the value if the stream
-	    // has not been initialized yet
-	    if (!this._writableState) {
-	      return;
-	    }
-
-	    // backward compatibility, the user is explicitly
-	    // managing destroyed
-	    this._writableState.destroyed = value;
-	  }
-	});
-	Writable.prototype.destroy = destroyImpl.destroy;
-	Writable.prototype._undestroy = destroyImpl.undestroy;
-	Writable.prototype._destroy = function (err, cb) {
-	  cb(err);
-	};
-	return _stream_writable;
-}
-
-var _stream_duplex;
-var hasRequired_stream_duplex;
-
-function require_stream_duplex () {
-	if (hasRequired_stream_duplex) return _stream_duplex;
-	hasRequired_stream_duplex = 1;
-
-	/*<replacement>*/
-	var objectKeys = Object.keys || function (obj) {
-	  var keys = [];
-	  for (var key in obj) keys.push(key);
-	  return keys;
-	};
-	/*</replacement>*/
-
-	_stream_duplex = Duplex;
-	var Readable = require_stream_readable();
-	var Writable = require_stream_writable();
-	requireInherits()(Duplex, Readable);
-	{
-	  // Allow the keys array to be GC'ed.
-	  var keys = objectKeys(Writable.prototype);
-	  for (var v = 0; v < keys.length; v++) {
-	    var method = keys[v];
-	    if (!Duplex.prototype[method]) Duplex.prototype[method] = Writable.prototype[method];
-	  }
-	}
-	function Duplex(options) {
-	  if (!(this instanceof Duplex)) return new Duplex(options);
-	  Readable.call(this, options);
-	  Writable.call(this, options);
-	  this.allowHalfOpen = true;
-	  if (options) {
-	    if (options.readable === false) this.readable = false;
-	    if (options.writable === false) this.writable = false;
-	    if (options.allowHalfOpen === false) {
-	      this.allowHalfOpen = false;
-	      this.once('end', onend);
-	    }
-	  }
-	}
-	Object.defineProperty(Duplex.prototype, 'writableHighWaterMark', {
-	  // making it explicit this property is not enumerable
-	  // because otherwise some prototype manipulation in
-	  // userland will fail
-	  enumerable: false,
-	  get: function get() {
-	    return this._writableState.highWaterMark;
-	  }
-	});
-	Object.defineProperty(Duplex.prototype, 'writableBuffer', {
-	  // making it explicit this property is not enumerable
-	  // because otherwise some prototype manipulation in
-	  // userland will fail
-	  enumerable: false,
-	  get: function get() {
-	    return this._writableState && this._writableState.getBuffer();
-	  }
-	});
-	Object.defineProperty(Duplex.prototype, 'writableLength', {
-	  // making it explicit this property is not enumerable
-	  // because otherwise some prototype manipulation in
-	  // userland will fail
-	  enumerable: false,
-	  get: function get() {
-	    return this._writableState.length;
-	  }
-	});
-
-	// the no-half-open enforcer
-	function onend() {
-	  // If the writable side ended, then we're ok.
-	  if (this._writableState.ended) return;
-
-	  // no more data can be written.
-	  // But allow more writes to happen in this tick.
-	  process.nextTick(onEndNT, this);
-	}
-	function onEndNT(self) {
-	  self.end();
-	}
-	Object.defineProperty(Duplex.prototype, 'destroyed', {
-	  // making it explicit this property is not enumerable
-	  // because otherwise some prototype manipulation in
-	  // userland will fail
-	  enumerable: false,
-	  get: function get() {
-	    if (this._readableState === undefined || this._writableState === undefined) {
-	      return false;
-	    }
-	    return this._readableState.destroyed && this._writableState.destroyed;
-	  },
-	  set: function set(value) {
-	    // we ignore the value if the stream
-	    // has not been initialized yet
-	    if (this._readableState === undefined || this._writableState === undefined) {
-	      return;
-	    }
-
-	    // backward compatibility, the user is explicitly
-	    // managing destroyed
-	    this._readableState.destroyed = value;
-	    this._writableState.destroyed = value;
-	  }
-	});
-	return _stream_duplex;
-}
-
-var string_decoder = {};
-
-var safeBuffer = {exports: {}};
-
-/*! safe-buffer. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
-
-var hasRequiredSafeBuffer;
-
-function requireSafeBuffer () {
-	if (hasRequiredSafeBuffer) return safeBuffer.exports;
-	hasRequiredSafeBuffer = 1;
-	(function (module, exports) {
-		/* eslint-disable node/no-deprecated-api */
-		var buffer = require$$0$6;
-		var Buffer = buffer.Buffer;
-
-		// alternative to using Object.keys for old browsers
-		function copyProps (src, dst) {
-		  for (var key in src) {
-		    dst[key] = src[key];
-		  }
-		}
-		if (Buffer.from && Buffer.alloc && Buffer.allocUnsafe && Buffer.allocUnsafeSlow) {
-		  module.exports = buffer;
-		} else {
-		  // Copy properties from require('buffer')
-		  copyProps(buffer, exports);
-		  exports.Buffer = SafeBuffer;
-		}
-
-		function SafeBuffer (arg, encodingOrOffset, length) {
-		  return Buffer(arg, encodingOrOffset, length)
-		}
-
-		SafeBuffer.prototype = Object.create(Buffer.prototype);
-
-		// Copy static methods from Buffer
-		copyProps(Buffer, SafeBuffer);
-
-		SafeBuffer.from = function (arg, encodingOrOffset, length) {
-		  if (typeof arg === 'number') {
-		    throw new TypeError('Argument must not be a number')
-		  }
-		  return Buffer(arg, encodingOrOffset, length)
-		};
-
-		SafeBuffer.alloc = function (size, fill, encoding) {
-		  if (typeof size !== 'number') {
-		    throw new TypeError('Argument must be a number')
-		  }
-		  var buf = Buffer(size);
-		  if (fill !== undefined) {
-		    if (typeof encoding === 'string') {
-		      buf.fill(fill, encoding);
-		    } else {
-		      buf.fill(fill);
-		    }
-		  } else {
-		    buf.fill(0);
-		  }
-		  return buf
-		};
-
-		SafeBuffer.allocUnsafe = function (size) {
-		  if (typeof size !== 'number') {
-		    throw new TypeError('Argument must be a number')
-		  }
-		  return Buffer(size)
-		};
-
-		SafeBuffer.allocUnsafeSlow = function (size) {
-		  if (typeof size !== 'number') {
-		    throw new TypeError('Argument must be a number')
-		  }
-		  return buffer.SlowBuffer(size)
-		}; 
-	} (safeBuffer, safeBuffer.exports));
-	return safeBuffer.exports;
-}
-
-var hasRequiredString_decoder;
-
-function requireString_decoder () {
-	if (hasRequiredString_decoder) return string_decoder;
-	hasRequiredString_decoder = 1;
-
-	/*<replacement>*/
-
-	var Buffer = requireSafeBuffer().Buffer;
-	/*</replacement>*/
-
-	var isEncoding = Buffer.isEncoding || function (encoding) {
-	  encoding = '' + encoding;
-	  switch (encoding && encoding.toLowerCase()) {
-	    case 'hex':case 'utf8':case 'utf-8':case 'ascii':case 'binary':case 'base64':case 'ucs2':case 'ucs-2':case 'utf16le':case 'utf-16le':case 'raw':
-	      return true;
-	    default:
-	      return false;
-	  }
-	};
-
-	function _normalizeEncoding(enc) {
-	  if (!enc) return 'utf8';
-	  var retried;
-	  while (true) {
-	    switch (enc) {
-	      case 'utf8':
-	      case 'utf-8':
-	        return 'utf8';
-	      case 'ucs2':
-	      case 'ucs-2':
-	      case 'utf16le':
-	      case 'utf-16le':
-	        return 'utf16le';
-	      case 'latin1':
-	      case 'binary':
-	        return 'latin1';
-	      case 'base64':
-	      case 'ascii':
-	      case 'hex':
-	        return enc;
-	      default:
-	        if (retried) return; // undefined
-	        enc = ('' + enc).toLowerCase();
-	        retried = true;
-	    }
-	  }
-	}
-	// Do not cache `Buffer.isEncoding` when checking encoding names as some
-	// modules monkey-patch it to support additional encodings
-	function normalizeEncoding(enc) {
-	  var nenc = _normalizeEncoding(enc);
-	  if (typeof nenc !== 'string' && (Buffer.isEncoding === isEncoding || !isEncoding(enc))) throw new Error('Unknown encoding: ' + enc);
-	  return nenc || enc;
-	}
-
-	// StringDecoder provides an interface for efficiently splitting a series of
-	// buffers into a series of JS strings without breaking apart multi-byte
-	// characters.
-	string_decoder.StringDecoder = StringDecoder;
-	function StringDecoder(encoding) {
-	  this.encoding = normalizeEncoding(encoding);
-	  var nb;
-	  switch (this.encoding) {
-	    case 'utf16le':
-	      this.text = utf16Text;
-	      this.end = utf16End;
-	      nb = 4;
-	      break;
-	    case 'utf8':
-	      this.fillLast = utf8FillLast;
-	      nb = 4;
-	      break;
-	    case 'base64':
-	      this.text = base64Text;
-	      this.end = base64End;
-	      nb = 3;
-	      break;
-	    default:
-	      this.write = simpleWrite;
-	      this.end = simpleEnd;
-	      return;
-	  }
-	  this.lastNeed = 0;
-	  this.lastTotal = 0;
-	  this.lastChar = Buffer.allocUnsafe(nb);
-	}
-
-	StringDecoder.prototype.write = function (buf) {
-	  if (buf.length === 0) return '';
-	  var r;
-	  var i;
-	  if (this.lastNeed) {
-	    r = this.fillLast(buf);
-	    if (r === undefined) return '';
-	    i = this.lastNeed;
-	    this.lastNeed = 0;
-	  } else {
-	    i = 0;
-	  }
-	  if (i < buf.length) return r ? r + this.text(buf, i) : this.text(buf, i);
-	  return r || '';
-	};
-
-	StringDecoder.prototype.end = utf8End;
-
-	// Returns only complete characters in a Buffer
-	StringDecoder.prototype.text = utf8Text;
-
-	// Attempts to complete a partial non-UTF-8 character using bytes from a Buffer
-	StringDecoder.prototype.fillLast = function (buf) {
-	  if (this.lastNeed <= buf.length) {
-	    buf.copy(this.lastChar, this.lastTotal - this.lastNeed, 0, this.lastNeed);
-	    return this.lastChar.toString(this.encoding, 0, this.lastTotal);
-	  }
-	  buf.copy(this.lastChar, this.lastTotal - this.lastNeed, 0, buf.length);
-	  this.lastNeed -= buf.length;
-	};
-
-	// Checks the type of a UTF-8 byte, whether it's ASCII, a leading byte, or a
-	// continuation byte. If an invalid byte is detected, -2 is returned.
-	function utf8CheckByte(byte) {
-	  if (byte <= 0x7F) return 0;else if (byte >> 5 === 0x06) return 2;else if (byte >> 4 === 0x0E) return 3;else if (byte >> 3 === 0x1E) return 4;
-	  return byte >> 6 === 0x02 ? -1 : -2;
-	}
-
-	// Checks at most 3 bytes at the end of a Buffer in order to detect an
-	// incomplete multi-byte UTF-8 character. The total number of bytes (2, 3, or 4)
-	// needed to complete the UTF-8 character (if applicable) are returned.
-	function utf8CheckIncomplete(self, buf, i) {
-	  var j = buf.length - 1;
-	  if (j < i) return 0;
-	  var nb = utf8CheckByte(buf[j]);
-	  if (nb >= 0) {
-	    if (nb > 0) self.lastNeed = nb - 1;
-	    return nb;
-	  }
-	  if (--j < i || nb === -2) return 0;
-	  nb = utf8CheckByte(buf[j]);
-	  if (nb >= 0) {
-	    if (nb > 0) self.lastNeed = nb - 2;
-	    return nb;
-	  }
-	  if (--j < i || nb === -2) return 0;
-	  nb = utf8CheckByte(buf[j]);
-	  if (nb >= 0) {
-	    if (nb > 0) {
-	      if (nb === 2) nb = 0;else self.lastNeed = nb - 3;
-	    }
-	    return nb;
-	  }
-	  return 0;
-	}
-
-	// Validates as many continuation bytes for a multi-byte UTF-8 character as
-	// needed or are available. If we see a non-continuation byte where we expect
-	// one, we "replace" the validated continuation bytes we've seen so far with
-	// a single UTF-8 replacement character ('\ufffd'), to match v8's UTF-8 decoding
-	// behavior. The continuation byte check is included three times in the case
-	// where all of the continuation bytes for a character exist in the same buffer.
-	// It is also done this way as a slight performance increase instead of using a
-	// loop.
-	function utf8CheckExtraBytes(self, buf, p) {
-	  if ((buf[0] & 0xC0) !== 0x80) {
-	    self.lastNeed = 0;
-	    return '\ufffd';
-	  }
-	  if (self.lastNeed > 1 && buf.length > 1) {
-	    if ((buf[1] & 0xC0) !== 0x80) {
-	      self.lastNeed = 1;
-	      return '\ufffd';
-	    }
-	    if (self.lastNeed > 2 && buf.length > 2) {
-	      if ((buf[2] & 0xC0) !== 0x80) {
-	        self.lastNeed = 2;
-	        return '\ufffd';
-	      }
-	    }
-	  }
-	}
-
-	// Attempts to complete a multi-byte UTF-8 character using bytes from a Buffer.
-	function utf8FillLast(buf) {
-	  var p = this.lastTotal - this.lastNeed;
-	  var r = utf8CheckExtraBytes(this, buf);
-	  if (r !== undefined) return r;
-	  if (this.lastNeed <= buf.length) {
-	    buf.copy(this.lastChar, p, 0, this.lastNeed);
-	    return this.lastChar.toString(this.encoding, 0, this.lastTotal);
-	  }
-	  buf.copy(this.lastChar, p, 0, buf.length);
-	  this.lastNeed -= buf.length;
-	}
-
-	// Returns all complete UTF-8 characters in a Buffer. If the Buffer ended on a
-	// partial character, the character's bytes are buffered until the required
-	// number of bytes are available.
-	function utf8Text(buf, i) {
-	  var total = utf8CheckIncomplete(this, buf, i);
-	  if (!this.lastNeed) return buf.toString('utf8', i);
-	  this.lastTotal = total;
-	  var end = buf.length - (total - this.lastNeed);
-	  buf.copy(this.lastChar, 0, end);
-	  return buf.toString('utf8', i, end);
-	}
-
-	// For UTF-8, a replacement character is added when ending on a partial
-	// character.
-	function utf8End(buf) {
-	  var r = buf && buf.length ? this.write(buf) : '';
-	  if (this.lastNeed) return r + '\ufffd';
-	  return r;
-	}
-
-	// UTF-16LE typically needs two bytes per character, but even if we have an even
-	// number of bytes available, we need to check if we end on a leading/high
-	// surrogate. In that case, we need to wait for the next two bytes in order to
-	// decode the last character properly.
-	function utf16Text(buf, i) {
-	  if ((buf.length - i) % 2 === 0) {
-	    var r = buf.toString('utf16le', i);
-	    if (r) {
-	      var c = r.charCodeAt(r.length - 1);
-	      if (c >= 0xD800 && c <= 0xDBFF) {
-	        this.lastNeed = 2;
-	        this.lastTotal = 4;
-	        this.lastChar[0] = buf[buf.length - 2];
-	        this.lastChar[1] = buf[buf.length - 1];
-	        return r.slice(0, -1);
-	      }
-	    }
-	    return r;
-	  }
-	  this.lastNeed = 1;
-	  this.lastTotal = 2;
-	  this.lastChar[0] = buf[buf.length - 1];
-	  return buf.toString('utf16le', i, buf.length - 1);
-	}
-
-	// For UTF-16LE we do not explicitly append special replacement characters if we
-	// end on a partial character, we simply let v8 handle that.
-	function utf16End(buf) {
-	  var r = buf && buf.length ? this.write(buf) : '';
-	  if (this.lastNeed) {
-	    var end = this.lastTotal - this.lastNeed;
-	    return r + this.lastChar.toString('utf16le', 0, end);
-	  }
-	  return r;
-	}
-
-	function base64Text(buf, i) {
-	  var n = (buf.length - i) % 3;
-	  if (n === 0) return buf.toString('base64', i);
-	  this.lastNeed = 3 - n;
-	  this.lastTotal = 3;
-	  if (n === 1) {
-	    this.lastChar[0] = buf[buf.length - 1];
-	  } else {
-	    this.lastChar[0] = buf[buf.length - 2];
-	    this.lastChar[1] = buf[buf.length - 1];
-	  }
-	  return buf.toString('base64', i, buf.length - n);
-	}
-
-	function base64End(buf) {
-	  var r = buf && buf.length ? this.write(buf) : '';
-	  if (this.lastNeed) return r + this.lastChar.toString('base64', 0, 3 - this.lastNeed);
-	  return r;
-	}
-
-	// Pass bytes on through for single-byte encodings (e.g. ascii, latin1, hex)
-	function simpleWrite(buf) {
-	  return buf.toString(this.encoding);
-	}
-
-	function simpleEnd(buf) {
-	  return buf && buf.length ? this.write(buf) : '';
-	}
-	return string_decoder;
-}
-
-var endOfStream;
-var hasRequiredEndOfStream;
-
-function requireEndOfStream () {
-	if (hasRequiredEndOfStream) return endOfStream;
-	hasRequiredEndOfStream = 1;
-
-	var ERR_STREAM_PREMATURE_CLOSE = requireErrors().codes.ERR_STREAM_PREMATURE_CLOSE;
-	function once(callback) {
-	  var called = false;
-	  return function () {
-	    if (called) return;
-	    called = true;
-	    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-	      args[_key] = arguments[_key];
-	    }
-	    callback.apply(this, args);
-	  };
-	}
-	function noop() {}
-	function isRequest(stream) {
-	  return stream.setHeader && typeof stream.abort === 'function';
-	}
-	function eos(stream, opts, callback) {
-	  if (typeof opts === 'function') return eos(stream, null, opts);
-	  if (!opts) opts = {};
-	  callback = once(callback || noop);
-	  var readable = opts.readable || opts.readable !== false && stream.readable;
-	  var writable = opts.writable || opts.writable !== false && stream.writable;
-	  var onlegacyfinish = function onlegacyfinish() {
-	    if (!stream.writable) onfinish();
-	  };
-	  var writableEnded = stream._writableState && stream._writableState.finished;
-	  var onfinish = function onfinish() {
-	    writable = false;
-	    writableEnded = true;
-	    if (!readable) callback.call(stream);
-	  };
-	  var readableEnded = stream._readableState && stream._readableState.endEmitted;
-	  var onend = function onend() {
-	    readable = false;
-	    readableEnded = true;
-	    if (!writable) callback.call(stream);
-	  };
-	  var onerror = function onerror(err) {
-	    callback.call(stream, err);
-	  };
-	  var onclose = function onclose() {
-	    var err;
-	    if (readable && !readableEnded) {
-	      if (!stream._readableState || !stream._readableState.ended) err = new ERR_STREAM_PREMATURE_CLOSE();
-	      return callback.call(stream, err);
-	    }
-	    if (writable && !writableEnded) {
-	      if (!stream._writableState || !stream._writableState.ended) err = new ERR_STREAM_PREMATURE_CLOSE();
-	      return callback.call(stream, err);
-	    }
-	  };
-	  var onrequest = function onrequest() {
-	    stream.req.on('finish', onfinish);
-	  };
-	  if (isRequest(stream)) {
-	    stream.on('complete', onfinish);
-	    stream.on('abort', onclose);
-	    if (stream.req) onrequest();else stream.on('request', onrequest);
-	  } else if (writable && !stream._writableState) {
-	    // legacy streams
-	    stream.on('end', onlegacyfinish);
-	    stream.on('close', onlegacyfinish);
-	  }
-	  stream.on('end', onend);
-	  stream.on('finish', onfinish);
-	  if (opts.error !== false) stream.on('error', onerror);
-	  stream.on('close', onclose);
-	  return function () {
-	    stream.removeListener('complete', onfinish);
-	    stream.removeListener('abort', onclose);
-	    stream.removeListener('request', onrequest);
-	    if (stream.req) stream.req.removeListener('finish', onfinish);
-	    stream.removeListener('end', onlegacyfinish);
-	    stream.removeListener('close', onlegacyfinish);
-	    stream.removeListener('finish', onfinish);
-	    stream.removeListener('end', onend);
-	    stream.removeListener('error', onerror);
-	    stream.removeListener('close', onclose);
-	  };
-	}
-	endOfStream = eos;
-	return endOfStream;
-}
-
-var async_iterator;
-var hasRequiredAsync_iterator;
-
-function requireAsync_iterator () {
-	if (hasRequiredAsync_iterator) return async_iterator;
-	hasRequiredAsync_iterator = 1;
-
-	var _Object$setPrototypeO;
-	function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-	function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return typeof key === "symbol" ? key : String(key); }
-	function _toPrimitive(input, hint) { if (typeof input !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (typeof res !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-	var finished = requireEndOfStream();
-	var kLastResolve = Symbol('lastResolve');
-	var kLastReject = Symbol('lastReject');
-	var kError = Symbol('error');
-	var kEnded = Symbol('ended');
-	var kLastPromise = Symbol('lastPromise');
-	var kHandlePromise = Symbol('handlePromise');
-	var kStream = Symbol('stream');
-	function createIterResult(value, done) {
-	  return {
-	    value: value,
-	    done: done
-	  };
-	}
-	function readAndResolve(iter) {
-	  var resolve = iter[kLastResolve];
-	  if (resolve !== null) {
-	    var data = iter[kStream].read();
-	    // we defer if data is null
-	    // we can be expecting either 'end' or
-	    // 'error'
-	    if (data !== null) {
-	      iter[kLastPromise] = null;
-	      iter[kLastResolve] = null;
-	      iter[kLastReject] = null;
-	      resolve(createIterResult(data, false));
-	    }
-	  }
-	}
-	function onReadable(iter) {
-	  // we wait for the next tick, because it might
-	  // emit an error with process.nextTick
-	  process.nextTick(readAndResolve, iter);
-	}
-	function wrapForNext(lastPromise, iter) {
-	  return function (resolve, reject) {
-	    lastPromise.then(function () {
-	      if (iter[kEnded]) {
-	        resolve(createIterResult(undefined, true));
-	        return;
-	      }
-	      iter[kHandlePromise](resolve, reject);
-	    }, reject);
-	  };
-	}
-	var AsyncIteratorPrototype = Object.getPrototypeOf(function () {});
-	var ReadableStreamAsyncIteratorPrototype = Object.setPrototypeOf((_Object$setPrototypeO = {
-	  get stream() {
-	    return this[kStream];
-	  },
-	  next: function next() {
-	    var _this = this;
-	    // if we have detected an error in the meanwhile
-	    // reject straight away
-	    var error = this[kError];
-	    if (error !== null) {
-	      return Promise.reject(error);
-	    }
-	    if (this[kEnded]) {
-	      return Promise.resolve(createIterResult(undefined, true));
-	    }
-	    if (this[kStream].destroyed) {
-	      // We need to defer via nextTick because if .destroy(err) is
-	      // called, the error will be emitted via nextTick, and
-	      // we cannot guarantee that there is no error lingering around
-	      // waiting to be emitted.
-	      return new Promise(function (resolve, reject) {
-	        process.nextTick(function () {
-	          if (_this[kError]) {
-	            reject(_this[kError]);
-	          } else {
-	            resolve(createIterResult(undefined, true));
-	          }
-	        });
-	      });
-	    }
-
-	    // if we have multiple next() calls
-	    // we will wait for the previous Promise to finish
-	    // this logic is optimized to support for await loops,
-	    // where next() is only called once at a time
-	    var lastPromise = this[kLastPromise];
-	    var promise;
-	    if (lastPromise) {
-	      promise = new Promise(wrapForNext(lastPromise, this));
-	    } else {
-	      // fast path needed to support multiple this.push()
-	      // without triggering the next() queue
-	      var data = this[kStream].read();
-	      if (data !== null) {
-	        return Promise.resolve(createIterResult(data, false));
-	      }
-	      promise = new Promise(this[kHandlePromise]);
-	    }
-	    this[kLastPromise] = promise;
-	    return promise;
-	  }
-	}, _defineProperty(_Object$setPrototypeO, Symbol.asyncIterator, function () {
-	  return this;
-	}), _defineProperty(_Object$setPrototypeO, "return", function _return() {
-	  var _this2 = this;
-	  // destroy(err, cb) is a private API
-	  // we can guarantee we have that here, because we control the
-	  // Readable class this is attached to
-	  return new Promise(function (resolve, reject) {
-	    _this2[kStream].destroy(null, function (err) {
-	      if (err) {
-	        reject(err);
-	        return;
-	      }
-	      resolve(createIterResult(undefined, true));
-	    });
-	  });
-	}), _Object$setPrototypeO), AsyncIteratorPrototype);
-	var createReadableStreamAsyncIterator = function createReadableStreamAsyncIterator(stream) {
-	  var _Object$create;
-	  var iterator = Object.create(ReadableStreamAsyncIteratorPrototype, (_Object$create = {}, _defineProperty(_Object$create, kStream, {
-	    value: stream,
-	    writable: true
-	  }), _defineProperty(_Object$create, kLastResolve, {
-	    value: null,
-	    writable: true
-	  }), _defineProperty(_Object$create, kLastReject, {
-	    value: null,
-	    writable: true
-	  }), _defineProperty(_Object$create, kError, {
-	    value: null,
-	    writable: true
-	  }), _defineProperty(_Object$create, kEnded, {
-	    value: stream._readableState.endEmitted,
-	    writable: true
-	  }), _defineProperty(_Object$create, kHandlePromise, {
-	    value: function value(resolve, reject) {
-	      var data = iterator[kStream].read();
-	      if (data) {
-	        iterator[kLastPromise] = null;
-	        iterator[kLastResolve] = null;
-	        iterator[kLastReject] = null;
-	        resolve(createIterResult(data, false));
-	      } else {
-	        iterator[kLastResolve] = resolve;
-	        iterator[kLastReject] = reject;
-	      }
-	    },
-	    writable: true
-	  }), _Object$create));
-	  iterator[kLastPromise] = null;
-	  finished(stream, function (err) {
-	    if (err && err.code !== 'ERR_STREAM_PREMATURE_CLOSE') {
-	      var reject = iterator[kLastReject];
-	      // reject if we are waiting for data in the Promise
-	      // returned by next() and store the error
-	      if (reject !== null) {
-	        iterator[kLastPromise] = null;
-	        iterator[kLastResolve] = null;
-	        iterator[kLastReject] = null;
-	        reject(err);
-	      }
-	      iterator[kError] = err;
-	      return;
-	    }
-	    var resolve = iterator[kLastResolve];
-	    if (resolve !== null) {
-	      iterator[kLastPromise] = null;
-	      iterator[kLastResolve] = null;
-	      iterator[kLastReject] = null;
-	      resolve(createIterResult(undefined, true));
-	    }
-	    iterator[kEnded] = true;
-	  });
-	  stream.on('readable', onReadable.bind(null, iterator));
-	  return iterator;
-	};
-	async_iterator = createReadableStreamAsyncIterator;
-	return async_iterator;
-}
-
-var from_1;
-var hasRequiredFrom;
-
-function requireFrom () {
-	if (hasRequiredFrom) return from_1;
-	hasRequiredFrom = 1;
-
-	function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-	function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-	function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-	function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-	function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-	function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return typeof key === "symbol" ? key : String(key); }
-	function _toPrimitive(input, hint) { if (typeof input !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (typeof res !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-	var ERR_INVALID_ARG_TYPE = requireErrors().codes.ERR_INVALID_ARG_TYPE;
-	function from(Readable, iterable, opts) {
-	  var iterator;
-	  if (iterable && typeof iterable.next === 'function') {
-	    iterator = iterable;
-	  } else if (iterable && iterable[Symbol.asyncIterator]) iterator = iterable[Symbol.asyncIterator]();else if (iterable && iterable[Symbol.iterator]) iterator = iterable[Symbol.iterator]();else throw new ERR_INVALID_ARG_TYPE('iterable', ['Iterable'], iterable);
-	  var readable = new Readable(_objectSpread({
-	    objectMode: true
-	  }, opts));
-	  // Reading boolean to protect against _read
-	  // being called before last iteration completion.
-	  var reading = false;
-	  readable._read = function () {
-	    if (!reading) {
-	      reading = true;
-	      next();
-	    }
-	  };
-	  function next() {
-	    return _next2.apply(this, arguments);
-	  }
-	  function _next2() {
-	    _next2 = _asyncToGenerator(function* () {
-	      try {
-	        var _yield$iterator$next = yield iterator.next(),
-	          value = _yield$iterator$next.value,
-	          done = _yield$iterator$next.done;
-	        if (done) {
-	          readable.push(null);
-	        } else if (readable.push(yield value)) {
-	          next();
-	        } else {
-	          reading = false;
-	        }
-	      } catch (err) {
-	        readable.destroy(err);
-	      }
-	    });
-	    return _next2.apply(this, arguments);
-	  }
-	  return readable;
-	}
-	from_1 = from;
-	return from_1;
-}
-
-var _stream_readable;
-var hasRequired_stream_readable;
-
-function require_stream_readable () {
-	if (hasRequired_stream_readable) return _stream_readable;
-	hasRequired_stream_readable = 1;
-
-	_stream_readable = Readable;
-
-	/*<replacement>*/
-	var Duplex;
-	/*</replacement>*/
-
-	Readable.ReadableState = ReadableState;
-
-	/*<replacement>*/
-	require$$2.EventEmitter;
-	var EElistenerCount = function EElistenerCount(emitter, type) {
-	  return emitter.listeners(type).length;
-	};
-	/*</replacement>*/
-
-	/*<replacement>*/
-	var Stream = requireStream();
-	/*</replacement>*/
-
-	var Buffer = require$$0$6.Buffer;
-	var OurUint8Array = (typeof commonjsGlobal !== 'undefined' ? commonjsGlobal : typeof window !== 'undefined' ? window : typeof self !== 'undefined' ? self : {}).Uint8Array || function () {};
-	function _uint8ArrayToBuffer(chunk) {
-	  return Buffer.from(chunk);
-	}
-	function _isUint8Array(obj) {
-	  return Buffer.isBuffer(obj) || obj instanceof OurUint8Array;
-	}
-
-	/*<replacement>*/
-	var debugUtil = require$$2$1;
-	var debug;
-	if (debugUtil && debugUtil.debuglog) {
-	  debug = debugUtil.debuglog('stream');
-	} else {
-	  debug = function debug() {};
-	}
-	/*</replacement>*/
-
-	var BufferList = requireBuffer_list();
-	var destroyImpl = requireDestroy();
-	var _require = requireState(),
-	  getHighWaterMark = _require.getHighWaterMark;
-	var _require$codes = requireErrors().codes,
-	  ERR_INVALID_ARG_TYPE = _require$codes.ERR_INVALID_ARG_TYPE,
-	  ERR_STREAM_PUSH_AFTER_EOF = _require$codes.ERR_STREAM_PUSH_AFTER_EOF,
-	  ERR_METHOD_NOT_IMPLEMENTED = _require$codes.ERR_METHOD_NOT_IMPLEMENTED,
-	  ERR_STREAM_UNSHIFT_AFTER_END_EVENT = _require$codes.ERR_STREAM_UNSHIFT_AFTER_END_EVENT;
-
-	// Lazy loaded to improve the startup performance.
-	var StringDecoder;
-	var createReadableStreamAsyncIterator;
-	var from;
-	requireInherits()(Readable, Stream);
-	var errorOrDestroy = destroyImpl.errorOrDestroy;
-	var kProxyEvents = ['error', 'close', 'destroy', 'pause', 'resume'];
-	function prependListener(emitter, event, fn) {
-	  // Sadly this is not cacheable as some libraries bundle their own
-	  // event emitter implementation with them.
-	  if (typeof emitter.prependListener === 'function') return emitter.prependListener(event, fn);
-
-	  // This is a hack to make sure that our error handler is attached before any
-	  // userland ones.  NEVER DO THIS. This is here only because this code needs
-	  // to continue to work with older versions of Node.js that do not include
-	  // the prependListener() method. The goal is to eventually remove this hack.
-	  if (!emitter._events || !emitter._events[event]) emitter.on(event, fn);else if (Array.isArray(emitter._events[event])) emitter._events[event].unshift(fn);else emitter._events[event] = [fn, emitter._events[event]];
-	}
-	function ReadableState(options, stream, isDuplex) {
-	  Duplex = Duplex || require_stream_duplex();
-	  options = options || {};
-
-	  // Duplex streams are both readable and writable, but share
-	  // the same options object.
-	  // However, some cases require setting options to different
-	  // values for the readable and the writable sides of the duplex stream.
-	  // These options can be provided separately as readableXXX and writableXXX.
-	  if (typeof isDuplex !== 'boolean') isDuplex = stream instanceof Duplex;
-
-	  // object stream flag. Used to make read(n) ignore n and to
-	  // make all the buffer merging and length checks go away
-	  this.objectMode = !!options.objectMode;
-	  if (isDuplex) this.objectMode = this.objectMode || !!options.readableObjectMode;
-
-	  // the point at which it stops calling _read() to fill the buffer
-	  // Note: 0 is a valid value, means "don't call _read preemptively ever"
-	  this.highWaterMark = getHighWaterMark(this, options, 'readableHighWaterMark', isDuplex);
-
-	  // A linked list is used to store data chunks instead of an array because the
-	  // linked list can remove elements from the beginning faster than
-	  // array.shift()
-	  this.buffer = new BufferList();
-	  this.length = 0;
-	  this.pipes = null;
-	  this.pipesCount = 0;
-	  this.flowing = null;
-	  this.ended = false;
-	  this.endEmitted = false;
-	  this.reading = false;
-
-	  // a flag to be able to tell if the event 'readable'/'data' is emitted
-	  // immediately, or on a later tick.  We set this to true at first, because
-	  // any actions that shouldn't happen until "later" should generally also
-	  // not happen before the first read call.
-	  this.sync = true;
-
-	  // whenever we return null, then we set a flag to say
-	  // that we're awaiting a 'readable' event emission.
-	  this.needReadable = false;
-	  this.emittedReadable = false;
-	  this.readableListening = false;
-	  this.resumeScheduled = false;
-	  this.paused = true;
-
-	  // Should close be emitted on destroy. Defaults to true.
-	  this.emitClose = options.emitClose !== false;
-
-	  // Should .destroy() be called after 'end' (and potentially 'finish')
-	  this.autoDestroy = !!options.autoDestroy;
-
-	  // has it been destroyed
-	  this.destroyed = false;
-
-	  // Crypto is kind of old and crusty.  Historically, its default string
-	  // encoding is 'binary' so we have to make this configurable.
-	  // Everything else in the universe uses 'utf8', though.
-	  this.defaultEncoding = options.defaultEncoding || 'utf8';
-
-	  // the number of writers that are awaiting a drain event in .pipe()s
-	  this.awaitDrain = 0;
-
-	  // if true, a maybeReadMore has been scheduled
-	  this.readingMore = false;
-	  this.decoder = null;
-	  this.encoding = null;
-	  if (options.encoding) {
-	    if (!StringDecoder) StringDecoder = requireString_decoder().StringDecoder;
-	    this.decoder = new StringDecoder(options.encoding);
-	    this.encoding = options.encoding;
-	  }
-	}
-	function Readable(options) {
-	  Duplex = Duplex || require_stream_duplex();
-	  if (!(this instanceof Readable)) return new Readable(options);
-
-	  // Checking for a Stream.Duplex instance is faster here instead of inside
-	  // the ReadableState constructor, at least with V8 6.5
-	  var isDuplex = this instanceof Duplex;
-	  this._readableState = new ReadableState(options, this, isDuplex);
-
-	  // legacy
-	  this.readable = true;
-	  if (options) {
-	    if (typeof options.read === 'function') this._read = options.read;
-	    if (typeof options.destroy === 'function') this._destroy = options.destroy;
-	  }
-	  Stream.call(this);
-	}
-	Object.defineProperty(Readable.prototype, 'destroyed', {
-	  // making it explicit this property is not enumerable
-	  // because otherwise some prototype manipulation in
-	  // userland will fail
-	  enumerable: false,
-	  get: function get() {
-	    if (this._readableState === undefined) {
-	      return false;
-	    }
-	    return this._readableState.destroyed;
-	  },
-	  set: function set(value) {
-	    // we ignore the value if the stream
-	    // has not been initialized yet
-	    if (!this._readableState) {
-	      return;
-	    }
-
-	    // backward compatibility, the user is explicitly
-	    // managing destroyed
-	    this._readableState.destroyed = value;
-	  }
-	});
-	Readable.prototype.destroy = destroyImpl.destroy;
-	Readable.prototype._undestroy = destroyImpl.undestroy;
-	Readable.prototype._destroy = function (err, cb) {
-	  cb(err);
-	};
-
-	// Manually shove something into the read() buffer.
-	// This returns true if the highWaterMark has not been hit yet,
-	// similar to how Writable.write() returns true if you should
-	// write() some more.
-	Readable.prototype.push = function (chunk, encoding) {
-	  var state = this._readableState;
-	  var skipChunkCheck;
-	  if (!state.objectMode) {
-	    if (typeof chunk === 'string') {
-	      encoding = encoding || state.defaultEncoding;
-	      if (encoding !== state.encoding) {
-	        chunk = Buffer.from(chunk, encoding);
-	        encoding = '';
-	      }
-	      skipChunkCheck = true;
-	    }
-	  } else {
-	    skipChunkCheck = true;
-	  }
-	  return readableAddChunk(this, chunk, encoding, false, skipChunkCheck);
-	};
-
-	// Unshift should *always* be something directly out of read()
-	Readable.prototype.unshift = function (chunk) {
-	  return readableAddChunk(this, chunk, null, true, false);
-	};
-	function readableAddChunk(stream, chunk, encoding, addToFront, skipChunkCheck) {
-	  debug('readableAddChunk', chunk);
-	  var state = stream._readableState;
-	  if (chunk === null) {
-	    state.reading = false;
-	    onEofChunk(stream, state);
-	  } else {
-	    var er;
-	    if (!skipChunkCheck) er = chunkInvalid(state, chunk);
-	    if (er) {
-	      errorOrDestroy(stream, er);
-	    } else if (state.objectMode || chunk && chunk.length > 0) {
-	      if (typeof chunk !== 'string' && !state.objectMode && Object.getPrototypeOf(chunk) !== Buffer.prototype) {
-	        chunk = _uint8ArrayToBuffer(chunk);
-	      }
-	      if (addToFront) {
-	        if (state.endEmitted) errorOrDestroy(stream, new ERR_STREAM_UNSHIFT_AFTER_END_EVENT());else addChunk(stream, state, chunk, true);
-	      } else if (state.ended) {
-	        errorOrDestroy(stream, new ERR_STREAM_PUSH_AFTER_EOF());
-	      } else if (state.destroyed) {
-	        return false;
-	      } else {
-	        state.reading = false;
-	        if (state.decoder && !encoding) {
-	          chunk = state.decoder.write(chunk);
-	          if (state.objectMode || chunk.length !== 0) addChunk(stream, state, chunk, false);else maybeReadMore(stream, state);
-	        } else {
-	          addChunk(stream, state, chunk, false);
-	        }
-	      }
-	    } else if (!addToFront) {
-	      state.reading = false;
-	      maybeReadMore(stream, state);
-	    }
-	  }
-
-	  // We can push more data if we are below the highWaterMark.
-	  // Also, if we have no data yet, we can stand some more bytes.
-	  // This is to work around cases where hwm=0, such as the repl.
-	  return !state.ended && (state.length < state.highWaterMark || state.length === 0);
-	}
-	function addChunk(stream, state, chunk, addToFront) {
-	  if (state.flowing && state.length === 0 && !state.sync) {
-	    state.awaitDrain = 0;
-	    stream.emit('data', chunk);
-	  } else {
-	    // update the buffer info.
-	    state.length += state.objectMode ? 1 : chunk.length;
-	    if (addToFront) state.buffer.unshift(chunk);else state.buffer.push(chunk);
-	    if (state.needReadable) emitReadable(stream);
-	  }
-	  maybeReadMore(stream, state);
-	}
-	function chunkInvalid(state, chunk) {
-	  var er;
-	  if (!_isUint8Array(chunk) && typeof chunk !== 'string' && chunk !== undefined && !state.objectMode) {
-	    er = new ERR_INVALID_ARG_TYPE('chunk', ['string', 'Buffer', 'Uint8Array'], chunk);
-	  }
-	  return er;
-	}
-	Readable.prototype.isPaused = function () {
-	  return this._readableState.flowing === false;
-	};
-
-	// backwards compatibility.
-	Readable.prototype.setEncoding = function (enc) {
-	  if (!StringDecoder) StringDecoder = requireString_decoder().StringDecoder;
-	  var decoder = new StringDecoder(enc);
-	  this._readableState.decoder = decoder;
-	  // If setEncoding(null), decoder.encoding equals utf8
-	  this._readableState.encoding = this._readableState.decoder.encoding;
-
-	  // Iterate over current buffer to convert already stored Buffers:
-	  var p = this._readableState.buffer.head;
-	  var content = '';
-	  while (p !== null) {
-	    content += decoder.write(p.data);
-	    p = p.next;
-	  }
-	  this._readableState.buffer.clear();
-	  if (content !== '') this._readableState.buffer.push(content);
-	  this._readableState.length = content.length;
-	  return this;
-	};
-
-	// Don't raise the hwm > 1GB
-	var MAX_HWM = 0x40000000;
-	function computeNewHighWaterMark(n) {
-	  if (n >= MAX_HWM) {
-	    // TODO(ronag): Throw ERR_VALUE_OUT_OF_RANGE.
-	    n = MAX_HWM;
-	  } else {
-	    // Get the next highest power of 2 to prevent increasing hwm excessively in
-	    // tiny amounts
-	    n--;
-	    n |= n >>> 1;
-	    n |= n >>> 2;
-	    n |= n >>> 4;
-	    n |= n >>> 8;
-	    n |= n >>> 16;
-	    n++;
-	  }
-	  return n;
-	}
-
-	// This function is designed to be inlinable, so please take care when making
-	// changes to the function body.
-	function howMuchToRead(n, state) {
-	  if (n <= 0 || state.length === 0 && state.ended) return 0;
-	  if (state.objectMode) return 1;
-	  if (n !== n) {
-	    // Only flow one buffer at a time
-	    if (state.flowing && state.length) return state.buffer.head.data.length;else return state.length;
-	  }
-	  // If we're asking for more than the current hwm, then raise the hwm.
-	  if (n > state.highWaterMark) state.highWaterMark = computeNewHighWaterMark(n);
-	  if (n <= state.length) return n;
-	  // Don't have enough
-	  if (!state.ended) {
-	    state.needReadable = true;
-	    return 0;
-	  }
-	  return state.length;
-	}
-
-	// you can override either this method, or the async _read(n) below.
-	Readable.prototype.read = function (n) {
-	  debug('read', n);
-	  n = parseInt(n, 10);
-	  var state = this._readableState;
-	  var nOrig = n;
-	  if (n !== 0) state.emittedReadable = false;
-
-	  // if we're doing read(0) to trigger a readable event, but we
-	  // already have a bunch of data in the buffer, then just trigger
-	  // the 'readable' event and move on.
-	  if (n === 0 && state.needReadable && ((state.highWaterMark !== 0 ? state.length >= state.highWaterMark : state.length > 0) || state.ended)) {
-	    debug('read: emitReadable', state.length, state.ended);
-	    if (state.length === 0 && state.ended) endReadable(this);else emitReadable(this);
-	    return null;
-	  }
-	  n = howMuchToRead(n, state);
-
-	  // if we've ended, and we're now clear, then finish it up.
-	  if (n === 0 && state.ended) {
-	    if (state.length === 0) endReadable(this);
-	    return null;
-	  }
-
-	  // All the actual chunk generation logic needs to be
-	  // *below* the call to _read.  The reason is that in certain
-	  // synthetic stream cases, such as passthrough streams, _read
-	  // may be a completely synchronous operation which may change
-	  // the state of the read buffer, providing enough data when
-	  // before there was *not* enough.
-	  //
-	  // So, the steps are:
-	  // 1. Figure out what the state of things will be after we do
-	  // a read from the buffer.
-	  //
-	  // 2. If that resulting state will trigger a _read, then call _read.
-	  // Note that this may be asynchronous, or synchronous.  Yes, it is
-	  // deeply ugly to write APIs this way, but that still doesn't mean
-	  // that the Readable class should behave improperly, as streams are
-	  // designed to be sync/async agnostic.
-	  // Take note if the _read call is sync or async (ie, if the read call
-	  // has returned yet), so that we know whether or not it's safe to emit
-	  // 'readable' etc.
-	  //
-	  // 3. Actually pull the requested chunks out of the buffer and return.
-
-	  // if we need a readable event, then we need to do some reading.
-	  var doRead = state.needReadable;
-	  debug('need readable', doRead);
-
-	  // if we currently have less than the highWaterMark, then also read some
-	  if (state.length === 0 || state.length - n < state.highWaterMark) {
-	    doRead = true;
-	    debug('length less than watermark', doRead);
-	  }
-
-	  // however, if we've ended, then there's no point, and if we're already
-	  // reading, then it's unnecessary.
-	  if (state.ended || state.reading) {
-	    doRead = false;
-	    debug('reading or ended', doRead);
-	  } else if (doRead) {
-	    debug('do read');
-	    state.reading = true;
-	    state.sync = true;
-	    // if the length is currently zero, then we *need* a readable event.
-	    if (state.length === 0) state.needReadable = true;
-	    // call internal read method
-	    this._read(state.highWaterMark);
-	    state.sync = false;
-	    // If _read pushed data synchronously, then `reading` will be false,
-	    // and we need to re-evaluate how much data we can return to the user.
-	    if (!state.reading) n = howMuchToRead(nOrig, state);
-	  }
-	  var ret;
-	  if (n > 0) ret = fromList(n, state);else ret = null;
-	  if (ret === null) {
-	    state.needReadable = state.length <= state.highWaterMark;
-	    n = 0;
-	  } else {
-	    state.length -= n;
-	    state.awaitDrain = 0;
-	  }
-	  if (state.length === 0) {
-	    // If we have nothing in the buffer, then we want to know
-	    // as soon as we *do* get something into the buffer.
-	    if (!state.ended) state.needReadable = true;
-
-	    // If we tried to read() past the EOF, then emit end on the next tick.
-	    if (nOrig !== n && state.ended) endReadable(this);
-	  }
-	  if (ret !== null) this.emit('data', ret);
-	  return ret;
-	};
-	function onEofChunk(stream, state) {
-	  debug('onEofChunk');
-	  if (state.ended) return;
-	  if (state.decoder) {
-	    var chunk = state.decoder.end();
-	    if (chunk && chunk.length) {
-	      state.buffer.push(chunk);
-	      state.length += state.objectMode ? 1 : chunk.length;
-	    }
-	  }
-	  state.ended = true;
-	  if (state.sync) {
-	    // if we are sync, wait until next tick to emit the data.
-	    // Otherwise we risk emitting data in the flow()
-	    // the readable code triggers during a read() call
-	    emitReadable(stream);
-	  } else {
-	    // emit 'readable' now to make sure it gets picked up.
-	    state.needReadable = false;
-	    if (!state.emittedReadable) {
-	      state.emittedReadable = true;
-	      emitReadable_(stream);
-	    }
-	  }
-	}
-
-	// Don't emit readable right away in sync mode, because this can trigger
-	// another read() call => stack overflow.  This way, it might trigger
-	// a nextTick recursion warning, but that's not so bad.
-	function emitReadable(stream) {
-	  var state = stream._readableState;
-	  debug('emitReadable', state.needReadable, state.emittedReadable);
-	  state.needReadable = false;
-	  if (!state.emittedReadable) {
-	    debug('emitReadable', state.flowing);
-	    state.emittedReadable = true;
-	    process.nextTick(emitReadable_, stream);
-	  }
-	}
-	function emitReadable_(stream) {
-	  var state = stream._readableState;
-	  debug('emitReadable_', state.destroyed, state.length, state.ended);
-	  if (!state.destroyed && (state.length || state.ended)) {
-	    stream.emit('readable');
-	    state.emittedReadable = false;
-	  }
-
-	  // The stream needs another readable event if
-	  // 1. It is not flowing, as the flow mechanism will take
-	  //    care of it.
-	  // 2. It is not ended.
-	  // 3. It is below the highWaterMark, so we can schedule
-	  //    another readable later.
-	  state.needReadable = !state.flowing && !state.ended && state.length <= state.highWaterMark;
-	  flow(stream);
-	}
-
-	// at this point, the user has presumably seen the 'readable' event,
-	// and called read() to consume some data.  that may have triggered
-	// in turn another _read(n) call, in which case reading = true if
-	// it's in progress.
-	// However, if we're not ended, or reading, and the length < hwm,
-	// then go ahead and try to read some more preemptively.
-	function maybeReadMore(stream, state) {
-	  if (!state.readingMore) {
-	    state.readingMore = true;
-	    process.nextTick(maybeReadMore_, stream, state);
-	  }
-	}
-	function maybeReadMore_(stream, state) {
-	  // Attempt to read more data if we should.
-	  //
-	  // The conditions for reading more data are (one of):
-	  // - Not enough data buffered (state.length < state.highWaterMark). The loop
-	  //   is responsible for filling the buffer with enough data if such data
-	  //   is available. If highWaterMark is 0 and we are not in the flowing mode
-	  //   we should _not_ attempt to buffer any extra data. We'll get more data
-	  //   when the stream consumer calls read() instead.
-	  // - No data in the buffer, and the stream is in flowing mode. In this mode
-	  //   the loop below is responsible for ensuring read() is called. Failing to
-	  //   call read here would abort the flow and there's no other mechanism for
-	  //   continuing the flow if the stream consumer has just subscribed to the
-	  //   'data' event.
-	  //
-	  // In addition to the above conditions to keep reading data, the following
-	  // conditions prevent the data from being read:
-	  // - The stream has ended (state.ended).
-	  // - There is already a pending 'read' operation (state.reading). This is a
-	  //   case where the the stream has called the implementation defined _read()
-	  //   method, but they are processing the call asynchronously and have _not_
-	  //   called push() with new data. In this case we skip performing more
-	  //   read()s. The execution ends in this method again after the _read() ends
-	  //   up calling push() with more data.
-	  while (!state.reading && !state.ended && (state.length < state.highWaterMark || state.flowing && state.length === 0)) {
-	    var len = state.length;
-	    debug('maybeReadMore read 0');
-	    stream.read(0);
-	    if (len === state.length)
-	      // didn't get any data, stop spinning.
-	      break;
-	  }
-	  state.readingMore = false;
-	}
-
-	// abstract method.  to be overridden in specific implementation classes.
-	// call cb(er, data) where data is <= n in length.
-	// for virtual (non-string, non-buffer) streams, "length" is somewhat
-	// arbitrary, and perhaps not very meaningful.
-	Readable.prototype._read = function (n) {
-	  errorOrDestroy(this, new ERR_METHOD_NOT_IMPLEMENTED('_read()'));
-	};
-	Readable.prototype.pipe = function (dest, pipeOpts) {
-	  var src = this;
-	  var state = this._readableState;
-	  switch (state.pipesCount) {
-	    case 0:
-	      state.pipes = dest;
-	      break;
-	    case 1:
-	      state.pipes = [state.pipes, dest];
-	      break;
-	    default:
-	      state.pipes.push(dest);
-	      break;
-	  }
-	  state.pipesCount += 1;
-	  debug('pipe count=%d opts=%j', state.pipesCount, pipeOpts);
-	  var doEnd = (!pipeOpts || pipeOpts.end !== false) && dest !== process.stdout && dest !== process.stderr;
-	  var endFn = doEnd ? onend : unpipe;
-	  if (state.endEmitted) process.nextTick(endFn);else src.once('end', endFn);
-	  dest.on('unpipe', onunpipe);
-	  function onunpipe(readable, unpipeInfo) {
-	    debug('onunpipe');
-	    if (readable === src) {
-	      if (unpipeInfo && unpipeInfo.hasUnpiped === false) {
-	        unpipeInfo.hasUnpiped = true;
-	        cleanup();
-	      }
-	    }
-	  }
-	  function onend() {
-	    debug('onend');
-	    dest.end();
-	  }
-
-	  // when the dest drains, it reduces the awaitDrain counter
-	  // on the source.  This would be more elegant with a .once()
-	  // handler in flow(), but adding and removing repeatedly is
-	  // too slow.
-	  var ondrain = pipeOnDrain(src);
-	  dest.on('drain', ondrain);
-	  var cleanedUp = false;
-	  function cleanup() {
-	    debug('cleanup');
-	    // cleanup event handlers once the pipe is broken
-	    dest.removeListener('close', onclose);
-	    dest.removeListener('finish', onfinish);
-	    dest.removeListener('drain', ondrain);
-	    dest.removeListener('error', onerror);
-	    dest.removeListener('unpipe', onunpipe);
-	    src.removeListener('end', onend);
-	    src.removeListener('end', unpipe);
-	    src.removeListener('data', ondata);
-	    cleanedUp = true;
-
-	    // if the reader is waiting for a drain event from this
-	    // specific writer, then it would cause it to never start
-	    // flowing again.
-	    // So, if this is awaiting a drain, then we just call it now.
-	    // If we don't know, then assume that we are waiting for one.
-	    if (state.awaitDrain && (!dest._writableState || dest._writableState.needDrain)) ondrain();
-	  }
-	  src.on('data', ondata);
-	  function ondata(chunk) {
-	    debug('ondata');
-	    var ret = dest.write(chunk);
-	    debug('dest.write', ret);
-	    if (ret === false) {
-	      // If the user unpiped during `dest.write()`, it is possible
-	      // to get stuck in a permanently paused state if that write
-	      // also returned false.
-	      // => Check whether `dest` is still a piping destination.
-	      if ((state.pipesCount === 1 && state.pipes === dest || state.pipesCount > 1 && indexOf(state.pipes, dest) !== -1) && !cleanedUp) {
-	        debug('false write response, pause', state.awaitDrain);
-	        state.awaitDrain++;
-	      }
-	      src.pause();
-	    }
-	  }
-
-	  // if the dest has an error, then stop piping into it.
-	  // however, don't suppress the throwing behavior for this.
-	  function onerror(er) {
-	    debug('onerror', er);
-	    unpipe();
-	    dest.removeListener('error', onerror);
-	    if (EElistenerCount(dest, 'error') === 0) errorOrDestroy(dest, er);
-	  }
-
-	  // Make sure our error handler is attached before userland ones.
-	  prependListener(dest, 'error', onerror);
-
-	  // Both close and finish should trigger unpipe, but only once.
-	  function onclose() {
-	    dest.removeListener('finish', onfinish);
-	    unpipe();
-	  }
-	  dest.once('close', onclose);
-	  function onfinish() {
-	    debug('onfinish');
-	    dest.removeListener('close', onclose);
-	    unpipe();
-	  }
-	  dest.once('finish', onfinish);
-	  function unpipe() {
-	    debug('unpipe');
-	    src.unpipe(dest);
-	  }
-
-	  // tell the dest that it's being piped to
-	  dest.emit('pipe', src);
-
-	  // start the flow if it hasn't been started already.
-	  if (!state.flowing) {
-	    debug('pipe resume');
-	    src.resume();
-	  }
-	  return dest;
-	};
-	function pipeOnDrain(src) {
-	  return function pipeOnDrainFunctionResult() {
-	    var state = src._readableState;
-	    debug('pipeOnDrain', state.awaitDrain);
-	    if (state.awaitDrain) state.awaitDrain--;
-	    if (state.awaitDrain === 0 && EElistenerCount(src, 'data')) {
-	      state.flowing = true;
-	      flow(src);
-	    }
-	  };
-	}
-	Readable.prototype.unpipe = function (dest) {
-	  var state = this._readableState;
-	  var unpipeInfo = {
-	    hasUnpiped: false
-	  };
-
-	  // if we're not piping anywhere, then do nothing.
-	  if (state.pipesCount === 0) return this;
-
-	  // just one destination.  most common case.
-	  if (state.pipesCount === 1) {
-	    // passed in one, but it's not the right one.
-	    if (dest && dest !== state.pipes) return this;
-	    if (!dest) dest = state.pipes;
-
-	    // got a match.
-	    state.pipes = null;
-	    state.pipesCount = 0;
-	    state.flowing = false;
-	    if (dest) dest.emit('unpipe', this, unpipeInfo);
-	    return this;
-	  }
-
-	  // slow case. multiple pipe destinations.
-
-	  if (!dest) {
-	    // remove all.
-	    var dests = state.pipes;
-	    var len = state.pipesCount;
-	    state.pipes = null;
-	    state.pipesCount = 0;
-	    state.flowing = false;
-	    for (var i = 0; i < len; i++) dests[i].emit('unpipe', this, {
-	      hasUnpiped: false
-	    });
-	    return this;
-	  }
-
-	  // try to find the right one.
-	  var index = indexOf(state.pipes, dest);
-	  if (index === -1) return this;
-	  state.pipes.splice(index, 1);
-	  state.pipesCount -= 1;
-	  if (state.pipesCount === 1) state.pipes = state.pipes[0];
-	  dest.emit('unpipe', this, unpipeInfo);
-	  return this;
-	};
-
-	// set up data events if they are asked for
-	// Ensure readable listeners eventually get something
-	Readable.prototype.on = function (ev, fn) {
-	  var res = Stream.prototype.on.call(this, ev, fn);
-	  var state = this._readableState;
-	  if (ev === 'data') {
-	    // update readableListening so that resume() may be a no-op
-	    // a few lines down. This is needed to support once('readable').
-	    state.readableListening = this.listenerCount('readable') > 0;
-
-	    // Try start flowing on next tick if stream isn't explicitly paused
-	    if (state.flowing !== false) this.resume();
-	  } else if (ev === 'readable') {
-	    if (!state.endEmitted && !state.readableListening) {
-	      state.readableListening = state.needReadable = true;
-	      state.flowing = false;
-	      state.emittedReadable = false;
-	      debug('on readable', state.length, state.reading);
-	      if (state.length) {
-	        emitReadable(this);
-	      } else if (!state.reading) {
-	        process.nextTick(nReadingNextTick, this);
-	      }
-	    }
-	  }
-	  return res;
-	};
-	Readable.prototype.addListener = Readable.prototype.on;
-	Readable.prototype.removeListener = function (ev, fn) {
-	  var res = Stream.prototype.removeListener.call(this, ev, fn);
-	  if (ev === 'readable') {
-	    // We need to check if there is someone still listening to
-	    // readable and reset the state. However this needs to happen
-	    // after readable has been emitted but before I/O (nextTick) to
-	    // support once('readable', fn) cycles. This means that calling
-	    // resume within the same tick will have no
-	    // effect.
-	    process.nextTick(updateReadableListening, this);
-	  }
-	  return res;
-	};
-	Readable.prototype.removeAllListeners = function (ev) {
-	  var res = Stream.prototype.removeAllListeners.apply(this, arguments);
-	  if (ev === 'readable' || ev === undefined) {
-	    // We need to check if there is someone still listening to
-	    // readable and reset the state. However this needs to happen
-	    // after readable has been emitted but before I/O (nextTick) to
-	    // support once('readable', fn) cycles. This means that calling
-	    // resume within the same tick will have no
-	    // effect.
-	    process.nextTick(updateReadableListening, this);
-	  }
-	  return res;
-	};
-	function updateReadableListening(self) {
-	  var state = self._readableState;
-	  state.readableListening = self.listenerCount('readable') > 0;
-	  if (state.resumeScheduled && !state.paused) {
-	    // flowing needs to be set to true now, otherwise
-	    // the upcoming resume will not flow.
-	    state.flowing = true;
-
-	    // crude way to check if we should resume
-	  } else if (self.listenerCount('data') > 0) {
-	    self.resume();
-	  }
-	}
-	function nReadingNextTick(self) {
-	  debug('readable nexttick read 0');
-	  self.read(0);
-	}
-
-	// pause() and resume() are remnants of the legacy readable stream API
-	// If the user uses them, then switch into old mode.
-	Readable.prototype.resume = function () {
-	  var state = this._readableState;
-	  if (!state.flowing) {
-	    debug('resume');
-	    // we flow only if there is no one listening
-	    // for readable, but we still have to call
-	    // resume()
-	    state.flowing = !state.readableListening;
-	    resume(this, state);
-	  }
-	  state.paused = false;
-	  return this;
-	};
-	function resume(stream, state) {
-	  if (!state.resumeScheduled) {
-	    state.resumeScheduled = true;
-	    process.nextTick(resume_, stream, state);
-	  }
-	}
-	function resume_(stream, state) {
-	  debug('resume', state.reading);
-	  if (!state.reading) {
-	    stream.read(0);
-	  }
-	  state.resumeScheduled = false;
-	  stream.emit('resume');
-	  flow(stream);
-	  if (state.flowing && !state.reading) stream.read(0);
-	}
-	Readable.prototype.pause = function () {
-	  debug('call pause flowing=%j', this._readableState.flowing);
-	  if (this._readableState.flowing !== false) {
-	    debug('pause');
-	    this._readableState.flowing = false;
-	    this.emit('pause');
-	  }
-	  this._readableState.paused = true;
-	  return this;
-	};
-	function flow(stream) {
-	  var state = stream._readableState;
-	  debug('flow', state.flowing);
-	  while (state.flowing && stream.read() !== null);
-	}
-
-	// wrap an old-style stream as the async data source.
-	// This is *not* part of the readable stream interface.
-	// It is an ugly unfortunate mess of history.
-	Readable.prototype.wrap = function (stream) {
-	  var _this = this;
-	  var state = this._readableState;
-	  var paused = false;
-	  stream.on('end', function () {
-	    debug('wrapped end');
-	    if (state.decoder && !state.ended) {
-	      var chunk = state.decoder.end();
-	      if (chunk && chunk.length) _this.push(chunk);
-	    }
-	    _this.push(null);
-	  });
-	  stream.on('data', function (chunk) {
-	    debug('wrapped data');
-	    if (state.decoder) chunk = state.decoder.write(chunk);
-
-	    // don't skip over falsy values in objectMode
-	    if (state.objectMode && (chunk === null || chunk === undefined)) return;else if (!state.objectMode && (!chunk || !chunk.length)) return;
-	    var ret = _this.push(chunk);
-	    if (!ret) {
-	      paused = true;
-	      stream.pause();
-	    }
-	  });
-
-	  // proxy all the other methods.
-	  // important when wrapping filters and duplexes.
-	  for (var i in stream) {
-	    if (this[i] === undefined && typeof stream[i] === 'function') {
-	      this[i] = function methodWrap(method) {
-	        return function methodWrapReturnFunction() {
-	          return stream[method].apply(stream, arguments);
-	        };
-	      }(i);
-	    }
-	  }
-
-	  // proxy certain important events.
-	  for (var n = 0; n < kProxyEvents.length; n++) {
-	    stream.on(kProxyEvents[n], this.emit.bind(this, kProxyEvents[n]));
-	  }
-
-	  // when we try to consume some more bytes, simply unpause the
-	  // underlying stream.
-	  this._read = function (n) {
-	    debug('wrapped _read', n);
-	    if (paused) {
-	      paused = false;
-	      stream.resume();
-	    }
-	  };
-	  return this;
-	};
-	if (typeof Symbol === 'function') {
-	  Readable.prototype[Symbol.asyncIterator] = function () {
-	    if (createReadableStreamAsyncIterator === undefined) {
-	      createReadableStreamAsyncIterator = requireAsync_iterator();
-	    }
-	    return createReadableStreamAsyncIterator(this);
-	  };
-	}
-	Object.defineProperty(Readable.prototype, 'readableHighWaterMark', {
-	  // making it explicit this property is not enumerable
-	  // because otherwise some prototype manipulation in
-	  // userland will fail
-	  enumerable: false,
-	  get: function get() {
-	    return this._readableState.highWaterMark;
-	  }
-	});
-	Object.defineProperty(Readable.prototype, 'readableBuffer', {
-	  // making it explicit this property is not enumerable
-	  // because otherwise some prototype manipulation in
-	  // userland will fail
-	  enumerable: false,
-	  get: function get() {
-	    return this._readableState && this._readableState.buffer;
-	  }
-	});
-	Object.defineProperty(Readable.prototype, 'readableFlowing', {
-	  // making it explicit this property is not enumerable
-	  // because otherwise some prototype manipulation in
-	  // userland will fail
-	  enumerable: false,
-	  get: function get() {
-	    return this._readableState.flowing;
-	  },
-	  set: function set(state) {
-	    if (this._readableState) {
-	      this._readableState.flowing = state;
-	    }
-	  }
-	});
-
-	// exposed for testing purposes only.
-	Readable._fromList = fromList;
-	Object.defineProperty(Readable.prototype, 'readableLength', {
-	  // making it explicit this property is not enumerable
-	  // because otherwise some prototype manipulation in
-	  // userland will fail
-	  enumerable: false,
-	  get: function get() {
-	    return this._readableState.length;
-	  }
-	});
-
-	// Pluck off n bytes from an array of buffers.
-	// Length is the combined lengths of all the buffers in the list.
-	// This function is designed to be inlinable, so please take care when making
-	// changes to the function body.
-	function fromList(n, state) {
-	  // nothing buffered
-	  if (state.length === 0) return null;
-	  var ret;
-	  if (state.objectMode) ret = state.buffer.shift();else if (!n || n >= state.length) {
-	    // read it all, truncate the list
-	    if (state.decoder) ret = state.buffer.join('');else if (state.buffer.length === 1) ret = state.buffer.first();else ret = state.buffer.concat(state.length);
-	    state.buffer.clear();
-	  } else {
-	    // read part of list
-	    ret = state.buffer.consume(n, state.decoder);
-	  }
-	  return ret;
-	}
-	function endReadable(stream) {
-	  var state = stream._readableState;
-	  debug('endReadable', state.endEmitted);
-	  if (!state.endEmitted) {
-	    state.ended = true;
-	    process.nextTick(endReadableNT, state, stream);
-	  }
-	}
-	function endReadableNT(state, stream) {
-	  debug('endReadableNT', state.endEmitted, state.length);
-
-	  // Check that we didn't get one last unshift.
-	  if (!state.endEmitted && state.length === 0) {
-	    state.endEmitted = true;
-	    stream.readable = false;
-	    stream.emit('end');
-	    if (state.autoDestroy) {
-	      // In case of duplex streams we need a way to detect
-	      // if the writable side is ready for autoDestroy as well
-	      var wState = stream._writableState;
-	      if (!wState || wState.autoDestroy && wState.finished) {
-	        stream.destroy();
-	      }
-	    }
-	  }
-	}
-	if (typeof Symbol === 'function') {
-	  Readable.from = function (iterable, opts) {
-	    if (from === undefined) {
-	      from = requireFrom();
-	    }
-	    return from(Readable, iterable, opts);
-	  };
-	}
-	function indexOf(xs, x) {
-	  for (var i = 0, l = xs.length; i < l; i++) {
-	    if (xs[i] === x) return i;
-	  }
-	  return -1;
-	}
-	return _stream_readable;
-}
-
-var _stream_transform;
-var hasRequired_stream_transform;
-
-function require_stream_transform () {
-	if (hasRequired_stream_transform) return _stream_transform;
-	hasRequired_stream_transform = 1;
-
-	_stream_transform = Transform;
-	var _require$codes = requireErrors().codes,
-	  ERR_METHOD_NOT_IMPLEMENTED = _require$codes.ERR_METHOD_NOT_IMPLEMENTED,
-	  ERR_MULTIPLE_CALLBACK = _require$codes.ERR_MULTIPLE_CALLBACK,
-	  ERR_TRANSFORM_ALREADY_TRANSFORMING = _require$codes.ERR_TRANSFORM_ALREADY_TRANSFORMING,
-	  ERR_TRANSFORM_WITH_LENGTH_0 = _require$codes.ERR_TRANSFORM_WITH_LENGTH_0;
-	var Duplex = require_stream_duplex();
-	requireInherits()(Transform, Duplex);
-	function afterTransform(er, data) {
-	  var ts = this._transformState;
-	  ts.transforming = false;
-	  var cb = ts.writecb;
-	  if (cb === null) {
-	    return this.emit('error', new ERR_MULTIPLE_CALLBACK());
-	  }
-	  ts.writechunk = null;
-	  ts.writecb = null;
-	  if (data != null)
-	    // single equals check for both `null` and `undefined`
-	    this.push(data);
-	  cb(er);
-	  var rs = this._readableState;
-	  rs.reading = false;
-	  if (rs.needReadable || rs.length < rs.highWaterMark) {
-	    this._read(rs.highWaterMark);
-	  }
-	}
-	function Transform(options) {
-	  if (!(this instanceof Transform)) return new Transform(options);
-	  Duplex.call(this, options);
-	  this._transformState = {
-	    afterTransform: afterTransform.bind(this),
-	    needTransform: false,
-	    transforming: false,
-	    writecb: null,
-	    writechunk: null,
-	    writeencoding: null
-	  };
-
-	  // start out asking for a readable event once data is transformed.
-	  this._readableState.needReadable = true;
-
-	  // we have implemented the _read method, and done the other things
-	  // that Readable wants before the first _read call, so unset the
-	  // sync guard flag.
-	  this._readableState.sync = false;
-	  if (options) {
-	    if (typeof options.transform === 'function') this._transform = options.transform;
-	    if (typeof options.flush === 'function') this._flush = options.flush;
-	  }
-
-	  // When the writable side finishes, then flush out anything remaining.
-	  this.on('prefinish', prefinish);
-	}
-	function prefinish() {
-	  var _this = this;
-	  if (typeof this._flush === 'function' && !this._readableState.destroyed) {
-	    this._flush(function (er, data) {
-	      done(_this, er, data);
-	    });
-	  } else {
-	    done(this, null, null);
-	  }
-	}
-	Transform.prototype.push = function (chunk, encoding) {
-	  this._transformState.needTransform = false;
-	  return Duplex.prototype.push.call(this, chunk, encoding);
-	};
-
-	// This is the part where you do stuff!
-	// override this function in implementation classes.
-	// 'chunk' is an input chunk.
-	//
-	// Call `push(newChunk)` to pass along transformed output
-	// to the readable side.  You may call 'push' zero or more times.
-	//
-	// Call `cb(err)` when you are done with this chunk.  If you pass
-	// an error, then that'll put the hurt on the whole operation.  If you
-	// never call cb(), then you'll never get another chunk.
-	Transform.prototype._transform = function (chunk, encoding, cb) {
-	  cb(new ERR_METHOD_NOT_IMPLEMENTED('_transform()'));
-	};
-	Transform.prototype._write = function (chunk, encoding, cb) {
-	  var ts = this._transformState;
-	  ts.writecb = cb;
-	  ts.writechunk = chunk;
-	  ts.writeencoding = encoding;
-	  if (!ts.transforming) {
-	    var rs = this._readableState;
-	    if (ts.needTransform || rs.needReadable || rs.length < rs.highWaterMark) this._read(rs.highWaterMark);
-	  }
-	};
-
-	// Doesn't matter what the args are here.
-	// _transform does all the work.
-	// That we got here means that the readable side wants more data.
-	Transform.prototype._read = function (n) {
-	  var ts = this._transformState;
-	  if (ts.writechunk !== null && !ts.transforming) {
-	    ts.transforming = true;
-	    this._transform(ts.writechunk, ts.writeencoding, ts.afterTransform);
-	  } else {
-	    // mark that we need a transform, so that any data that comes in
-	    // will get processed, now that we've asked for it.
-	    ts.needTransform = true;
-	  }
-	};
-	Transform.prototype._destroy = function (err, cb) {
-	  Duplex.prototype._destroy.call(this, err, function (err2) {
-	    cb(err2);
-	  });
-	};
-	function done(stream, er, data) {
-	  if (er) return stream.emit('error', er);
-	  if (data != null)
-	    // single equals check for both `null` and `undefined`
-	    stream.push(data);
-
-	  // TODO(BridgeAR): Write a test for these two error cases
-	  // if there's nothing in the write buffer, then that means
-	  // that nothing more will ever be provided
-	  if (stream._writableState.length) throw new ERR_TRANSFORM_WITH_LENGTH_0();
-	  if (stream._transformState.transforming) throw new ERR_TRANSFORM_ALREADY_TRANSFORMING();
-	  return stream.push(null);
-	}
-	return _stream_transform;
-}
-
-var _stream_passthrough;
-var hasRequired_stream_passthrough;
-
-function require_stream_passthrough () {
-	if (hasRequired_stream_passthrough) return _stream_passthrough;
-	hasRequired_stream_passthrough = 1;
-
-	_stream_passthrough = PassThrough;
-	var Transform = require_stream_transform();
-	requireInherits()(PassThrough, Transform);
-	function PassThrough(options) {
-	  if (!(this instanceof PassThrough)) return new PassThrough(options);
-	  Transform.call(this, options);
-	}
-	PassThrough.prototype._transform = function (chunk, encoding, cb) {
-	  cb(null, chunk);
-	};
-	return _stream_passthrough;
-}
-
-var pipeline_1;
-var hasRequiredPipeline;
-
-function requirePipeline () {
-	if (hasRequiredPipeline) return pipeline_1;
-	hasRequiredPipeline = 1;
-
-	var eos;
-	function once(callback) {
-	  var called = false;
-	  return function () {
-	    if (called) return;
-	    called = true;
-	    callback.apply(void 0, arguments);
-	  };
-	}
-	var _require$codes = requireErrors().codes,
-	  ERR_MISSING_ARGS = _require$codes.ERR_MISSING_ARGS,
-	  ERR_STREAM_DESTROYED = _require$codes.ERR_STREAM_DESTROYED;
-	function noop(err) {
-	  // Rethrow the error if it exists to avoid swallowing it
-	  if (err) throw err;
-	}
-	function isRequest(stream) {
-	  return stream.setHeader && typeof stream.abort === 'function';
-	}
-	function destroyer(stream, reading, writing, callback) {
-	  callback = once(callback);
-	  var closed = false;
-	  stream.on('close', function () {
-	    closed = true;
-	  });
-	  if (eos === undefined) eos = requireEndOfStream();
-	  eos(stream, {
-	    readable: reading,
-	    writable: writing
-	  }, function (err) {
-	    if (err) return callback(err);
-	    closed = true;
-	    callback();
-	  });
-	  var destroyed = false;
-	  return function (err) {
-	    if (closed) return;
-	    if (destroyed) return;
-	    destroyed = true;
-
-	    // request.destroy just do .end - .abort is what we want
-	    if (isRequest(stream)) return stream.abort();
-	    if (typeof stream.destroy === 'function') return stream.destroy();
-	    callback(err || new ERR_STREAM_DESTROYED('pipe'));
-	  };
-	}
-	function call(fn) {
-	  fn();
-	}
-	function pipe(from, to) {
-	  return from.pipe(to);
-	}
-	function popCallback(streams) {
-	  if (!streams.length) return noop;
-	  if (typeof streams[streams.length - 1] !== 'function') return noop;
-	  return streams.pop();
-	}
-	function pipeline() {
-	  for (var _len = arguments.length, streams = new Array(_len), _key = 0; _key < _len; _key++) {
-	    streams[_key] = arguments[_key];
-	  }
-	  var callback = popCallback(streams);
-	  if (Array.isArray(streams[0])) streams = streams[0];
-	  if (streams.length < 2) {
-	    throw new ERR_MISSING_ARGS('streams');
-	  }
-	  var error;
-	  var destroys = streams.map(function (stream, i) {
-	    var reading = i < streams.length - 1;
-	    var writing = i > 0;
-	    return destroyer(stream, reading, writing, function (err) {
-	      if (!error) error = err;
-	      if (err) destroys.forEach(call);
-	      if (reading) return;
-	      destroys.forEach(call);
-	      callback(error);
-	    });
-	  });
-	  return streams.reduce(pipe);
-	}
-	pipeline_1 = pipeline;
-	return pipeline_1;
-}
-
-(function (module, exports) {
-	var Stream = require$$0$5;
-	if (process.env.READABLE_STREAM === 'disable' && Stream) {
-	  module.exports = Stream.Readable;
-	  Object.assign(module.exports, Stream);
-	  module.exports.Stream = Stream;
-	} else {
-	  exports = module.exports = require_stream_readable();
-	  exports.Stream = Stream || exports;
-	  exports.Readable = exports;
-	  exports.Writable = require_stream_writable();
-	  exports.Duplex = require_stream_duplex();
-	  exports.Transform = require_stream_transform();
-	  exports.PassThrough = require_stream_passthrough();
-	  exports.finished = requireEndOfStream();
-	  exports.pipeline = requirePipeline();
-	} 
-} (readable, readable.exports));
-
-var readableExports = readable.exports;
-
-Object.defineProperty(lib, "__esModule", { value: true });
-lib.ReadableWebToNodeStream = void 0;
-const readable_stream_1 = readableExports;
-/**
- * Converts a Web-API stream into Node stream.Readable class
- * Node stream readable: https://nodejs.org/api/stream.html#stream_readable_streams
- * Web API readable-stream: https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream
- * Node readable stream: https://nodejs.org/api/stream.html#stream_readable_streams
- */
-class ReadableWebToNodeStream extends readable_stream_1.Readable {
-    /**
-     *
-     * @param stream Readable​Stream: https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream
-     */
-    constructor(stream) {
-        super();
-        this.bytesRead = 0;
-        this.released = false;
-        this.reader = stream.getReader();
+function getOS() {
+    const { appVersion } = navigator;
+    if (appVersion.indexOf("Win") !== -1) {
+        return "Windows";
     }
-    /**
-     * Implementation of readable._read(size).
-     * When readable._read() is called, if data is available from the resource,
-     * the implementation should begin pushing that data into the read queue
-     * https://nodejs.org/api/stream.html#stream_readable_read_size_1
-     */
-    async _read() {
-        // Should start pushing data into the queue
-        // Read data from the underlying Web-API-readable-stream
-        if (this.released) {
-            this.push(null); // Signal EOF
-            return;
+    else if (appVersion.indexOf("Mac") !== -1) {
+        return "MacOS";
+    }
+    else if (appVersion.indexOf("X11") !== -1) {
+        return "Linux";
+    }
+    else {
+        return "Unknown OS";
+    }
+}
+async function streamToString(stream) {
+    const chunks = [];
+    for await (const chunk of stream) {
+        chunks.push(Buffer.from(chunk));
+    }
+    // @ts-ignore
+    return Buffer.concat(chunks).toString("utf-8");
+}
+function getUrlAsset(url) {
+    return (url = url.substr(1 + url.lastIndexOf("/")).split("?")[0]).split("#")[0];
+}
+function getLastImage(list) {
+    const reversedList = list.reverse();
+    let lastImage;
+    reversedList.forEach(item => {
+        if (item && item.startsWith("http")) {
+            lastImage = item;
+            return item;
         }
-        this.pendingRead = this.reader.read();
-        const data = await this.pendingRead;
-        // clear the promise before pushing pushing new data to the queue and allow sequential calls to _read()
-        delete this.pendingRead;
-        if (data.done || this.released) {
-            this.push(null); // Signal EOF
-        }
-        else {
-            this.bytesRead += data.value.length;
-            this.push(data.value); // Push new data to the queue
-        }
-    }
-    /**
-     * If there is no unresolved read call to Web-API Readable​Stream immediately returns;
-     * otherwise will wait until the read is resolved.
-     */
-    async waitForReadToComplete() {
-        if (this.pendingRead) {
-            await this.pendingRead;
-        }
-    }
-    /**
-     * Close wrapper
-     */
-    async close() {
-        await this.syncAndRelease();
-    }
-    async syncAndRelease() {
-        this.released = true;
-        await this.waitForReadToComplete();
-        await this.reader.releaseLock();
-    }
+    });
+    return lastImage;
 }
-lib.ReadableWebToNodeStream = ReadableWebToNodeStream;
+function arrayToObject(arr, key) {
+    const obj = {};
+    arr.forEach(element => {
+        obj[element[key]] = element;
+    });
+    return obj;
+}
+function bufferToArrayBuffer(buffer) {
+    const arrayBuffer = new ArrayBuffer(buffer.length);
+    const view = new Uint8Array(arrayBuffer);
+    for (let i = 0; i < buffer.length; i++) {
+        view[i] = buffer[i];
+    }
+    return arrayBuffer;
+}
+function uuid() {
+    return Math.random().toString(36).slice(2);
+}
 
 // Primitive types
 function dv(array) {
@@ -6013,6 +3172,164 @@ class EndOfStreamError extends Error {
     }
 }
 
+class Deferred {
+    constructor() {
+        this.resolve = () => null;
+        this.reject = () => null;
+        this.promise = new Promise((resolve, reject) => {
+            this.reject = reject;
+            this.resolve = resolve;
+        });
+    }
+}
+
+class AbstractStreamReader {
+    constructor() {
+        /**
+         * Maximum request length on read-stream operation
+         */
+        this.maxStreamReadSize = 1 * 1024 * 1024;
+        this.endOfStream = false;
+        /**
+         * Store peeked data
+         * @type {Array}
+         */
+        this.peekQueue = [];
+    }
+    async peek(uint8Array, offset, length) {
+        const bytesRead = await this.read(uint8Array, offset, length);
+        this.peekQueue.push(uint8Array.subarray(offset, offset + bytesRead)); // Put read data back to peek buffer
+        return bytesRead;
+    }
+    async read(buffer, offset, length) {
+        if (length === 0) {
+            return 0;
+        }
+        let bytesRead = this.readFromPeekBuffer(buffer, offset, length);
+        bytesRead += await this.readRemainderFromStream(buffer, offset + bytesRead, length - bytesRead);
+        if (bytesRead === 0) {
+            throw new EndOfStreamError();
+        }
+        return bytesRead;
+    }
+    /**
+     * Read chunk from stream
+     * @param buffer - Target Uint8Array (or Buffer) to store data read from stream in
+     * @param offset - Offset target
+     * @param length - Number of bytes to read
+     * @returns Number of bytes read
+     */
+    readFromPeekBuffer(buffer, offset, length) {
+        let remaining = length;
+        let bytesRead = 0;
+        // consume peeked data first
+        while (this.peekQueue.length > 0 && remaining > 0) {
+            const peekData = this.peekQueue.pop(); // Front of queue
+            if (!peekData)
+                throw new Error('peekData should be defined');
+            const lenCopy = Math.min(peekData.length, remaining);
+            buffer.set(peekData.subarray(0, lenCopy), offset + bytesRead);
+            bytesRead += lenCopy;
+            remaining -= lenCopy;
+            if (lenCopy < peekData.length) {
+                // remainder back to queue
+                this.peekQueue.push(peekData.subarray(lenCopy));
+            }
+        }
+        return bytesRead;
+    }
+    async readRemainderFromStream(buffer, offset, initialRemaining) {
+        let remaining = initialRemaining;
+        let bytesRead = 0;
+        // Continue reading from stream if required
+        while (remaining > 0 && !this.endOfStream) {
+            const reqLen = Math.min(remaining, this.maxStreamReadSize);
+            const chunkLen = await this.readFromStream(buffer, offset + bytesRead, reqLen);
+            if (chunkLen === 0)
+                break;
+            bytesRead += chunkLen;
+            remaining -= chunkLen;
+        }
+        return bytesRead;
+    }
+}
+
+/**
+ * Node.js Readable Stream Reader
+ * Ref: https://nodejs.org/api/stream.html#readable-streams
+ */
+class StreamReader extends AbstractStreamReader {
+    constructor(s) {
+        super();
+        this.s = s;
+        /**
+         * Deferred used for postponed read request (as not data is yet available to read)
+         */
+        this.deferred = null;
+        if (!s.read || !s.once) {
+            throw new Error('Expected an instance of stream.Readable');
+        }
+        this.s.once('end', () => this.reject(new EndOfStreamError()));
+        this.s.once('error', err => this.reject(err));
+        this.s.once('close', () => this.reject(new Error('Stream closed')));
+    }
+    /**
+     * Read chunk from stream
+     * @param buffer Target Uint8Array (or Buffer) to store data read from stream in
+     * @param offset Offset target
+     * @param length Number of bytes to read
+     * @returns Number of bytes read
+     */
+    async readFromStream(buffer, offset, length) {
+        if (this.endOfStream) {
+            return 0;
+        }
+        const readBuffer = this.s.read(length);
+        if (readBuffer) {
+            buffer.set(readBuffer, offset);
+            return readBuffer.length;
+        }
+        const request = {
+            buffer,
+            offset,
+            length,
+            deferred: new Deferred()
+        };
+        this.deferred = request.deferred;
+        this.s.once('readable', () => {
+            this.readDeferred(request);
+        });
+        return request.deferred.promise;
+    }
+    /**
+     * Process deferred read request
+     * @param request Deferred read request
+     */
+    readDeferred(request) {
+        const readBuffer = this.s.read(request.length);
+        if (readBuffer) {
+            request.buffer.set(readBuffer, request.offset);
+            request.deferred.resolve(readBuffer.length);
+            this.deferred = null;
+        }
+        else {
+            this.s.once('readable', () => {
+                this.readDeferred(request);
+            });
+        }
+    }
+    reject(err) {
+        this.endOfStream = true;
+        if (this.deferred) {
+            this.deferred.reject(err);
+            this.deferred = null;
+        }
+    }
+    async abort() {
+        this.s.destroy();
+    }
+}
+
 /**
  * Core tokenizer
  */
@@ -6032,7 +3349,7 @@ class AbstractTokenizer {
      * @returns Promise with token data
      */
     async readToken(token, position = this.position) {
-        const uint8Array = node_buffer.Buffer.alloc(token.len);
+        const uint8Array = new Uint8Array(token.len);
         const len = await this.readBuffer(uint8Array, { position });
         if (len < token.len)
             throw new EndOfStreamError();
@@ -6045,7 +3362,7 @@ class AbstractTokenizer {
      * @returns Promise with token data
      */
     async peekToken(token, position = this.position) {
-        const uint8Array = node_buffer.Buffer.alloc(token.len);
+        const uint8Array = new Uint8Array(token.len);
         const len = await this.peekBuffer(uint8Array, { position });
         if (len < token.len)
             throw new EndOfStreamError();
@@ -6113,6 +3430,99 @@ class AbstractTokenizer {
     }
 }
 
+const maxBufferSize = 256000;
+class ReadStreamTokenizer extends AbstractTokenizer {
+    constructor(streamReader, fileInfo) {
+        super(fileInfo);
+        this.streamReader = streamReader;
+    }
+    /**
+     * Get file information, an HTTP-client may implement this doing a HEAD request
+     * @return Promise with file information
+     */
+    async getFileInfo() {
+        return this.fileInfo;
+    }
+    /**
+     * Read buffer from tokenizer
+     * @param uint8Array - Target Uint8Array to fill with data read from the tokenizer-stream
+     * @param options - Read behaviour options
+     * @returns Promise with number of bytes read
+     */
+    async readBuffer(uint8Array, options) {
+        const normOptions = this.normalizeOptions(uint8Array, options);
+        const skipBytes = normOptions.position - this.position;
+        if (skipBytes > 0) {
+            await this.ignore(skipBytes);
+            return this.readBuffer(uint8Array, options);
+        }
+        else if (skipBytes < 0) {
+            throw new Error('`options.position` must be equal or greater than `tokenizer.position`');
+        }
+        if (normOptions.length === 0) {
+            return 0;
+        }
+        const bytesRead = await this.streamReader.read(uint8Array, normOptions.offset, normOptions.length);
+        this.position += bytesRead;
+        if ((!options || !options.mayBeLess) && bytesRead < normOptions.length) {
+            throw new EndOfStreamError();
+        }
+        return bytesRead;
+    }
+    /**
+     * Peek (read ahead) buffer from tokenizer
+     * @param uint8Array - Uint8Array (or Buffer) to write data to
+     * @param options - Read behaviour options
+     * @returns Promise with number of bytes peeked
+     */
+    async peekBuffer(uint8Array, options) {
+        const normOptions = this.normalizeOptions(uint8Array, options);
+        let bytesRead = 0;
+        if (normOptions.position) {
+            const skipBytes = normOptions.position - this.position;
+            if (skipBytes > 0) {
+                const skipBuffer = new Uint8Array(normOptions.length + skipBytes);
+                bytesRead = await this.peekBuffer(skipBuffer, { mayBeLess: normOptions.mayBeLess });
+                uint8Array.set(skipBuffer.subarray(skipBytes), normOptions.offset);
+                return bytesRead - skipBytes;
+            }
+            else if (skipBytes < 0) {
+                throw new Error('Cannot peek from a negative offset in a stream');
+            }
+        }
+        if (normOptions.length > 0) {
+            try {
+                bytesRead = await this.streamReader.peek(uint8Array, normOptions.offset, normOptions.length);
+            }
+            catch (err) {
+                if (options && options.mayBeLess && err instanceof EndOfStreamError) {
+                    return 0;
+                }
+                throw err;
+            }
+            if ((!normOptions.mayBeLess) && bytesRead < normOptions.length) {
+                throw new EndOfStreamError();
+            }
+        }
+        return bytesRead;
+    }
+    async ignore(length) {
+        // debug(`ignore ${this.position}...${this.position + length - 1}`);
+        const bufSize = Math.min(maxBufferSize, length);
+        const buf = new Uint8Array(bufSize);
+        let totBytesRead = 0;
+        while (totBytesRead < length) {
+            const remaining = length - totBytesRead;
+            const bytesRead = await this.readBuffer(buf, { length: Math.min(bufSize, remaining) });
+            if (bytesRead < 0) {
+                return bytesRead;
+            }
+            totBytesRead += bytesRead;
+        }
+        return totBytesRead;
+    }
+}
+
 class BufferTokenizer extends AbstractTokenizer {
     /**
      * Construct BufferTokenizer
@@ -6163,6 +3573,17 @@ class BufferTokenizer extends AbstractTokenizer {
     }
 }
 
+/**
+ * Construct ReadStreamTokenizer from given Stream.
+ * Will set fileSize, if provided given Stream has set the .path property/
+ * @param stream - Read from Node.js Stream.Readable
+ * @param fileInfo - Pass the file information, like size and MIME-type of the corresponding stream.
+ * @returns ReadStreamTokenizer
+ */
+function fromStream(stream, fileInfo) {
+    fileInfo = fileInfo ? fileInfo : {};
+    return new ReadStreamTokenizer(new StreamReader(stream), fileInfo);
+}
 /**
  * Construct ReadStreamTokenizer from given Buffer.
  * @param uint8Array - Uint8Array to tokenize
@@ -6262,6 +3683,7 @@ const extensions = [
 	'pdf',
 	'epub',
 	'elf',
+	'macho',
 	'exe',
 	'swf',
 	'rtf',
@@ -6362,6 +3784,8 @@ const extensions = [
 	'cpio',
 	'ace',
 	'avro',
+	'icc',
+	'fbx',
 ];
 
 const mimeTypes = [
@@ -6419,6 +3843,7 @@ const mimeTypes = [
 	'audio/amr',
 	'application/pdf',
 	'application/x-elf',
+	'application/x-mach-binary',
 	'application/x-msdownload',
 	'application/x-shockwave-flash',
 	'application/rtf',
@@ -6509,22 +3934,14 @@ const mimeTypes = [
 	'application/x-cpio',
 	'application/x-ace-compressed',
 	'application/avro',
+	'application/vnd.iccprofile',
+	'application/x.autodesk.fbx', // Invented by us
 ];
 
 const minimumBytes = 4100; // A fair amount of file-types are detectable within this range.
 
 async function fileTypeFromBuffer(input) {
-	if (!(input instanceof Uint8Array || input instanceof ArrayBuffer)) {
-		throw new TypeError(`Expected the \`input\` argument to be of type \`Uint8Array\` or \`Buffer\` or \`ArrayBuffer\`, got \`${typeof input}\``);
-	}
-
-	const buffer = input instanceof Uint8Array ? input : new Uint8Array(input);
-
-	if (!(buffer?.length > 1)) {
-		return;
-	}
-
-	return fileTypeFromTokenizer(fromBuffer(buffer));
+	return new FileTypeParser().fromBuffer(input);
 }
 
 function _check(buffer, headers, options) {
@@ -6548,17 +3965,95 @@ function _check(buffer, headers, options) {
 	return true;
 }
 
-async function fileTypeFromTokenizer(tokenizer) {
-	try {
-		return new FileTypeParser().parse(tokenizer);
-	} catch (error) {
-		if (!(error instanceof EndOfStreamError)) {
-			throw error;
+class FileTypeParser {
+	constructor(options) {
+		this.detectors = options?.customDetectors;
+
+		this.fromTokenizer = this.fromTokenizer.bind(this);
+		this.fromBuffer = this.fromBuffer.bind(this);
+		this.parse = this.parse.bind(this);
+	}
+
+	async fromTokenizer(tokenizer) {
+		const initialPosition = tokenizer.position;
+
+		for (const detector of this.detectors || []) {
+			const fileType = await detector(tokenizer);
+			if (fileType) {
+				return fileType;
+			}
+
+			if (initialPosition !== tokenizer.position) {
+				return undefined; // Cannot proceed scanning of the tokenizer is at an arbitrary position
+			}
+		}
+
+		return this.parse(tokenizer);
+	}
+
+	async fromBuffer(input) {
+		if (!(input instanceof Uint8Array || input instanceof ArrayBuffer)) {
+			throw new TypeError(`Expected the \`input\` argument to be of type \`Uint8Array\` or \`Buffer\` or \`ArrayBuffer\`, got \`${typeof input}\``);
+		}
+
+		const buffer = input instanceof Uint8Array ? input : new Uint8Array(input);
+
+		if (!(buffer?.length > 1)) {
+			return;
+		}
+
+		return this.fromTokenizer(fromBuffer(buffer));
+	}
+
+	async fromBlob(blob) {
+		const buffer = await blob.arrayBuffer();
+		return this.fromBuffer(new Uint8Array(buffer));
+	}
+
+	async fromStream(stream) {
+		const tokenizer = await fromStream(stream);
+		try {
+			return await this.fromTokenizer(tokenizer);
+		} finally {
+			await tokenizer.close();
 		}
 	}
-}
 
-class FileTypeParser {
+	async toDetectionStream(readableStream, options = {}) {
+		const {default: stream} = await import('node:stream');
+		const {sampleSize = minimumBytes} = options;
+
+		return new Promise((resolve, reject) => {
+			readableStream.on('error', reject);
+
+			readableStream.once('readable', () => {
+				(async () => {
+					try {
+						// Set up output stream
+						const pass = new stream.PassThrough();
+						const outputStream = stream.pipeline ? stream.pipeline(readableStream, pass, () => {}) : readableStream.pipe(pass);
+
+						// Read the input stream and detect the filetype
+						const chunk = readableStream.read(sampleSize) ?? readableStream.read() ?? node_buffer.Buffer.alloc(0);
+						try {
+							pass.fileType = await this.fromBuffer(chunk);
+						} catch (error) {
+							if (error instanceof EndOfStreamError) {
+								pass.fileType = undefined;
+							} else {
+								reject(error);
+							}
+						}
+
+						resolve(outputStream);
+					} catch (error) {
+						reject(error);
+					}
+				})();
+			});
+		});
+	}
+
 	check(header, options) {
 		return _check(this.buffer, header, options);
 	}
@@ -6700,7 +4195,7 @@ class FileTypeParser {
 			}
 
 			await tokenizer.ignore(id3HeaderLength);
-			return fileTypeFromTokenizer(tokenizer); // Skip ID3 header, recursion
+			return this.fromTokenizer(tokenizer); // Skip ID3 header, recursion
 		}
 
 		// Musepack, SV7
@@ -7183,7 +4678,7 @@ class FileTypeParser {
 			};
 		}
 
-		// https://github.com/threatstack/libmagic/blob/master/magic/Magdir/matroska
+		// https://github.com/file/file/blob/master/magic/Magdir/matroska
 		if (this.check([0x1A, 0x45, 0xDF, 0xA3])) { // Root element: EBML
 			async function readField() {
 				const msb = await tokenizer.peekNumber(UINT8);
@@ -7341,6 +4836,13 @@ class FileTypeParser {
 			return {
 				ext: 'parquet',
 				mime: 'application/x-parquet',
+			};
+		}
+
+		if (this.check([0xCF, 0xFA, 0xED, 0xFE])) {
+			return {
+				ext: 'macho',
+				mime: 'application/x-mach-binary',
 			};
 		}
 
@@ -7800,6 +5302,13 @@ class FileTypeParser {
 		// Increase sample size from 12 to 256.
 		await tokenizer.peekBuffer(this.buffer, {length: Math.min(256, tokenizer.fileInfo.size), mayBeLess: true});
 
+		if (this.check([0x61, 0x63, 0x73, 0x70], {offset: 36})) {
+			return {
+				ext: 'icc',
+				mime: 'application/vnd.iccprofile',
+			};
+		}
+
 		// -- 15-byte signatures --
 
 		if (this.checkString('BEGIN:')) {
@@ -7912,6 +5421,13 @@ class FileTypeParser {
 			return {
 				ext: 'alias',
 				mime: 'application/x.apple.alias', // Invented by us
+			};
+		}
+
+		if (this.checkString('Kaydara FBX Binary  \u0000')) {
+			return {
+				ext: 'fbx',
+				mime: 'application/x.autodesk.fbx', // Invented by us
 			};
 		}
 
@@ -8113,623 +5629,6 @@ async function imageType(input) {
 	return imageExtensions.has(result?.ext) && result;
 }
 
-var IMAGE_EXT_LIST = [
-    ".png",
-    ".jpg",
-    ".jpeg",
-    ".bmp",
-    ".gif",
-    ".svg",
-    ".tiff",
-    ".webp",
-    ".avif",
-];
-function isAnImage(ext) {
-    return IMAGE_EXT_LIST.includes(ext.toLowerCase());
-}
-function isAssetTypeAnImage(path) {
-    return isAnImage(require$$0$1.extname(path));
-}
-function getOS() {
-    var appVersion = navigator.appVersion;
-    if (appVersion.indexOf("Win") !== -1) {
-        return "Windows";
-    }
-    else if (appVersion.indexOf("Mac") !== -1) {
-        return "MacOS";
-    }
-    else if (appVersion.indexOf("X11") !== -1) {
-        return "Linux";
-    }
-    else {
-        return "Unknown OS";
-    }
-}
-function streamToString(stream) {
-    var _a, stream_1, stream_1_1;
-    var _b, e_1, _c, _d;
-    return __awaiter(this, void 0, void 0, function () {
-        var chunks, chunk, e_1_1;
-        return __generator(this, function (_e) {
-            switch (_e.label) {
-                case 0:
-                    chunks = [];
-                    _e.label = 1;
-                case 1:
-                    _e.trys.push([1, 6, 7, 12]);
-                    _a = true, stream_1 = __asyncValues(stream);
-                    _e.label = 2;
-                case 2: return [4 /*yield*/, stream_1.next()];
-                case 3:
-                    if (!(stream_1_1 = _e.sent(), _b = stream_1_1.done, !_b)) return [3 /*break*/, 5];
-                    _d = stream_1_1.value;
-                    _a = false;
-                    try {
-                        chunk = _d;
-                        chunks.push(Buffer.from(chunk));
-                    }
-                    finally {
-                        _a = true;
-                    }
-                    _e.label = 4;
-                case 4: return [3 /*break*/, 2];
-                case 5: return [3 /*break*/, 12];
-                case 6:
-                    e_1_1 = _e.sent();
-                    e_1 = { error: e_1_1 };
-                    return [3 /*break*/, 12];
-                case 7:
-                    _e.trys.push([7, , 10, 11]);
-                    if (!(!_a && !_b && (_c = stream_1.return))) return [3 /*break*/, 9];
-                    return [4 /*yield*/, _c.call(stream_1)];
-                case 8:
-                    _e.sent();
-                    _e.label = 9;
-                case 9: return [3 /*break*/, 11];
-                case 10:
-                    if (e_1) throw e_1.error;
-                    return [7 /*endfinally*/];
-                case 11: return [7 /*endfinally*/];
-                case 12: return [2 /*return*/, Buffer.concat(chunks).toString("utf-8")];
-            }
-        });
-    });
-}
-function getUrlAsset(url) {
-    return (url = url.substr(1 + url.lastIndexOf("/")).split("?")[0]).split("#")[0];
-}
-function getLastImage(list) {
-    var reversedList = list.reverse();
-    var lastImage;
-    reversedList.forEach(function (item) {
-        if (item && item.startsWith("http")) {
-            lastImage = item;
-            return item;
-        }
-    });
-    return lastImage;
-}
-function arrayToObject(arr, key) {
-    var obj = {};
-    arr.forEach(function (element) {
-        obj[element[key]] = element;
-    });
-    return obj;
-}
-function bufferToArrayBuffer(buffer) {
-    var arrayBuffer = new ArrayBuffer(buffer.length);
-    var view = new Uint8Array(arrayBuffer);
-    for (var i = 0; i < buffer.length; i++) {
-        view[i] = buffer[i];
-    }
-    return arrayBuffer;
-}
-
-const a=globalThis.FormData,l=globalThis.fetch||(()=>{throw new Error("[node-fetch-native] Failed to fetch: `globalThis.fetch` is not available!")});
-
-var PicGoUploader = /** @class */ (function () {
-    function PicGoUploader(settings, plugin) {
-        this.settings = settings;
-        this.plugin = plugin;
-    }
-    PicGoUploader.prototype.uploadFiles = function (fileList) {
-        return __awaiter(this, void 0, void 0, function () {
-            var response, data, files, _loop_1, i, uploadUrlFullResultList;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        if (!this.settings.remoteServerMode) return [3 /*break*/, 7];
-                        files = [];
-                        _loop_1 = function (i) {
-                            var file, buffer, arrayBuffer;
-                            return __generator(this, function (_b) {
-                                switch (_b.label) {
-                                    case 0:
-                                        file = fileList[i];
-                                        return [4 /*yield*/, new Promise(function (resolve, reject) {
-                                                require$$0.readFile(file, function (err, data) {
-                                                    if (err) {
-                                                        reject(err);
-                                                    }
-                                                    resolve(data);
-                                                });
-                                            })];
-                                    case 1:
-                                        buffer = _b.sent();
-                                        arrayBuffer = bufferToArrayBuffer(buffer);
-                                        files.push(new File([arrayBuffer], file));
-                                        return [2 /*return*/];
-                                }
-                            });
-                        };
-                        i = 0;
-                        _a.label = 1;
-                    case 1:
-                        if (!(i < fileList.length)) return [3 /*break*/, 4];
-                        return [5 /*yield**/, _loop_1(i)];
-                    case 2:
-                        _a.sent();
-                        _a.label = 3;
-                    case 3:
-                        i++;
-                        return [3 /*break*/, 1];
-                    case 4: return [4 /*yield*/, this.uploadFileByData(files)];
-                    case 5:
-                        response = _a.sent();
-                        return [4 /*yield*/, response.json()];
-                    case 6:
-                        data = _a.sent();
-                        return [3 /*break*/, 10];
-                    case 7: return [4 /*yield*/, obsidian.requestUrl({
-                            url: this.settings.uploadServer,
-                            method: "POST",
-                            headers: { "Content-Type": "application/json" },
-                            body: JSON.stringify({ list: fileList }),
-                        })];
-                    case 8:
-                        response = _a.sent();
-                        return [4 /*yield*/, response.json];
-                    case 9:
-                        data = _a.sent();
-                        _a.label = 10;
-                    case 10:
-                        // piclist
-                        if (data.fullResult) {
-                            uploadUrlFullResultList = data.fullResult || [];
-                            this.settings.uploadedImages = __spreadArray(__spreadArray([], __read((this.settings.uploadedImages || [])), false), __read(uploadUrlFullResultList), false);
-                        }
-                        return [2 /*return*/, data];
-                }
-            });
-        });
-    };
-    PicGoUploader.prototype.uploadFileByData = function (fileList) {
-        return __awaiter(this, void 0, void 0, function () {
-            var form, i, options, response;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        form = new a();
-                        for (i = 0; i < fileList.length; i++) {
-                            form.append("list", fileList[i]);
-                        }
-                        options = {
-                            method: "post",
-                            body: form,
-                        };
-                        return [4 /*yield*/, l(this.settings.uploadServer, options)];
-                    case 1:
-                        response = _a.sent();
-                        console.log("response", response);
-                        return [2 /*return*/, response];
-                }
-            });
-        });
-    };
-    PicGoUploader.prototype.uploadFileByClipboard = function (fileList) {
-        return __awaiter(this, void 0, void 0, function () {
-            var data, res, uploadUrlFullResultList;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        if (!this.settings.remoteServerMode) return [3 /*break*/, 3];
-                        return [4 /*yield*/, this.uploadFileByData(fileList)];
-                    case 1:
-                        res = _a.sent();
-                        return [4 /*yield*/, res.json()];
-                    case 2:
-                        data = _a.sent();
-                        return [3 /*break*/, 6];
-                    case 3: return [4 /*yield*/, obsidian.requestUrl({
-                            url: this.settings.uploadServer,
-                            method: "POST",
-                        })];
-                    case 4:
-                        res = _a.sent();
-                        return [4 /*yield*/, res.json];
-                    case 5:
-                        data = _a.sent();
-                        _a.label = 6;
-                    case 6:
-                        if (res.status !== 200) {
-                            return [2 /*return*/, {
-                                    code: -1,
-                                    msg: data.msg,
-                                    data: "",
-                                }];
-                        }
-                        // piclist
-                        if (data.fullResult) {
-                            uploadUrlFullResultList = data.fullResult || [];
-                            this.settings.uploadedImages = __spreadArray(__spreadArray([], __read((this.settings.uploadedImages || [])), false), __read(uploadUrlFullResultList), false);
-                            this.plugin.saveSettings();
-                        }
-                        return [2 /*return*/, {
-                                code: 0,
-                                msg: "success",
-                                data: typeof data.result == "string" ? data.result : data.result[0],
-                            }];
-                }
-            });
-        });
-    };
-    return PicGoUploader;
-}());
-var PicGoCoreUploader = /** @class */ (function () {
-    function PicGoCoreUploader(settings, plugin) {
-        this.settings = settings;
-        this.plugin = plugin;
-    }
-    PicGoCoreUploader.prototype.uploadFiles = function (fileList) {
-        return __awaiter(this, void 0, void 0, function () {
-            var length, cli, command, res, splitList, splitListLength, data;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        length = fileList.length;
-                        cli = this.settings.picgoCorePath || "picgo";
-                        command = "".concat(cli, " upload ").concat(fileList
-                            .map(function (item) { return "\"".concat(item, "\""); })
-                            .join(" "));
-                        return [4 /*yield*/, this.exec(command)];
-                    case 1:
-                        res = _a.sent();
-                        splitList = res.split("\n");
-                        splitListLength = splitList.length;
-                        data = splitList.splice(splitListLength - 1 - length, length);
-                        if (res.includes("PicGo ERROR")) {
-                            console.log(command, res);
-                            return [2 /*return*/, {
-                                    success: false,
-                                    msg: "失败",
-                                }];
-                        }
-                        else {
-                            return [2 /*return*/, {
-                                    success: true,
-                                    result: data,
-                                }];
-                        }
-                }
-            });
-        });
-    };
-    // PicGo-Core 上传处理
-    PicGoCoreUploader.prototype.uploadFileByClipboard = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            var res, splitList, lastImage;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.uploadByClip()];
-                    case 1:
-                        res = _a.sent();
-                        splitList = res.split("\n");
-                        lastImage = getLastImage(splitList);
-                        if (lastImage) {
-                            return [2 /*return*/, {
-                                    code: 0,
-                                    msg: "success",
-                                    data: lastImage,
-                                }];
-                        }
-                        else {
-                            console.log(splitList);
-                            // new Notice(`"Please check PicGo-Core config"\n${res}`);
-                            return [2 /*return*/, {
-                                    code: -1,
-                                    msg: "\"Please check PicGo-Core config\"\n".concat(res),
-                                    data: "",
-                                }];
-                        }
-                }
-            });
-        });
-    };
-    // PicGo-Core的剪切上传反馈
-    PicGoCoreUploader.prototype.uploadByClip = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            var command, res;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        if (this.settings.picgoCorePath) {
-                            command = "".concat(this.settings.picgoCorePath, " upload");
-                        }
-                        else {
-                            command = "picgo upload";
-                        }
-                        return [4 /*yield*/, this.exec(command)];
-                    case 1:
-                        res = _a.sent();
-                        // const res = await this.spawnChild();
-                        return [2 /*return*/, res];
-                }
-            });
-        });
-    };
-    PicGoCoreUploader.prototype.exec = function (command) {
-        return __awaiter(this, void 0, void 0, function () {
-            var stdout, res;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0: return [4 /*yield*/, require$$0$2.exec(command)];
-                    case 1:
-                        stdout = (_a.sent()).stdout;
-                        return [4 /*yield*/, streamToString(stdout)];
-                    case 2:
-                        res = _a.sent();
-                        return [2 /*return*/, res];
-                }
-            });
-        });
-    };
-    PicGoCoreUploader.prototype.spawnChild = function () {
-        var _a, e_1, _b, _c, _d, e_2, _e, _f;
-        return __awaiter(this, void 0, void 0, function () {
-            var spawn, child, data, _g, _h, _j, chunk, e_1_1, error, _k, _l, _m, chunk, e_2_1, exitCode;
-            return __generator(this, function (_o) {
-                switch (_o.label) {
-                    case 0:
-                        spawn = require("child_process").spawn;
-                        child = spawn("picgo", ["upload"], {
-                            shell: true,
-                        });
-                        data = "";
-                        _o.label = 1;
-                    case 1:
-                        _o.trys.push([1, 6, 7, 12]);
-                        _g = true, _h = __asyncValues(child.stdout);
-                        _o.label = 2;
-                    case 2: return [4 /*yield*/, _h.next()];
-                    case 3:
-                        if (!(_j = _o.sent(), _a = _j.done, !_a)) return [3 /*break*/, 5];
-                        _c = _j.value;
-                        _g = false;
-                        try {
-                            chunk = _c;
-                            data += chunk;
-                        }
-                        finally {
-                            _g = true;
-                        }
-                        _o.label = 4;
-                    case 4: return [3 /*break*/, 2];
-                    case 5: return [3 /*break*/, 12];
-                    case 6:
-                        e_1_1 = _o.sent();
-                        e_1 = { error: e_1_1 };
-                        return [3 /*break*/, 12];
-                    case 7:
-                        _o.trys.push([7, , 10, 11]);
-                        if (!(!_g && !_a && (_b = _h.return))) return [3 /*break*/, 9];
-                        return [4 /*yield*/, _b.call(_h)];
-                    case 8:
-                        _o.sent();
-                        _o.label = 9;
-                    case 9: return [3 /*break*/, 11];
-                    case 10:
-                        if (e_1) throw e_1.error;
-                        return [7 /*endfinally*/];
-                    case 11: return [7 /*endfinally*/];
-                    case 12:
-                        error = "";
-                        _o.label = 13;
-                    case 13:
-                        _o.trys.push([13, 18, 19, 24]);
-                        _k = true, _l = __asyncValues(child.stderr);
-                        _o.label = 14;
-                    case 14: return [4 /*yield*/, _l.next()];
-                    case 15:
-                        if (!(_m = _o.sent(), _d = _m.done, !_d)) return [3 /*break*/, 17];
-                        _f = _m.value;
-                        _k = false;
-                        try {
-                            chunk = _f;
-                            error += chunk;
-                        }
-                        finally {
-                            _k = true;
-                        }
-                        _o.label = 16;
-                    case 16: return [3 /*break*/, 14];
-                    case 17: return [3 /*break*/, 24];
-                    case 18:
-                        e_2_1 = _o.sent();
-                        e_2 = { error: e_2_1 };
-                        return [3 /*break*/, 24];
-                    case 19:
-                        _o.trys.push([19, , 22, 23]);
-                        if (!(!_k && !_d && (_e = _l.return))) return [3 /*break*/, 21];
-                        return [4 /*yield*/, _e.call(_l)];
-                    case 20:
-                        _o.sent();
-                        _o.label = 21;
-                    case 21: return [3 /*break*/, 23];
-                    case 22:
-                        if (e_2) throw e_2.error;
-                        return [7 /*endfinally*/];
-                    case 23: return [7 /*endfinally*/];
-                    case 24: return [4 /*yield*/, new Promise(function (resolve, reject) {
-                            child.on("close", resolve);
-                        })];
-                    case 25:
-                        exitCode = _o.sent();
-                        if (exitCode) {
-                            throw new Error("subprocess error exit ".concat(exitCode, ", ").concat(error));
-                        }
-                        return [2 /*return*/, data];
-                }
-            });
-        });
-    };
-    return PicGoCoreUploader;
-}());
-
-var PicGoDeleter = /** @class */ (function () {
-    function PicGoDeleter(plugin) {
-        this.plugin = plugin;
-    }
-    PicGoDeleter.prototype.deleteImage = function (configMap) {
-        return __awaiter(this, void 0, void 0, function () {
-            var response, data;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0: return [4 /*yield*/, obsidian.requestUrl({
-                            url: this.plugin.settings.deleteServer,
-                            method: "POST",
-                            headers: { "Content-Type": "application/json" },
-                            body: JSON.stringify({
-                                list: configMap,
-                            }),
-                        })];
-                    case 1:
-                        response = _a.sent();
-                        data = response.json;
-                        return [2 /*return*/, data];
-                }
-            });
-        });
-    };
-    return PicGoDeleter;
-}());
-
-// ![](./dsa/aa.png) local image should has ext
-// ![](https://dasdasda) internet image should not has ext
-var REGEX_FILE = /\!\[(.*?)\]\((\S+\.\w+)\)|\!\[(.*?)\]\((https?:\/\/.*?)\)/g;
-var REGEX_WIKI_FILE = /\!\[\[(.*?)(\s*?\|.*?)?\]\]/g;
-var Helper = /** @class */ (function () {
-    function Helper(app) {
-        this.app = app;
-    }
-    Helper.prototype.getFrontmatterValue = function (key, defaultValue) {
-        if (defaultValue === void 0) { defaultValue = undefined; }
-        var file = this.app.workspace.getActiveFile();
-        if (!file) {
-            return undefined;
-        }
-        var path = file.path;
-        var cache = this.app.metadataCache.getCache(path);
-        var value = defaultValue;
-        if ((cache === null || cache === void 0 ? void 0 : cache.frontmatter) && cache.frontmatter.hasOwnProperty(key)) {
-            value = cache.frontmatter[key];
-        }
-        return value;
-    };
-    Helper.prototype.getEditor = function () {
-        var mdView = this.app.workspace.getActiveViewOfType(obsidian.MarkdownView);
-        if (mdView) {
-            return mdView.editor;
-        }
-        else {
-            return null;
-        }
-    };
-    Helper.prototype.getValue = function () {
-        var editor = this.getEditor();
-        return editor.getValue();
-    };
-    Helper.prototype.setValue = function (value) {
-        var editor = this.getEditor();
-        var _a = editor.getScrollInfo(), left = _a.left, top = _a.top;
-        var position = editor.getCursor();
-        editor.setValue(value);
-        editor.scrollTo(left, top);
-        editor.setCursor(position);
-    };
-    // get all file urls, include local and internet
-    Helper.prototype.getAllFiles = function () {
-        var editor = this.getEditor();
-        var value = editor.getValue();
-        return this.getImageLink(value);
-    };
-    Helper.prototype.getImageLink = function (value) {
-        var e_1, _a, e_2, _b;
-        var matches = value.matchAll(REGEX_FILE);
-        var WikiMatches = value.matchAll(REGEX_WIKI_FILE);
-        var fileArray = [];
-        try {
-            for (var matches_1 = __values(matches), matches_1_1 = matches_1.next(); !matches_1_1.done; matches_1_1 = matches_1.next()) {
-                var match = matches_1_1.value;
-                var source = match[0];
-                var name_1 = match[1];
-                var path = match[2];
-                if (name_1 === undefined) {
-                    name_1 = match[3];
-                }
-                if (path === undefined) {
-                    path = match[4];
-                }
-                fileArray.push({
-                    path: path,
-                    name: name_1,
-                    source: source,
-                });
-            }
-        }
-        catch (e_1_1) { e_1 = { error: e_1_1 }; }
-        finally {
-            try {
-                if (matches_1_1 && !matches_1_1.done && (_a = matches_1.return)) _a.call(matches_1);
-            }
-            finally { if (e_1) throw e_1.error; }
-        }
-        try {
-            for (var WikiMatches_1 = __values(WikiMatches), WikiMatches_1_1 = WikiMatches_1.next(); !WikiMatches_1_1.done; WikiMatches_1_1 = WikiMatches_1.next()) {
-                var match = WikiMatches_1_1.value;
-                var name_2 = require$$0$1.parse(match[1]).name;
-                var path = match[1];
-                var source = match[0];
-                if (match[2]) {
-                    name_2 = "".concat(name_2).concat(match[2]);
-                }
-                fileArray.push({
-                    path: path,
-                    name: name_2,
-                    source: source,
-                });
-            }
-        }
-        catch (e_2_1) { e_2 = { error: e_2_1 }; }
-        finally {
-            try {
-                if (WikiMatches_1_1 && !WikiMatches_1_1.done && (_b = WikiMatches_1.return)) _b.call(WikiMatches_1);
-            }
-            finally { if (e_2) throw e_2.error; }
-        }
-        return fileArray;
-    };
-    Helper.prototype.hasBlackDomain = function (src, blackDomains) {
-        if (blackDomains.trim() === "") {
-            return false;
-        }
-        var blackDomainList = blackDomains.split(",").filter(function (item) { return item !== ""; });
-        var url = new URL(src);
-        var domain = url.hostname;
-        return blackDomainList.some(function (blackDomain) { return domain.includes(blackDomain); });
-    };
-    return Helper;
-}());
-
 // العربية
 var ar = {};
 
@@ -8882,37 +5781,418 @@ var zhCN = {
 // 繁體中文
 var zhTW = {};
 
-var localeMap = {
-    ar: ar,
+const localeMap = {
+    ar,
     cs: cz,
-    da: da,
-    de: de,
-    en: en,
+    da,
+    de,
+    en,
     'en-gb': enGB,
-    es: es,
-    fr: fr,
-    hi: hi,
-    id: id,
-    it: it,
-    ja: ja,
-    ko: ko,
-    nl: nl,
+    es,
+    fr,
+    hi,
+    id,
+    it,
+    ja,
+    ko,
+    nl,
     nn: no,
-    pl: pl,
-    pt: pt,
+    pl,
+    pt,
     'pt-br': ptBR,
-    ro: ro,
-    ru: ru,
-    tr: tr,
+    ro,
+    ru,
+    tr,
     'zh-cn': zhCN,
     'zh-tw': zhTW,
 };
-var locale = localeMap[obsidian.moment.locale()];
+const locale = localeMap[obsidian.moment.locale()];
 function t(str) {
     return (locale && locale[str]) || en[str];
 }
 
-var DEFAULT_SETTINGS = {
+async function downloadAllImageFiles(plugin) {
+    const activeFile = plugin.app.workspace.getActiveFile();
+    const folderPath = await plugin.app.fileManager.getAvailablePathForAttachment("");
+    const fileArray = plugin.helper.getAllFiles();
+    if (!(await plugin.app.vault.adapter.exists(folderPath))) {
+        await plugin.app.vault.adapter.mkdir(folderPath);
+    }
+    let imageArray = [];
+    for (const file of fileArray) {
+        if (!file.path.startsWith("http")) {
+            continue;
+        }
+        const url = file.path;
+        const asset = getUrlAsset(url);
+        let name = decodeURI(pathBrowserify.parse(asset).name).replaceAll(/[\\\\/:*?\"<>|]/g, "-");
+        const response = await download(plugin, url, folderPath, name);
+        if (response.ok) {
+            const activeFolder = plugin.app.workspace.getActiveFile().parent.path;
+            imageArray.push({
+                source: file.source,
+                name: name,
+                path: obsidian.normalizePath(pathBrowserify.relative(obsidian.normalizePath(activeFolder), obsidian.normalizePath(response.path))),
+            });
+        }
+    }
+    let value = plugin.helper.getValue();
+    imageArray.map(image => {
+        let name = plugin.handleName(image.name);
+        value = value.replace(image.source, `![${name}](${encodeURI(image.path)})`);
+    });
+    const currentFile = plugin.app.workspace.getActiveFile();
+    if (activeFile.path !== currentFile.path) {
+        new obsidian.Notice(t("File has been changedd, download failure"));
+        return;
+    }
+    plugin.helper.setValue(value);
+    new obsidian.Notice(`all: ${fileArray.length}\nsuccess: ${imageArray.length}\nfailed: ${fileArray.length - imageArray.length}`);
+}
+async function download(plugin, url, folderPath, name) {
+    const response = await obsidian.requestUrl({ url });
+    if (response.status !== 200) {
+        return {
+            ok: false,
+            msg: "error",
+        };
+    }
+    const type = await imageType(new Uint8Array(response.arrayBuffer));
+    if (!type) {
+        return {
+            ok: false,
+            msg: "error",
+        };
+    }
+    try {
+        let path = obsidian.normalizePath(pathBrowserify.join(folderPath, `${name}.${type.ext}`));
+        // 如果文件名已存在，则用随机值替换，不对文件后缀进行判断
+        if (await plugin.app.vault.adapter.exists(path)) {
+            path = obsidian.normalizePath(pathBrowserify.join(folderPath, `${uuid()}.${type.ext}`));
+        }
+        plugin.app.vault.adapter.writeBinary(path, response.arrayBuffer);
+        return {
+            ok: true,
+            msg: "ok",
+            path: path,
+            type,
+        };
+    }
+    catch (err) {
+        return {
+            ok: false,
+            msg: err,
+        };
+    }
+}
+
+class PicGoUploader {
+    settings;
+    plugin;
+    constructor(settings, plugin) {
+        this.settings = settings;
+        this.plugin = plugin;
+    }
+    async uploadFiles(fileList) {
+        let response;
+        let data;
+        if (this.settings.remoteServerMode) {
+            const files = [];
+            for (let i = 0; i < fileList.length; i++) {
+                const file = fileList[i];
+                const buffer = await new Promise((resolve, reject) => {
+                    require$$0.readFile(file, (err, data) => {
+                        if (err) {
+                            reject(err);
+                        }
+                        resolve(data);
+                    });
+                });
+                const arrayBuffer = bufferToArrayBuffer(buffer);
+                files.push(new File([arrayBuffer], file));
+            }
+            response = await this.uploadFileByData(files);
+            data = await response.json();
+        }
+        else {
+            response = await obsidian.requestUrl({
+                url: this.settings.uploadServer,
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ list: fileList }),
+            });
+            data = await response.json;
+        }
+        // piclist
+        if (data.fullResult) {
+            const uploadUrlFullResultList = data.fullResult || [];
+            this.settings.uploadedImages = [
+                ...(this.settings.uploadedImages || []),
+                ...uploadUrlFullResultList,
+            ];
+        }
+        return data;
+    }
+    async uploadFileByData(fileList) {
+        const form = new FormData();
+        for (let i = 0; i < fileList.length; i++) {
+            form.append("list", fileList[i]);
+        }
+        const options = {
+            method: "post",
+            body: form,
+        };
+        const response = await fetch(this.settings.uploadServer, options);
+        console.log("response", response);
+        return response;
+    }
+    async uploadFileByClipboard(fileList) {
+        let data;
+        let res;
+        if (this.settings.remoteServerMode) {
+            res = await this.uploadFileByData(fileList);
+            data = await res.json();
+        }
+        else {
+            res = await obsidian.requestUrl({
+                url: this.settings.uploadServer,
+                method: "POST",
+            });
+            data = await res.json;
+        }
+        if (res.status !== 200) {
+            return {
+                code: -1,
+                msg: data.msg,
+                data: "",
+            };
+        }
+        // piclist
+        if (data.fullResult) {
+            const uploadUrlFullResultList = data.fullResult || [];
+            this.settings.uploadedImages = [
+                ...(this.settings.uploadedImages || []),
+                ...uploadUrlFullResultList,
+            ];
+            this.plugin.saveSettings();
+        }
+        return {
+            code: 0,
+            msg: "success",
+            data: typeof data.result == "string" ? data.result : data.result[0],
+        };
+    }
+}
+class PicGoCoreUploader {
+    settings;
+    plugin;
+    constructor(settings, plugin) {
+        this.settings = settings;
+        this.plugin = plugin;
+    }
+    async uploadFiles(fileList) {
+        const length = fileList.length;
+        let cli = this.settings.picgoCorePath || "picgo";
+        let command = `${cli} upload ${fileList
+            .map(item => `"${item}"`)
+            .join(" ")}`;
+        const res = await this.exec(command);
+        const splitList = res.split("\n");
+        const splitListLength = splitList.length;
+        const data = splitList.splice(splitListLength - 1 - length, length);
+        if (res.includes("PicGo ERROR")) {
+            console.log(command, res);
+            return {
+                success: false,
+                msg: "失败",
+            };
+        }
+        else {
+            return {
+                success: true,
+                result: data,
+            };
+        }
+        // {success:true,result:[]}
+    }
+    // PicGo-Core 上传处理
+    async uploadFileByClipboard() {
+        const res = await this.uploadByClip();
+        const splitList = res.split("\n");
+        const lastImage = getLastImage(splitList);
+        if (lastImage) {
+            return {
+                code: 0,
+                msg: "success",
+                data: lastImage,
+            };
+        }
+        else {
+            console.log(splitList);
+            // new Notice(`"Please check PicGo-Core config"\n${res}`);
+            return {
+                code: -1,
+                msg: `"Please check PicGo-Core config"\n${res}`,
+                data: "",
+            };
+        }
+    }
+    // PicGo-Core的剪切上传反馈
+    async uploadByClip() {
+        let command;
+        if (this.settings.picgoCorePath) {
+            command = `${this.settings.picgoCorePath} upload`;
+        }
+        else {
+            command = `picgo upload`;
+        }
+        const res = await this.exec(command);
+        // const res = await this.spawnChild();
+        return res;
+    }
+    async exec(command) {
+        let { stdout } = await require$$0$2.exec(command);
+        const res = await streamToString(stdout);
+        return res;
+    }
+    async spawnChild() {
+        const { spawn } = require("child_process");
+        const child = spawn("picgo", ["upload"], {
+            shell: true,
+        });
+        let data = "";
+        for await (const chunk of child.stdout) {
+            data += chunk;
+        }
+        let error = "";
+        for await (const chunk of child.stderr) {
+            error += chunk;
+        }
+        const exitCode = await new Promise((resolve, reject) => {
+            child.on("close", resolve);
+        });
+        if (exitCode) {
+            throw new Error(`subprocess error exit ${exitCode}, ${error}`);
+        }
+        return data;
+    }
+}
+
+class PicGoDeleter {
+    plugin;
+    constructor(plugin) {
+        this.plugin = plugin;
+    }
+    async deleteImage(configMap) {
+        const response = await obsidian.requestUrl({
+            url: this.plugin.settings.deleteServer,
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                list: configMap,
+            }),
+        });
+        const data = response.json;
+        return data;
+    }
+}
+
+// ![](./dsa/aa.png) local image should has ext, support ![](<./dsa/aa.png>), support ![](image.png "alt")
+// ![](https://dasdasda) internet image should not has ext
+const REGEX_FILE = /\!\[(.*?)\]\(<(\S+\.\w+)>\)|\!\[(.*?)\]\((\S+\.\w+)(?:\s+"[^"]*")?\)|\!\[(.*?)\]\((https?:\/\/.*?)\)/g;
+const REGEX_WIKI_FILE = /\!\[\[(.*?)(\s*?\|.*?)?\]\]/g;
+class Helper {
+    app;
+    constructor(app) {
+        this.app = app;
+    }
+    getFrontmatterValue(key, defaultValue = undefined) {
+        const file = this.app.workspace.getActiveFile();
+        if (!file) {
+            return undefined;
+        }
+        const path = file.path;
+        const cache = this.app.metadataCache.getCache(path);
+        let value = defaultValue;
+        if (cache?.frontmatter && cache.frontmatter.hasOwnProperty(key)) {
+            value = cache.frontmatter[key];
+        }
+        return value;
+    }
+    getEditor() {
+        const mdView = this.app.workspace.getActiveViewOfType(obsidian.MarkdownView);
+        if (mdView) {
+            return mdView.editor;
+        }
+        else {
+            return null;
+        }
+    }
+    getValue() {
+        const editor = this.getEditor();
+        return editor.getValue();
+    }
+    setValue(value) {
+        const editor = this.getEditor();
+        const { left, top } = editor.getScrollInfo();
+        const position = editor.getCursor();
+        editor.setValue(value);
+        editor.scrollTo(left, top);
+        editor.setCursor(position);
+    }
+    // get all file urls, include local and internet
+    getAllFiles() {
+        const editor = this.getEditor();
+        let value = editor.getValue();
+        return this.getImageLink(value);
+    }
+    getImageLink(value) {
+        const matches = value.matchAll(REGEX_FILE);
+        const WikiMatches = value.matchAll(REGEX_WIKI_FILE);
+        let fileArray = [];
+        for (const match of matches) {
+            const source = match[0];
+            let name = match[1];
+            let path = match[2];
+            if (name === undefined) {
+                name = match[3];
+            }
+            if (path === undefined) {
+                path = match[4];
+            }
+            fileArray.push({
+                path: path,
+                name: name,
+                source: source,
+            });
+        }
+        for (const match of WikiMatches) {
+            let name = pathBrowserify.parse(match[1]).name;
+            const path = match[1];
+            const source = match[0];
+            if (match[2]) {
+                name = `${name}${match[2]}`;
+            }
+            fileArray.push({
+                path: path,
+                name: name,
+                source: source,
+            });
+        }
+        return fileArray;
+    }
+    hasBlackDomain(src, blackDomains) {
+        if (blackDomains.trim() === "") {
+            return false;
+        }
+        const blackDomainList = blackDomains.split(",").filter(item => item !== "");
+        let url = new URL(src);
+        const domain = url.hostname;
+        return blackDomainList.some(blackDomain => domain.includes(blackDomain));
+    }
+}
+
+const DEFAULT_SETTINGS = {
     uploadByClipSwitch: true,
     uploader: "PicGo",
     uploadServer: "http://127.0.0.1:36677/upload",
@@ -8927,638 +6207,420 @@ var DEFAULT_SETTINGS = {
     imageDesc: "origin",
     remoteServerMode: false,
 };
-var SettingTab = /** @class */ (function (_super) {
-    __extends(SettingTab, _super);
-    function SettingTab(app, plugin) {
-        var _this = _super.call(this, app, plugin) || this;
-        _this.plugin = plugin;
-        return _this;
+class SettingTab extends obsidian.PluginSettingTab {
+    plugin;
+    constructor(app, plugin) {
+        super(app, plugin);
+        this.plugin = plugin;
     }
-    SettingTab.prototype.display = function () {
-        var _this = this;
-        var containerEl = this.containerEl;
-        var os = getOS();
+    display() {
+        let { containerEl } = this;
+        const os = getOS();
         containerEl.empty();
         containerEl.createEl("h2", { text: t("Plugin Settings") });
         new obsidian.Setting(containerEl)
             .setName(t("Auto pasted upload"))
             .setDesc(t("If you set this value true, when you paste image, it will be auto uploaded(you should set the picGo server rightly)"))
-            .addToggle(function (toggle) {
-            return toggle
-                .setValue(_this.plugin.settings.uploadByClipSwitch)
-                .onChange(function (value) { return __awaiter(_this, void 0, void 0, function () {
-                return __generator(this, function (_a) {
-                    switch (_a.label) {
-                        case 0:
-                            this.plugin.settings.uploadByClipSwitch = value;
-                            return [4 /*yield*/, this.plugin.saveSettings()];
-                        case 1:
-                            _a.sent();
-                            return [2 /*return*/];
-                    }
-                });
-            }); });
-        });
+            .addToggle(toggle => toggle
+            .setValue(this.plugin.settings.uploadByClipSwitch)
+            .onChange(async (value) => {
+            this.plugin.settings.uploadByClipSwitch = value;
+            await this.plugin.saveSettings();
+        }));
         new obsidian.Setting(containerEl)
             .setName(t("Default uploader"))
             .setDesc(t("Default uploader"))
-            .addDropdown(function (cb) {
-            return cb
-                .addOption("PicGo", "PicGo(app)")
-                .addOption("PicGo-Core", "PicGo-Core")
-                .setValue(_this.plugin.settings.uploader)
-                .onChange(function (value) { return __awaiter(_this, void 0, void 0, function () {
-                return __generator(this, function (_a) {
-                    switch (_a.label) {
-                        case 0:
-                            this.plugin.settings.uploader = value;
-                            this.display();
-                            return [4 /*yield*/, this.plugin.saveSettings()];
-                        case 1:
-                            _a.sent();
-                            return [2 /*return*/];
-                    }
-                });
-            }); });
-        });
+            .addDropdown(cb => cb
+            .addOption("PicGo", "PicGo(app)")
+            .addOption("PicGo-Core", "PicGo-Core")
+            .setValue(this.plugin.settings.uploader)
+            .onChange(async (value) => {
+            this.plugin.settings.uploader = value;
+            this.display();
+            await this.plugin.saveSettings();
+        }));
         if (this.plugin.settings.uploader === "PicGo") {
             new obsidian.Setting(containerEl)
                 .setName(t("PicGo server"))
                 .setDesc(t("PicGo server desc"))
-                .addText(function (text) {
-                return text
-                    .setPlaceholder(t("Please input PicGo server"))
-                    .setValue(_this.plugin.settings.uploadServer)
-                    .onChange(function (key) { return __awaiter(_this, void 0, void 0, function () {
-                    return __generator(this, function (_a) {
-                        switch (_a.label) {
-                            case 0:
-                                this.plugin.settings.uploadServer = key;
-                                return [4 /*yield*/, this.plugin.saveSettings()];
-                            case 1:
-                                _a.sent();
-                                return [2 /*return*/];
-                        }
-                    });
-                }); });
-            });
+                .addText(text => text
+                .setPlaceholder(t("Please input PicGo server"))
+                .setValue(this.plugin.settings.uploadServer)
+                .onChange(async (key) => {
+                this.plugin.settings.uploadServer = key;
+                await this.plugin.saveSettings();
+            }));
             new obsidian.Setting(containerEl)
                 .setName(t("PicGo delete server"))
                 .setDesc(t("PicList desc"))
-                .addText(function (text) {
-                return text
-                    .setPlaceholder(t("Please input PicGo delete server"))
-                    .setValue(_this.plugin.settings.deleteServer)
-                    .onChange(function (key) { return __awaiter(_this, void 0, void 0, function () {
-                    return __generator(this, function (_a) {
-                        switch (_a.label) {
-                            case 0:
-                                this.plugin.settings.deleteServer = key;
-                                return [4 /*yield*/, this.plugin.saveSettings()];
-                            case 1:
-                                _a.sent();
-                                return [2 /*return*/];
-                        }
-                    });
-                }); });
-            });
+                .addText(text => text
+                .setPlaceholder(t("Please input PicGo delete server"))
+                .setValue(this.plugin.settings.deleteServer)
+                .onChange(async (key) => {
+                this.plugin.settings.deleteServer = key;
+                await this.plugin.saveSettings();
+            }));
         }
         new obsidian.Setting(containerEl)
             .setName(t("Remote server mode"))
             .setDesc(t("Remote server mode desc"))
-            .addToggle(function (toggle) {
-            return toggle
-                .setValue(_this.plugin.settings.remoteServerMode)
-                .onChange(function (value) { return __awaiter(_this, void 0, void 0, function () {
-                return __generator(this, function (_a) {
-                    switch (_a.label) {
-                        case 0:
-                            this.plugin.settings.remoteServerMode = value;
-                            if (value) {
-                                this.plugin.settings.workOnNetWork = false;
-                            }
-                            this.display();
-                            return [4 /*yield*/, this.plugin.saveSettings()];
-                        case 1:
-                            _a.sent();
-                            return [2 /*return*/];
-                    }
-                });
-            }); });
-        });
+            .addToggle(toggle => toggle
+            .setValue(this.plugin.settings.remoteServerMode)
+            .onChange(async (value) => {
+            this.plugin.settings.remoteServerMode = value;
+            if (value) {
+                this.plugin.settings.workOnNetWork = false;
+            }
+            this.display();
+            await this.plugin.saveSettings();
+        }));
         if (this.plugin.settings.uploader === "PicGo-Core") {
             new obsidian.Setting(containerEl)
                 .setName(t("PicGo-Core path"))
                 .setDesc(t("Please input PicGo-Core path, default using environment variables"))
-                .addText(function (text) {
-                return text
-                    .setPlaceholder("")
-                    .setValue(_this.plugin.settings.picgoCorePath)
-                    .onChange(function (value) { return __awaiter(_this, void 0, void 0, function () {
-                    return __generator(this, function (_a) {
-                        switch (_a.label) {
-                            case 0:
-                                this.plugin.settings.picgoCorePath = value;
-                                return [4 /*yield*/, this.plugin.saveSettings()];
-                            case 1:
-                                _a.sent();
-                                return [2 /*return*/];
-                        }
-                    });
-                }); });
-            });
+                .addText(text => text
+                .setPlaceholder("")
+                .setValue(this.plugin.settings.picgoCorePath)
+                .onChange(async (value) => {
+                this.plugin.settings.picgoCorePath = value;
+                await this.plugin.saveSettings();
+            }));
             if (os !== "Windows") {
                 new obsidian.Setting(containerEl)
                     .setName(t("fixPath"))
                     .setDesc(t("fixPathWarning"))
-                    .addToggle(function (toggle) {
-                    return toggle
-                        .setValue(_this.plugin.settings.fixPath)
-                        .onChange(function (value) { return __awaiter(_this, void 0, void 0, function () {
-                        return __generator(this, function (_a) {
-                            switch (_a.label) {
-                                case 0:
-                                    this.plugin.settings.fixPath = value;
-                                    return [4 /*yield*/, this.plugin.saveSettings()];
-                                case 1:
-                                    _a.sent();
-                                    return [2 /*return*/];
-                            }
-                        });
-                    }); });
-                });
+                    .addToggle(toggle => toggle
+                    .setValue(this.plugin.settings.fixPath)
+                    .onChange(async (value) => {
+                    this.plugin.settings.fixPath = value;
+                    await this.plugin.saveSettings();
+                }));
             }
         }
         // image desc setting
         new obsidian.Setting(containerEl)
             .setName(t("Image desc"))
             .setDesc(t("Image desc"))
-            .addDropdown(function (cb) {
-            return cb
-                .addOption("origin", t("reserve")) // 保留全部
-                .addOption("none", t("remove all")) // 移除全部
-                .addOption("removeDefault", t("remove default")) // 只移除默认即 image.png
-                .setValue(_this.plugin.settings.imageDesc)
-                .onChange(function (value) { return __awaiter(_this, void 0, void 0, function () {
-                return __generator(this, function (_a) {
-                    switch (_a.label) {
-                        case 0:
-                            this.plugin.settings.imageDesc = value;
-                            this.display();
-                            return [4 /*yield*/, this.plugin.saveSettings()];
-                        case 1:
-                            _a.sent();
-                            return [2 /*return*/];
-                    }
-                });
-            }); });
-        });
+            .addDropdown(cb => cb
+            .addOption("origin", t("reserve")) // 保留全部
+            .addOption("none", t("remove all")) // 移除全部
+            .addOption("removeDefault", t("remove default")) // 只移除默认即 image.png
+            .setValue(this.plugin.settings.imageDesc)
+            .onChange(async (value) => {
+            this.plugin.settings.imageDesc = value;
+            this.display();
+            await this.plugin.saveSettings();
+        }));
         new obsidian.Setting(containerEl)
             .setName(t("Image size suffix"))
             .setDesc(t("Image size suffix Description"))
-            .addText(function (text) {
-            return text
-                .setPlaceholder(t("Please input image size suffix"))
-                .setValue(_this.plugin.settings.imageSizeSuffix)
-                .onChange(function (key) { return __awaiter(_this, void 0, void 0, function () {
-                return __generator(this, function (_a) {
-                    switch (_a.label) {
-                        case 0:
-                            this.plugin.settings.imageSizeSuffix = key;
-                            return [4 /*yield*/, this.plugin.saveSettings()];
-                        case 1:
-                            _a.sent();
-                            return [2 /*return*/];
-                    }
-                });
-            }); });
-        });
+            .addText(text => text
+            .setPlaceholder(t("Please input image size suffix"))
+            .setValue(this.plugin.settings.imageSizeSuffix)
+            .onChange(async (key) => {
+            this.plugin.settings.imageSizeSuffix = key;
+            await this.plugin.saveSettings();
+        }));
         new obsidian.Setting(containerEl)
             .setName(t("Work on network"))
             .setDesc(t("Work on network Description"))
-            .addToggle(function (toggle) {
-            return toggle
-                .setValue(_this.plugin.settings.workOnNetWork)
-                .onChange(function (value) { return __awaiter(_this, void 0, void 0, function () {
-                return __generator(this, function (_a) {
-                    switch (_a.label) {
-                        case 0:
-                            if (this.plugin.settings.remoteServerMode) {
-                                new obsidian.Notice("Can only work when remote server mode is off.");
-                                this.plugin.settings.workOnNetWork = false;
-                            }
-                            else {
-                                this.plugin.settings.workOnNetWork = value;
-                            }
-                            this.display();
-                            return [4 /*yield*/, this.plugin.saveSettings()];
-                        case 1:
-                            _a.sent();
-                            return [2 /*return*/];
-                    }
-                });
-            }); });
-        });
+            .addToggle(toggle => toggle
+            .setValue(this.plugin.settings.workOnNetWork)
+            .onChange(async (value) => {
+            if (this.plugin.settings.remoteServerMode) {
+                new obsidian.Notice("Can only work when remote server mode is off.");
+                this.plugin.settings.workOnNetWork = false;
+            }
+            else {
+                this.plugin.settings.workOnNetWork = value;
+            }
+            this.display();
+            await this.plugin.saveSettings();
+        }));
         new obsidian.Setting(containerEl)
             .setName(t("Network Domain Black List"))
             .setDesc(t("Network Domain Black List Description"))
-            .addTextArea(function (textArea) {
-            return textArea
-                .setValue(_this.plugin.settings.newWorkBlackDomains)
-                .onChange(function (value) { return __awaiter(_this, void 0, void 0, function () {
-                return __generator(this, function (_a) {
-                    switch (_a.label) {
-                        case 0:
-                            this.plugin.settings.newWorkBlackDomains = value;
-                            return [4 /*yield*/, this.plugin.saveSettings()];
-                        case 1:
-                            _a.sent();
-                            return [2 /*return*/];
-                    }
-                });
-            }); });
-        });
+            .addTextArea(textArea => textArea
+            .setValue(this.plugin.settings.newWorkBlackDomains)
+            .onChange(async (value) => {
+            this.plugin.settings.newWorkBlackDomains = value;
+            await this.plugin.saveSettings();
+        }));
         new obsidian.Setting(containerEl)
             .setName(t("Upload when clipboard has image and text together"))
             .setDesc(t("When you copy, some application like Excel will image and text to clipboard, you can upload or not."))
-            .addToggle(function (toggle) {
-            return toggle
-                .setValue(_this.plugin.settings.applyImage)
-                .onChange(function (value) { return __awaiter(_this, void 0, void 0, function () {
-                return __generator(this, function (_a) {
-                    switch (_a.label) {
-                        case 0:
-                            this.plugin.settings.applyImage = value;
-                            this.display();
-                            return [4 /*yield*/, this.plugin.saveSettings()];
-                        case 1:
-                            _a.sent();
-                            return [2 /*return*/];
-                    }
-                });
-            }); });
-        });
+            .addToggle(toggle => toggle
+            .setValue(this.plugin.settings.applyImage)
+            .onChange(async (value) => {
+            this.plugin.settings.applyImage = value;
+            this.display();
+            await this.plugin.saveSettings();
+        }));
         new obsidian.Setting(containerEl)
             .setName(t("Delete source file after you upload file"))
             .setDesc(t("Delete source file in ob assets after you upload file."))
-            .addToggle(function (toggle) {
-            return toggle
-                .setValue(_this.plugin.settings.deleteSource)
-                .onChange(function (value) { return __awaiter(_this, void 0, void 0, function () {
-                return __generator(this, function (_a) {
-                    switch (_a.label) {
-                        case 0:
-                            this.plugin.settings.deleteSource = value;
-                            this.display();
-                            return [4 /*yield*/, this.plugin.saveSettings()];
-                        case 1:
-                            _a.sent();
-                            return [2 /*return*/];
-                    }
-                });
-            }); });
-        });
-    };
-    return SettingTab;
-}(obsidian.PluginSettingTab));
-
-var imageAutoUploadPlugin = /** @class */ (function (_super) {
-    __extends(imageAutoUploadPlugin, _super);
-    function imageAutoUploadPlugin() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.addMenu = function (menu, imgPath, editor) {
-            menu.addItem(function (item) {
-                return item
-                    .setIcon("trash-2")
-                    .setTitle(t("Delete image using PicList"))
-                    .onClick(function () { return __awaiter(_this, void 0, void 0, function () {
-                    var selectedItem, res, selection;
-                    return __generator(this, function (_b) {
-                        switch (_b.label) {
-                            case 0:
-                                _b.trys.push([0, 3, , 4]);
-                                selectedItem = this.settings.uploadedImages.find(function (item) { return item.imgUrl === imgPath; });
-                                if (!selectedItem) return [3 /*break*/, 2];
-                                return [4 /*yield*/, this.picGoDeleter.deleteImage([selectedItem])];
-                            case 1:
-                                res = _b.sent();
-                                if (res.success) {
-                                    new obsidian.Notice(t("Delete successfully"));
-                                    selection = editor.getSelection();
-                                    if (selection) {
-                                        editor.replaceSelection("");
-                                    }
-                                    this.settings.uploadedImages =
-                                        this.settings.uploadedImages.filter(function (item) { return item.imgUrl !== imgPath; });
-                                    this.saveSettings();
-                                }
-                                else {
-                                    new obsidian.Notice(t("Delete failed"));
-                                }
-                                _b.label = 2;
-                            case 2: return [3 /*break*/, 4];
-                            case 3:
-                                _b.sent();
-                                new obsidian.Notice(t("Error, could not delete"));
-                                return [3 /*break*/, 4];
-                            case 4: return [2 /*return*/];
-                        }
-                    });
-                }); });
-            });
-        };
-        return _this;
+            .addToggle(toggle => toggle
+            .setValue(this.plugin.settings.deleteSource)
+            .onChange(async (value) => {
+            this.plugin.settings.deleteSource = value;
+            this.display();
+            await this.plugin.saveSettings();
+        }));
     }
-    imageAutoUploadPlugin.prototype.loadSettings = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            var _a, _b, _c, _d;
-            return __generator(this, function (_e) {
-                switch (_e.label) {
-                    case 0:
-                        _a = this;
-                        _c = (_b = Object).assign;
-                        _d = [DEFAULT_SETTINGS];
-                        return [4 /*yield*/, this.loadData()];
-                    case 1:
-                        _a.settings = _c.apply(_b, _d.concat([_e.sent()]));
-                        return [2 /*return*/];
+}
+
+class imageAutoUploadPlugin extends obsidian.Plugin {
+    settings;
+    helper;
+    editor;
+    picGoUploader;
+    picGoDeleter;
+    picGoCoreUploader;
+    uploader;
+    async loadSettings() {
+        this.settings = Object.assign(DEFAULT_SETTINGS, await this.loadData());
+    }
+    async saveSettings() {
+        await this.saveData(this.settings);
+    }
+    onunload() { }
+    async onload() {
+        await this.loadSettings();
+        this.helper = new Helper(this.app);
+        this.picGoUploader = new PicGoUploader(this.settings, this);
+        this.picGoDeleter = new PicGoDeleter(this);
+        this.picGoCoreUploader = new PicGoCoreUploader(this.settings, this);
+        if (this.settings.uploader === "PicGo") {
+            this.uploader = this.picGoUploader;
+        }
+        else if (this.settings.uploader === "PicGo-Core") {
+            this.uploader = this.picGoCoreUploader;
+            if (this.settings.fixPath) {
+                fixPath();
+            }
+        }
+        else {
+            new obsidian.Notice("unknown uploader");
+        }
+        obsidian.addIcon("upload", `<svg t="1636630783429" class="icon" viewBox="0 0 100 100" version="1.1" p-id="4649" xmlns="http://www.w3.org/2000/svg">
+      <path d="M 71.638 35.336 L 79.408 35.336 C 83.7 35.336 87.178 38.662 87.178 42.765 L 87.178 84.864 C 87.178 88.969 83.7 92.295 79.408 92.295 L 17.249 92.295 C 12.957 92.295 9.479 88.969 9.479 84.864 L 9.479 42.765 C 9.479 38.662 12.957 35.336 17.249 35.336 L 25.019 35.336 L 25.019 42.765 L 17.249 42.765 L 17.249 84.864 L 79.408 84.864 L 79.408 42.765 L 71.638 42.765 L 71.638 35.336 Z M 49.014 10.179 L 67.326 27.688 L 61.835 32.942 L 52.849 24.352 L 52.849 59.731 L 45.078 59.731 L 45.078 24.455 L 36.194 32.947 L 30.702 27.692 L 49.012 10.181 Z" p-id="4650" fill="#8a8a8a"></path>
+    </svg>`);
+        this.addSettingTab(new SettingTab(this.app, this));
+        this.addCommand({
+            id: "Upload all images",
+            name: "Upload all images",
+            checkCallback: (checking) => {
+                let leaf = this.app.workspace.activeLeaf;
+                if (leaf) {
+                    if (!checking) {
+                        this.uploadAllFile();
+                    }
+                    return true;
                 }
-            });
+                return false;
+            },
         });
-    };
-    imageAutoUploadPlugin.prototype.saveSettings = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.saveData(this.settings)];
-                    case 1:
-                        _a.sent();
-                        return [2 /*return*/];
+        this.addCommand({
+            id: "Download all images",
+            name: "Download all images",
+            checkCallback: (checking) => {
+                let leaf = this.app.workspace.activeLeaf;
+                if (leaf) {
+                    if (!checking) {
+                        downloadAllImageFiles(this);
+                    }
+                    return true;
                 }
-            });
+                return false;
+            },
         });
-    };
-    imageAutoUploadPlugin.prototype.onunload = function () { };
-    imageAutoUploadPlugin.prototype.onload = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.loadSettings()];
-                    case 1:
-                        _a.sent();
-                        this.helper = new Helper(this.app);
-                        this.picGoUploader = new PicGoUploader(this.settings, this);
-                        this.picGoDeleter = new PicGoDeleter(this);
-                        this.picGoCoreUploader = new PicGoCoreUploader(this.settings, this);
-                        if (this.settings.uploader === "PicGo") {
-                            this.uploader = this.picGoUploader;
-                        }
-                        else if (this.settings.uploader === "PicGo-Core") {
-                            this.uploader = this.picGoCoreUploader;
-                            if (this.settings.fixPath) {
-                                fixPath();
-                            }
-                        }
-                        else {
-                            new obsidian.Notice("unknown uploader");
-                        }
-                        obsidian.addIcon("upload", "<svg t=\"1636630783429\" class=\"icon\" viewBox=\"0 0 100 100\" version=\"1.1\" p-id=\"4649\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path d=\"M 71.638 35.336 L 79.408 35.336 C 83.7 35.336 87.178 38.662 87.178 42.765 L 87.178 84.864 C 87.178 88.969 83.7 92.295 79.408 92.295 L 17.249 92.295 C 12.957 92.295 9.479 88.969 9.479 84.864 L 9.479 42.765 C 9.479 38.662 12.957 35.336 17.249 35.336 L 25.019 35.336 L 25.019 42.765 L 17.249 42.765 L 17.249 84.864 L 79.408 84.864 L 79.408 42.765 L 71.638 42.765 L 71.638 35.336 Z M 49.014 10.179 L 67.326 27.688 L 61.835 32.942 L 52.849 24.352 L 52.849 59.731 L 45.078 59.731 L 45.078 24.455 L 36.194 32.947 L 30.702 27.692 L 49.012 10.181 Z\" p-id=\"4650\" fill=\"#8a8a8a\"></path>\n    </svg>");
-                        this.addSettingTab(new SettingTab(this.app, this));
-                        this.addCommand({
-                            id: "Upload all images",
-                            name: "Upload all images",
-                            checkCallback: function (checking) {
-                                var leaf = _this.app.workspace.activeLeaf;
-                                if (leaf) {
-                                    if (!checking) {
-                                        _this.uploadAllFile();
-                                    }
-                                    return true;
-                                }
-                                return false;
-                            },
-                        });
-                        this.addCommand({
-                            id: "Download all images",
-                            name: "Download all images",
-                            checkCallback: function (checking) {
-                                var leaf = _this.app.workspace.activeLeaf;
-                                if (leaf) {
-                                    if (!checking) {
-                                        _this.downloadAllImageFiles();
-                                    }
-                                    return true;
-                                }
-                                return false;
-                            },
-                        });
-                        this.setupPasteHandler();
-                        this.registerFileMenu();
-                        this.registerSelection();
-                        return [2 /*return*/];
-                }
-            });
-        });
-    };
-    imageAutoUploadPlugin.prototype.registerSelection = function () {
-        var _this = this;
-        this.registerEvent(this.app.workspace.on("editor-menu", function (menu, editor, info) {
-            if (_this.app.workspace.getLeavesOfType("markdown").length === 0) {
+        this.setupPasteHandler();
+        this.registerFileMenu();
+        this.registerSelection();
+    }
+    registerSelection() {
+        this.registerEvent(this.app.workspace.on("editor-menu", (menu, editor, info) => {
+            if (this.app.workspace.getLeavesOfType("markdown").length === 0) {
                 return;
             }
-            var selection = editor.getSelection();
+            const selection = editor.getSelection();
             if (selection) {
-                var markdownRegex = /!\[.*\]\((.*)\)/g;
-                var markdownMatch = markdownRegex.exec(selection);
+                const markdownRegex = /!\[.*\]\((.*)\)/g;
+                const markdownMatch = markdownRegex.exec(selection);
                 if (markdownMatch && markdownMatch.length > 1) {
-                    var markdownUrl_1 = markdownMatch[1];
-                    if (_this.settings.uploadedImages.find(function (item) { return item.imgUrl === markdownUrl_1; })) {
-                        _this.addMenu(menu, markdownUrl_1, editor);
+                    const markdownUrl = markdownMatch[1];
+                    if (this.settings.uploadedImages.find((item) => item.imgUrl === markdownUrl)) {
+                        this.addMenu(menu, markdownUrl, editor);
                     }
                 }
             }
         }));
-    };
-    imageAutoUploadPlugin.prototype.downloadAllImageFiles = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            var activeFile, folderPath, fileArray, imageArray, nameSet, fileArray_1, fileArray_1_1, file, url, asset, name_1, response, activeFolder, abstractActiveFolder, e_1_1, value, currentFile;
-            var e_1, _a;
-            var _this = this;
-            return __generator(this, function (_b) {
-                switch (_b.label) {
-                    case 0:
-                        activeFile = this.app.workspace.getActiveFile();
-                        folderPath = this.getFileAssetPath();
-                        fileArray = this.helper.getAllFiles();
-                        if (!require$$0.existsSync(folderPath)) {
-                            require$$0.mkdirSync(folderPath);
+    }
+    addMenu = (menu, imgPath, editor) => {
+        menu.addItem((item) => item
+            .setIcon("trash-2")
+            .setTitle(t("Delete image using PicList"))
+            .onClick(async () => {
+            try {
+                const selectedItem = this.settings.uploadedImages.find((item) => item.imgUrl === imgPath);
+                if (selectedItem) {
+                    const res = await this.picGoDeleter.deleteImage([selectedItem]);
+                    if (res.success) {
+                        new obsidian.Notice(t("Delete successfully"));
+                        const selection = editor.getSelection();
+                        if (selection) {
+                            editor.replaceSelection("");
                         }
-                        imageArray = [];
-                        nameSet = new Set();
-                        _b.label = 1;
-                    case 1:
-                        _b.trys.push([1, 6, 7, 8]);
-                        fileArray_1 = __values(fileArray), fileArray_1_1 = fileArray_1.next();
-                        _b.label = 2;
-                    case 2:
-                        if (!!fileArray_1_1.done) return [3 /*break*/, 5];
-                        file = fileArray_1_1.value;
-                        if (!file.path.startsWith("http")) {
-                            return [3 /*break*/, 4];
-                        }
-                        url = file.path;
-                        asset = getUrlAsset(url);
-                        name_1 = decodeURI(require$$0$1.parse(asset).name).replaceAll(/[\\\\/:*?\"<>|]/g, "-");
-                        // 如果文件名已存在，则用随机值替换，不对文件后缀进行判断
-                        if (require$$0.existsSync(require$$0$1.join(folderPath))) {
-                            name_1 = (Math.random() + 1).toString(36).substr(2, 5);
-                        }
-                        if (nameSet.has(name_1)) {
-                            name_1 = "".concat(name_1, "-").concat((Math.random() + 1).toString(36).substr(2, 5));
-                        }
-                        nameSet.add(name_1);
-                        return [4 /*yield*/, this.download(url, folderPath, name_1)];
-                    case 3:
-                        response = _b.sent();
-                        if (response.ok) {
-                            activeFolder = obsidian.normalizePath(this.app.workspace.getActiveFile().parent.path);
-                            abstractActiveFolder = this.app.vault.adapter.getFullPath(activeFolder);
-                            imageArray.push({
-                                source: file.source,
-                                name: name_1,
-                                path: obsidian.normalizePath(require$$0$1.relative(abstractActiveFolder, response.path)),
-                            });
-                        }
-                        _b.label = 4;
-                    case 4:
-                        fileArray_1_1 = fileArray_1.next();
-                        return [3 /*break*/, 2];
-                    case 5: return [3 /*break*/, 8];
-                    case 6:
-                        e_1_1 = _b.sent();
-                        e_1 = { error: e_1_1 };
-                        return [3 /*break*/, 8];
-                    case 7:
-                        try {
-                            if (fileArray_1_1 && !fileArray_1_1.done && (_a = fileArray_1.return)) _a.call(fileArray_1);
-                        }
-                        finally { if (e_1) throw e_1.error; }
-                        return [7 /*endfinally*/];
-                    case 8:
-                        value = this.helper.getValue();
-                        imageArray.map(function (image) {
-                            var name = _this.handleName(image.name);
-                            value = value.replace(image.source, "![".concat(name, "](").concat(encodeURI(image.path), ")"));
-                        });
-                        currentFile = this.app.workspace.getActiveFile();
-                        if (activeFile.path !== currentFile.path) {
-                            new obsidian.Notice(t("File has been changedd, download failure"));
-                            return [2 /*return*/];
-                        }
-                        this.helper.setValue(value);
-                        new obsidian.Notice("all: ".concat(fileArray.length, "\nsuccess: ").concat(imageArray.length, "\nfailed: ").concat(fileArray.length - imageArray.length));
-                        return [2 /*return*/];
+                        this.settings.uploadedImages =
+                            this.settings.uploadedImages.filter((item) => item.imgUrl !== imgPath);
+                        this.saveSettings();
+                    }
+                    else {
+                        new obsidian.Notice(t("Delete failed"));
+                    }
                 }
-            });
-        });
+            }
+            catch {
+                new obsidian.Notice(t("Error, could not delete"));
+            }
+        }));
     };
-    // 获取当前文件所属的附件文件夹
-    imageAutoUploadPlugin.prototype.getFileAssetPath = function () {
-        var basePath = this.app.vault.adapter.getBasePath();
-        // @ts-ignore
-        var assetFolder = this.app.vault.config.attachmentFolderPath;
-        var activeFile = this.app.vault.getAbstractFileByPath(this.app.workspace.getActiveFile().path);
-        // 当前文件夹下的子文件夹
-        if (assetFolder.startsWith("./")) {
-            var activeFolder = decodeURI(require$$0$1.resolve(basePath, activeFile.parent.path));
-            return require$$0$1.join(activeFolder, assetFolder);
-        }
-        else {
-            // 根文件夹
-            return require$$0$1.join(basePath, assetFolder);
-        }
-    };
-    imageAutoUploadPlugin.prototype.download = function (url, folderPath, name) {
-        return __awaiter(this, void 0, void 0, function () {
-            var response, type, buffer, path;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0: return [4 /*yield*/, obsidian.requestUrl({ url: url })];
-                    case 1:
-                        response = _a.sent();
-                        return [4 /*yield*/, imageType(new Uint8Array(response.arrayBuffer))];
-                    case 2:
-                        type = _a.sent();
-                        if (response.status !== 200) {
-                            return [2 /*return*/, {
-                                    ok: false,
-                                    msg: "error",
-                                }];
-                        }
-                        if (!type) {
-                            return [2 /*return*/, {
-                                    ok: false,
-                                    msg: "error",
-                                }];
-                        }
-                        buffer = Buffer.from(response.arrayBuffer);
-                        try {
-                            path = require$$0$1.join(folderPath, "".concat(name, ".").concat(type.ext));
-                            require$$0.writeFileSync(path, buffer);
-                            return [2 /*return*/, {
-                                    ok: true,
-                                    msg: "ok",
-                                    path: path,
-                                    type: type,
-                                }];
-                        }
-                        catch (err) {
-                            return [2 /*return*/, {
-                                    ok: false,
-                                    msg: err,
-                                }];
-                        }
-                        return [2 /*return*/];
-                }
-            });
-        });
-    };
-    imageAutoUploadPlugin.prototype.registerFileMenu = function () {
-        var _this = this;
-        this.registerEvent(this.app.workspace.on("file-menu", function (menu, file, source, leaf) {
+    registerFileMenu() {
+        this.registerEvent(this.app.workspace.on("file-menu", (menu, file, source, leaf) => {
             if (source === "canvas-menu")
                 return false;
             if (!isAssetTypeAnImage(file.path))
                 return false;
-            menu.addItem(function (item) {
+            menu.addItem((item) => {
                 item
                     .setTitle("Upload")
                     .setIcon("upload")
-                    .onClick(function () {
+                    .onClick(() => {
                     if (!(file instanceof obsidian.TFile)) {
                         return false;
                     }
-                    _this.fileMenuUpload(file);
+                    this.fileMenuUpload(file);
                 });
             });
         }));
-    };
-    imageAutoUploadPlugin.prototype.fileMenuUpload = function (file) {
-        var e_2, _a;
-        var _this = this;
-        var content = this.helper.getValue();
-        var basePath = this.app.vault.adapter.getBasePath();
-        var imageList = [];
-        var fileArray = this.helper.getAllFiles();
-        try {
-            for (var fileArray_2 = __values(fileArray), fileArray_2_1 = fileArray_2.next(); !fileArray_2_1.done; fileArray_2_1 = fileArray_2.next()) {
-                var match = fileArray_2_1.value;
-                var imageName = match.name;
-                var encodedUri = match.path;
-                var fileName = require$$0$1.basename(decodeURI(encodedUri));
-                if (file && file.name === fileName) {
-                    var abstractImageFile = require$$0$1.join(basePath, file.path);
+    }
+    fileMenuUpload(file) {
+        let content = this.helper.getValue();
+        const basePath = this.app.vault.adapter.getBasePath();
+        let imageList = [];
+        const fileArray = this.helper.getAllFiles();
+        for (const match of fileArray) {
+            const imageName = match.name;
+            const encodedUri = match.path;
+            const fileName = pathBrowserify.basename(decodeURI(encodedUri));
+            if (file && file.name === fileName) {
+                const abstractImageFile = pathBrowserify.join(basePath, file.path);
+                if (isAssetTypeAnImage(abstractImageFile)) {
+                    imageList.push({
+                        path: abstractImageFile,
+                        name: imageName,
+                        source: match.source,
+                    });
+                }
+            }
+        }
+        if (imageList.length === 0) {
+            new obsidian.Notice(t("Can not find image file"));
+            return;
+        }
+        this.uploader.uploadFiles(imageList.map(item => item.path)).then(res => {
+            if (res.success) {
+                let uploadUrlList = res.result;
+                imageList.map(item => {
+                    const uploadImage = uploadUrlList.shift();
+                    let name = this.handleName(item.name);
+                    content = content.replaceAll(item.source, `![${name}](${uploadImage})`);
+                });
+                this.helper.setValue(content);
+                if (this.settings.deleteSource) {
+                    imageList.map(image => {
+                        if (!image.path.startsWith("http")) {
+                            require$$0.unlink(image.path, () => { });
+                        }
+                    });
+                }
+            }
+            else {
+                new obsidian.Notice("Upload error");
+            }
+        });
+    }
+    filterFile(fileArray) {
+        const imageList = [];
+        for (const match of fileArray) {
+            if (match.path.startsWith("http")) {
+                if (this.settings.workOnNetWork) {
+                    if (!this.helper.hasBlackDomain(match.path, this.settings.newWorkBlackDomains)) {
+                        imageList.push({
+                            path: match.path,
+                            name: match.name,
+                            source: match.source,
+                        });
+                    }
+                }
+            }
+            else {
+                imageList.push({
+                    path: match.path,
+                    name: match.name,
+                    source: match.source,
+                });
+            }
+        }
+        return imageList;
+    }
+    getFile(fileName, fileMap) {
+        if (!fileMap) {
+            fileMap = arrayToObject(this.app.vault.getFiles(), "name");
+        }
+        return fileMap[fileName];
+    }
+    // uploda all file
+    uploadAllFile() {
+        let content = this.helper.getValue();
+        const basePath = this.app.vault.adapter.getBasePath();
+        const activeFile = this.app.workspace.getActiveFile();
+        const fileMap = arrayToObject(this.app.vault.getFiles(), "name");
+        const filePathMap = arrayToObject(this.app.vault.getFiles(), "path");
+        let imageList = [];
+        const fileArray = this.filterFile(this.helper.getAllFiles());
+        for (const match of fileArray) {
+            const imageName = match.name;
+            const encodedUri = match.path;
+            if (encodedUri.startsWith("http")) {
+                imageList.push({
+                    path: match.path,
+                    name: imageName,
+                    source: match.source,
+                });
+            }
+            else {
+                const fileName = pathBrowserify.basename(decodeURI(encodedUri));
+                let file;
+                // 绝对路径
+                if (filePathMap[decodeURI(encodedUri)]) {
+                    file = filePathMap[decodeURI(encodedUri)];
+                }
+                // 相对路径
+                if ((!file && decodeURI(encodedUri).startsWith("./")) ||
+                    decodeURI(encodedUri).startsWith("../")) {
+                    const filePath = pathBrowserify.resolve(pathBrowserify.join(basePath, pathBrowserify.dirname(activeFile.path)), decodeURI(encodedUri));
+                    if (require$$0.existsSync(filePath)) {
+                        const path = obsidian.normalizePath(pathBrowserify.relative(obsidian.normalizePath(basePath), obsidian.normalizePath(pathBrowserify.resolve(pathBrowserify.join(basePath, pathBrowserify.dirname(activeFile.path)), decodeURI(encodedUri)))));
+                        file = filePathMap[path];
+                    }
+                }
+                // 尽可能短路径
+                if (!file) {
+                    file = this.getFile(fileName, fileMap);
+                }
+                if (file) {
+                    const abstractImageFile = pathBrowserify.join(basePath, file.path);
                     if (isAssetTypeAnImage(abstractImageFile)) {
                         imageList.push({
                             path: abstractImageFile,
@@ -9569,171 +6631,34 @@ var imageAutoUploadPlugin = /** @class */ (function (_super) {
                 }
             }
         }
-        catch (e_2_1) { e_2 = { error: e_2_1 }; }
-        finally {
-            try {
-                if (fileArray_2_1 && !fileArray_2_1.done && (_a = fileArray_2.return)) _a.call(fileArray_2);
-            }
-            finally { if (e_2) throw e_2.error; }
-        }
-        if (imageList.length === 0) {
-            new obsidian.Notice(t("Can not find image file"));
-            return;
-        }
-        this.uploader.uploadFiles(imageList.map(function (item) { return item.path; })).then(function (res) {
-            if (res.success) {
-                var uploadUrlList_1 = res.result;
-                imageList.map(function (item) {
-                    var uploadImage = uploadUrlList_1.shift();
-                    var name = _this.handleName(item.name);
-                    content = content.replaceAll(item.source, "![".concat(name, "](").concat(uploadImage, ")"));
-                });
-                _this.helper.setValue(content);
-                if (_this.settings.deleteSource) {
-                    imageList.map(function (image) {
-                        if (!image.path.startsWith("http")) {
-                            require$$0.unlink(image.path, function () { });
-                        }
-                    });
-                }
-            }
-            else {
-                new obsidian.Notice("Upload error");
-            }
-        });
-    };
-    imageAutoUploadPlugin.prototype.filterFile = function (fileArray) {
-        var e_3, _a;
-        var imageList = [];
-        try {
-            for (var fileArray_3 = __values(fileArray), fileArray_3_1 = fileArray_3.next(); !fileArray_3_1.done; fileArray_3_1 = fileArray_3.next()) {
-                var match = fileArray_3_1.value;
-                if (match.path.startsWith("http")) {
-                    if (this.settings.workOnNetWork) {
-                        if (!this.helper.hasBlackDomain(match.path, this.settings.newWorkBlackDomains)) {
-                            imageList.push({
-                                path: match.path,
-                                name: match.name,
-                                source: match.source,
-                            });
-                        }
-                    }
-                }
-                else {
-                    imageList.push({
-                        path: match.path,
-                        name: match.name,
-                        source: match.source,
-                    });
-                }
-            }
-        }
-        catch (e_3_1) { e_3 = { error: e_3_1 }; }
-        finally {
-            try {
-                if (fileArray_3_1 && !fileArray_3_1.done && (_a = fileArray_3.return)) _a.call(fileArray_3);
-            }
-            finally { if (e_3) throw e_3.error; }
-        }
-        return imageList;
-    };
-    imageAutoUploadPlugin.prototype.getFile = function (fileName, fileMap) {
-        if (!fileMap) {
-            fileMap = arrayToObject(this.app.vault.getFiles(), "name");
-        }
-        return fileMap[fileName];
-    };
-    // uploda all file
-    imageAutoUploadPlugin.prototype.uploadAllFile = function () {
-        var e_4, _a;
-        var _this = this;
-        var content = this.helper.getValue();
-        var basePath = this.app.vault.adapter.getBasePath();
-        var activeFile = this.app.workspace.getActiveFile();
-        var fileMap = arrayToObject(this.app.vault.getFiles(), "name");
-        var filePathMap = arrayToObject(this.app.vault.getFiles(), "path");
-        var imageList = [];
-        var fileArray = this.filterFile(this.helper.getAllFiles());
-        try {
-            for (var fileArray_4 = __values(fileArray), fileArray_4_1 = fileArray_4.next(); !fileArray_4_1.done; fileArray_4_1 = fileArray_4.next()) {
-                var match = fileArray_4_1.value;
-                var imageName = match.name;
-                var encodedUri = match.path;
-                if (encodedUri.startsWith("http")) {
-                    imageList.push({
-                        path: match.path,
-                        name: imageName,
-                        source: match.source,
-                    });
-                }
-                else {
-                    var fileName = require$$0$1.basename(decodeURI(encodedUri));
-                    var file = void 0;
-                    // 绝对路径
-                    if (filePathMap[decodeURI(encodedUri)]) {
-                        file = filePathMap[decodeURI(encodedUri)];
-                    }
-                    // 相对路径
-                    if ((!file && decodeURI(encodedUri).startsWith("./")) ||
-                        decodeURI(encodedUri).startsWith("../")) {
-                        var filePath = require$$0$1.resolve(require$$0$1.join(basePath, require$$0$1.dirname(activeFile.path)), decodeURI(encodedUri));
-                        if (require$$0.existsSync(filePath)) {
-                            var path = obsidian.normalizePath(require$$0$1.relative(basePath, require$$0$1.resolve(require$$0$1.join(basePath, require$$0$1.dirname(activeFile.path)), decodeURI(encodedUri))));
-                            file = filePathMap[path];
-                        }
-                    }
-                    // 尽可能短路径
-                    if (!file) {
-                        file = this.getFile(fileName, fileMap);
-                    }
-                    if (file) {
-                        var abstractImageFile = require$$0$1.join(basePath, file.path);
-                        if (isAssetTypeAnImage(abstractImageFile)) {
-                            imageList.push({
-                                path: abstractImageFile,
-                                name: imageName,
-                                source: match.source,
-                            });
-                        }
-                    }
-                }
-            }
-        }
-        catch (e_4_1) { e_4 = { error: e_4_1 }; }
-        finally {
-            try {
-                if (fileArray_4_1 && !fileArray_4_1.done && (_a = fileArray_4.return)) _a.call(fileArray_4);
-            }
-            finally { if (e_4) throw e_4.error; }
-        }
         if (imageList.length === 0) {
             new obsidian.Notice(t("Can not find image file"));
             return;
         }
         else {
-            new obsidian.Notice("\u5171\u627E\u5230".concat(imageList.length, "\u4E2A\u56FE\u50CF\u6587\u4EF6\uFF0C\u5F00\u59CB\u4E0A\u4F20"));
+            new obsidian.Notice(`共找到${imageList.length}个图像文件，开始上传`);
         }
-        this.uploader.uploadFiles(imageList.map(function (item) { return item.path; })).then(function (res) {
+        this.uploader.uploadFiles(imageList.map(item => item.path)).then(res => {
             if (res.success) {
-                var uploadUrlList_2 = res.result;
-                if (imageList.length !== uploadUrlList_2.length) {
+                let uploadUrlList = res.result;
+                if (imageList.length !== uploadUrlList.length) {
                     new obsidian.Notice(t("Warning: upload files is different of reciver files from api"));
                 }
-                imageList.map(function (item) {
-                    var uploadImage = uploadUrlList_2.shift();
-                    var name = _this.handleName(item.name);
-                    content = content.replaceAll(item.source, "![".concat(name, "](").concat(uploadImage, ")"));
+                imageList.map(item => {
+                    const uploadImage = uploadUrlList.shift();
+                    let name = this.handleName(item.name);
+                    content = content.replaceAll(item.source, `![${name}](${uploadImage})`);
                 });
-                var currentFile = _this.app.workspace.getActiveFile();
+                const currentFile = this.app.workspace.getActiveFile();
                 if (activeFile.path !== currentFile.path) {
                     new obsidian.Notice(t("File has been changedd, upload failure"));
                     return;
                 }
-                _this.helper.setValue(content);
-                if (_this.settings.deleteSource) {
-                    imageList.map(function (image) {
+                this.helper.setValue(content);
+                if (this.settings.deleteSource) {
+                    imageList.map(image => {
                         if (!image.path.startsWith("http")) {
-                            require$$0.unlink(image.path, function () { });
+                            require$$0.unlink(image.path, () => { });
                         }
                     });
                 }
@@ -9742,37 +6667,34 @@ var imageAutoUploadPlugin = /** @class */ (function (_super) {
                 new obsidian.Notice("Upload error");
             }
         });
-    };
-    imageAutoUploadPlugin.prototype.setupPasteHandler = function () {
-        var _this = this;
-        this.registerEvent(this.app.workspace.on("editor-paste", function (evt, editor, markdownView) {
-            var allowUpload = _this.helper.getFrontmatterValue("image-auto-upload", _this.settings.uploadByClipSwitch);
+    }
+    setupPasteHandler() {
+        this.registerEvent(this.app.workspace.on("editor-paste", (evt, editor, markdownView) => {
+            const allowUpload = this.helper.getFrontmatterValue("image-auto-upload", this.settings.uploadByClipSwitch);
             evt.clipboardData.files;
             if (!allowUpload) {
                 return;
             }
             // 剪贴板内容有md格式的图片时
-            if (_this.settings.workOnNetWork) {
-                var clipboardValue = evt.clipboardData.getData("text/plain");
-                var imageList_1 = _this.helper
+            if (this.settings.workOnNetWork) {
+                const clipboardValue = evt.clipboardData.getData("text/plain");
+                const imageList = this.helper
                     .getImageLink(clipboardValue)
-                    .filter(function (image) { return image.path.startsWith("http"); })
-                    .filter(function (image) {
-                    return !_this.helper.hasBlackDomain(image.path, _this.settings.newWorkBlackDomains);
-                });
-                if (imageList_1.length !== 0) {
-                    _this.uploader
-                        .uploadFiles(imageList_1.map(function (item) { return item.path; }))
-                        .then(function (res) {
-                        var value = _this.helper.getValue();
+                    .filter(image => image.path.startsWith("http"))
+                    .filter(image => !this.helper.hasBlackDomain(image.path, this.settings.newWorkBlackDomains));
+                if (imageList.length !== 0) {
+                    this.uploader
+                        .uploadFiles(imageList.map(item => item.path))
+                        .then(res => {
+                        let value = this.helper.getValue();
                         if (res.success) {
-                            var uploadUrlList_3 = res.result;
-                            imageList_1.map(function (item) {
-                                var uploadImage = uploadUrlList_3.shift();
-                                var name = _this.handleName(item.name);
-                                value = value.replaceAll(item.source, "![".concat(name, "](").concat(uploadImage, ")"));
+                            let uploadUrlList = res.result;
+                            imageList.map(item => {
+                                const uploadImage = uploadUrlList.shift();
+                                let name = this.handleName(item.name);
+                                value = value.replaceAll(item.source, `![${name}](${uploadImage})`);
                             });
-                            _this.helper.setValue(value);
+                            this.helper.setValue(value);
                         }
                         else {
                             new obsidian.Notice("Upload error");
@@ -9781,68 +6703,63 @@ var imageAutoUploadPlugin = /** @class */ (function (_super) {
                 }
             }
             // 剪贴板中是图片时进行上传
-            if (_this.canUpload(evt.clipboardData)) {
-                _this.uploadFileAndEmbedImgurImage(editor, function (editor, pasteId) { return __awaiter(_this, void 0, void 0, function () {
-                    var res, url;
-                    return __generator(this, function (_a) {
-                        switch (_a.label) {
-                            case 0: return [4 /*yield*/, this.uploader.uploadFileByClipboard(evt.clipboardData.files)];
-                            case 1:
-                                res = _a.sent();
-                                if (res.code !== 0) {
-                                    this.handleFailedUpload(editor, pasteId, res.msg);
-                                    return [2 /*return*/];
-                                }
-                                url = res.data;
-                                return [2 /*return*/, url];
-                        }
-                    });
-                }); }, evt.clipboardData).catch();
+            if (this.canUpload(evt.clipboardData)) {
+                this.uploadFileAndEmbedImgurImage(editor, async (editor, pasteId) => {
+                    let res;
+                    res = await this.uploader.uploadFileByClipboard(evt.clipboardData.files);
+                    if (res.code !== 0) {
+                        this.handleFailedUpload(editor, pasteId, res.msg);
+                        return;
+                    }
+                    const url = res.data;
+                    return url;
+                }, evt.clipboardData).catch();
                 evt.preventDefault();
             }
         }));
-        this.registerEvent(this.app.workspace.on("editor-drop", function (evt, editor, markdownView) { return __awaiter(_this, void 0, void 0, function () {
-            var allowUpload, files, sendFiles_1, files_1, data;
-            var _this = this;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        allowUpload = this.helper.getFrontmatterValue("image-auto-upload", this.settings.uploadByClipSwitch);
-                        files = evt.dataTransfer.files;
-                        if (!allowUpload) {
-                            return [2 /*return*/];
-                        }
-                        if (!(files.length !== 0 && files[0].type.startsWith("image"))) return [3 /*break*/, 2];
-                        sendFiles_1 = [];
-                        files_1 = evt.dataTransfer.files;
-                        Array.from(files_1).forEach(function (item, index) {
-                            sendFiles_1.push(item.path);
-                        });
-                        evt.preventDefault();
-                        return [4 /*yield*/, this.uploader.uploadFiles(sendFiles_1)];
-                    case 1:
-                        data = _a.sent();
-                        if (data.success) {
-                            data.result.map(function (value) {
-                                var pasteId = (Math.random() + 1).toString(36).substr(2, 5);
-                                _this.insertTemporaryText(editor, pasteId);
-                                _this.embedMarkDownImage(editor, pasteId, value, files_1[0].name);
-                            });
-                        }
-                        else {
-                            new obsidian.Notice("Upload error");
-                        }
-                        _a.label = 2;
-                    case 2: return [2 /*return*/];
+        this.registerEvent(this.app.workspace.on("editor-drop", async (evt, editor, markdownView) => {
+            // when ctrl key is pressed, do not upload image, because it is used to set local file
+            if (evt.ctrlKey) {
+                return;
+            }
+            const allowUpload = this.helper.getFrontmatterValue("image-auto-upload", this.settings.uploadByClipSwitch);
+            let files = evt.dataTransfer.files;
+            if (!allowUpload) {
+                return;
+            }
+            if (files.length !== 0 && files[0].type.startsWith("image")) {
+                let sendFiles = [];
+                let files = evt.dataTransfer.files;
+                Array.from(files).forEach((item, index) => {
+                    if (item.path) {
+                        sendFiles.push(item.path);
+                    }
+                    else {
+                        const { webUtils } = require("electron");
+                        const path = webUtils.getPathForFile(item);
+                        sendFiles.push(path);
+                    }
+                });
+                evt.preventDefault();
+                const data = await this.uploader.uploadFiles(sendFiles);
+                if (data.success) {
+                    data.result.map((value) => {
+                        let pasteId = (Math.random() + 1).toString(36).substr(2, 5);
+                        this.insertTemporaryText(editor, pasteId);
+                        this.embedMarkDownImage(editor, pasteId, value, files[0].name);
+                    });
                 }
-            });
-        }); }));
-    };
-    imageAutoUploadPlugin.prototype.canUpload = function (clipboardData) {
+                else {
+                    new obsidian.Notice("Upload error");
+                }
+            }
+        }));
+    }
+    canUpload(clipboardData) {
         this.settings.applyImage;
-        var files = clipboardData.files;
-        var text = clipboardData.getData("text");
-        var hasImageFile = files.length !== 0 && files[0].type.startsWith("image");
+        const files = clipboardData.files;
+        const text = clipboardData.getData("text");
+        const hasImageFile = files.length !== 0 && files[0].type.startsWith("image");
         if (hasImageFile) {
             if (!!text) {
                 return this.settings.applyImage;
@@ -9854,57 +6771,42 @@ var imageAutoUploadPlugin = /** @class */ (function (_super) {
         else {
             return false;
         }
-    };
-    imageAutoUploadPlugin.prototype.uploadFileAndEmbedImgurImage = function (editor, callback, clipboardData) {
-        return __awaiter(this, void 0, void 0, function () {
-            var pasteId, name, url, e_5;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        pasteId = (Math.random() + 1).toString(36).substr(2, 5);
-                        this.insertTemporaryText(editor, pasteId);
-                        name = clipboardData.files[0].name;
-                        _a.label = 1;
-                    case 1:
-                        _a.trys.push([1, 3, , 4]);
-                        return [4 /*yield*/, callback(editor, pasteId)];
-                    case 2:
-                        url = _a.sent();
-                        this.embedMarkDownImage(editor, pasteId, url, name);
-                        return [3 /*break*/, 4];
-                    case 3:
-                        e_5 = _a.sent();
-                        this.handleFailedUpload(editor, pasteId, e_5);
-                        return [3 /*break*/, 4];
-                    case 4: return [2 /*return*/];
-                }
-            });
-        });
-    };
-    imageAutoUploadPlugin.prototype.insertTemporaryText = function (editor, pasteId) {
-        var progressText = imageAutoUploadPlugin.progressTextFor(pasteId);
+    }
+    async uploadFileAndEmbedImgurImage(editor, callback, clipboardData) {
+        let pasteId = (Math.random() + 1).toString(36).substr(2, 5);
+        this.insertTemporaryText(editor, pasteId);
+        const name = clipboardData.files[0].name;
+        try {
+            const url = await callback(editor, pasteId);
+            this.embedMarkDownImage(editor, pasteId, url, name);
+        }
+        catch (e) {
+            this.handleFailedUpload(editor, pasteId, e);
+        }
+    }
+    insertTemporaryText(editor, pasteId) {
+        let progressText = imageAutoUploadPlugin.progressTextFor(pasteId);
         editor.replaceSelection(progressText + "\n");
-    };
-    imageAutoUploadPlugin.progressTextFor = function (id) {
-        return "![Uploading file...".concat(id, "]()");
-    };
-    imageAutoUploadPlugin.prototype.embedMarkDownImage = function (editor, pasteId, imageUrl, name) {
-        if (name === void 0) { name = ""; }
-        var progressText = imageAutoUploadPlugin.progressTextFor(pasteId);
+    }
+    static progressTextFor(id) {
+        return `![Uploading file...${id}]()`;
+    }
+    embedMarkDownImage(editor, pasteId, imageUrl, name = "") {
+        let progressText = imageAutoUploadPlugin.progressTextFor(pasteId);
         name = this.handleName(name);
-        var markDownImage = "![".concat(name, "](").concat(imageUrl, ")");
+        let markDownImage = `![${name}](${imageUrl})`;
         imageAutoUploadPlugin.replaceFirstOccurrence(editor, progressText, markDownImage);
-    };
-    imageAutoUploadPlugin.prototype.handleFailedUpload = function (editor, pasteId, reason) {
+    }
+    handleFailedUpload(editor, pasteId, reason) {
         new obsidian.Notice(reason);
         console.error("Failed request: ", reason);
-        var progressText = imageAutoUploadPlugin.progressTextFor(pasteId);
+        let progressText = imageAutoUploadPlugin.progressTextFor(pasteId);
         imageAutoUploadPlugin.replaceFirstOccurrence(editor, progressText, "⚠️upload failed, check dev console");
-    };
-    imageAutoUploadPlugin.prototype.handleName = function (name) {
-        var imageSizeSuffix = this.settings.imageSizeSuffix || "";
+    }
+    handleName(name) {
+        const imageSizeSuffix = this.settings.imageSizeSuffix || "";
         if (this.settings.imageDesc === "origin") {
-            return "".concat(name).concat(imageSizeSuffix);
+            return `${name}${imageSizeSuffix}`;
         }
         else if (this.settings.imageDesc === "none") {
             return "";
@@ -9914,27 +6816,26 @@ var imageAutoUploadPlugin = /** @class */ (function (_super) {
                 return "";
             }
             else {
-                return "".concat(name).concat(imageSizeSuffix);
+                return `${name}${imageSizeSuffix}`;
             }
         }
         else {
-            return "".concat(name).concat(imageSizeSuffix);
+            return `${name}${imageSizeSuffix}`;
         }
-    };
-    imageAutoUploadPlugin.replaceFirstOccurrence = function (editor, target, replacement) {
-        var lines = editor.getValue().split("\n");
-        for (var i = 0; i < lines.length; i++) {
-            var ch = lines[i].indexOf(target);
+    }
+    static replaceFirstOccurrence(editor, target, replacement) {
+        let lines = editor.getValue().split("\n");
+        for (let i = 0; i < lines.length; i++) {
+            let ch = lines[i].indexOf(target);
             if (ch != -1) {
-                var from = { line: i, ch: ch };
-                var to = { line: i, ch: ch + target.length };
+                let from = { line: i, ch: ch };
+                let to = { line: i, ch: ch + target.length };
                 editor.replaceRange(replacement, from, to);
                 break;
             }
         }
-    };
-    return imageAutoUploadPlugin;
-}(obsidian.Plugin));
+    }
+}
 
 module.exports = imageAutoUploadPlugin;
 

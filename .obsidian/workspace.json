@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "article/【2024W48】肖恩技术周刊（第 26 期）.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "【2024W48】肖恩技术周刊（第 26 期）"
+              "title": "README"
             }
           },
           {
@@ -185,11 +185,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "62196a9aacfdb958",
+  "active": "2c134ca7de08233f",
   "lastOpenFiles": [
-    "source/read_source.md",
-    "article/【2024W48】肖恩技术周刊（第 26 期）.md",
     "SUMMARY.md",
+    "article/【2024W49】肖恩技术周刊（第 27 期）.md",
+    "article/【2024W48】肖恩技术周刊（第 26 期）.md",
+    "source/read_source.md",
     "source/template.md",
     "article/【2024W31】肖恩技术周刊（第 9 期）.md",
     "article/【2024W47】肖恩技术周刊（第 25 期）.md",
