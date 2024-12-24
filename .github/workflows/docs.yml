@@ -10,7 +10,6 @@ on:
 jobs:
   docs:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
         with:
@@ -46,4 +45,4 @@ jobs:
           build_dir: docs/.vuepress/dist
         env:
           # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
