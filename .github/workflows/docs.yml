@@ -17,36 +17,19 @@ jobs:
           fetch-depth: 0
 
       - name: 设置 Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
           # 选择要使用的 node 版本
-          node-version: 22
-          
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-npm-cache-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-npm-cache-
+          node-version: 18
 
       - name: Install dependencies
-        # 如果没有命中缓存才执行 npm install
-        if: steps.cache-deps.outputs.cache-hit != 'true'
         run: npm install
 
       - name: Run Build Script
-        run: npm run docs:build
+        run: npm run build
 
-      # 查看 workflow 的文档来获取更多信息
-      # @see https://github.com/crazy-max/ghaction-github-pages
       - name: 部署到 GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          # 部署到 gh-pages 分支
-          target_branch: gh-pages
-          # 部署目录为 VuePress 的默认输出目录
-          build_dir: docs/.vuepress/dist
-        env:
-          # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          publish_dir: ./docs/.vuepress/dist
