@@ -1,17 +1,12 @@
 <template><div><h1 id="肖恩技术周刊-第-9-期-queen-wen" tabindex="-1"><a class="header-anchor" href="#肖恩技术周刊-第-9-期-queen-wen"><span>肖恩技术周刊（第 9 期）：Queen Wen！！！</span></a></h1>
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具分享”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br/>
-<strong>更新时间</strong>: 周一<br/>
-<strong>历史收录</strong>: <a href="https://github.com/Xiaoxie1994/shawn-weekly" target="_blank" rel="noopener noreferrer">shawn-weekly</a> <br/>
+<strong>更新时间</strong>: 周一<br>
+<strong>历史收录</strong>: <a href="https://github.com/Xiaoxie1994/shawn-weekly" target="_blank" rel="noopener noreferrer">shawn-weekly</a> <br>
 <strong>订阅方式</strong>:</p>
 <ul>
-<li>
-<p><strong>公众号</strong>: 肖恩聊技术<br/>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"/></p>
-</li>
-<li>
-<p><strong>个人博客</strong>: <a href="https://www.shawnxie.top/categories/tf-weekly" target="_blank" rel="noopener noreferrer">肖恩的杂货店</a></p>
-</li>
+<li><strong>公众号</strong>: 肖恩聊技术<br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></li>
 </ul>
 </blockquote>
 <h2 id="开篇图" tabindex="-1"><a class="header-anchor" href="#开篇图"><span>开篇图</span></a></h2>
@@ -23,7 +18,7 @@
 <ul>
 <li><a href="https://36kr.com/p/2889209647553160" target="_blank" rel="noopener noreferrer">全线大溃败，英特尔 “黄粱一梦”</a></li>
 </ul>
-<img src="@source/content/picture/w31/image-2.png" width="500"/>
+<p><img src="@source/content/picture/w31/image-2.png" alt=""></p>
 <blockquote>
 <p>英特尔在2024年第二季度遭遇了业绩全线大溃败。财报显示，公司营收为128.3亿美元，同比下滑0.9%，低于市场预期的129.5亿美元。净利润亏损16.1亿美元，远低于市场预期的亏损5.4亿美元。主要受数据中心及AI业务下滑影响，英特尔的毛利率出现大幅下滑，导致亏损扩大。公司对2024年第三季度的业绩指引同样低于市场预期，预期收入为125-135亿美元，毛利率为34.5%，均低于市场预期的143.7亿美元和44.1%。</p>
 <p>面对亏损，英特尔采取了一系列措施进行调整，包括裁员15%（约1-2万人）、降低2024年总资本开支20%至250-270亿美元，以及从四季度开始停止派息，这是公司32年来首次暂停派息。尽管云厂商增加资本开支，但英特尔的数据中心业务未见起色，市场份额被竞争对手蚕食。英特尔的AI市场难以突破，主要由于市场需求集中在GPU端，而公司的传统CPU业务受到挑战。此外，公司的网络及边缘域业务也表现低迷。整体来看，英特尔的经营状况和市场前景不容乐观。</p>
@@ -31,7 +26,7 @@
 <ul>
 <li><a href="https://www.jiqizhixin.com/articles/2024-07-30-5" target="_blank" rel="noopener noreferrer">刚刚，Meta开源「分割一切」2.0模型，视频也能分割了</a></li>
 </ul>
-<img src="@source/content/picture/w31/image-3.png" width="500"/>
+<p><img src="@source/content/picture/w31/image-3.png" alt=""></p>
 <blockquote>
 <p>Meta公司最近在SIGGRAPH会议上宣布了Segment Anything Model 2（SAM 2）的开源，这是一项重大的技术突破，它提供了实时、可提示的对象分割能力，适用于静态图像和动态视频内容。SAM 2能够分割任何视频或图像中的任何对象，即使这些对象是它以前没有见过的，也无需进行自定义适配。它在图像分割准确率上超越了前身，并在视频分割性能上实现了显著提升，同时减少了交互时间。</p>
 <p>SAM 2的架构采用了创新的流式内存设计，适合实时应用，并且能够在不依赖数据中心的情况下运行，显示了计算效率的显著提升。模型需要大量数据训练，Meta为此发布了一个大型带注释的数据库SA-V，包含51,000个真实世界视频和600,000个masklets，是现有最大视频分割数据集的4.5倍和53倍。</p>
@@ -42,7 +37,7 @@
 <ul>
 <li><a href="https://www.oschina.net/news/304647" target="_blank" rel="noopener noreferrer">三个 90 后小伙自学技术搭建黄色网站被刑拘</a></li>
 </ul>
-<img src="@source/content/picture/w31/image-4.png" width="500"/>
+<p><img src="@source/content/picture/w31/image-4.png" alt=""></p>
 <blockquote>
 <p>三个&quot;90后&quot;年轻小伙因不满打工辛苦赚钱慢，自学技术搭建淫秽色情网站牟利，最终因涉嫌制作、复制、出版贩卖、传播淫秽物品罪被合肥警方依法刑事拘留。涉案的唐某某、姚某某是中学同学，两人虽只有大专学历，对网络技术不精通，但通过自学搭建了网站，上传淫秽音视频，并通过会员制和零售方式盈利。后来拉朋友钱某某负责广告推广，网站访问量激增，非法牟利达50余万元。办案民警指出，网络传播淫秽物品不仅扰乱互联网秩序，还易污染青少年身心健康，诱发犯罪，危害严重。目前案件正在进一步侦办中。</p>
 </blockquote>
@@ -50,7 +45,7 @@
 <ul>
 <li><a href="https://www.infoq.cn/article/LvQs5lG7et17I3wxvTkO" target="_blank" rel="noopener noreferrer">检索增强生成：革命性技术还是过度承诺？</a></li>
 </ul>
-<img src="@source/content/picture/w31/image-8.png" width="500"/>
+<p><img src="@source/content/picture/w31/image-8.png" alt=""></p>
 <blockquote>
 <p>检索增强生成（Retrieval-Augmented Generation, RAG）是一种人工智能技术，它通过整合外部最新信息来增强生成式模型的能力。RAG技术允许AI系统访问实时数据，从而提供更准确和相关的响应。它涉及几个关键步骤：用户提出问题、AI将问题转换为向量、检索相关数据、生成答复。</p>
 <p>RAG的开发是一个多步骤过程，包括收集数据、数据预处理、转换数据为向量、开发数据搜索算法和准备提示词系统。尽管RAG技术有潜力提高AI系统的准确性和用户体验，但它并非万能，存在一些挑战，如确保AI正确使用检索到的数据、处理会话中的语义差异、以及访问大型数据库的复杂性。</p>
@@ -60,14 +55,14 @@
 <ul>
 <li><a href="https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&amp;mid=2247678605&amp;idx=1&amp;sn=c720091348d50a547a0ca77b4b75a41b&amp;chksm=ebff5ba491de767ab7cbce8601110a396333501f22c4329bf0bb1deba044d592e27417466562&amp;scene=126&amp;sessionid=1722750038#rd" target="_blank" rel="noopener noreferrer">程序员必备Linux性能分析工具和方法</a></li>
 </ul>
-<img src="@source/content/picture/w31/image-9.png" width="500"/>
+<p><img src="@source/content/picture/w31/image-9.png" alt=""></p>
 <blockquote>
 <p>本文是一篇关于Linux性能分析工具和方法的总结，主要面向后台开发者。文章分为六个部分，分别介绍了性能分析工具、分析方法，以及针对CPU、内存、磁盘I/O和网络I/O的具体排查步骤。</p>
 <ul>
 <li>分析工具：Linux提供了多种性能分析工具，如top、vmstat、slabtop、iostat、ethool、ifconfig、ip、netstat、strace、ltrace、memprof、oprofile等，它们可以用于监控和分析系统性能。</li>
 <li>分析方法：作者提供了一个排查问题的思路图，建议从CPU、内存、磁盘和网络四个方面入手，快速缩小问题范围。</li>
 <li>CPU使用问题：使用top命令检查CPU使用率和负载，通过procinfo或/proc/interrupts查看中断情况，使用oprofile分析内核函数和用户空间进程的CPU使用情况。</li>
-<li>内存使用问题：通过top、vmstat、procinfo等工具确定内存使用情况，使用slabtop分析内核内存使用，通过/proc/<pid>/status查看进程内存使用类型。</li>
+<li>内存使用问题：通过top、vmstat、procinfo等工具确定内存使用情况，使用slabtop分析内核内存使用，通过/proc/pid/status查看进程内存使用类型。</li>
 <li>磁盘I/O问题：运行iostat查看磁盘等待时间，使用iotop找到高IO进程，通过strace跟踪文件操作。</li>
 <li>网络I/O问题：使用ethool和iptraf查看网络流量和错误，通过ifconfig/ip、netstat、strace、lsof等工具分析网络问题。</li>
 </ul>
@@ -85,7 +80,7 @@
 <ul>
 <li><a href="https://github.com/johannesjo/super-productivity" target="_blank" rel="noopener noreferrer">super-productivity</a></li>
 </ul>
-<img src="@source/content/picture/w31/image-1.png" width="500"/>
+<p><img src="@source/content/picture/w31/image-1.png" alt=""></p>
 <blockquote>
 <p>Super Productivity是一个高级待办事项列表应用程序，具备时间框定和时间跟踪功能，支持从日历、Jira、GitHub等集成导入任务。它提供了组织和专注的计划工具，包括子任务、项目、标签和颜色编码，以及健康和生产力习惯的辅助功能，如休息提醒、反拖延特性和番茄工作计时器。此外，它还提供了与Jira、GitHub、GitLab、Gitea和OpenProject的集成，可以自动导入分配给您的任务，计划细节，自动创建工作日志，并在有变更时立即通知。Super Productivity尊重用户隐私，不收集任何数据，无需注册账户，且是免费和开源的。</p>
 </blockquote>
@@ -93,7 +88,7 @@
 <ul>
 <li><a href="https://www.jiqizhixin.com/articles/2024-7-31-20" target="_blank" rel="noopener noreferrer">一键生成PPT！Kimi ：让「PPT民工」先浪起来</a></li>
 </ul>
-<img src="@source/content/picture/w31/image-5.png" width="500"/>
+<p><img src="@source/content/picture/w31/image-5.png" alt=""></p>
 <blockquote>
 <p>Kimi与AiPPT合作推出了PPT助手功能，旨在简化PPT的制作过程。用户可以通过两种方式使用Kimi制作PPT：一是上传文档后一键转换为PPT；二是输入指令，一键生成PPT大纲和幻灯片。Kimi能够迅速构思出PPT框架，并提供多种模板供用户选择。尽管生成的PPT只是框架，需要用户添加详情和图片，但这一过程大大缩短了制作时间。此外，市场上还有多款AI生成PPT的应用，如Gamma、Tome、WPS AI、AiPPT、美图AI等，它们各具特色，提供从内容生成到模板选择的多种服务。尽管Kimi等工具不能完全替代人工制作PPT，但它们显著提高了效率，减少了制作时间。</p>
 </blockquote>
@@ -120,7 +115,7 @@
 <ul>
 <li><a href="https://36kr.com/p/2890286663539589" target="_blank" rel="noopener noreferrer">韩国人不生小孩，没你想的那么简单</a></li>
 </ul>
-<img src="@source/content/picture/w31/image-6.png" width="500"/>
+<p><img src="@source/content/picture/w31/image-6.png" alt=""></p>
 <blockquote>
 <p>探讨了韩国低生育率的复杂原因。文章首先提到了韩国统计厅公布的数据，显示2024年一季度韩国的总和生育率降至0.76，出生人口仅有6万人。这一现象并非韩国独有，日本和西班牙等国家也面临类似困境。文章通过小说《出生意愿确认》引出了一个架空的设定，即生育权被赋予胎儿，父母需在孩子出生前征得其同意。这一设定引发了关于出生权和自由意志的深入讨论。</p>
 <p>文章指出，韩国年轻人对生育持消极态度，原因可能不仅仅是经济压力，还可能源于更深层次的社会和文化因素。韩国政府为鼓励生育投入了巨额资金，但效果有限。一些专家指出，这些政策主要惠及大企业和公共机构，而对弱势群体的支持不足。此外，房价上涨、教育成本增加和社会竞争的加剧，都是影响生育意愿的因素。</p>
@@ -129,23 +124,11 @@
 <ul>
 <li><a href="https://36kr.com/p/2889738490977156" target="_blank" rel="noopener noreferrer">离职之后，我在图书馆“假装上班”</a></li>
 </ul>
-<img src="@source/content/picture/w31/image-7.png" width="500"/>
+<p><img src="@source/content/picture/w31/image-7.png" alt=""></p>
 <blockquote>
 <p>文章通过三个失业者的故事，揭示了图书馆成为他们临时避风港的现象。这些失业者，像上班族一样，每天准时到图书馆“打卡”，在安静的环境里阅读、学习，同时寻找新的工作机会。</p>
 <p>Simon，一位85后通信行业从业者，失业后选择图书馆作为日常去处。在这里，他阅读专业书籍，学习新知识，试图维持生活的秩序感。尽管内心感到失落和焦虑，图书馆给了他一种还在上班的错觉，帮助他逐渐适应失业的生活。</p>
-<p>杰克，一位95后金融从业者，被裁后在图书馆过着规律的生活。他发现图书馆提供了一个专注的环境，帮助他保持积极态度，继续寻找工作。图书馆的安静和专注氛围，让他能够远离床的诱惑，提高工作效率。</p>
-<p>徐云，一位90后设计师，被裁员后在图书馆寻找工作的同时，享受阅读的乐趣。他发现图书馆里有许多和他一样的失业者，但他选择独自面对，保持早上8点出门的习惯。图书馆的安静和免费的环境，为他提供了一个理想的工作和学习场所。</p>
-<p>文章通过这些故事，展示了图书馆在失业者生活中扮演的角色。它不仅是一个提供知识和信息的地方，更是一个给予安慰、支持和希望的空间。失业者在这里找到了一种新的生活方式，帮助他们面对生活的挑战，保持积极的生活态度。</p>
-<p>同时，这些故事也反映了当前就业市场的一些挑战，以及人们如何在逆境中寻找出路。图书馆成为了他们自我提升和心理调适的场所，帮助他们在失业期间保持积极和前进的动力。尽管面临不确定性和压力，图书馆的宁静环境和丰富资源，为他们提供了一个理想的避风港。</p>
-</blockquote>
-<ul>
-<li><a href="https://www.ruanyifeng.com/blog/2024/08/weekly-issue-311.html" target="_blank" rel="noopener noreferrer">科技爱好者周刊（第 311 期）：低利率与长期项目</a></li>
-</ul>
-<blockquote>
-<p>文章提到进入低利率时代，传统高回报项目难以寻找且风险较高。低利率环境促使人们重视并投资于长期项目，因其未来收益现值增加，缩小了与即时收益的差异。张五常认为，低利率利于年轻人选择学医等长期职业。周刊还强调，长期项目虽困难但能带来更大优势，建议选择重要事务进行长期规划。</p>
-<p>科技动态方面，周刊介绍了人体外骨骼产品MO/GO、钛金属人工心脏、微塑料处理的气泡屏障技术等创新。同时，提及广电总局推动遥控器统一、Windows Insider新增功能等信息。周刊还包括了对任正非电视剧评价的收录、微信小程序用户规模榜单、网站证书工作原理的解释、Makefile教程、DuckDB数据库操作JSON数据等文章。</p>
-<p>工具推荐包括Zulip群聊软件、win-vind快捷键工具、canvas-confetti网页纸屑效果库等。AI相关部分推荐了Luvvoice文本转语音服务、Outfitify AI穿搭评价工具等。资源分享涵盖了漫画家官网、古生物3D标本网站、Linux发行版试用平台等。图片分享包括LG透明电视墙和波兰华沙自来水厂使用蛤蜊监测水质的创新方法。</p>
-<p>文摘部分讨论了技术博客的特质、搜索引擎发展史，以及谷歌作为内容农场的争议。言论部分包括对AI风险、React框架、薛定谔的猫以及人类行为模式的见解。最后，周刊附有往年回顾、版权声明、相关文章链接和留言区，留言区中读者就周刊内容、科技话题、翻译插件推荐等进行了互动讨论。</p>
+<p>杰克，一位95后金融从业者，被裁</p>
 </blockquote>
 </div></template>
 

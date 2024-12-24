@@ -2,9 +2,9 @@ export const redirects = JSON.parse("{}")
 
 export const routes = Object.fromEntries([
   ["/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/xiexiao6/repo/github/shawn-weekly/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":""} }],
+  ["/collection/2024.html", { loader: () => import(/* webpackChunkName: "collection_2024.html" */"/Users/xiexiao6/repo/github/shawn-weekly/docs/.vuepress/.temp/pages/collection/2024.html.js"), meta: {"title":""} }],
   ["/source/read_source.html", { loader: () => import(/* webpackChunkName: "source_read_source.html" */"/Users/xiexiao6/repo/github/shawn-weekly/docs/.vuepress/.temp/pages/source/read_source.html.js"), meta: {"title":""} }],
   ["/source/template.html", { loader: () => import(/* webpackChunkName: "source_template.html" */"/Users/xiexiao6/repo/github/shawn-weekly/docs/.vuepress/.temp/pages/source/template.html.js"), meta: {"title":""} }],
-  ["/collection/2024.html", { loader: () => import(/* webpackChunkName: "collection_2024.html" */"/Users/xiexiao6/repo/github/shawn-weekly/docs/.vuepress/.temp/pages/collection/2024.html.js"), meta: {"title":""} }],
   ["/content/2024/1.html", { loader: () => import(/* webpackChunkName: "content_2024_1.html" */"/Users/xiexiao6/repo/github/shawn-weekly/docs/.vuepress/.temp/pages/content/2024/1.html.js"), meta: {"title":"肖恩技术周刊（第 1 期）：起点！"} }],
   ["/content/2024/10.html", { loader: () => import(/* webpackChunkName: "content_2024_10.html" */"/Users/xiexiao6/repo/github/shawn-weekly/docs/.vuepress/.temp/pages/content/2024/10.html.js"), meta: {"title":"肖恩技术周刊（第 10 期）：太阳神鸟"} }],
   ["/content/2024/11.html", { loader: () => import(/* webpackChunkName: "content_2024_11.html" */"/Users/xiexiao6/repo/github/shawn-weekly/docs/.vuepress/.temp/pages/content/2024/11.html.js"), meta: {"title":"肖恩技术周刊（第 11 期）：猴哥，我好急啊！"} }],
