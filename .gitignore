@@ -6,4 +6,3 @@
 .vuepress/dist
 # node模块
 node_modules
-package-lock.json
