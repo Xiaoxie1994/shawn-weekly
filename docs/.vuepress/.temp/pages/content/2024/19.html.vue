@@ -1,0 +1,61 @@
+<template><div><h1 id="肖恩技术周刊-第-19-期-物理学不存在了" tabindex="-1"><a class="header-anchor" href="#肖恩技术周刊-第-19-期-物理学不存在了"><span>肖恩技术周刊（第 19 期）：物理学不存在了</span></a></h1>
+<blockquote>
+<p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
+<strong>更新时间</strong>: 周一<br>
+<strong>历史收录</strong>: <a href="https://github.com/Xiaoxie1994/shawn-weekly" target="_blank" rel="noopener noreferrer">shawn-weekly</a> <br>
+<strong>订阅方式</strong>: 微信公众号“<strong>肖恩聊技术</strong>”，除周刊外还有更多原创技术博文~<br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></p>
+</blockquote>
+<h2 id="内容速览" tabindex="-1"><a class="header-anchor" href="#内容速览"><span>内容速览</span></a></h2>
+<blockquote>
+<p><strong>业界资讯</strong></p>
+<ul>
+<li>Kimi 探索版来了，最好的搜索是不用自己搜索</li>
+<li>2024年物理诺奖颁给“AI+物理”</li>
+<li>马斯克发布特斯拉Robotaxi</li>
+</ul>
+<p><strong>技术博客</strong></p>
+<ul>
+<li>一文探索应运而生的数据库们</li>
+<li>我的内容创作最强搭子——Kimi</li>
+</ul>
+<p><strong>开源项目</strong></p>
+<ul>
+<li>surya: 开源的文档OCR工具包</li>
+<li>PaddleOCR: 百度飞桨开源OCR工具库</li>
+</ul>
+</blockquote>
+<h2 id="开篇图" tabindex="-1"><a class="header-anchor" href="#开篇图"><span>开篇图</span></a></h2>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262344743.jpg" alt=""></p>
+<p>这周内容比较少，因为突然被安排周一去学校面试，得提前准备一下。本周最激动的事莫过于Kimi推出探索版了，体验还是很不错的，虽然有时候检索的网页数量没有达到预期并且每天只能体验5次，但瑕不掩瑜。探索版灰度周一就要推全了，还没有用过的小伙伴快去试试吧。</p>
+<h2 id="业界资讯" tabindex="-1"><a class="header-anchor" href="#业界资讯"><span>业界资讯</span></a></h2>
+<h3 id="kimi-探索版来了-最好的搜索是不用自己搜索" tabindex="-1"><a class="header-anchor" href="#kimi-探索版来了-最好的搜索是不用自己搜索"><span><a href="https://mp.weixin.qq.com/s/cRXe0HFO5BX0AzziaqoiKg" target="_blank" rel="noopener noreferrer">Kimi 探索版来了，最好的搜索是不用自己搜索</a></span></a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262344746.png" alt=""></p>
+<p>Kimi探索版是月之暗面科技有限公司开发的AI助手，拥有强大的自主搜索能力，能够模拟人类的推理思考过程，解决复杂问题。它的搜索量是普通版的10倍，一次搜索可以精读超过500个页面，帮助用户高效完成分析调研等任务。Kimi探索版旨在帮助用户节省时间，专注于提出好问题和思考创造。它已分批上线Web端，用户可以通过对话框唤醒。为确保更多人使用，目前每人每天可使用5次。Kimi探索版通过自主规划策略、自动化信息检索和即时反思结果，显著提升搜索效率，综合性能超过同类产品至少30%。它主要面向知识工作者和大学生，满足他们对高信息密度、时效性和权威性的搜索需求，通过模拟人类思考过程，多级分解问题，执行深度搜索，提供全面准确的答案。</p>
+<h3 id="_2024年物理诺奖颁给-ai-物理-geoffrey-hinton和john-hopfield因人工神经网络成果获奖" tabindex="-1"><a class="header-anchor" href="#_2024年物理诺奖颁给-ai-物理-geoffrey-hinton和john-hopfield因人工神经网络成果获奖"><span><a href="https://www.mittrchina.com/news/detail/13858" target="_blank" rel="noopener noreferrer">2024年物理诺奖颁给“AI+物理”：Geoffrey Hinton和John Hopfield因人工神经网络成果获奖</a></span></a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262344747.png" alt=""></p>
+<p>2024年诺贝尔物理学奖授予了美国和加拿大的科学家John J. Hopfield和Geoffrey E. Hinton，以表彰他们在人工神经网络领域的贡献。这一选择打破了传统，首次将物理学奖颁发给计算机科学领域的研究。Hopfield因发明联想记忆网络而闻名，而Hinton则因开发能在数据中自主查找属性的方法而著称。他们的工作为现代机器学习奠定了基础。</p>
+<p>Hopfield网络利用物理学描述材料的原子自旋特性，通过节点（代表像素）之间的连接存储和重建图像。Hinton在此基础上发展了玻尔兹曼机，这是一种能够通过学习识别数据特征的网络。他们的研究推动了机器学习的快速发展，并在物理学、生物学和计算机科学等多个领域产生了显著影响。</p>
+<p>Hinton曾是谷歌大脑团队的成员，并在多伦多大学担任教授，他因对深度学习领域的贡献而获得了2018年的图灵奖。他还因对人工智能风险的担忧而从谷歌辞职，以自由地讨论AI的威胁。Hopfield则是普林斯顿大学的教授，他的研究主要集中在动作电位定时和同步在神经生物学计算中的应用。</p>
+<p>诺贝尔物理学奖的评选标准是基于对物理学领域的杰出贡献，自1901年以来，该奖项共颁发了117届，有225人次获奖。其中，约翰·巴丁是唯一一位两次获得诺贝尔物理学奖的人。最年轻的获奖者劳伦斯·布拉格当时仅25岁，而女性获奖者包括玛丽·居里、玛丽亚·格佩特·梅耶等。此外，还有夫妻档和父子档共同获得该奖项的情况。</p>
+<h3 id="马斯克发布特斯拉robotaxi-取消方向盘刹车电门-可无线充电-洗车都是机器人操作" tabindex="-1"><a class="header-anchor" href="#马斯克发布特斯拉robotaxi-取消方向盘刹车电门-可无线充电-洗车都是机器人操作"><span><a href="https://www.qbitai.com/2024/10/199411.html" target="_blank" rel="noopener noreferrer">马斯克发布特斯拉Robotaxi：取消方向盘刹车电门，可无线充电，洗车都是机器人操作</a></span></a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262344748.png" alt=""></p>
+<p>特斯拉在发布会上展示了其Robotaxi（CyberCab）和RoboVan两款无人驾驶车型，以及人形机器人Optimus。CyberCab是一款无方向盘和踏板的出租车，预计成本不到3万美元，而RoboVan能容纳20人并用于货物运输。Optimus机器人展示了其新的能力，如跳舞和倒酒。马斯克预计，到2027年，CyberCab的销量将非常高，且成本将继续下降。然而，发布会后，特斯拉股价下跌，市值蒸发了约2156亿人民币。一些观众和网友对发布会的内容感到失望，认为缺乏技术细节和实际演示。尽管如此，马斯克可能还有更大的计划尚未透露。</p>
+<h2 id="技术博客" tabindex="-1"><a class="header-anchor" href="#技术博客"><span>技术博客</span></a></h2>
+<h3 id="一文探索应运而生的数据库们" tabindex="-1"><a class="header-anchor" href="#一文探索应运而生的数据库们"><span><a href="https://mp.weixin.qq.com/s/6nOwTieyW9SXvi2tqLtizw" target="_blank" rel="noopener noreferrer">一文探索应运而生的数据库们</a></span></a></h3>
+<p>本文深入探讨了数据库技术的演进历程，从早期的层次数据库IMS到现代的向量数据库Milvus，展示了数据库技术如何适应不同时代的技术挑战和应用需求。文章首先介绍了关系数据库MySQL，强调了其关系模型和ACID事务特性，同时指出了其在处理大规模数据时的局限性。接着，文章分析了NoSQL数据库如HBase、MongoDB和Redis，它们通过牺牲一致性来换取更高的可用性和扩展性，适用于处理大量非结构化数据。</p>
+<p>文章还详细介绍了图数据库Neo4j，其基于图数据模型的原生图处理和存储结构，使其在关系复杂的数据分析中表现出色。时序数据库InfluxDB针对时间序列数据的存储和查询进行了优化，而HTAP数据库TiDB则通过一体化架构实现了实时分析和事务处理的无缝结合。</p>
+<p>特别地，文章对向量数据库Milvus进行了重点讨论，解释了其如何支持高维向量数据的存储和相似性计算，为机器学习等领域提供了强大的数据支持。最后，文章预测了数据库技术的未来趋势，包括向垂直领域专业化发展、分布式架构的普及、云原生化以及数据安全技术的强化，预示着数据库技术将继续向着更高效、更安全、更智能的方向发展。</p>
+<h3 id="我的内容创作最强搭子——kimi" tabindex="-1"><a class="header-anchor" href="#我的内容创作最强搭子——kimi"><span><a href="https://mp.weixin.qq.com/s/HDUjesD7Qs5o9qm3bPs_ZA" target="_blank" rel="noopener noreferrer">我的内容创作最强搭子——Kimi</a></span></a></h3>
+<p>肖恩在文章中分享了他使用Kimi这个AI工具在内容创作上的体验和改进过程。他最初被Kimi的长文本解读能力所吸引，并在整理“代码可视化”的理论知识时，利用Kimi节省了大量素材寻找和解读的时间。随后，他尝试制作了一个自动抓取技术热点并总结的工具，但由于Kimi的API当时不支持搜索功能，他不得不自己编写搜索和内容解析工具。随着Kimi浏览器插件的推出，他得以在原始页面上直接生成内容摘要，简化了工作流程。</p>
+<p>在第7期技术周刊时，作者因内容准确度和信息源质量的问题，放弃了自动工具，转而人工收集内容。Kimi的探索版发布，具备了AI自主搜索能力，使得作者能够更加专注于提出问题和思考，而不是花费大量时间在搜索调研上。作者对Kimi的新功能表示赞赏，并希望Kimi能继续提供更多有用的功能。</p>
+<h2 id="开源项目" tabindex="-1"><a class="header-anchor" href="#开源项目"><span>开源项目</span></a></h2>
+<h3 id="surya" tabindex="-1"><a class="header-anchor" href="#surya"><span><a href="https://github.com/VikParuchuri/surya" target="_blank" rel="noopener noreferrer">surya</a></span></a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262344749.png" alt=""></p>
+<p>Surya是一个开源的文档OCR工具包，支持90多种语言的OCR，并提供行级文本检测、布局分析、阅读顺序检测和表格识别。它适用于多种文档类型，并且提供了一个托管的API，可以处理PDF、图像、Word文档和PowerPoint。Surya的模型权重在特定条件下可以免费使用，并且提供了详细的安装和使用指南，包括命令行工具和Python API。此外，还提供了性能提示和基准测试结果，以及对局限性和故障排除的建议。</p>
+<h3 id="paddleocr" tabindex="-1"><a class="header-anchor" href="#paddleocr"><span><a href="https://github.com/PaddlePaddle/PaddleOCR" target="_blank" rel="noopener noreferrer">PaddleOCR</a></span></a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262344750.gif" alt=""></p>
+<p>PaddleOCR是由百度飞桨（PaddlePaddle）深度学习平台开发的开源OCR工具库，支持80+种语言识别，提供数据标注和合成工具，支持服务器、移动设备、嵌入式和IoT设备的模型训练和部署。项目持续更新，包括算法模型挑战赛冠军方案，新增低代码开发能力，支持多种前沿OCR算法和产业级特色模型。</p>
+</div></template>
+
+
