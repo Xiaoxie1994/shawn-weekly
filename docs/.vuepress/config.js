@@ -5,6 +5,32 @@ import { slimsearchPlugin } from '@vuepress/plugin-slimsearch'
 import { cachePlugin } from '@vuepress/plugin-cache'
 import { feedPlugin } from '@vuepress/plugin-feed'
 import { umamiAnalyticsPlugin } from '@vuepress/plugin-umami-analytics'
+import fs from 'fs';
+import path from 'path';
+
+const generateContentSidebar = () => {
+  const contentDir = 'docs/content';
+  const sidebar = [];
+  fs.readdirSync(contentDir).forEach(year => {
+    if (fs.statSync(path.join(contentDir, year)).isDirectory() && year !== 'picture') {
+      const yearSidebar = { text: year, prefix: `${year}/`, collapsible: true, children: [] };
+      fs.readdirSync(path.join(contentDir, year)).forEach(file => {
+        const filePath = path.join(contentDir, year, file);
+        const fileContent = fs.readFileSync(filePath, 'utf-8');
+        const titleMatch = fileContent.match(/^#\s+(.*)$/m);
+        const title = titleMatch ? titleMatch[1] : `第 ${path.basename(file, path.extname(file))} 期`;
+        yearSidebar.children.push({ text: title, link: `${path.basename(file, path.extname(file))}.md` });
+      });
+      yearSidebar.children.sort((a, b) => {
+        const numA = parseInt(a.text.match(/第 (\d+) 期/)[1], 10);
+        const numB = parseInt(b.text.match(/第 (\d+) 期/)[1], 10);
+        return numB - numA;
+      });
+      sidebar.push(yearSidebar);
+    }
+  });
+  return sidebar;
+};
 
 export default defineUserConfig({
   bundler: viteBundler(),
@@ -62,131 +88,7 @@ export default defineUserConfig({
           text: '周刊',
           prefix:'content/',
           collapsible: true,
-          children: [
-            {
-              text: '2024',
-              prefix:'2024/',
-              collapsible: true,
-              children: [
-                {
-                  text: '第 29 期：宇宙的尽头是上岸',
-                  link: '29.md'
-                },
-                {
-                  text: '第 28 期：小机器人是什么鬼啊？',
-                  link: '28.md'
-                },
-                {
-                  text: '第 27 期：移动的移动充电宝',
-                  link: '27.md'
-                },
-                {
-                  text: '第 26 期：无痛写作',
-                  link: '26.md'
-                },
-                {
-                  text: '第 25 期：第一生产力',
-                  link: '25.md'
-                },
-                {
-                  text: '第 24 期：伟大的母亲',
-                  link: '24.md'
-                },
-                {
-                  text: '第 23 期：MAGA!',
-                  link: '23.md'
-                },
-                {
-                  text: '第 22 期：4 > 1',
-                  link: '22.md'
-                },
-                {
-                  text: '第 21 期：惬意',
-                  link: '21.md'
-                },
-                {
-                  text: '第 20 期：折腾要趁早',
-                  link: '20.md'
-                },
-                {
-                  text: '第 19 期：物理学不存在了',
-                  link: '19.md'
-                },
-                {
-                  text: '第 18 期：啪的一下，假期就没了！',
-                  link: '18.md'
-                },
-                {
-                  text: '第 17 期：牛市来了？',
-                  link: '17.md'
-                },
-                {
-                  text: '第 16 期：白嫖AI的最佳时间',
-                  link: '16.md'
-                },
-                {
-                  text: '第 15 期：中秋节快乐',
-                  link: '15.md'
-                },
-                {
-                  text: '第 14 期：什么是完美副业？',
-                  link: '14.md'
-                },
-                {
-                  text: '第 13 期：肉，好次！',
-                  link: '13.md'
-                },
-                {
-                  text: '第 12 期：热 & 累！',
-                  link: '12.md'
-                },
-                {
-                  text: '第 11 期：猴哥，我好急啊！',
-                  link: '11.md'
-                },
-                {
-                  text: '第 10 期：太阳神鸟',
-                  link: '10.md'
-                },
-                {
-                  text: '第 9 期：Queen Wen！！！',
-                  link: '9.md'
-                },
-                {
-                  text: '第 8 期：奥运会热度不高？',
-                  link: '8.md'
-                },
-                {
-                  text: '第 7 期：Fight！',
-                  link: '7.md'
-                },
-                {
-                  text: '第 6 期：陶冶情操！',
-                  link: '6.md'
-                },
-                {
-                  text: '第 5 期：小魔女太可爱了！',
-                  link: '5.md'
-                },
-                {
-                  text: '第 4 期：Steam夏季促销开始啦！',
-                  link: '4.md'
-                },
-                {
-                  text: '第 3 期：基于“智能体”创造自发展的冒险镇',
-                  link: '3.md'
-                },
-                {
-                  text: '第 2 期：房地产降温',
-                  link: '2.md'
-                },
-                {
-                  text: '第 1 期：起点！',
-                  link: '1.md'
-                }
-              ]
-            }
-          ],
+          children: generateContentSidebar(),
         },
       ],
     },
@@ -219,6 +121,12 @@ export default defineUserConfig({
       hostname: 'https://weekly.shawnxie.top',
       rss: true,
       count: 100000,
+      filter: (page) => page.path.startsWith('/content/2024/'),
+      sorter: (pageA, pageB) => {
+        const numA = parseInt(pageA.title.match(/第 (\d+) 期/)[1], 10);
+        const numB = parseInt(pageB.title.match(/第 (\d+) 期/)[1], 10);
+        return numB - numA;
+      },
     }),
     umamiAnalyticsPlugin({
       id: '3b366c06-d035-411e-a013-8efbabbdad43',
