@@ -18,7 +18,12 @@ const generateContentSidebar = () => {
         const filePath = path.join(contentDir, year, file);
         const fileContent = fs.readFileSync(filePath, 'utf-8');
         const titleMatch = fileContent.match(/^#\s+(.*)$/m);
-        const title = titleMatch ? titleMatch[1] : `第 ${path.basename(file, path.extname(file))} 期`;
+        let title = titleMatch ? titleMatch[1] : `第 ${path.basename(file, path.extname(file))} 期`;
+        // 如果标题为"肖恩技术周刊（第 X 期）：XXX"，则调整为"第 X 期：XXX"
+        const shortTitleMatch = title.match(/技术周刊（第 (\d+) 期）：(.+)/);
+        if (shortTitleMatch) {
+          title = `第 ${shortTitleMatch[1]} 期：${shortTitleMatch[2]}`;
+        }
         yearSidebar.children.push({ text: title, link: `${path.basename(file, path.extname(file))}.md` });
       });
       yearSidebar.children.sort((a, b) => {
