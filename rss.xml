@@ -6,8 +6,8 @@
     <link>https://weekly.shawnxie.top/</link>
     <description>记录有价值的技术内容</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 25 Dec 2024 14:58:32 GMT</pubDate>
-    <lastBuildDate>Wed, 25 Dec 2024 14:58:32 GMT</lastBuildDate>
+    <pubDate>Wed, 25 Dec 2024 15:03:25 GMT</pubDate>
+    <lastBuildDate>Wed, 25 Dec 2024 15:03:25 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <item>
@@ -1101,21 +1101,15 @@
 <p>最近资讯含AI量很高，大模型这波热度确实是前几次概念无法比拟的。同时由于国内的内卷，当下也是普通人白嫖AI的最佳时刻，但随着这波热潮过去或某些厂家杀出重围一统天下，前期价格战的成本迟早是要收回的。想想我开始写周刊也是吃到了大模型提效的红利，现在完成一篇周刊除去前期阅读的成本（也可以通过工具自动化，但收集的效果一直不太满意）基本可以在一小时内完成，视频的生成也能控制在20分钟左右，这种效率确实相当可观。不过本周开始还是决定将视频砍掉了，一方面是20分钟虽然短但对于周末来说还是太宝贵了😁，制作完还得发到各个平台也得花费不少时间。同时也分析了近一个月的数据，发现3分钟的视频在当前信息量爆炸的环境下还是太长了，80%的观众都在前20s就退出了，完播率很低。因此，还是优先将精力放在周刊文章上，把内容做的更好一点吧。</p>
 </blockquote>
 <h2>业界资讯</h2>
-<ul>
-<li><a href="https://www.oschina.net/news/312381/java-23-released" target="_blank" rel="noopener noreferrer">Java 23 / JDK 23 正式发布</a></li>
-</ul>
+<h3><a class="header-anchor" href="#java-23-jdk-23-正式发布"><span></span></a><a href="https://www.oschina.net/news/312381/java-23-released" target="_blank" rel="noopener noreferrer">Java 23 / JDK 23 正式发布</a></h3>
 <p>Java 23 / JDK 23 正式发布，此版本为非长期支持(LTS)版本，Oracle 仅提供六个月支持。包含12个JEP，重点包括ZGC默认模式切换为分代模式，以及多个预览特性如模式中的原始类型、Class-File API、Markdown文档注释、Vector API等。此外，还有数百个小增强和数千个错误修复。</p>
 <h2>技术博客</h2>
-<ul>
-<li><a href="https://mp.weixin.qq.com/s/AAxlJzX_S_-ScJRtUktm4g" target="_blank" rel="noopener noreferrer">10种数据库技术的发展历程与现状</a></li>
-</ul>
+<h3><a class="header-anchor" href="#_10种数据库技术的发展历程与现状"><span></span></a><a href="https://mp.weixin.qq.com/s/AAxlJzX_S_-ScJRtUktm4g" target="_blank" rel="noopener noreferrer">10种数据库技术的发展历程与现状</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262354812.png" alt=""></p>
 <p>本文概述了数据库技术的演变历程，从早期的层次数据库IMS到现代的向量数据库Milvus。关系数据库如MySQL以其表格结构和SQL查询语言而流行，而NoSQL数据库则针对特定数据类型和查询需求提供了优化，包括列存数据库HBase、文档数据库MongoDB、键值数据库Redis、图数据库Neo4j和时序数据库InfluxDB。</p>
 <p>随着技术的发展，出现了HTAP数据库TiDB，它结合了在线事务处理（OLTP）和在线分析处理（OLAP），以满足实时分析和事务处理的需求。向量数据库Milvus专注于处理大规模向量数据，支持高效的相似性搜索，适用于机器学习、图像识别等场景。</p>
 <p>文章还预测了数据库技术的未来趋势，包括专业化、分布式架构、云原生化和数据安全技术的强化。这些趋势反映了数据库技术不断适应互联网服务、数据分析和人工智能等领域的发展需求。</p>
-<ul>
-<li><a href="https://mp.weixin.qq.com/s/jWKHAic4Tt4Ohsj4pTmYFw" target="_blank" rel="noopener noreferrer">消息队列选型看这一篇就够了</a></li>
-</ul>
+<h3><a class="header-anchor" href="#消息队列选型看这一篇就够了"><span></span></a><a href="https://mp.weixin.qq.com/s/jWKHAic4Tt4Ohsj4pTmYFw" target="_blank" rel="noopener noreferrer">消息队列选型看这一篇就够了</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262354813.png" alt=""></p>
 <p>本文讨论了消息队列（MQ）在分布式系统中的重要性和应用，以及几种主流的消息队列系统：Kafka、Pulsar、RocketMQ、RabbitMQ和NSQ。</p>
 <p>消息队列的作用：消息队列作为分布式系统中的关键组件，主要提供异步通信、流量削峰、系统解耦和数据缓存等功能。</p>
@@ -1128,20 +1122,14 @@
 <p>运维考量：包括高可用性、跨地域容灾、集群扩容和成本效益，不同消息队列产品在这些方面有不同的优势和限制。</p>
 <p>使用场景：根据业务需求选择合适的消息队列产品，例如Kafka适合日志处理，Pulsar适合多租户和容灾需求，RocketMQ适合金融级消息传递，RabbitMQ适合复杂路由需求，NSQ适合快速开发。</p>
 <h2>开源项目</h2>
-<ul>
-<li><a href="https://github.com/ripienaar/free-for-dev" target="_blank" rel="noopener noreferrer">free-for-dev</a></li>
-</ul>
+<h3><a class="header-anchor" href="#free-for-dev"><span></span></a><a href="https://github.com/ripienaar/free-for-dev" target="_blank" rel="noopener noreferrer">free-for-dev</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262354814.png" alt=""></p>
 <p>free-for-dev 是一个由社区维护的项目，旨在收集和分享各种对开发者和基础设施运维人员有用的软件即服务（SaaS）、平台即服务（PaaS）和基础设施即服务（IaaS）的免费层服务。这些服务包括但不限于云服务、代码托管、项目管理工具、CI/CD 工具、数据库服务、监控服务、域名注册等</p>
-<ul>
-<li><a href="https://github.com/tw93/Pake" target="_blank" rel="noopener noreferrer">Pake</a></li>
-</ul>
+<h3><a class="header-anchor" href="#pake"><span></span></a><a href="https://github.com/tw93/Pake" target="_blank" rel="noopener noreferrer">Pake</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262354815.png" alt=""></p>
 <p>Pake是一个利用Rust语言开发的框架，可以将任何网页转换成桌面应用程序。</p>
 <h2>观点</h2>
-<ul>
-<li><a href="https://36kr.com/p/2958337573047560" target="_blank" rel="noopener noreferrer">我们的一生，都在为认知买单</a></li>
-</ul>
+<h3><a class="header-anchor" href="#我们的一生-都在为认知买单"><span></span></a><a href="https://36kr.com/p/2958337573047560" target="_blank" rel="noopener noreferrer">我们的一生，都在为认知买单</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262354817.png" alt=""></p>
 <p>文章强调认知力是解决未知问题的关键能力，对个人成长和企业发展至关重要。认知力的局限性可以通过“黑天鹅理论”来说明，即人们的认知往往受限于个人经验，而新信息的出现可以颠覆旧有认知。</p>
 <p>提升认知力的四个层次包括：不知道自己不知道、知道自己不知道、知道自己知道、不知道自己知道。为了提升认知力，创业者需要构建思维框架，包括终局思维、第一性原理、增量思维和模型思维。</p>
@@ -1171,9 +1159,7 @@
 <p>大家中秋快乐！抱歉周刊延迟了，去青城山躺平了两天。先报个喜，公众号粉丝破百了！虽然好友占比高达50%，但也是值得纪念的里程碑，感谢大家的支持。这两周也对公众号的定位和内容规划有了更多的思考和探索，之后就是慢慢逐步实施了。另外写本期的时候发现很多其他周刊也没发，大家看来都挺懒的，假期只想摆烂😂。</p>
 </blockquote>
 <h2>业界资讯</h2>
-<ul>
-<li><a href="https://www.jiqizhixin.com/articles/2024-09-13-4" target="_blank" rel="noopener noreferrer">刚刚，OpenAI震撼发布o1大模型！强化学习突破LLM推理极限</a></li>
-</ul>
+<h3><a class="header-anchor" href="#刚刚-openai震撼发布o1大模型-强化学习突破llm推理极限"><span></span></a><a href="https://www.jiqizhixin.com/articles/2024-09-13-4" target="_blank" rel="noopener noreferrer">刚刚，OpenAI震撼发布o1大模型！强化学习突破LLM推理极限</a></h3>
 <p></p>
 <blockquote>
 <p>OpenAI最近发布了一款名为o1的新型AI大模型，这是该公司在大语言模型领域的又一重大突破。o1模型具备强大的复杂推理能力，能够在科学、代码和数学等领域解决比以往模型更为复杂的问题。o1模型的发布，标志着大模型领域的技术发展进入了一个新的阶段。</p>
@@ -1183,24 +1169,18 @@
 <p>OpenAI表示，o1模型系列的发布只是开始，公司计划在未来不断迭代和改进这些模型。同时，OpenAI也在探索如何将模型与人类价值观和原则更好地结合，以提高模型的安全性和可靠性。目前，o1模型的使用受到一定的限制，但OpenAI正在努力提升用户的可使用次数，并计划在未来增加更多功能，如网络浏览、文件和图像上传等，以提升模型的实用性。</p>
 <p>总的来说，o1模型的发布为AI社区带来了震撼，展示了AI在复杂推理和编程等领域的巨大潜力，预示着人工智能能力的新水平。</p>
 </blockquote>
-<ul>
-<li><a href="https://www.oschina.net/news/311382/nginx-moved-to-github" target="_blank" rel="noopener noreferrer">NGINX 项目迁移到 GitHub</a></li>
-</ul>
+<h3><a class="header-anchor" href="#nginx-项目迁移到-github"><span></span></a><a href="https://www.oschina.net/news/311382/nginx-moved-to-github" target="_blank" rel="noopener noreferrer">NGINX 项目迁移到 GitHub</a></h3>
 <p></p>
 <blockquote>
 <p>NGINX项目宣布将其开源代码仓库从Mercurial迁移到GitHub，以便于更好地接受社区的贡献和反馈。迁移后，NGINX将通过GitHub的Pull Requests接受代码贡献，并通过GitHub问题页接受bug报告和功能请求。为了帮助开发者适应新流程，NGINX将提供过渡期，直到2024年12月31日，期间仍然通过邮件列表接受补丁和社区支持。NGINX是一款高性能的HTTP服务器，以其内存占用少和高稳定性而闻名。文章还提供了NGINX的详细介绍和下载链接，以及Gitee上的NGINX镜像链接，方便用户获取和使用。社区对这一迁移消息反应积极，认为这将有助于NGINX项目的进一步发展和社区的参与。</p>
 </blockquote>
-<ul>
-<li><a href="https://tech.cnr.cn/techph/20240913/t20240913_526901485.shtml" target="_blank" rel="noopener noreferrer">京东宣布再次加薪：零售和职能体系将用两年时间实现20薪</a></li>
-</ul>
+<h3><a class="header-anchor" href="#京东宣布再次加薪-零售和职能体系将用两年时间实现20薪"><span></span></a><a href="https://tech.cnr.cn/techph/20240913/t20240913_526901485.shtml" target="_blank" rel="noopener noreferrer">京东宣布再次加薪：零售和职能体系将用两年时间实现20薪</a></h3>
 <blockquote>
 <p>京东集团在2024年9月13日宣布了新一轮的加薪计划。从2024年10月1日开始，京东零售集团和职能体系将在两年内逐步实现20薪制。这一加薪计划是继2024年初和年中连续三轮加薪之后的又一次动作。在过去三年中，京东已经逐步将员工的平均年薪从14薪提高到16薪，并在2024年对一线业务人员和客服员工的薪酬进行了显著提升。此外，京东还在2024年8月启动了2025校园招聘，开放了1.8万个岗位，并提高了校招生的薪酬。</p>
 <p>PS：有找工作诉求的朋友可以使用我的内推码: <a href="https://mp.weixin.qq.com/s/_jgjLAKpTtYLDWFTYl3iuw" target="_blank" rel="noopener noreferrer">校招内推码</a>, <a href="https://mp.weixin.qq.com/s/FV7l3GofiSr-aYNcl7zqcw" target="_blank" rel="noopener noreferrer">社招内推码</a>。</p>
 </blockquote>
 <h2>技术博客</h2>
-<ul>
-<li><a href="https://my.oschina.net/morflameblog/blog/15316524" target="_blank" rel="noopener noreferrer">可观测性与传统监控的区别和联系</a></li>
-</ul>
+<h3><a class="header-anchor" href="#可观测性与传统监控的区别和联系"><span></span></a><a href="https://my.oschina.net/morflameblog/blog/15316524" target="_blank" rel="noopener noreferrer">可观测性与传统监控的区别和联系</a></h3>
 <p></p>
 <blockquote>
 <p>文章主要讨论了可观测性与监控的区别，并强调了可观测性在现代软件开发中的重要性。可观测性是一种系统设计哲学，它通过日志、指标和链路追踪等手段，让开发者能够理解和推断系统内部的状态和行为。与传统监控相比，可观测性更加全面，不依赖于预设的警报规则，而是提供了更深入的系统内部视角。</p>
@@ -1208,9 +1188,7 @@
 <p>文章还强调了可观测性的技术趋势，如Continuous Profiling和eBPF技术，这些技术提供了更全面的性能分析和内核级别的监控能力。此外，一体化监控平台如Flashcat的出现，使得运维人员能够更高效地管理Metrics、Logging、Tracing和Event，从而提升了整体的运维效率。</p>
 <p>总的来说，文章强调了在现代软件开发和运维中，可观测性比传统监控更为重要，它提供了更全面和深入的系统理解，帮助开发者和运维人员更好地管理和优化系统性能。</p>
 </blockquote>
-<ul>
-<li><a href="https://www.infoq.cn/article/MEEWNJi2f0P7tUEQeKP4" target="_blank" rel="noopener noreferrer">Java 虚拟线程：案例研究</a></li>
-</ul>
+<h3><a class="header-anchor" href="#java-虚拟线程-案例研究"><span></span></a><a href="https://www.infoq.cn/article/MEEWNJi2f0P7tUEQeKP4" target="_blank" rel="noopener noreferrer">Java 虚拟线程：案例研究</a></h3>
 <p></p>
 <blockquote>
 <p>文章对Java虚拟线程进行了深入的案例研究，这是JDK 21中引入的一项新特性，旨在提供一种轻量级且可扩展的并发模型。Java虚拟线程允许开发者在单个JVM中高效地处理数以百万计的线程，而不会像传统OS线程那样消耗大量资源。</p>
@@ -1219,9 +1197,7 @@
 <p>研究中还发现了一个意外的问题，即在某些情况下，虚拟线程的性能表现不佳，这与Linux内核调度程序和Java的ForkJoinPool线程管理之间的交互有关。</p>
 <p>综合考虑，作者得出结论，尽管虚拟线程在理论上具有优势，但在中等高并发级别下，Liberty的现有线程池通常提供更好的性能。因此，作者建议Java开发者在考虑使用虚拟线程时应该谨慎，并充分了解其在特定应用程序中的潜在问题。文章最后指出，虽然虚拟线程在某些情况下可能有其用途，但作者决定不将Liberty线程池替换为虚拟线程，并鼓励开发者基于对性能影响的深入了解来决定是否在自己的应用程序中实现虚拟线程。</p>
 </blockquote>
-<ul>
-<li><a href="https://mp.weixin.qq.com/s/TLyQON9Tt_uMUbr5U7Pnyg" target="_blank" rel="noopener noreferrer">暗水印显隐术助力生产排障提效</a></li>
-</ul>
+<h3><a class="header-anchor" href="#暗水印显隐术助力生产排障提效"><span></span></a><a href="https://mp.weixin.qq.com/s/TLyQON9Tt_uMUbr5U7Pnyg" target="_blank" rel="noopener noreferrer">暗水印显隐术助力生产排障提效</a></h3>
 <p></p>
 <blockquote>
 <p>这篇文章介绍了水印技术的发展和应用，特别是暗水印技术在提升生产排障效率方面的作用。文章首先解释了水印技术的演进，从最初的易被删除和修改的版本，发展到具备防删除、防隐身、防覆盖和防感知能力的高级版本。接着，文章探讨了暗水印技术与OCR（光学字符识别）技术的结合，如何通过在网页中嵌入暗水印来帮助快速定位问题。文章详细讨论了暗水印显隐术的功能设计和架构，以及如何通过选择不同的解码方案来提升OCR识别的准确率。</p>
@@ -1229,32 +1205,24 @@
 <p>最后，作者强调了即使是看似简单的功能，如水印，只要深入研究和应用得当，也能在不同的业务场景中发挥巨大价值。文章鼓励开发者在开发过程中多思考技术的可能性，并反思如何更好地服务于业务需求。</p>
 </blockquote>
 <h2>开源项目</h2>
-<ul>
-<li><a href="https://github.com/szad670401/HyperLPR" target="_blank" rel="noopener noreferrer">HyperLPR</a></li>
-</ul>
+<h3><a class="header-anchor" href="#hyperlpr"><span></span></a><a href="https://github.com/szad670401/HyperLPR" target="_blank" rel="noopener noreferrer">HyperLPR</a></h3>
 <p></p>
 <blockquote>
 <p>HyperLPR是一个高性能的车牌识别框架，支持多种操作系统和平台，包括Windows、Mac、Linux、Raspberry Pi和Android。它能够实现720p分辨率下的实时车牌识别，平均识别时间少于100毫秒。该框架支持跨平台编译和快速部署，并且提供了WebAPI服务支持。HyperLPR3的识别准确率在95%-97%之间，无需字符分割即可实现端到端的车牌识别。</p>
 </blockquote>
-<ul>
-<li><a href="https://github.com/markmap/markmap" target="_blank" rel="noopener noreferrer">markmap</a></li>
-</ul>
+<h3><a class="header-anchor" href="#markmap"><span></span></a><a href="https://github.com/markmap/markmap" target="_blank" rel="noopener noreferrer">markmap</a></h3>
 <p></p>
 <blockquote>
 <p>Markmap是一个用纯文本创建思维导图的项目，支持Markdown格式，由dundalek的markmap启发。</p>
 </blockquote>
 <h2>学习资源</h2>
-<ul>
-<li><a href="https://ohmygit.org/" target="_blank" rel="noopener noreferrer">ohmygit</a></li>
-</ul>
+<h3><a class="header-anchor" href="#ohmygit"><span></span></a><a href="https://ohmygit.org/" target="_blank" rel="noopener noreferrer">ohmygit</a></h3>
 <p></p>
 <blockquote>
 <p>"Oh My Git!" 是一个开源游戏，旨在通过互动方式教授Git版本控制。游戏特点包括实时仓库可视化、为初学者设计的卡牌界面和为高级用户准备的集成终端。它不仅教授Git命令，还强调团队协作和远程仓库交互。</p>
 </blockquote>
 <h2>其他周刊</h2>
-<ul>
-<li><a href="https://quail.ink/op7418/p/aigc-weekly-88" target="_blank" rel="noopener noreferrer">AIGC Weekly #88</a></li>
-</ul>
+<h3><a class="header-anchor" href="#aigc-weekly-88"><span></span></a><a href="https://quail.ink/op7418/p/aigc-weekly-88" target="_blank" rel="noopener noreferrer">AIGC Weekly #88</a></h3>
 <blockquote>
 <p>Replit公司推出了Replit Agent，一个AI编程工具，它能够根据用户的自然语言描述生成应用程序，极大地降低了编程的门槛。在社会模拟方面，Project Sid展示了一个由1000个Agent组成的社会，这些Agent能在《我的世界》游戏中自主发展，模拟不同的社会政策和策略。</p>
 <p>Meta AI的研究人员探讨了如何通过精细的数据集来提高大型语言模型的性能，比较了全参数微调和参数高效微调的方法，并指出了高质量数据集的重要性。谷歌AI Edge的MediaPipe团队展示了在浏览器中运行超过70亿参数的大型语言模型的能力，而DeepMind的AlphaProteo系统则在设计新型蛋白质结合体方面取得了进展。</p>
@@ -1356,7 +1324,7 @@
       <link>https://weekly.shawnxie.top/content/2024/13.html</link>
       <guid>https://weekly.shawnxie.top/content/2024/13.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 13 期）：肉，好次！</source>
-      <description>肖恩技术周刊（第 13 期）：肉，好次！ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 公众号: 肖恩聊技术 公众号二维码 个人博客: 肖...</description>
+      <description>肖恩技术周刊（第 13 期）：肉，好次！ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 公众号: 肖恩聊技术 公众号二维码 开篇图 潮汕牛...</description>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -1364,13 +1332,8 @@
 <strong>历史收录</strong>: <a href="https://github.com/Xiaoxie1994/shawn-weekly" target="_blank" rel="noopener noreferrer">shawn-weekly</a> <br>
 <strong>订阅方式</strong>:</p>
 <ul>
-<li>
-<p><strong>公众号</strong>: 肖恩聊技术<br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></p>
-</li>
-<li>
-<p><strong>个人博客</strong>: <a href="https://www.shawnxie.top/categories/tf-weekly" target="_blank" rel="noopener noreferrer">肖恩的杂货店</a></p>
-</li>
+<li><strong>公众号</strong>: 肖恩聊技术<br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></li>
 </ul>
 </blockquote>
 <h2>开篇图</h2>
@@ -1467,7 +1430,7 @@
       <link>https://weekly.shawnxie.top/content/2024/12.html</link>
       <guid>https://weekly.shawnxie.top/content/2024/12.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 12 期）：热 &amp; 累！</source>
-      <description>肖恩技术周刊（第 12 期）：热 &amp; 累！ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 公众号: 肖恩聊技术 公众号二维码 个人博客: ...</description>
+      <description>肖恩技术周刊（第 12 期）：热 &amp; 累！ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 公众号: 肖恩聊技术 公众号二维码 开篇图 热炸...</description>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -1475,13 +1438,8 @@
 <strong>历史收录</strong>: <a href="https://github.com/Xiaoxie1994/shawn-weekly" target="_blank" rel="noopener noreferrer">shawn-weekly</a> <br>
 <strong>订阅方式</strong>:</p>
 <ul>
-<li>
-<p><strong>公众号</strong>: 肖恩聊技术<br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></p>
-</li>
-<li>
-<p><strong>个人博客</strong>: <a href="https://www.shawnxie.top/categories/tf-weekly" target="_blank" rel="noopener noreferrer">肖恩的杂货店</a></p>
-</li>
+<li><strong>公众号</strong>: 肖恩聊技术<br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></li>
 </ul>
 </blockquote>
 <h2>开篇图</h2>
@@ -1561,7 +1519,7 @@
       <link>https://weekly.shawnxie.top/content/2024/11.html</link>
       <guid>https://weekly.shawnxie.top/content/2024/11.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 11 期）：猴哥，我好急啊！</source>
-      <description>肖恩技术周刊（第 11 期）：猴哥，我好急啊！ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 公众号: 肖恩聊技术 公众号二维码 个人博客...</description>
+      <description>肖恩技术周刊（第 11 期）：猴哥，我好急啊！ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 公众号: 肖恩聊技术 公众号二维码 开篇图 ...</description>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -1569,13 +1527,8 @@
 <strong>历史收录</strong>: <a href="https://github.com/Xiaoxie1994/shawn-weekly" target="_blank" rel="noopener noreferrer">shawn-weekly</a> <br>
 <strong>订阅方式</strong>:</p>
 <ul>
-<li>
-<p><strong>公众号</strong>: 肖恩聊技术<br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></p>
-</li>
-<li>
-<p><strong>个人博客</strong>: <a href="https://www.shawnxie.top/categories/tf-weekly" target="_blank" rel="noopener noreferrer">肖恩的杂货店</a></p>
-</li>
+<li><strong>公众号</strong>: 肖恩聊技术<br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></li>
 </ul>
 </blockquote>
 <h2>开篇图</h2>
@@ -1672,7 +1625,7 @@
       <link>https://weekly.shawnxie.top/content/2024/10.html</link>
       <guid>https://weekly.shawnxie.top/content/2024/10.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 10 期）：太阳神鸟</source>
-      <description>肖恩技术周刊（第 10 期）：太阳神鸟 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 公众号: 肖恩聊技术 公众号二维码 个人博客: 肖恩...</description>
+      <description>肖恩技术周刊（第 10 期）：太阳神鸟 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 公众号: 肖恩聊技术 公众号二维码 开篇图 太阳神鸟...</description>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -1680,13 +1633,8 @@
 <strong>历史收录</strong>: <a href="https://github.com/Xiaoxie1994/shawn-weekly" target="_blank" rel="noopener noreferrer">shawn-weekly</a> <br>
 <strong>订阅方式</strong>:</p>
 <ul>
-<li>
-<p><strong>公众号</strong>: 肖恩聊技术<br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></p>
-</li>
-<li>
-<p><strong>个人博客</strong>: <a href="https://www.shawnxie.top/categories/tf-weekly" target="_blank" rel="noopener noreferrer">肖恩的杂货店</a></p>
-</li>
+<li><strong>公众号</strong>: 肖恩聊技术<br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></li>
 </ul>
 </blockquote>
 <h2>开篇图</h2>
@@ -2256,13 +2204,8 @@
 <strong>历史收录</strong>: <a href="https://github.com/Xiaoxie1994/shawn-weekly" target="_blank" rel="noopener noreferrer">shawn-weekly</a> <br>
 <strong>订阅方式</strong>:</p>
 <ul>
-<li>
-<p><strong>公众号</strong>: 肖恩聊技术<br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></p>
-</li>
-<li>
-<p><strong>个人博客</strong>: <a href="https://www.shawnxie.top/categories/tf-weekly" target="_blank" rel="noopener noreferrer">肖恩的杂货店</a>, <a href="https://www.shawnxie.top/feed.xml" target="_blank" rel="noopener noreferrer">RSS订阅</a></p>
-</li>
+<li><strong>公众号</strong>: 肖恩聊技术<br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></li>
 </ul>
 <p><strong>备注</strong>: 内容收集&amp;摘要生成基于<a href="https://github.com/Xiaoxie1994/developer-hotspots-summary" target="_blank" rel="noopener noreferrer">developer-hotspots-summary</a>，之后经人工校验和调整后发布。</p>
 </blockquote>
@@ -2393,13 +2336,8 @@
 <strong>历史收录</strong>: <a href="https://github.com/Xiaoxie1994/shawn-weekly" target="_blank" rel="noopener noreferrer">shawn-weekly</a> <br>
 <strong>订阅方式</strong>:</p>
 <ul>
-<li>
-<p><strong>公众号</strong>: 肖恩聊技术<br>
-<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></p>
-</li>
-<li>
-<p><strong>个人博客</strong>: <a href="https://www.shawnxie.top/categories/tf-weekly" target="_blank" rel="noopener noreferrer">肖恩的杂货店</a>, <a href="https://www.shawnxie.top/feed.xml" target="_blank" rel="noopener noreferrer">RSS订阅</a></p>
-</li>
+<li><strong>公众号</strong>: 肖恩聊技术<br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></li>
 </ul>
 <p><strong>备注</strong>: 内容收集&amp;摘要生成基于<a href="https://github.com/Xiaoxie1994/developer-hotspots-summary" target="_blank" rel="noopener noreferrer">developer-hotspots-summary</a>，之后经人工校验和调整后发布。</p>
 </blockquote>
