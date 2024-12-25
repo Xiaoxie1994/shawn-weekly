@@ -3,6 +3,8 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 import { slimsearchPlugin } from '@vuepress/plugin-slimsearch'
 import { cachePlugin } from '@vuepress/plugin-cache'
+import { feedPlugin } from '@vuepress/plugin-feed'
+import { umamiAnalyticsPlugin } from '@vuepress/plugin-umami-analytics'
 
 export default defineUserConfig({
   bundler: viteBundler(),
@@ -198,6 +200,9 @@ export default defineUserConfig({
     ],
     [
       'meta',{ name: 'google-site-verification', content: 'rBr3QpOiV6jhzWBKMvyt2NUZOPlgtVBms1Fmq6u--1s' }
+    ],
+    [
+      'meta',{ name: 'msvalidate.01', content: '2F1791A628BF53E1505F40AA9EBF45AD' }
     ]
   ],
   plugins: [
@@ -209,6 +214,15 @@ export default defineUserConfig({
           placeholder: '搜索',
         }
       },
+    }),
+    feedPlugin({
+      hostname: 'https://weekly.shawnxie.top',
+      rss: true,
+      count: 100000,
+    }),
+    umamiAnalyticsPlugin({
+      id: '3b366c06-d035-411e-a013-8efbabbdad43',
+      link: 'https://cloud.umami.is/script.js'
     }),
     // 放到最后
     cachePlugin({
