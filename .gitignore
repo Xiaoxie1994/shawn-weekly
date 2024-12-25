@@ -6,3 +6,4 @@
 /docs/.vuepress/dist
 # node模块
 node_modules
+.DS_Store
