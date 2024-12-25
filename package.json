@@ -5,6 +5,7 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-rc.19",
+    "@vuepress/plugin-cache": "^2.0.0-rc.66",
     "@vuepress/plugin-feed": "^2.0.0-rc.66",
     "@vuepress/plugin-slimsearch": "^2.0.0-rc.67",
     "@vuepress/theme-default": "^2.0.0-rc.66",

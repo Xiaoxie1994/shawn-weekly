@@ -1,5 +1,0 @@
-
-User-agent:*
-Disallow:
-
-Sitemap: https://weekly.shawnxie.top/sitemap.xml

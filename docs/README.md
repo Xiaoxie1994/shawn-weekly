@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /picture/image-sjql.png
+heroImage: https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/image-sjql.png
 heroText: 肖恩技术周刊
 actions:
   - text: 新一期
@@ -13,7 +13,7 @@ actions:
     link: https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwODY0ODQzOQ==&action=getalbum&album_id=3492416248238096386#wechat_redirect
     type: secondary
 features:
-  - title: 内容多样
+  - title: 内容丰富
     details: 包含“业界资讯”、“技术博客”、“开源项目”和“学习资料”等
   - title: 更新时间
     details: 每周一 8:30 不见不散

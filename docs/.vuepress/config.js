@@ -2,15 +2,17 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 import { slimsearchPlugin } from '@vuepress/plugin-slimsearch'
+import { cachePlugin } from '@vuepress/plugin-cache'
 
 export default defineUserConfig({
   bundler: viteBundler(),
   theme: defaultTheme({
     hostname: 'https://weekly.shawnxie.top',
-    logo: '/picture/image-sjql.png',
+    logo: 'https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/image-sjql.png',
     repo: 'https://github.com/Xiaoxie1994/shawn-weekly',
     editLink: false,
     subSidebar: 'auto',
+    contributors: false,
     navbar: [
       {
         text: '主页',
@@ -192,7 +194,10 @@ export default defineUserConfig({
   description: '记录有价值的技术内容',
   head: [
     [
-      'link',{ rel: 'icon', href: '/picture/image-sjql.png' }
+      'link',{ rel: 'icon', href: 'https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/image-sjql.png' }
+    ],
+    [
+      'meta',{ name: 'google-site-verification', content: 'rBr3QpOiV6jhzWBKMvyt2NUZOPlgtVBms1Fmq6u--1s' }
     ]
   ],
   plugins: [
@@ -204,6 +209,10 @@ export default defineUserConfig({
           placeholder: '搜索',
         }
       },
+    }),
+    // 放到最后
+    cachePlugin({
+      type: 'filesystem',
     }),
   ],
 })
