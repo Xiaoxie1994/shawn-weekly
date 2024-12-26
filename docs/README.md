@@ -14,7 +14,7 @@ actions:
     type: secondary
 features:
   - title: 内容丰富
-    details: 包含“业界资讯”、“技术博客”、“开源项目”和“学习资料”等
+    details: 包含“业界资讯”、“技术博客”、“开源项目”、“工具推荐”和“学习资料”等
   - title: 更新时间
     details: 每周一 8:30 不见不散
   - title: 订阅推送
