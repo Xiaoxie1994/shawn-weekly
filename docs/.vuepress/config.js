@@ -52,6 +52,11 @@ export default defineUserConfig({
         link: '/'
       },
       {
+        text: '目录',
+        prefix: '/content/',
+        children: generateContentSidebar(),
+      },
+      {
         text: '合集',
         prefix: '/collection/',
         children: [
@@ -62,13 +67,9 @@ export default defineUserConfig({
         ],
       },
       {
-        text: '信息源',
-        link: '/source/read_source.md',
-      },
-      {
         text: '订阅',
         link: 'https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwODY0ODQzOQ==&action=getalbum&album_id=3492416248238096386#wechat_redirect',
-      }
+      },
     ],
     sidebar: {
       displayAllHeaders: false,
