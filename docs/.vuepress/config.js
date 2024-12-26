@@ -1,9 +1,7 @@
 import { viteBundler } from '@vuepress/bundler-vite'
-import { defaultTheme } from '@vuepress/theme-default'
+import { hopeTheme } from 'vuepress-theme-hope'
 import { defineUserConfig } from 'vuepress'
-import { slimsearchPlugin } from '@vuepress/plugin-slimsearch'
 import { cachePlugin } from '@vuepress/plugin-cache'
-import { feedPlugin } from '@vuepress/plugin-feed'
 import { umamiAnalyticsPlugin } from '@vuepress/plugin-umami-analytics'
 import fs from 'fs';
 import path from 'path';
@@ -19,7 +17,6 @@ const generateContentSidebar = () => {
         const fileContent = fs.readFileSync(filePath, 'utf-8');
         const titleMatch = fileContent.match(/^#\s+(.*)$/m);
         let title = titleMatch ? titleMatch[1] : `第 ${path.basename(file, path.extname(file))} 期`;
-        // 如果标题为"肖恩技术周刊（第 X 期）：XXX"，则调整为"第 X 期：XXX"
         const shortTitleMatch = title.match(/技术周刊（第 (\d+) 期）：(.+)/);
         if (shortTitleMatch) {
           title = `第 ${shortTitleMatch[1]} 期：${shortTitleMatch[2]}`;
@@ -39,13 +36,35 @@ const generateContentSidebar = () => {
 
 export default defineUserConfig({
   bundler: viteBundler(),
-  theme: defaultTheme({
+  theme: hopeTheme({
     hostname: 'https://weekly.shawnxie.top',
     logo: 'https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/image-sjql.png',
     repo: 'https://github.com/Xiaoxie1994/shawn-weekly',
     editLink: false,
     subSidebar: 'auto',
     contributors: false,
+    plugins: {
+      feed: {
+        hostname: 'https://weekly.shawnxie.top',
+        rss: true,
+        count: 100000,
+        filter: (page) => page.path.startsWith('/content/2024/'),
+        sorter: (pageA, pageB) => {
+          const numA = parseInt(pageA.title.match(/第 (\d+) 期/)[1], 10);
+          const numB = parseInt(pageB.title.match(/第 (\d+) 期/)[1], 10);
+          return numB - numA;
+        },
+      },
+      slimsearch: {
+        indexContent: true,
+        suggestion: true,
+        locales: {
+          '/': {
+            placeholder: '搜索',
+          }
+        },
+      }
+    },
     navbar: [
       {
         text: '主页',
@@ -114,31 +133,10 @@ export default defineUserConfig({
     ]
   ],
   plugins: [
-    slimsearchPlugin({
-      indexContent: true,
-      suggestion: true,
-      locales: {
-        '/': {
-          placeholder: '搜索',
-        }
-      },
-    }),
-    feedPlugin({
-      hostname: 'https://weekly.shawnxie.top',
-      rss: true,
-      count: 100000,
-      filter: (page) => page.path.startsWith('/content/2024/'),
-      sorter: (pageA, pageB) => {
-        const numA = parseInt(pageA.title.match(/第 (\d+) 期/)[1], 10);
-        const numB = parseInt(pageB.title.match(/第 (\d+) 期/)[1], 10);
-        return numB - numA;
-      },
-    }),
     umamiAnalyticsPlugin({
       id: '3b366c06-d035-411e-a013-8efbabbdad43',
       link: 'https://cloud.umami.is/script.js'
     }),
-    // 放到最后
     cachePlugin({
       type: 'filesystem',
     }),
