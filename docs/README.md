@@ -4,7 +4,7 @@ heroImage: https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/image-sjql.png
 heroText: 肖恩技术周刊
 actions:
   - text: 新一期
-    link: /content/2024/29.html
+    link: /content/2024/30.html
     type: primary
   - text: 合集
     link: /collection/2024.html

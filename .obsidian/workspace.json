@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "124bc601fe4c4741",
+        "id": "ae79b2b12988b517",
         "type": "tabs",
         "children": [
           {
-            "id": "b0e0104ff2da280e",
+            "id": "fbdf35533669743c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/content/2024/2.md",
+                "file": "docs/README.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "2"
+              "title": "README"
             }
           }
         ]
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cheat",
+                "query": "/content/2024/29.html",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,7 +73,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -173,11 +174,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b0e0104ff2da280e",
+  "active": "cb24b07ab43162c0",
   "lastOpenFiles": [
+    "docs/README.md",
+    "docs/content/2024/30.md",
+    "docs/source/read_source.md",
+    "docs/source/template.md",
+    "docs/content/2024/29.md",
+    "docs/content/2025",
+    "docs/content/2024/2.md",
     "docs/content/2024/3.md",
     "docs/content/picture/WechatIMG182.jpg",
-    "docs/content/2024/2.md",
     "docs/content/2024/1.md",
     "docs/content/picture/intro-w25.png",
     "docs/content/picture/WechatIMG65.jpg",
@@ -201,10 +208,6 @@
     "docs/content/picture/w26/image-4.png",
     "docs/content/2024/22.md",
     "docs/content/2024/23.md",
-    "docs/content/2024/24.md",
-    "docs/content/2024/25.md",
-    "docs/content/2024/26.md",
-    "docs/content/2024/27.md",
     "docs/content/picture/w26/image-2.png",
     "package.json",
     "package-lock.json",
@@ -219,7 +222,6 @@
     "docs/content/picture/w35",
     "docs/content/picture/w34",
     "docs/content/picture/w33",
-    "docs/content/picture/w32",
     "未命名.canvas",
     "未命名 1.canvas"
   ]
