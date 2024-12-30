@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <script src="echarts.js"></script>
+    <script src="theme/vintage.js"></script>
+</head>
+
+<body>
+    <div style="margin: 20px;">
+        <input type="file" id="fileInput" multiple accept=".md" style="margin-bottom: 20px;">
+    </div>
+    <div id="main" style="width: 1000px;height:1000px;"></div>
+    <script type="text/javascript">
+        const HEADINGS = ["业界资讯", "技术博客", "开源项目", "工具推荐", "学习资源", "随便看看", "其他周刊"];
+
+        function countHeadings(content) {
+            const counts = new Map(HEADINGS.map(h => [h, 0]));
+            let currentHeading = null;
+
+            content.split('\n').forEach(line => {
+                line = line.trim();
+                if (line.startsWith('## ')) {
+                    const heading = line.slice(3);
+                    currentHeading = HEADINGS.includes(heading) ? heading : null;
+                } else if (line.startsWith('### ') && currentHeading) {
+                    counts.set(currentHeading, counts.get(currentHeading) + 1);
+                }
+            });
+
+            return counts;
+        }
+
+        function processFiles(files) {
+            const totalCounts = new Map(HEADINGS.map(h => [h, 0]));
+            let filesProcessed = 0;
+
+            Array.from(files).forEach(file => {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const content = e.target.result;
+                    const counts = countHeadings(content);
+                    for (const heading of HEADINGS) {
+                        totalCounts.set(heading, totalCounts.get(heading) + counts.get(heading));
+                    }
+                    filesProcessed++;
+                    if (filesProcessed === files.length) {
+                        renderChart(totalCounts);
+                    }
+                };
+                reader.readAsText(file);
+            });
+        }
+
+        function renderChart(totalCounts) {
+            const data = HEADINGS.map(heading => ({
+                value: totalCounts.get(heading),
+                name: heading
+            }));
+
+            const myChart = echarts.init(document.getElementById('main'), 'vintage');
+            myChart.setOption({
+                series: [{
+                    type: 'pie',
+                    data: data,
+                    roseType: 'area',
+                    label: {
+                        fontSize: 16,
+                        fontWeight: 'bold',
+                        formatter: function(params) {
+                            return `${params.name}\n${params.value} (${params.percent}%)`;
+                        }
+                    }
+                }]
+            });
+        }
+
+        document.getElementById('fileInput').addEventListener('change', function(e) {
+            const files = e.target.files;
+            if (files.length > 0) {
+                processFiles(files);
+            }
+        });
+    </script>
+</body>
+
+</html>

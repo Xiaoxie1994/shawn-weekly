@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <script src="echarts.js"></script>
+    <script src="theme/vintage.js"></script>
+</head>
+
+<body>
+    <div id="chart" style="width: 1200px;height:600px;"></div>
+    <script type="text/javascript">
+        // 数据
+        const data = `期数,阅读数
+第1期,130
+第2期,77
+第3期,40
+第4期,51
+第5期,51
+第6期,61
+第7期,39
+第8期,34
+第9期,32
+第10期,46
+第11期,75
+第12期,73
+第13期,64
+第14期,54
+第15期,56
+第16期,23
+第17期,45
+第18期,39
+第19期,87
+第20期,34
+第21期,51
+第22期,144
+第23期,79
+第24期,105
+第25期,141
+第26期,82
+第27期,60
+第28期,75
+第29期,66
+第30期,48`;
+
+        // 处理CSV数据
+        const rows = data.split('\n').slice(1);
+        const xAxisData = [];
+        const seriesData = [];
+        rows.forEach(row => {
+            const [period, count] = row.split(',');
+            xAxisData.push(period);
+            seriesData.push(parseInt(count));
+        });
+
+        // 初始化图表
+        const chart = echarts.init(document.getElementById('chart'), 'vintage');
+        const option = {
+            tooltip: {},
+            xAxis: {
+                data: xAxisData,
+                axisLabel: {
+                    interval: 0,
+                    rotate: 45
+                }
+            },
+            yAxis: {},
+            series: [
+                {
+                    name: '阅读数',
+                    type: 'bar',
+                    data: seriesData,
+                    label: {
+                        show: true,
+                        position: 'top'
+                    }
+                },
+                {
+                    name: '趋势线',
+                    type: 'line',
+                    data: seriesData,
+                    smooth: false,
+                    lineStyle: {
+                        color: '#91cc75',
+                        width: 3,
+                        type: 'dashed'
+                    },
+                    symbol: 'circle',
+                    symbolSize: 8,
+                    itemStyle: {
+                        color: '#91cc75'
+                    }
+                }
+            ]
+        };
+        chart.setOption(option);
+    </script>
+</body>
+
+</html>

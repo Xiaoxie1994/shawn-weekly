@@ -7,3 +7,4 @@
 # node模块
 node_modules
 .DS_Store
+tools/image_cache
