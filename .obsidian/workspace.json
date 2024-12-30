@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/README.md",
+                "file": "docs/collection/2024.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "2024"
             }
           }
         ]
@@ -73,8 +73,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -174,23 +173,39 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cb24b07ab43162c0",
+  "active": "fbdf35533669743c",
   "lastOpenFiles": [
-    "docs/README.md",
-    "docs/content/2024/30.md",
-    "docs/source/read_source.md",
+    "docs/content/2024/1.md",
     "docs/source/template.md",
+    "docs/collection/2024.md",
+    "docs/content/2024/30.md",
+    "tools/theme/vintage.js",
+    "tools/type-statistics.html",
+    "tools/theme",
+    "tools/read-trend.html",
+    "tools/generate_wordcloud.py",
+    "tools/echarts.js",
+    "tools/combine_images.py",
+    "tools/2024-keyword.txt",
+    "tools",
+    "docs/collection/wordcloud.png",
+    "docs/collection/image.png",
+    "docs/collection/image-4.png",
+    "docs/collection/image-3.png",
+    "docs/collection/image-2.png",
+    "docs/collection/image-1.png",
+    "docs/collection/combined_image.jpg",
+    "未命名.canvas",
+    "docs/README.md",
+    "docs/source/read_source.md",
     "docs/content/2024/29.md",
     "docs/content/2025",
     "docs/content/2024/2.md",
     "docs/content/2024/3.md",
     "docs/content/picture/WechatIMG182.jpg",
-    "docs/content/2024/1.md",
     "docs/content/picture/intro-w25.png",
     "docs/content/picture/WechatIMG65.jpg",
-    "docs/content/picture",
     "docs/content/2024/4.md",
-    "docs/collection/2024.md",
     "docs/content/2024/18.md",
     "docs/content/2024/17.md",
     "docs/content/2024/16.md",
@@ -205,24 +220,7 @@
     "docs/content/2024/7.md",
     "docs/content/2024/6.md",
     "docs/content/2024/5.md",
-    "docs/content/picture/w26/image-4.png",
     "docs/content/2024/22.md",
-    "docs/content/2024/23.md",
-    "docs/content/picture/w26/image-2.png",
-    "package.json",
-    "package-lock.json",
-    "docs/source",
-    "docs/content/picture/w37/videoframe_19867.png",
-    "docs/content/picture/w37/image.png",
-    "docs/content/picture/w37/image-7.png",
-    "docs/content/picture/w37/image-6.png",
-    "docs/content/picture/w37/image-5.png",
-    "docs/content/picture/w37",
-    "docs/content/picture/w36",
-    "docs/content/picture/w35",
-    "docs/content/picture/w34",
-    "docs/content/picture/w33",
-    "未命名.canvas",
     "未命名 1.canvas"
   ]
 }
