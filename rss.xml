@@ -6,8 +6,8 @@
     <link>https://weekly.shawnxie.top/</link>
     <description>记录有价值的技术内容</description>
     <language>zh-CN</language>
-    <pubDate>Sun, 29 Dec 2024 16:11:25 GMT</pubDate>
-    <lastBuildDate>Sun, 29 Dec 2024 16:11:25 GMT</lastBuildDate>
+    <pubDate>Mon, 30 Dec 2024 14:29:47 GMT</pubDate>
+    <lastBuildDate>Mon, 30 Dec 2024 14:29:47 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <item>
@@ -15,10 +15,10 @@
       <link>https://weekly.shawnxie.top/content/2024/30.html</link>
       <guid>https://weekly.shawnxie.top/content/2024/30.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 30 期）：2024的尾声</source>
-      <description>肖恩技术周刊（第 30 期）：2024的尾声 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资料”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 2024就要结束了...</description>
+      <description>肖恩技术周刊（第 30 期）：2024的尾声 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 2024就要结束了...</description>
       <content:encoded><![CDATA[
 <blockquote>
-<p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资料”等。<br>
+<p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。<br>
 <strong>更新时间</strong>: 周一<br>
 <strong>历史收录</strong>: <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwODY0ODQzOQ==&amp;action=getalbum&amp;album_id=3492416248238096386#wechat_redirect" target="_blank" rel="noopener noreferrer">技术周刊合集</a> <br>
 <strong>订阅方式</strong>: 微信公众号“<strong>肖恩聊技术</strong>”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~<br>
@@ -53,7 +53,7 @@
 <li>逗逗：AI游戏伙伴</li>
 <li>cobalt：简洁的媒体下载器</li>
 </ul>
-<p><strong>学习资料</strong></p>
+<p><strong>学习资源</strong></p>
 <ul>
 <li>anthropic-cookbook：Claude使用指南</li>
 </ul>
@@ -137,10 +137,10 @@
       <link>https://weekly.shawnxie.top/content/2024/29.html</link>
       <guid>https://weekly.shawnxie.top/content/2024/29.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 29 期）：宇宙的尽头是上岸</source>
-      <description>肖恩技术周刊（第 29 期）：宇宙的尽头是上岸 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资料”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 陆陆续续各家年度...</description>
+      <description>肖恩技术周刊（第 29 期）：宇宙的尽头是上岸 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 陆陆续续各家年度...</description>
       <content:encoded><![CDATA[
 <blockquote>
-<p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资料”等。<br>
+<p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。<br>
 <strong>更新时间</strong>: 周一<br>
 <strong>历史收录</strong>: <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwODY0ODQzOQ==&amp;action=getalbum&amp;album_id=3492416248238096386#wechat_redirect" target="_blank" rel="noopener noreferrer">技术周刊合集</a> <br>
 <strong>订阅方式</strong>: 微信公众号“<strong>肖恩聊技术</strong>”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~<br>
@@ -164,7 +164,7 @@
 <li>Gitako：GitHub文件树浏览器插件</li>
 <li>my-github-2024：个人Github活动统计</li>
 </ul>
-<p><strong>学习资料</strong></p>
+<p><strong>学习资源</strong></p>
 <ul>
 <li>devtoolstips：web开发者小贴士</li>
 <li>CoRecursive：代码背后的故事</li>
@@ -225,10 +225,10 @@
       <link>https://weekly.shawnxie.top/content/2024/28.html</link>
       <guid>https://weekly.shawnxie.top/content/2024/28.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 28 期）：小机器人是什么鬼啊？</source>
-      <description>肖恩技术周刊（第 28 期）：小机器人是什么鬼啊？ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资料”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 TGA 20...</description>
+      <description>肖恩技术周刊（第 28 期）：小机器人是什么鬼啊？ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 TGA 20...</description>
       <content:encoded><![CDATA[
 <blockquote>
-<p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资料”等。<br>
+<p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。<br>
 <strong>更新时间</strong>: 周一<br>
 <strong>历史收录</strong>: <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwODY0ODQzOQ==&amp;action=getalbum&amp;album_id=3492416248238096386#wechat_redirect" target="_blank" rel="noopener noreferrer">技术周刊合集</a> <br>
 <strong>订阅方式</strong>: 微信公众号“<strong>肖恩聊技术</strong>”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~<br>
@@ -255,7 +255,7 @@
 <li>BPlusTree：B+树操作可视化</li>
 <li>AI 模型比较</li>
 </ul>
-<p><strong>学习资料</strong></p>
+<p><strong>学习资源</strong></p>
 <ul>
 <li>深入架构原理与实践</li>
 <li>硬核指南</li>
@@ -283,10 +283,10 @@
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412152255477.png" alt=""></p>
 <p>本文探讨了5种高并发系统中常用的限流算法：固定窗口、滑动窗口、滑动日志、漏桶和令牌桶算法。固定窗口算法将时间划分为固定窗口，每个窗口内允许一定数量请求，简单但存在窗口边际效应。滑动窗口算法通过多个小桶减缓窗口边际效应，但流量突发时仍会失败。滑动日志算法记录请求时间戳，精确控制请求速率，但内存开销大且流量突发时失败多。漏桶算法以恒定速率处理请求，能削峰填谷，但控制刻板，弹性弱，产生延迟。令牌桶算法以固定速率添加令牌，能处理突发流量，灵活性高，但实现复杂。每种算法都有适用场景和优缺点，通过代码实例帮助理解原理和应用，以构建高效稳定的系统。</p>
 <h2>工具推荐</h2>
-<h3><a class="header-anchor" href="#drissionpage"><span></span></a><a href="https://github.com/g1879/DrissionPage" target="_blank" rel="noopener noreferrer">DrissionPage</a></h3>
+<h3><a class="header-anchor" href="#drissionpage-网页自动化工具"><span></span></a><a href="https://github.com/g1879/DrissionPage" target="_blank" rel="noopener noreferrer">DrissionPage：网页自动化工具</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412152242459.png" alt=""></p>
 <p>DrissionPage® 是一个基于 Python 的网页自动化工具。既能控制浏览器，也能收发数据包，还能把两者合而为一。可兼顾浏览器自动化的便利性和 requests 的高效率。功能强大，语法简洁优雅，代码量少，对新手友好。</p>
-<h3><a class="header-anchor" href="#bplustree"><span></span></a><a href="https://www.cs.usfca.edu/~galles/visualization/BPlusTree.html" target="_blank" rel="noopener noreferrer">BPlusTree</a></h3>
+<h3><a class="header-anchor" href="#bplustree-b-树操作可视化"><span></span></a><a href="https://www.cs.usfca.edu/~galles/visualization/BPlusTree.html" target="_blank" rel="noopener noreferrer">BPlusTree：B+树操作可视化</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412152205423.png" alt=""></p>
 <p>B+树操作可视化。</p>
 <h3><a class="header-anchor" href="#ai模型比较"><span></span></a><a href="https://countless.dev/" target="_blank" rel="noopener noreferrer">AI模型比较</a></h3>
@@ -313,10 +313,10 @@
       <link>https://weekly.shawnxie.top/content/2024/27.html</link>
       <guid>https://weekly.shawnxie.top/content/2024/27.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 27 期）：移动的移动充电宝</source>
-      <description>肖恩技术周刊（第 27 期）：移动的移动充电宝 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资料”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 这周阅读量偏少，...</description>
+      <description>肖恩技术周刊（第 27 期）：移动的移动充电宝 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 这周阅读量偏少，...</description>
       <content:encoded><![CDATA[
 <blockquote>
-<p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资料”等。<br>
+<p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。<br>
 <strong>更新时间</strong>: 周一<br>
 <strong>历史收录</strong>: <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwODY0ODQzOQ==&amp;action=getalbum&amp;album_id=3492416248238096386#wechat_redirect" target="_blank" rel="noopener noreferrer">技术周刊合集</a> <br>
 <strong>订阅方式</strong>: 微信公众号“<strong>肖恩聊技术</strong>”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~<br>
@@ -354,17 +354,17 @@
 <h3><a class="header-anchor" href="#spring-boot-3-4-正式发布"><span></span></a><a href="https://www.oschina.net/news/322949/spring-boot-3-4-released" target="_blank" rel="noopener noreferrer">Spring Boot 3.4 正式发布</a></h3>
 <p>Spring Boot 3.4版本正式发布，带来了多项新特性和改进。主要更新包括对RestTemplate和RestClient的自动配置支持，增强的Bean属性验证，以及对Actuator端点访问控制的精细管理。此外，引入了结构化日志记录、应用分组、OTLP支持等可观测性改进。Spring Pulsar和Couchbase认证也得到了增强。HtmlUnit和Selenium HtmlUnit的依赖升级，以及对Docker Compose和嵌入式Broker的支持改进也是亮点。最低要求的变更包括对Gradle版本的更新。Spring Boot 3.4还迁移到多个Spring项目的新版本，并更新了许多第三方依赖。此外，还引入了一些废弃和替换自动配置类的支持，以及对虚拟线程的使用。这些更新旨在提升性能、安全性和开发效率。</p>
 <h2>工具推荐</h2>
-<h3><a class="header-anchor" href="#stock"><span></span></a><a href="https://github.com/myhhub/stock" target="_blank" rel="noopener noreferrer">stock</a></h3>
+<h3><a class="header-anchor" href="#stock-股票量化投资辅助工具"><span></span></a><a href="https://github.com/myhhub/stock" target="_blank" rel="noopener noreferrer">stock：股票量化投资辅助工具</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412082247282.png" alt=""></p>
 <p>stock是一个量化投资辅助工具，它能够抓取每日股票和ETF的关键数据，计算股票指标，识别K线形态，并综合选股。系统内置多种选股策略，支持选股验证回测和自动交易。它运行高效，支持多设备显示，并提供Docker镜像方便安装。系统还具备数据存储和Web展示功能，以及多线程运算提高效率。</p>
-<h3><a class="header-anchor" href="#random-websites-explorer"><span></span></a><a href="https://random-websites.com/" target="_blank" rel="noopener noreferrer">Random webSites Explorer</a></h3>
+<h3><a class="header-anchor" href="#random-websites-explorer-随机访问有趣的网站"><span></span></a><a href="https://random-websites.com/" target="_blank" rel="noopener noreferrer">Random webSites Explorer：随机访问有趣的网站</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412082248678.png" alt=""></p>
 <p>用户只需点击按钮即可随机访问一个网站，发现和分享有趣的网站。</p>
-<h3><a class="header-anchor" href="#互乐吧"><span></span></a><a href="https://huleba.com/" target="_blank" rel="noopener noreferrer">互乐吧</a></h3>
+<h3><a class="header-anchor" href="#互乐吧-免费资源"><span></span></a><a href="https://huleba.com/" target="_blank" rel="noopener noreferrer">互乐吧：免费资源</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412082251499.png" alt=""></p>
 <p>各种免费的资源和工具。</p>
 <h2>学习资源</h2>
-<h3><a class="header-anchor" href="#expert-readed-books"><span></span></a><a href="https://github.com/0voice/expert_readed_books" target="_blank" rel="noopener noreferrer">expert_readed_books</a></h3>
+<h3><a class="header-anchor" href="#expert-readed-books-工程师阅读书单推荐"><span></span></a><a href="https://github.com/0voice/expert_readed_books" target="_blank" rel="noopener noreferrer">expert_readed_books：工程师阅读书单推荐</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412082248547.png" alt=""></p>
 <p>汇总了2024年推荐的工程师阅读书单，涵盖计算机科学、软件技术、软件工程、创业、哲学、大佬书籍、历史、思想、数学、经济和小说等多个类别。</p>
 ]]></content:encoded>
@@ -375,10 +375,10 @@
       <link>https://weekly.shawnxie.top/content/2024/26.html</link>
       <guid>https://weekly.shawnxie.top/content/2024/26.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 26 期）：无痛写作</source>
-      <description>肖恩技术周刊（第 26 期）：无痛写作 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资料”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 写作相关的工具，这几个月...</description>
+      <description>肖恩技术周刊（第 26 期）：无痛写作 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 写作相关的工具，这几个月...</description>
       <content:encoded><![CDATA[
 <blockquote>
-<p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资料”等。<br>
+<p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。<br>
 <strong>更新时间</strong>: 周一<br>
 <strong>历史收录</strong>: <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwODY0ODQzOQ==&amp;action=getalbum&amp;album_id=3492416248238096386#wechat_redirect" target="_blank" rel="noopener noreferrer">技术周刊合集</a> <br>
 <strong>订阅方式</strong>: 微信公众号“<strong>肖恩聊技术</strong>”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~<br>
@@ -407,7 +407,7 @@
 <li>rewrite：自动化代码重构工具</li>
 <li>marker：PDF快速转换成Markdown、JSON和HTML格式</li>
 </ul>
-<p><strong>学习资料</strong></p>
+<p><strong>学习资源</strong></p>
 <ul>
 <li>NVIDIA 新开发者福利：600元AI课程免费学，还有机会获得NVIDIA培训证书</li>
 <li>看见概率论：交互式学习概率论</li>
@@ -439,23 +439,23 @@
 <p>本文讨论了Redis中的热key问题及其对性能的影响，并介绍了几种常见的热key探测方法。热key是指访问频率极高的key，可能导致CPU资源占用高，影响Redis性能。常见的探测方法包括使用Redis-cli的hotkeys参数、monitor命令统计、Redis节点抓包分析以及Client/Proxy端收集，但这些方法各有局限性。</p>
 <p>得物技术提出了一种基于Redis内核的热key统计方案，该方案实时性强，信息详细，支持订阅与查询功能，有效解决了热key探测的难点。方案包含热key统计和通知模块，能在Redis-server端实现。热key统计模块基于LRU队列，统计key每秒访问次数，超过阈值则判定为热key，同时区分读热key与写热key。热key通知模块提供读热key、写热key、热key失效三个订阅通道，Redis-server会主动向订阅通道广播热key消息。此外，还支持热key记录查询与重置命令，允许查询和重置读命令和写命令的热key日志。这一方案为热key探测提供了一种新的解决方案，有助于提高Redis的性能和稳定性。</p>
 <h2>开源项目</h2>
-<h3><a class="header-anchor" href="#screenshot-to-code"><span></span></a><a href="https://github.com/abi/screenshot-to-code" target="_blank" rel="noopener noreferrer">screenshot-to-code</a></h3>
+<h3><a class="header-anchor" href="#screenshot-to-code-截图生成前端代码"><span></span></a><a href="https://github.com/abi/screenshot-to-code" target="_blank" rel="noopener noreferrer">screenshot-to-code：截图生成前端代码</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412012231166.png" alt=""></p>
 <p>screenshot-to-code通过AI将截图、草图和Figma设计转换成干净、功能性的前端代码。目前支持Claude Sonnet 3.5和GPT-4o模型。</p>
-<h3><a class="header-anchor" href="#rewrite"><span></span></a><a href="https://github.com/openrewrite/rewrite" target="_blank" rel="noopener noreferrer">rewrite</a></h3>
+<h3><a class="header-anchor" href="#rewrite-自动化代码重构工具"><span></span></a><a href="https://github.com/openrewrite/rewrite" target="_blank" rel="noopener noreferrer">rewrite：自动化代码重构工具</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412012234100.png" alt=""></p>
 <p>OpenRewrite是一个开源的自动化代码重构工具，它通过修改Lossless Semantic Trees (LSTs)并重新打印源代码来工作，保持代码原始格式。它最初支持Java，但正在扩展对更多语言和框架的支持。开发者可以创建和运行自己的重构食谱，以获得想要的重构效果。</p>
-<h3><a class="header-anchor" href="#marker"><span></span></a><a href="https://github.com/VikParuchuri/marker" target="_blank" rel="noopener noreferrer">marker</a></h3>
+<h3><a class="header-anchor" href="#marker-pdf快速转换成markdown、json和html格式"><span></span></a><a href="https://github.com/VikParuchuri/marker" target="_blank" rel="noopener noreferrer">marker：PDF快速转换成Markdown、JSON和HTML格式</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412012230300.png" alt=""></p>
 <p>marker能够将PDF文件快速且准确地转换成Markdown、JSON和HTML格式。</p>
 <h2>学习资源</h2>
 <h3><a class="header-anchor" href="#nvidia-新开发者福利-600元ai课程免费学-还有机会获得nvidia培训证书"><span></span></a><a href="https://www.solidot.org/story?sid=79898" target="_blank" rel="noopener noreferrer">NVIDIA 新开发者福利：600元AI课程免费学，还有机会获得NVIDIA培训证书</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412012235780.png" alt=""></p>
 <p>NVIDIA为新开发者提供免费学习价值600元的AI在线课程，并有机会获得官方培训证书。课程覆盖生成式AI、大语言模型、图形仿真、加速计算、数据科学和深度学习等五大领域，提供云端实验环境和实践机会，助力专业技能提升。</p>
-<h3><a class="header-anchor" href="#git-cheat-sheet"><span></span></a><a href="https://wizardzines.com/git-cheat-sheet.pdf" target="_blank" rel="noopener noreferrer">git-cheat-sheet</a></h3>
+<h3><a class="header-anchor" href="#git-cheat-sheet-速查git命令"><span></span></a><a href="https://wizardzines.com/git-cheat-sheet.pdf" target="_blank" rel="noopener noreferrer">git-cheat-sheet：速查Git命令</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412012221429.png" alt=""></p>
 <p>速查Git命令。</p>
-<h3><a class="header-anchor" href="#看见概率论"><span></span></a><a href="https://probability.visualized.fun/" target="_blank" rel="noopener noreferrer">看见概率论</a></h3>
+<h3><a class="header-anchor" href="#看见概率论-交互式学习概率论"><span></span></a><a href="https://probability.visualized.fun/" target="_blank" rel="noopener noreferrer">看见概率论：交互式学习概率论</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412012223637.png" alt=""></p>
 <p>交互式学习平台，通过直观演示和实际案例，使概率论的学习变得有趣和易于理解。平台涵盖了大数定理、贝叶斯定理、凯利公式等核心概念，并提供了经典概率趣题的互动演示。</p>
 <h2>随便看看</h2>
@@ -474,10 +474,10 @@
       <link>https://weekly.shawnxie.top/content/2024/25.html</link>
       <guid>https://weekly.shawnxie.top/content/2024/25.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 25 期）：第一生产力</source>
-      <description>肖恩技术周刊（第 25 期）：第一生产力 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资料”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 娃是中年人的第一生产力...</description>
+      <description>肖恩技术周刊（第 25 期）：第一生产力 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 娃是中年人的第一生产力...</description>
       <content:encoded><![CDATA[
 <blockquote>
-<p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资料”等。<br>
+<p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。<br>
 <strong>更新时间</strong>: 周一<br>
 <strong>历史收录</strong>: <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwODY0ODQzOQ==&amp;action=getalbum&amp;album_id=3492416248238096386#wechat_redirect" target="_blank" rel="noopener noreferrer">技术周刊合集</a> <br>
 <strong>订阅方式</strong>: 微信公众号“<strong>肖恩聊技术</strong>”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~<br>
@@ -503,7 +503,7 @@
 <li>allow-right-click：重启页面禁用的右键</li>
 <li>图片AI无损放大</li>
 </ul>
-<p><strong>学习资料</strong></p>
+<p><strong>学习资源</strong></p>
 <ul>
 <li>Best-websites-a-programmer-should-visit：推荐程序员应该访问的网站</li>
 <li>data-engineer-handbook：成为优秀数据工程师所需的资源</li>
@@ -511,7 +511,7 @@
 <p><strong>观点</strong></p>
 <ul>
 <li>大模型狂飙两年后，“六小龙”开始做减法</li>
-<li>I Work On A 5 Year Time Frame. Anything Less Is A Loss.</li>
+<li>我的工作期限为 5 年，少一点就是损失（英文）</li>
 </ul>
 </blockquote>
 <h2>业界资讯</h2>
@@ -545,17 +545,17 @@
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411250042655.png" alt=""></p>
 <p>提供AI无损放大功能，能够高保真放大图片分辨率，支持JPG/JPEG/PNG格式，尺寸小于2000*2000px，文件大小不超过10M。</p>
 <h2>学习资源</h2>
-<h3><a class="header-anchor" href="#best-websites-a-programmer-should-visit"><span></span></a><a href="https://github.com/sdmg15/Best-websites-a-programmer-should-visit" target="_blank" rel="noopener noreferrer">Best-websites-a-programmer-should-visit</a></h3>
+<h3><a class="header-anchor" href="#best-websites-a-programmer-should-visit-推荐程序员应该访问的网站"><span></span></a><a href="https://github.com/sdmg15/Best-websites-a-programmer-should-visit" target="_blank" rel="noopener noreferrer">Best-websites-a-programmer-should-visit：推荐程序员应该访问的网站</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411250028141.png" alt=""></p>
 <p>提供了程序员在学习计算机科学和编程时应该访问的网站列表。它涵盖了从解决问题、新闻、编程实践、加密货币、项目构思、编码建议、编码风格、工具、面试准备、纪录片、在线课程、特定编程语言资源、人工智能和机器学习、研讨会、研究写作、演讲、集成资源、YouTube频道、好文章、Bash和Shell脚本、播客、编译器/解释器构建、观看他人编码、教程等多个方面的资源。</p>
-<h3><a class="header-anchor" href="#data-engineer-handbook"><span></span></a><a href="https://github.com/DataExpert-io/data-engineer-handbook" target="_blank" rel="noopener noreferrer">data-engineer-handbook</a></h3>
+<h3><a class="header-anchor" href="#data-engineer-handbook-成为优秀数据工程师所需的资源"><span></span></a><a href="https://github.com/DataExpert-io/data-engineer-handbook" target="_blank" rel="noopener noreferrer">data-engineer-handbook：成为优秀数据工程师所需的资源</a></h3>
 <p>提供成为优秀数据工程师所需的资源。包括入门指南、软件需求、实践项目、面试技巧、书籍推荐、社区和新闻通讯。项目还涉及数据工程工具和平台，如数据编排、数据湖/云、数据仓库、数据质量和教育公司。此外，还提供有关数据工程的博客、白皮书、术语表和设计模式。适合新手和有经验的数据工程师，帮助他们提升技能和知识。</p>
 <h2>观点</h2>
 <h3><a class="header-anchor" href="#大模型狂飙两年后-六小龙-开始做减法"><span></span></a><a href="https://36kr.com/p/3042747744009984" target="_blank" rel="noopener noreferrer">大模型狂飙两年后，“六小龙”开始做减法</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411242354148.png" alt=""></p>
 <p>国内AI大模型企业“六小龙”（智谱、MiniMax、月之暗面、百川智能、零一万物和阶跃星辰）正在调整发展策略，从规模扩张转向聚焦核心优势和技术深化，以缩小与国际头部企业的技术差距。这些企业在经历了广泛的商业尝试后，开始回归各自擅长的领域，更加聚焦于特定的商业化路径。在C端，月之暗面和MiniMax通过快速迭代和灵活反应获得优势；而在B端，其他企业则根据各自特点深耕不同领域。</p>
 <p>面对高估值和融资难题，“六小龙”需要更有效地使用资金，以展现业务的成长性和市场竞争力。同时，随着人事变动和业务调整，这些企业面临着变大还是变小的选择，这将影响他们的未来发展和市场定位。在AI浪潮中，只有少数企业能脱颖而出，因此人才流动和企业规模选择成为关键因素。这些企业正通过技术深化和商业化聚焦，寻求在激烈的市场竞争中获得优势。</p>
-<h3><a class="header-anchor" href="#i-work-on-a-5-year-time-frame-anything-less-is-a-loss"><span></span></a><a href="https://www.joanwestenberg.com/i-work-on-a-5-year-time-frame-anything-less-is-a-loss/" target="_blank" rel="noopener noreferrer">I Work On A 5 Year Time Frame. Anything Less Is A Loss.</a></h3>
+<h3><a class="header-anchor" href="#我的工作期限为-5-年-少一点就是损失-英文"><span></span></a><a href="https://www.joanwestenberg.com/i-work-on-a-5-year-time-frame-anything-less-is-a-loss/" target="_blank" rel="noopener noreferrer">我的工作期限为 5 年，少一点就是损失（英文）</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411250040797.png" alt=""></p>
 <p>文章主张任何值得追求的目标都需要至少五年的时间投入。作者认为，无论是写作、创业还是政治竞选，真正的成就需要时间来成长、学习和克服错误。作者致力于长期项目，因为只有长期的努力才能带来真正的成功和满足感。</p>
 <p>文章批评了追求快速回报和短期成果的心态，指出这种心态会导致忽视个人成长和长远目标。作者观察到，许多人在没有立即成功时就会放弃，错过了通过坚持和努力实现更大成就的机会。这种短视行为是自我挫败的，因为真正的成功需要时间和耐心。</p>
@@ -569,10 +569,10 @@
       <link>https://weekly.shawnxie.top/content/2024/24.html</link>
       <guid>https://weekly.shawnxie.top/content/2024/24.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 24 期）：伟大的母亲</source>
-      <description>肖恩技术周刊（第 24 期）：伟大的母亲 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资料”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 11月15日在华西LD...</description>
+      <description>肖恩技术周刊（第 24 期）：伟大的母亲 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 11月15日在华西LD...</description>
       <content:encoded><![CDATA[
 <blockquote>
-<p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资料”等。<br>
+<p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。<br>
 <strong>更新时间</strong>: 周一<br>
 <strong>历史收录</strong>: <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwODY0ODQzOQ==&amp;action=getalbum&amp;album_id=3492416248238096386#wechat_redirect" target="_blank" rel="noopener noreferrer">技术周刊合集</a> <br>
 <strong>订阅方式</strong>: 微信公众号“<strong>肖恩聊技术</strong>”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~<br>
@@ -627,13 +627,13 @@
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241117231657.png" alt=""></p>
 <p>探讨了应用网关的演进历程和不同分类，以及AI技术如何推动网关发展。软件架构从单体架构发展到云原生和AI原生架构，网关形态也随之变化。关键网关类型包括流量网关、ESB网关、微服务网关和云原生网关，各负责不同功能，如流量管理、系统集成、微服务路由和云服务发现。AI网关专为AI流量设计，具备长连接和大带宽特性，通过AI插件集简化开发。文章还介绍了Higress，一个AI原生API网关，它集成了多种网关功能，并支持与AI模型的无缝集成，提供高性能处理和智能流量调度，以适应AI应用需求。</p>
 <h2>工具推荐</h2>
-<h3><a class="header-anchor" href="#全功能ai应用平台"><span></span></a><a href="https://302.ai/" target="_blank" rel="noopener noreferrer">全功能AI应用平台</a></h3>
+<h3><a class="header-anchor" href="#_302-ai-全功能ai应用平台"><span></span></a><a href="https://302.ai/" target="_blank" rel="noopener noreferrer">302.AI: 全功能AI应用平台</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241117231202.png" alt=""></p>
 <p>302.AI是一个全功能AI应用平台，提供多种AI服务，包括语言模型、图像生成、图片处理等。平台支持按用量付费，拥有开源生态，持续接入最新的AI模型。用户可以一键部署AI应用，无需账号即可分享给他人使用。平台还承诺本地存储用户数据，保护隐私安全，并提供网络加速服务。此外，平台提供机器人超市、工具超市和API超市，满足不同用户需求。</p>
-<h3><a class="header-anchor" href="#url-parser-online"><span></span></a><a href="https://www.urlparser.online/" target="_blank" rel="noopener noreferrer">URL Parser Online</a></h3>
+<h3><a class="header-anchor" href="#url-parser-online-将网页转换为更适合大型语言模型的输入格式"><span></span></a><a href="https://www.urlparser.online/" target="_blank" rel="noopener noreferrer">URL Parser Online: 将网页转换为更适合大型语言模型的输入格式</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241117231627.png" alt=""></p>
 <p>输入URL将网页转换为Markdown、HTML、TXT等更适合大型语言模型的输入格式。</p>
-<h3><a class="header-anchor" href="#code-maat"><span></span></a><a href="https://github.com/adamtornhill/code-maat" target="_blank" rel="noopener noreferrer">code-maat</a></h3>
+<h3><a class="header-anchor" href="#code-maat-从版本控制系统中挖掘和分析数据"><span></span></a><a href="https://github.com/adamtornhill/code-maat" target="_blank" rel="noopener noreferrer">code-maat：从版本控制系统中挖掘和分析数据</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241117235436.png" alt=""></p>
 <p>Code Maat是一个命令行工具，用于从版本控制系统中挖掘和分析数据。它通过分析代码的历史演变来识别设计问题和开发瓶颈，旨在简化维护并指导系统向更有序的方向发展。Code Maat支持多种版本控制系统，并提供多种分析方法，如代码年龄、代码周转率和所有权模式等。</p>
 <h2>人物</h2>
@@ -661,7 +661,7 @@
 <blockquote>
 <p><strong>业界资讯</strong></p>
 <ul>
-<li>Linus:：我略微出手修改几行内核代码就提升了2.6%性能</li>
+<li>Linus:我略微出手修改几行内核代码就提升了2.6%性能</li>
 <li>仓颉编程语言官网正式上线，首个公测版本开放下载</li>
 <li>TIOBE 11月榜单：Go语言排名创新高</li>
 </ul>
@@ -690,17 +690,17 @@
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241110230501.png" alt=""></p>
 <p>2024年11月TIOBE指数显示，Go语言排名上升至第7位，创历史新高。Go以其快速、易部署和学习的特点在编程语言中突出。Python以22.85%的评分位居榜首，C++、Java和C紧随其后。Go语言的下一个挑战是超越排名第六的JavaScript，根据趋势预测未来三年内可能实现这一目标。</p>
 <h2>工具推荐</h2>
-<h3><a class="header-anchor" href="#jsoncrack-com"><span></span></a><a href="https://github.com/AykutSarac/jsoncrack.com" target="_blank" rel="noopener noreferrer">jsoncrack.com</a></h3>
+<h3><a class="header-anchor" href="#jsoncrack-com-json数据可视化工具"><span></span></a><a href="https://github.com/AykutSarac/jsoncrack.com" target="_blank" rel="noopener noreferrer">jsoncrack.com：JSON数据可视化工具</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241110224711.png" alt=""></p>
 <p>JSON Crack是一个在线工具，用于可视化、格式化和探索JSON数据。它提供了一个清晰的数据展示平台，支持JSON、YAML、CSV、XML和TOML格式的转换、格式化、验证和代码生成。</p>
-<h3><a class="header-anchor" href="#i18n-code-markdown"><span></span></a><a href="https://www.i18ncode.com/zh/markdown" target="_blank" rel="noopener noreferrer">I18n code Markdown</a></h3>
+<h3><a class="header-anchor" href="#i18n-code-markdown-多语言内容转换工具"><span></span></a><a href="https://www.i18ncode.com/zh/markdown" target="_blank" rel="noopener noreferrer">I18n code Markdown：多语言内容转换工具</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241110224614.png" alt=""></p>
 <p>多语言内容转换工具，它通过三个简单步骤帮助用户将Markdown文本翻译成多种语言。该工具支持多种文件格式和语言，并采用AI技术提供自然流畅的翻译，旨在帮助用户打破语言障碍，让内容全球化。</p>
 <h2>学习资源</h2>
 <h3><a class="header-anchor" href="#系统设计面试-内幕指南"><span></span></a><a href="https://learning-guide.gitbook.io/system-design-interview" target="_blank" rel="noopener noreferrer">系统设计面试：内幕指南</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241110225501.png" alt=""></p>
 <p>《系统设计面试：内幕指南》（System Design Interview: An Insider’s Guide）的中文翻译版本。</p>
-<h3><a class="header-anchor" href="#ebooks"><span></span></a><a href="https://github.com/kska32/ebooks" target="_blank" rel="noopener noreferrer">ebooks</a></h3>
+<h3><a class="header-anchor" href="#ebooks-10万本电子书"><span></span></a><a href="https://github.com/kska32/ebooks" target="_blank" rel="noopener noreferrer">ebooks：10万本电子书</a></h3>
 <p>收藏的一些经典的历史、政治、心理、哲学、数学、计算机方面电子书(约10万本）。</p>
 ]]></content:encoded>
       <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241110230042.png" type="image/png"/>
@@ -746,30 +746,30 @@
 <p>本周花了较多时间在“知识管理”的理论学习上，了解了工作流、知识花园（Digital Garden）和笔记软件。本来打算周末再深入调研一下，再结合个人目前的阅读写作工作流和工具产出一篇文章。但一切都被周六晚上的比赛打断了，熬夜看完5局比赛，像吃了一口大翔，整个人都不好了，LPL是永远翻不过T1和Faker这座大山了。不知道是不是我的错觉，商业价值越高的竞技比赛，虽然自己玩的如火如荼，但国际赛事成绩却很差（三大球），这背后的原因究竟是为什么？</p>
 <h2>业界资讯</h2>
 <h3><a class="header-anchor" href="#刚刚-阿里全球数学竞赛决赛结果公布-姜萍违反预选赛规则未获奖"><span></span></a><a href="https://www.jiqizhixin.com/articles/2024-11-03" target="_blank" rel="noopener noreferrer">刚刚，阿里全球数学竞赛决赛结果公布，姜萍违反预选赛规则未获奖</a></h3>
-<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103231836.png" alt="|500"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103231836.png" alt=""></p>
 <p>2024年阿里巴巴全球数学竞赛决赛结果公布，86名选手获奖，包括金奖5名、银奖10名、铜奖20名和优秀奖51名。决赛设有五个赛道，每个赛道分别评出金奖1名、银奖2名、铜奖4名和优秀奖10名。北京大学获得最多金奖，奖金每人30000美元。江苏17岁中专生姜萍因违反预选赛规则未获奖，其教师王某某在预选赛中提供帮助，违反了“禁止与他人讨论”的规则。阿里达摩院对此表示歉意，承认赛制和管理存在问题。江苏省涟水中等专业学校也发布了相关情况通报。</p>
 <h3><a class="header-anchor" href="#随着全球开发人员数量激增-ai-将-python-引领至顶级语言"><span></span></a><a href="https://github.blog/news-insights/octoverse/octoverse-2024/" target="_blank" rel="noopener noreferrer">随着全球开发人员数量激增，AI 将 Python 引领至顶级语言</a></h3>
-<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103232505.png" alt="|500"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103232505.png" alt=""></p>
 <p>2024年的Octoverse报告显示，人工智能（AI）在全球开发者社区中扮演了重要角色，Python超越JavaScript成为GitHub上最受欢迎的编程语言。AI的集成推动了开发者社区的增长，许多开发者首次参与开源项目。全球开发者数量显著增加，特别是在南部地区，自2023年GitHub Copilot推出以来，开发者数量迅速增长。</p>
 <p>报告还指出，全球生成性AI活动激增，贡献数量增长59%，项目总数增加98%，印度、德国、日本和新加坡的开发者贡献显著。开发者数量的全球增长在非洲、拉丁美洲和亚洲尤为显著，预计到2028年，印度将拥有GitHub上最大的开发者人口。</p>
 <p>Python因其在机器学习、数据科学和科学计算等领域的广泛应用而成为GitHub上最广泛使用的语言，与STEM领域人群加入开源社区的趋势相吻合。Jupyter Notebooks的使用量激增，反映了数据科学和机器学习在GitHub上的增长。总体而言，AI的发展并未取代开发者，而是促进了开发者社区的扩张和多样化。</p>
 <h3><a class="header-anchor" href="#elasticsearch-star-数一夜归零"><span></span></a><a href="https://www.oschina.net/news/318236" target="_blank" rel="noopener noreferrer">Elasticsearch star 数一夜归零？</a></h3>
-<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103232649.png" alt="|500"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103232649.png" alt=""></p>
 <p>Elasticsearch在GitHub上的star数突然归零，原因是Elastic公司内部操作失误，导致部分公共git仓库被错误地标记为私有。问题发现后，Elastic团队紧急响应，逐步恢复了仓库的公共状态。除了Kibana仓库外，其他仓库在12:51 UTC至15:09 UTC间恢复，而Kibana仓库在18:39 UTC完全恢复。Elastic公司在整个过程中持续更新状态，并与GitHub支持团队合作。Elasticsearch是一个基于Lucene的开源、分布式、RESTful搜索引擎。</p>
 <h2>技术博客</h2>
 <h3><a class="header-anchor" href="#单体架构比微服务架构更落后吗"><span></span></a><a href="https://mp.weixin.qq.com/s/HvMlNYrJFQkqewD9Bwn8_w" target="_blank" rel="noopener noreferrer">单体架构比微服务架构更落后吗？</a></h3>
-<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103231724.png" alt="|500"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103231724.png" alt=""></p>
 <p>本文讨论了单体架构与微服务架构的发展、特点及适用场景。作者指出，单体架构和微服务架构无先进落后之分，而是根据历史阶段和技术需求发展而来。单体架构因其简单自然，适合小型系统，但在大型系统中隔离性和技术扩展性较差。微服务架构通过服务拆分，提高了系统的可用性和灵活性，适合大型复杂系统和大规模团队。微服务架构的优势在于能够提高系统的可用性和灵活性，但成功的实践需要组织中有充分理解微服务的专家，以及自动化和监控度量能力。作者强调，架构的选择应基于业务需求和团队能力，单体和微服务架构各有优劣，无绝对优劣之分。因此，在选择架构时，应考虑团队的实际情况和业务需求，选择最适合当前情况的架构。</p>
 <h2>开源项目</h2>
-<h3><a class="header-anchor" href="#omniparser"><span></span></a><a href="https://github.com/microsoft/OmniParser" target="_blank" rel="noopener noreferrer">OmniParser</a></h3>
-<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103232358.png" alt="|500"></p>
+<h3><a class="header-anchor" href="#omniparser-屏幕解析工具"><span></span></a><a href="https://github.com/microsoft/OmniParser" target="_blank" rel="noopener noreferrer">OmniParser：屏幕解析工具</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103232358.png" alt=""></p>
 <p>OmniParser 是微软研究院开发的屏幕解析工具，专门用于将用户界面的屏幕截图转换成结构化数据。该工具旨在提高基于大型语言模型（如 GPT-4V）的 UI 代理系统的性能，通过准确识别可交互图标和理解截图元素的语义，增强代理执行任务的能力。</p>
-<h3><a class="header-anchor" href="#drawdb"><span></span></a><a href="https://github.com/drawdb-io/drawdb" target="_blank" rel="noopener noreferrer">drawdb</a></h3>
-<p><img src="https://gw.alipayobjects.com/zos/k/e2/drawdb.gif" alt="|500"></p>
+<h3><a class="header-anchor" href="#drawdb-数据库设计工具"><span></span></a><a href="https://github.com/drawdb-io/drawdb" target="_blank" rel="noopener noreferrer">drawdb：数据库设计工具</a></h3>
+<p><img src="https://gw.alipayobjects.com/zos/k/e2/drawdb.gif" alt=""></p>
 <p>一款简单直观的数据库设计工具和 SQL 生成器。</p>
 <h2>观点</h2>
 <h3><a class="header-anchor" href="#如何思考产品的底层逻辑"><span></span></a><a href="https://www.woshipm.com/pd/6132516.html" target="_blank" rel="noopener noreferrer">如何思考产品的底层逻辑</a></h3>
-<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103232845.png" alt="|500"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103232845.png" alt=""></p>
 <p>本文深入探讨了产品底层逻辑的构建，强调产品经理需从多个维度进行思考。首先，明确产品为用户创造的核心价值和商业模式是基础，这包括如何盈利以维持发展。其次，用户体验至关重要，涉及需求、行为和情感，要求产品既实用又愉悦。技术方案的选择和市场定位也是关键，需要形成竞争壁垒。文章以xx浏览器为例，展示了如何通过“搜刷用看”功能提供个性化服务。</p>
 <p>商业模式方面，文章介绍了互联网产品的多种盈利模式，如广告、电商等，并强调了用户体验的多维度考量，包括视觉设计、性能优化等。产品的持续迭代和创新是吸引新用户、服务老用户的关键，需要根据用户反馈和市场竞品进行优化。同时，产品创新要适应时代和技术发展，如AI大模型的应用，以保持竞争力。</p>
 <p>最后，文章指出，产品团队需关注外部环境变化，反思市场定位，确保技术实现的可行性。通过这些综合考量，产品才能在激烈的市场竞争中立于不败之地。</p>
@@ -838,17 +838,17 @@
 <p>通过流量规则巡检，团队发现并解决了三个具体问题：1) 算法推荐了虚拟商品导致砍价成功后券金额为0，通过算法侧过滤虚拟商品解决；2) 520膨胀后金额等于膨胀前金额，通过处理膨胀后金额小于等于膨胀前券金额的情况解决；3) 商详页520领券失败，通过在商详查券接口补上拦截解决。</p>
 <p>流量规则巡检的优势在于线上巡检、研发自测、需求右移、发布验证、线下拦截等方面。易发现问题的场景包括活动相关接口、C端展示数据、用户操作成功后数据变化、算法链路等。通过这一实践，得物技术团队有效提升了生产稳定性和业务逻辑的正确性。</p>
 <h2>开源项目</h2>
-<h3><a class="header-anchor" href="#vue-fabric-editor"><span></span></a><a href="https://github.com/ikuaitu/vue-fabric-editor" target="_blank" rel="noopener noreferrer">vue-fabric-editor</a></h3>
+<h3><a class="header-anchor" href="#vue-fabric-editor-开源的图片编辑器"><span></span></a><a href="https://github.com/ikuaitu/vue-fabric-editor" target="_blank" rel="noopener noreferrer">vue-fabric-editor：开源的图片编辑器</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/image-7.png" alt=""></p>
 <p>vue-fabric-editor 是一个基于 Vue 和 fabric.js 开源的图片编辑器，它允许用户自定义字体、素材和设计模板。这款编辑器支持导入 JSON、PSD 文件，并能够将编辑后的图片保存为 PNG、SVG 或 JSON 格式。它提供了丰富的图形编辑功能，包括多元素对齐、组合拆分、图层顺序调整等。此外，vue-fabric-editor 强调易用性和插件化架构，适合非专业设计人员进行简单的图形编辑任务。</p>
-<h3><a class="header-anchor" href="#text-behind-image"><span></span></a><a href="https://github.com/RexanWONG/text-behind-image" target="_blank" rel="noopener noreferrer">text-behind-image</a></h3>
+<h3><a class="header-anchor" href="#text-behind-image-图片主体后加文字"><span></span></a><a href="https://github.com/RexanWONG/text-behind-image" target="_blank" rel="noopener noreferrer">text-behind-image：图片主体后加文字</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/image-6.png" alt=""></p>
 <p>在图片主体后加上你想添加的文字。</p>
 <h2>学习资源</h2>
-<h3><a class="header-anchor" href="#openbookshongkong"><span></span></a><a href="https://openbookshongkong.com/book/" target="_blank" rel="noopener noreferrer">openbookshongkong</a></h3>
+<h3><a class="header-anchor" href="#openbookshongkong-香港开源书籍"><span></span></a><a href="https://openbookshongkong.com/book/" target="_blank" rel="noopener noreferrer">openbookshongkong：香港开源书籍</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/image-5.png" alt=""></p>
 <p>香港中文大学、香港城市大学和香港大学联合推出“开读”计划，旨在免费提供三所大学出版社出版的中文学术著作，推动全球知识开放。图书经过严格学术评审，确保质量。通过开放获取，计划扩大大学出版社影响力，建立作者与读者联系，吸纳更广泛读者群。多位教授和图书馆馆长对计划表示支持，认为体现了香港的前瞻性思维，为全球读者提供知识宝库。</p>
-<h3><a class="header-anchor" href="#awesome-low-level-design"><span></span></a><a href="https://github.com/ashishps1/awesome-low-level-design" target="_blank" rel="noopener noreferrer">awesome-low-level-design</a></h3>
+<h3><a class="header-anchor" href="#awesome-low-level-design-学习低层次设计"><span></span></a><a href="https://github.com/ashishps1/awesome-low-level-design" target="_blank" rel="noopener noreferrer">awesome-low-level-design：学习低层次设计</a></h3>
 <p>帮助开发者学习低层次设计（LLD）和面向对象设计（OOD），并准备技术面试。该项目提供了丰富的学习资源，包括基础OOP概念、SOLID原则、设计模式、UML图绘制等。此外，它还收录了不同难度级别的面试问题，如设计停车场、ATM系统等，以及相关的书籍推荐和额外学习资源。</p>
 ]]></content:encoded>
       <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/WechatIMG65.png" type="image/png"/>
@@ -889,13 +889,10 @@
 <ul>
 <li>机器学习系统：设计和实现</li>
 </ul>
-<p><strong>观点</strong></p>
+<p><strong>随便看看</strong></p>
 <ul>
 <li>国产操作系统的沉浮往事</li>
 <li>第一批摆摊的打工人，已经回去上班了</li>
-</ul>
-<p><strong>人物</strong></p>
-<ul>
 <li>“图灵诺奖双得主”、“AI教父”，至高荣誉加身，杰弗里·辛顿配吗？看了他的故事果然没人比他更合适</li>
 </ul>
 </blockquote>
@@ -918,26 +915,25 @@
 <h3><a class="header-anchor" href="#一文搞懂第三方支付系统架构设计"><span></span></a><a href="https://mp.weixin.qq.com/s/Z2sNg-VjdmGD5kymZPrrYQ" target="_blank" rel="noopener noreferrer">一文搞懂第三方支付系统架构设计</a></h3>
 <p>本文概述了第三方支付系统的架构设计，从第一方现金支付、第二方银行支付，到第三方网络支付的演进，并提及了第四方支付。文章定义了第三方支付中的角色（用户、商户、银行、支付工具），并解释了账户体系，包括用户账户U账户、商户账户M账户和银行账户。通过菜市场买菜的例子，文章说明了支付过程的复杂性。文章还描述了支付系统的运作模式，包括充值、提现、转账等操作的资金流动和账户变动。最后，文章对支付系统的主要领域进行了概述，并预告了后续文章将深入探讨支付系统的各个环节。</p>
 <h2>开源项目</h2>
-<h3><a class="header-anchor" href="#roughviz"><span></span></a><a href="https://github.com/jwilber/roughViz" target="_blank" rel="noopener noreferrer">roughViz</a></h3>
+<h3><a class="header-anchor" href="#roughviz-可重复使用的手绘风javascript画图库"><span></span></a><a href="https://github.com/jwilber/roughViz" target="_blank" rel="noopener noreferrer">roughViz：可重复使用的手绘风JavaScript画图库</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262033366.webp" alt=""></p>
 <p>roughViz.js 是一个可重复使用的 JavaScript 库，用于在浏览器中创建基于 D3v5、rough.js 和 handy 库的多种图表类型，包括条形图、水平条形图、甜甜圈图、折线图、饼图、散点图和堆叠条形图等。</p>
-<h3><a class="header-anchor" href="#graphql-editor"><span></span></a><a href="https://github.com/graphql-editor/graphql-editor" target="_blank" rel="noopener noreferrer">graphql-editor</a></h3>
+<h3><a class="header-anchor" href="#graphql-editor-graphql可视化编辑器"><span></span></a><a href="https://github.com/graphql-editor/graphql-editor" target="_blank" rel="noopener noreferrer">graphql-editor：Graphql可视化编辑器</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262033367.gif" alt=""></p>
 <p>Graphql editor 是一款 Graphql 的可视化编辑器和 IDE，帮助用户更容易理解 GraphQL 模式，通过使用可视化块系统创建模式。GraphQL Editor 将把它们转化为代码。通过 GraphQL Editor，用户可以在不写任何代码的情况下创建可视化的图表，或者以一种很好的方式呈现其模式。</p>
-<h3><a class="header-anchor" href="#googleapis"><span></span></a><a href="https://github.com/googleapis/googleapis" target="_blank" rel="noopener noreferrer">googleapis</a></h3>
+<h3><a class="header-anchor" href="#googleapis-谷歌api原始接口定义"><span></span></a><a href="https://github.com/googleapis/googleapis" target="_blank" rel="noopener noreferrer">googleapis：谷歌API原始接口定义</a></h3>
 <p>包含支持 REST 和 gRPC 协议的公共谷歌 API 的原始接口定义。阅读原始接口定义可以更好地理解谷歌 API，并帮助你更高效地使用它们。你还可以使用这些定义与开源工具一起生成客户端库、文档和其他工件。</p>
 <h2>学习资源</h2>
 <h3><a class="header-anchor" href="#机器学习系统-设计和实现"><span></span></a><a href="https://openmlsys.github.io/index.html" target="_blank" rel="noopener noreferrer">机器学习系统：设计和实现</a></h3>
 <p>宣称要做世界上第一本全面讲述机器学习系统知识的开源书籍。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262033368.jpeg" alt=""></p>
-<h2>观点</h2>
+<h2>随便看看</h2>
 <h3><a class="header-anchor" href="#国产操作系统的沉浮往事"><span></span></a><a href="https://36kr.com/p/2995474036846465" target="_blank" rel="noopener noreferrer">国产操作系统的沉浮往事</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262033369.png" alt=""></p>
 <p>回顾了国产操作系统的发展历程，从1968年的萌芽阶段到2024年的当前状态。在早期，中国计算机研究起步，研制了第一台百万次集成电路计算机DJS-11机，并开发了150机系统。1980年代，随着IBM PC的推出，中国开始研制国产PC和操作系统，如长城PC和CCDOS。1999年，国产操作系统迎来第一次发展浪潮，出现了Xteam Linux、红旗Linux等。2009年后，国产操作系统吸取教训，更加注重用户体验和生态建设，推出了中标麒麟、深度Linux等。2020年至今，国产操作系统支持多平台，搭建根社区如openEuler，展现出新趋势。尽管面临生态系统和用户体验的挑战，国产操作系统已取得显著进步，未来有潜力取得更大成功。作者呼吁公众支持国产操作系统，认为基于Linux内核的开发是合理选择，国内厂商已做出大量原创贡献。</p>
 <h3><a class="header-anchor" href="#第一批摆摊的打工人-已经回去上班了"><span></span></a><a href="https://36kr.com/p/2993757111803521" target="_blank" rel="noopener noreferrer">第一批摆摊的打工人，已经回去上班了</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262033370.png" alt=""></p>
 <p>许多打工人因追求自由和额外收入而选择摆摊创业，但现实远比想象中艰难。许多摊主因选址困难、成本控制和定价问题，在两个月内便放弃。摆摊不仅辛苦，收入也不稳定，且成功案例并不多见。背后还存在培训机构、设备商和供应链服务商的利益链，他们可能因自身利益而夸大摆摊的盈利前景。因此，摆摊并非轻松的致富途径，而是充满挑战和风险。人们应理性看待摆摊创业，不被网络宣传误导，而是专注于做好手头工作，追求稳定而实际的职业发展。</p>
-<h2>人物</h2>
 <h3><a class="header-anchor" href="#图灵诺奖双得主-、-ai教父-至高荣誉加身-杰弗里·辛顿配吗-看了他的故事果然没人比他更合适"><span></span></a><a href="https://mp.weixin.qq.com/s/1WCeLS47VErFFirRvAtBEw" target="_blank" rel="noopener noreferrer">“图灵诺奖双得主”、“AI教父”，至高荣誉加身，杰弗里·辛顿配吗？看了他的故事果然没人比他更合适</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262033371.png" alt=""></p>
 <p>杰弗里·辛顿因其在神经网络和人工智能领域的杰出贡献荣获2024年诺贝尔物理学奖。作为深度学习的先驱，辛顿的研究不仅改变了人们对神经网络的认知，还推动了智能机器时代的到来。他从学术困境中坚持研究，最终成为AI领域的领军人物。</p>
@@ -1005,10 +1001,10 @@
 <p>肖恩在文章中分享了他使用Kimi这个AI工具在内容创作上的体验和改进过程。他最初被Kimi的长文本解读能力所吸引，并在整理“代码可视化”的理论知识时，利用Kimi节省了大量素材寻找和解读的时间。随后，他尝试制作了一个自动抓取技术热点并总结的工具，但由于Kimi的API当时不支持搜索功能，他不得不自己编写搜索和内容解析工具。随着Kimi浏览器插件的推出，他得以在原始页面上直接生成内容摘要，简化了工作流程。</p>
 <p>在第7期技术周刊时，作者因内容准确度和信息源质量的问题，放弃了自动工具，转而人工收集内容。Kimi的探索版发布，具备了AI自主搜索能力，使得作者能够更加专注于提出问题和思考，而不是花费大量时间在搜索调研上。作者对Kimi的新功能表示赞赏，并希望Kimi能继续提供更多有用的功能。</p>
 <h2>开源项目</h2>
-<h3><a class="header-anchor" href="#surya"><span></span></a><a href="https://github.com/VikParuchuri/surya" target="_blank" rel="noopener noreferrer">surya</a></h3>
+<h3><a class="header-anchor" href="#surya-开源的文档ocr工具包"><span></span></a><a href="https://github.com/VikParuchuri/surya" target="_blank" rel="noopener noreferrer">surya: 开源的文档OCR工具包</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262344749.png" alt=""></p>
 <p>Surya是一个开源的文档OCR工具包，支持90多种语言的OCR，并提供行级文本检测、布局分析、阅读顺序检测和表格识别。它适用于多种文档类型，并且提供了一个托管的API，可以处理PDF、图像、Word文档和PowerPoint。Surya的模型权重在特定条件下可以免费使用，并且提供了详细的安装和使用指南，包括命令行工具和Python API。此外，还提供了性能提示和基准测试结果，以及对局限性和故障排除的建议。</p>
-<h3><a class="header-anchor" href="#paddleocr"><span></span></a><a href="https://github.com/PaddlePaddle/PaddleOCR" target="_blank" rel="noopener noreferrer">PaddleOCR</a></h3>
+<h3><a class="header-anchor" href="#paddleocr-百度飞桨开源ocr工具库"><span></span></a><a href="https://github.com/PaddlePaddle/PaddleOCR" target="_blank" rel="noopener noreferrer">PaddleOCR: 百度飞桨开源OCR工具库</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262344750.gif" alt=""></p>
 <p>PaddleOCR是由百度飞桨（PaddlePaddle）深度学习平台开发的开源OCR工具库，支持80+种语言识别，提供数据标注和合成工具，支持服务器、移动设备、嵌入式和IoT设备的模型训练和部署。项目持续更新，包括算法模型挑战赛冠军方案，新增低代码开发能力，支持多种前沿OCR算法和产业级特色模型。</p>
 ]]></content:encoded>
@@ -1043,10 +1039,10 @@
 </ul>
 <p><strong>学习资源</strong></p>
 <ul>
-<li>100-exercises-to-learn-rust</li>
-<li>TheAlgorithms/Java</li>
+<li>100-exercises-to-learn-rust：100个练习学习Rust编程</li>
+<li>TheAlgorithms/Java：多种算法的Java实现</li>
 </ul>
-<p><strong>观点</strong></p>
+<p><strong>随便看看</strong></p>
 <ul>
 <li>逆向思维：拿走一些东西，你会做得更好</li>
 <li>“她们”越来越多了</li>
@@ -1070,23 +1066,23 @@
 </ul>
 <p>Canvas还提供了写作和编码的快捷方式，如建议编辑、调整文档长度、改变阅读水平、添加表情符号、代码审查、添加日志、添加注释、修复错误和代码移植等。</p>
 <h2>开源项目</h2>
-<h3><a class="header-anchor" href="#kestra"><span></span></a><a href="https://github.com/kestra-io/kestra" target="_blank" rel="noopener noreferrer">kestra</a></h3>
+<h3><a class="header-anchor" href="#kestra-开源的工作流自动化平台"><span></span></a><a href="https://github.com/kestra-io/kestra" target="_blank" rel="noopener noreferrer">kestra：开源的工作流自动化平台</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262348296.png" alt=""></p>
 <p>Kestra 是一个开源的工作流自动化平台，支持事件驱动和定时工作流，允许在任何语言中编写代码，并在任何环境中运行。它以代码形式管理工作流，支持Git版本控制，并通过直观的UI使工作流构建变得简单。Kestra 拥有丰富的插件生态系统，能够与各种数据库、云存储和API集成，支持多种编程语言的脚本执行。它具备高可扩展性和容错性，适合处理大规模工作流。</p>
-<h3><a class="header-anchor" href="#doocs-md"><span></span></a><a href="https://github.com/doocs/md" target="_blank" rel="noopener noreferrer">doocs/md</a></h3>
+<h3><a class="header-anchor" href="#doocs-md-高度简洁的微信公众号排版工具"><span></span></a><a href="https://github.com/doocs/md" target="_blank" rel="noopener noreferrer">doocs/md：高度简洁的微信公众号排版工具</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262348297.png" alt=""></p>
 <p>doocs/md 是一款高度简洁的微信公众号排版工具，支持 Markdown 所有基础语法、色盘取色、一键复制并粘贴到公众号后台、多图上传、一键下载文档、自定义 CSS 样式、一键重置等特性。</p>
-<h3><a class="header-anchor" href="#openbb"><span></span></a><a href="https://github.com/OpenBB-finance/OpenBB" target="_blank" rel="noopener noreferrer">OpenBB</a></h3>
+<h3><a class="header-anchor" href="#openbb-免费且完全开源的金融平台"><span></span></a><a href="https://github.com/OpenBB-finance/OpenBB" target="_blank" rel="noopener noreferrer">OpenBB：免费且完全开源的金融平台</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262348298.png" alt=""></p>
 <p>OpenBB是一个免费且完全开源的金融平台，提供股票、期权、加密货币、外汇、宏观经济、固定收益等多种金融数据和分析工具。它还提供了广泛的扩展功能，以增强用户体验。用户可以通过OpenBB Hub注册以充分利用OpenBB生态系统。</p>
 <h2>学习资源</h2>
-<h3><a class="header-anchor" href="#_100-exercises-to-learn-rust"><span></span></a><a href="https://github.com/mainmatter/100-exercises-to-learn-rust" target="_blank" rel="noopener noreferrer">100-exercises-to-learn-rust</a></h3>
+<h3><a class="header-anchor" href="#_100-exercises-to-learn-rust-100个练习学习rust编程"><span></span></a><a href="https://github.com/mainmatter/100-exercises-to-learn-rust" target="_blank" rel="noopener noreferrer">100-exercises-to-learn-rust：100个练习学习Rust编程</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262348299.png" alt=""></p>
 <p>面向初学者的Rust编程语言学习课程，课程包含100个练习，旨在帮助学习者从零开始，逐步学会编写 Rust程序。</p>
-<h3><a class="header-anchor" href="#thealgorithms-java"><span></span></a><a href="https://github.com/TheAlgorithms/Java" target="_blank" rel="noopener noreferrer">TheAlgorithms/Java</a></h3>
+<h3><a class="header-anchor" href="#thealgorithms-java-多种算法的java实现"><span></span></a><a href="https://github.com/TheAlgorithms/Java" target="_blank" rel="noopener noreferrer">TheAlgorithms/Java：多种算法的Java实现</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262348300.png" alt=""></p>
 <p>多种算法的Java实现。</p>
-<h2>观点</h2>
+<h2>随便看看</h2>
 <h3><a class="header-anchor" href="#逆向思维-拿走一些东西-你会做得更好"><span></span></a><a href="https://36kr.com/p/2969575306236162" target="_blank" rel="noopener noreferrer">逆向思维：拿走一些东西，你会做得更好</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262348301.png" alt=""></p>
 <p>这篇文章通过几个实例阐述了逆向思维的力量，即通过减少而非增加来解决问题。瑞安·麦克法兰通过移除自行车的踏板，创造了Strider自行车，帮助孩子们学会平衡，从而成功教会他们骑车。作者个人通过移除过敏原，而不是增加药物，解决了湿疹问题。在医疗保健领域，减少药物和不健康食品的摄入往往比增加药物更有效。软件领域中的“布鲁克斯定律”也表明，增加人手可能导致项目进度变慢。星巴克的过度定制化和Chipotle的“少而精”策略对比，进一步说明了减少选择可以提高效率和质量。文章最终呼吁读者考虑减少生活中的复杂性，专注于重要的事情，以提升幸福感。</p>
@@ -1129,9 +1125,9 @@
 </li>
 <li><strong>开源项目</strong>
 <ul>
-<li>hercules</li>
-<li>supervision</li>
-<li>mastering-bitcoin-3rd</li>
+<li>hercules：Git历史分析引擎</li>
+<li>supervision：开源的计算机视觉工具库</li>
+<li>mastering-bitcoin-3rd：精通比特币</li>
 </ul>
 </li>
 <li><strong>工具推荐</strong>
@@ -1139,14 +1135,10 @@
 <li>开源许可证选择器</li>
 </ul>
 </li>
-<li><strong>观点</strong>
+<li><strong>随便看看</strong>
 <ul>
 <li>尿酸危机，席卷中国</li>
 <li>Uber人类行为学研究：手机快没电时乘客愿付高价</li>
-</ul>
-</li>
-<li><strong>人物</strong>
-<ul>
 <li>从北京到硅谷，“AI教母”李飞飞的传奇AI路</li>
 </ul>
 </li>
@@ -1176,25 +1168,24 @@
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262331271.png" alt=""></p>
 <p>KLimiter自适应限流器是一种新型限流工具，旨在保护系统下游资源如数据库，通过动态监测资源水位并自适应调节上游流量，以适应不断变化的业务需求。它能够秒级监测多个下游资源，自适应调节多个入口流量，并根据不同优先级降低低优先级入口流量。KLimiter通过算法计算影响系数和流量比例，解决了传统限流方法的不足，如资源浪费和系统过载。它还采用了跌零保护、降低流量速率、慢启动等策略，以确保限流过程的稳定性和可靠性。KLimiter为系统稳定运行提供了强大的支持，尤其在应对流量高峰和日常流量管理方面表现出色。</p>
 <h2>开源项目</h2>
-<h3><a class="header-anchor" href="#hercules"><span></span></a><a href="https://github.com/src-d/hercules" target="_blank" rel="noopener noreferrer">hercules</a></h3>
+<h3><a class="header-anchor" href="#hercules-git历史分析引擎"><span></span></a><a href="https://github.com/src-d/hercules" target="_blank" rel="noopener noreferrer">hercules：Git历史分析引擎</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262331272.png" alt=""></p>
 <p>代码的 “半衰期”，衡量项目中不变的代码占比变化情况，半衰期越长的项目越稳定。Hercules是一个用Go语言编写的快速且高度可定制的Git历史分析引擎，支持多种内置分析和插件系统，可以用于生成代码的“半衰期”图。</p>
-<h3><a class="header-anchor" href="#supervision"><span></span></a><a href="https://github.com/roboflow/supervision" target="_blank" rel="noopener noreferrer">supervision</a></h3>
+<h3><a class="header-anchor" href="#supervision-开源的计算机视觉工具库"><span></span></a><a href="https://github.com/roboflow/supervision" target="_blank" rel="noopener noreferrer">supervision：开源的计算机视觉工具库</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262331273.png" alt=""></p>
 <p>supervision是一个开源的计算机视觉工具库，旨在帮助开发者快速、可靠地构建计算机视觉应用。</p>
-<h3><a class="header-anchor" href="#mastering-bitcoin-3rd"><span></span></a><a href="https://github.com/berryjam/mastering-bitcoin-3rd" target="_blank" rel="noopener noreferrer">mastering-bitcoin-3rd</a></h3>
+<h3><a class="header-anchor" href="#mastering-bitcoin-3rd-精通比特币"><span></span></a><a href="https://github.com/berryjam/mastering-bitcoin-3rd" target="_blank" rel="noopener noreferrer">mastering-bitcoin-3rd：精通比特币</a></h3>
 <p>《精通比特币》第三版中文翻译。提供最新的比特币学习内容和技术思考，包括比特币Java应用开发示例、Rust的BRC-20编程实践，以及BTC二层网络的详细技术分析。内容涵盖了比特币及其基础区块链的广泛介绍，适合非技术用户、投资者和企业高管，同时也包括了面向开发人员、工程师和软件及系统架构师的技术基础和加密货币解释。</p>
 <h2>工具推荐</h2>
 <h3><a class="header-anchor" href="#开源许可证选择器"><span></span></a><a href="https://open-source-license-chooser.toolsnav.top/zh/" target="_blank" rel="noopener noreferrer">开源许可证选择器</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262331274.png" alt=""></p>
 <p>开源许可证选择器工具，它通过一系列问题帮助用户选择适合其项目需求的开源许可证。工具提供了多种许可证的比较，包括MIT、Apache、GPL等，并用生动的比喻和实例项目来解释每种许可证的特点、优点、缺点和使用量。</p>
-<h2>观点</h2>
+<h2>随便看看</h2>
 <h3><a class="header-anchor" href="#尿酸危机-席卷中国"><span></span></a><a href="https://mp.weixin.qq.com/s/oiXz-dAJuP51rBDrZRL8mg" target="_blank" rel="noopener noreferrer">尿酸危机，席卷中国</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262331275.png" alt=""></p>
 <p>从2001年到2017年，中国大陆15岁以上人群高尿酸血症(HUA)的患病率从8.5%上升到18.4%，华南地区尤为严重。尿酸水平升高与多种慢性病如高血压、糖尿病、肥胖等有关。尿酸水平受年龄、性别、遗传、生活方式等因素影响，其中华南和西南地区因饮食文化和遗传因素患病率较高。果糖摄入增加是尿酸升高的一个重要因素。改变生活方式，如合理饮食、适量运动、戒烟限酒等，对预防和控制HUA至关重要。</p>
 <h3><a class="header-anchor" href="#uber人类行为学研究-手机快没电时乘客愿付高价"><span></span></a><a href="https://www.163.com/auto/article/BNO805HT000854CH.html" target="_blank" rel="noopener noreferrer">Uber人类行为学研究：手机快没电时乘客愿付高价</a></h3>
 <p>Uber通过研究人类行为学发现，当乘客手机电量低时，他们更愿意接受因需求高峰导致的车费上涨。这种动态定价机制旨在需求旺盛时通过提高价格来抑制部分需求，同时吸引司机在高峰时段提供服务。Uber强调这种现象虽无确凿数据支持，但反映了人类行为的有趣一面。此外，Uber还发现，如果涨价倍数是非整数，人们更易接受，认为背后有精密计算。Uber计划利用机器学习预测客户需求，以优化车辆分配，减少乘客等待时间。</p>
-<h2>人物</h2>
 <h3><a class="header-anchor" href="#从北京到硅谷-ai教母-李飞飞的传奇ai路"><span></span></a><a href="https://mp.weixin.qq.com/s/UWZEH056Tn84BQ9tGJhU2w" target="_blank" rel="noopener noreferrer">从北京到硅谷，“AI教母”李飞飞的传奇AI路</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262331276.png" alt=""></p>
 <p>李飞飞，被誉为“AI教母”，是全球人工智能领域的杰出科学家。她在北京出生，16岁赴美国求学，在普林斯顿大学和加州理工学院完成学业后，专注于计算机视觉研究。2006年，她发明了ImageNet图片数据集，成为AI技术的三大基石之一。33岁时，李飞飞获得斯坦福大学终身副教授职称，成为该校人工智能实验室首位女性主任，并当选为美国三院院士。</p>
@@ -1244,13 +1235,13 @@
 <p>运维考量：包括高可用性、跨地域容灾、集群扩容和成本效益，不同消息队列产品在这些方面有不同的优势和限制。</p>
 <p>使用场景：根据业务需求选择合适的消息队列产品，例如Kafka适合日志处理，Pulsar适合多租户和容灾需求，RocketMQ适合金融级消息传递，RabbitMQ适合复杂路由需求，NSQ适合快速开发。</p>
 <h2>开源项目</h2>
-<h3><a class="header-anchor" href="#free-for-dev"><span></span></a><a href="https://github.com/ripienaar/free-for-dev" target="_blank" rel="noopener noreferrer">free-for-dev</a></h3>
+<h3><a class="header-anchor" href="#free-for-dev-分享各种对开发者有用的免费服务"><span></span></a><a href="https://github.com/ripienaar/free-for-dev" target="_blank" rel="noopener noreferrer">free-for-dev：分享各种对开发者有用的免费服务</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262354814.png" alt=""></p>
 <p>free-for-dev 是一个由社区维护的项目，旨在收集和分享各种对开发者和基础设施运维人员有用的软件即服务（SaaS）、平台即服务（PaaS）和基础设施即服务（IaaS）的免费层服务。这些服务包括但不限于云服务、代码托管、项目管理工具、CI/CD 工具、数据库服务、监控服务、域名注册等</p>
-<h3><a class="header-anchor" href="#pake"><span></span></a><a href="https://github.com/tw93/Pake" target="_blank" rel="noopener noreferrer">Pake</a></h3>
+<h3><a class="header-anchor" href="#pake-将任何网页转换成桌面应用程序"><span></span></a><a href="https://github.com/tw93/Pake" target="_blank" rel="noopener noreferrer">Pake：将任何网页转换成桌面应用程序</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262354815.png" alt=""></p>
 <p>Pake是一个利用Rust语言开发的框架，可以将任何网页转换成桌面应用程序。</p>
-<h2>观点</h2>
+<h2>随便看看</h2>
 <h3><a class="header-anchor" href="#我们的一生-都在为认知买单"><span></span></a><a href="https://36kr.com/p/2958337573047560" target="_blank" rel="noopener noreferrer">我们的一生，都在为认知买单</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262354817.png" alt=""></p>
 <p>文章强调认知力是解决未知问题的关键能力，对个人成长和企业发展至关重要。认知力的局限性可以通过“黑天鹅理论”来说明，即人们的认知往往受限于个人经验，而新信息的出现可以颠覆旧有认知。</p>
@@ -1327,18 +1318,18 @@
 <p>最后，作者强调了即使是看似简单的功能，如水印，只要深入研究和应用得当，也能在不同的业务场景中发挥巨大价值。文章鼓励开发者在开发过程中多思考技术的可能性，并反思如何更好地服务于业务需求。</p>
 </blockquote>
 <h2>开源项目</h2>
-<h3><a class="header-anchor" href="#hyperlpr"><span></span></a><a href="https://github.com/szad670401/HyperLPR" target="_blank" rel="noopener noreferrer">HyperLPR</a></h3>
+<h3><a class="header-anchor" href="#hyperlpr-高性能的车牌识别框架"><span></span></a><a href="https://github.com/szad670401/HyperLPR" target="_blank" rel="noopener noreferrer">HyperLPR：高性能的车牌识别框架</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252317796.png" alt=""></p>
 <blockquote>
 <p>HyperLPR是一个高性能的车牌识别框架，支持多种操作系统和平台，包括Windows、Mac、Linux、Raspberry Pi和Android。它能够实现720p分辨率下的实时车牌识别，平均识别时间少于100毫秒。该框架支持跨平台编译和快速部署，并且提供了WebAPI服务支持。HyperLPR3的识别准确率在95%-97%之间，无需字符分割即可实现端到端的车牌识别。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#markmap"><span></span></a><a href="https://github.com/markmap/markmap" target="_blank" rel="noopener noreferrer">markmap</a></h3>
+<h3><a class="header-anchor" href="#markmap-用纯文本创建思维导图"><span></span></a><a href="https://github.com/markmap/markmap" target="_blank" rel="noopener noreferrer">markmap：用纯文本创建思维导图</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252317797.png" alt=""></p>
 <blockquote>
 <p>Markmap是一个用纯文本创建思维导图的项目，支持Markdown格式，由dundalek的markmap启发。</p>
 </blockquote>
 <h2>学习资源</h2>
-<h3><a class="header-anchor" href="#ohmygit"><span></span></a><a href="https://ohmygit.org/" target="_blank" rel="noopener noreferrer">ohmygit</a></h3>
+<h3><a class="header-anchor" href="#ohmygit-互动方式学习git"><span></span></a><a href="https://ohmygit.org/" target="_blank" rel="noopener noreferrer">ohmygit：互动方式学习Git</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252317798.png" alt=""></p>
 <blockquote>
 <p>"Oh My Git!" 是一个开源游戏，旨在通过互动方式教授Git版本控制。游戏特点包括实时仓库可视化、为初学者设计的卡牌界面和为高级用户准备的集成终端。它不仅教授Git命令，还强调团队协作和远程仓库交互。</p>
@@ -1397,27 +1388,27 @@
 <p>最后，作者总结说，重构是软件开发中不可或缺的一部分，但必须经过深思熟虑，并尊重现有代码库和团队的工作方式。最好的重构应该是在不改变代码外部行为的情况下，优化其内部结构，提升代码的可读性、可维护性和效率，同时保持系统的稳定性，减少技术债务。作者建议在进行重构前深入理解代码，评估改动可能带来的影响，并选择渐进式改进方法。</p>
 </blockquote>
 <h2>开源项目</h2>
-<h3><a class="header-anchor" href="#hivisionidphotos"><span></span></a><a href="https://github.com/Zeyi-Lin/HivisionIDPhotos" target="_blank" rel="noopener noreferrer">HivisionIDPhotos</a></h3>
+<h3><a class="header-anchor" href="#hivisionidphotos-轻量级的ai证件照制作工具"><span></span></a><a href="https://github.com/Zeyi-Lin/HivisionIDPhotos" target="_blank" rel="noopener noreferrer">HivisionIDPhotos：轻量级的AI证件照制作工具</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252316875.png" alt=""></p>
 <blockquote>
 <p>HivisionIDPhoto是一个轻量级的AI证件照制作工具，它通过一套完善的模型工作流程实现对用户拍照场景的识别、抠图与证件照生成。该工具支持轻量级抠图、根据不同尺寸生成标准证件照和六寸排版照，并计划增加美颜和智能换正装功能。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#docker-osx"><span></span></a><a href="https://github.com/sickcodes/Docker-OSX" target="_blank" rel="noopener noreferrer">Docker-OSX</a></h3>
+<h3><a class="header-anchor" href="#docker-osx-在docker容器中运行macos"><span></span></a><a href="https://github.com/sickcodes/Docker-OSX" target="_blank" rel="noopener noreferrer">Docker-OSX：在Docker容器中运行macOS</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252316876.png" alt=""></p>
 <blockquote>
 <p>Docker-OSX 是一个允许用户在 Docker 容器中运行 macOS 的项目，支持近原生性能。它支持 X11 转发、iMessage 安全研究、iPhone USB 功能，并能在 Docker 容器中运行 macOS。该项目适用于希望在 Linux 和 Windows 上进行安全研究的用户。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#linutil"><span></span></a><a href="https://github.com/ChrisTitusTech/linutil" target="_blank" rel="noopener noreferrer">linutil</a></h3>
+<h3><a class="header-anchor" href="#linutil-linux工具箱"><span></span></a><a href="https://github.com/ChrisTitusTech/linutil" target="_blank" rel="noopener noreferrer">linutil：Linux工具箱</a></h3>
 <blockquote>
 <p>Linutil 是一个跨发行版、用 Rust 开发的 Linux 工具箱，旨在简化日常的 Linux 任务，帮助用户设置应用程序并优化系统。</p>
 </blockquote>
 <h2>工具推荐</h2>
-<h3><a class="header-anchor" href="#it-tools"><span></span></a><a href="https://it-tools.tech/" target="_blank" rel="noopener noreferrer">it-tools</a></h3>
+<h3><a class="header-anchor" href="#it-tools-多功能在线工具集"><span></span></a><a href="https://it-tools.tech/" target="_blank" rel="noopener noreferrer">it-tools：多功能在线工具集</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252316877.png" alt=""></p>
 <blockquote>
 <p>IT-Tools 是一个为开发者设计的多功能在线工具集，提供密码学、转换、编码、网络、数学、文本处理、数据解析等工具。这些工具旨在简化开发过程，提高效率，包括生成随机字符串、加密解密文本、转换数据格式、分析密码强度、验证PDF签名等。</p>
 </blockquote>
-<h2>观点</h2>
+<h2>随便看看</h2>
 <h3><a class="header-anchor" href="#个人实验的力量"><span></span></a><a href="https://36kr.com/p/2928414000585600" target="_blank" rel="noopener noreferrer">个人实验的力量</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252316878.png" alt=""></p>
 <blockquote>
@@ -1504,12 +1495,12 @@
 <p>总结来说，JDK 8中"+"的使用已经足够高效，JDK 11之后通过JEP 280进一步优化了字符串拼接的性能。阿里巴巴的贡献，特别是PR 20273，不仅提升了性能，还解决了启动速度慢和JIT优化资源消耗大的问题，预计该实现将在JDK 24中成为默认的字符串拼接方式。此外，阿里巴巴在OpenJDK社区的其他贡献也涵盖了GC、JIT、Runtime、RAS等多个方面，推动了Java技术的进步。</p>
 </blockquote>
 <h2>开源项目</h2>
-<h3><a class="header-anchor" href="#appflowy"><span></span></a><a href="https://github.com/AppFlowy-IO/AppFlowy" target="_blank" rel="noopener noreferrer">AppFlowy</a></h3>
+<h3><a class="header-anchor" href="#appflowy-开源的notion替代品"><span></span></a><a href="https://github.com/AppFlowy-IO/AppFlowy" target="_blank" rel="noopener noreferrer">AppFlowy：开源的Notion替代品</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252315694.png" alt=""></p>
 <blockquote>
 <p>AppFlowy是一个开源的Notion替代品，旨在提供数据安全、跨平台的原生体验和社区驱动的可扩展性。它使用Flutter和Rust构建，支持Windows、Mac、Linux和Docker。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#affine"><span></span></a><a href="https://github.com/toeverything/AFFiNE" target="_blank" rel="noopener noreferrer">AFFiNE</a></h3>
+<h3><a class="header-anchor" href="#affine-开源的notion替代品"><span></span></a><a href="https://github.com/toeverything/AFFiNE" target="_blank" rel="noopener noreferrer">AFFiNE：：开源的Notion替代品</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252315695.png" alt=""></p>
 <blockquote>
 <p>AFFiNE是一个隐私优先、本地优先、开源的一体化工作空间和操作系统，旨在整合构建知识库所需的所有构建块，如维基、知识管理、演示和数字资产。它提供了一个无边界的画布，支持多种编辑应用，并且是Notion和Miro的更好替代品。AFFiNE支持本地数据所有权、实时协作、自托管，并即将推出插件社区和第三方模块。项目由多个开源项目支持，如Blocksuite、OctoBase、yjs等。</p>
@@ -1518,7 +1509,7 @@
 <blockquote>
 <p>Coolify是一个开源且可自托管的平台，旨在替代Heroku、Netlify和Vercel等服务。它允许用户在自己的硬件上管理服务器、应用程序和数据库，仅需SSH连接即可。Coolify提供了云服务的便利性，同时避免了供应商锁定，因为所有配置都保存在用户服务器上。项目还提供了付费的云版本，提供高可用性、免费邮件通知、更好的支持和较少的维护需求。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#openobserve"><span></span></a><a href="https://github.com/openobserve/openobserve" target="_blank" rel="noopener noreferrer">openobserve</a></h3>
+<h3><a class="header-anchor" href="#openobserve-云原生的可观测性平台"><span></span></a><a href="https://github.com/openobserve/openobserve" target="_blank" rel="noopener noreferrer">openobserve：云原生的可观测性平台</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252315696.png" alt=""></p>
 <blockquote>
 <p>OpenObserve是一个云原生的可观测性平台，专为日志、指标、追踪、分析和真实用户监控（RUM）设计，支持PB级数据规模。它易于操作，与Elasticsearch相比，减少了设置和调整的复杂性。OpenObserve提供了一个用户界面，无需单独安装，并且可以显著降低存储成本。它支持多种数据类型和查询语言，包括SQL和PromQL，并提供高可用性和集群功能。</p>
@@ -1529,7 +1520,7 @@
 <blockquote>
 <p>这份书单汇集了编程领域的经典书籍，涵盖了从算法、编程语言、设计模式到软件开发等多个方面。书籍作者包括Donald E. Knuth、Martin Fowler、Robert C. Martin等知名专家，出版年份从1968年至2023年，涉及多种编程语言和主题。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#books"><span></span></a><a href="https://github.com/free-educa/books" target="_blank" rel="noopener noreferrer">books</a></h3>
+<h3><a class="header-anchor" href="#books-开发和编程相关的精选书籍"><span></span></a><a href="https://github.com/free-educa/books" target="_blank" rel="noopener noreferrer">books：开发和编程相关的精选书籍</a></h3>
 <blockquote>
 <p>Free-Educa/books 是一个GitHub仓库，提供与开发和编程相关的精选书籍资源。该仓库旨在帮助程序员和开发者获取最新趋势、工具和最佳实践的知识。书籍内容覆盖编程语言、Web开发、移动应用开发、软件工程、数据科学、机器学习、DevOps、基础设施、软件架构和网络安全等多个领域。所有书籍均免费提供，且鼓励社区贡献和反馈。</p>
 </blockquote>
@@ -1594,17 +1585,17 @@
 <p>携程度假商品系统日志架构经历了三个主要发展阶段：2019年以前的单表日志存储，2020年至2022年的平台化建设，以及2023年至2024年的开放与赋能。最初，系统使用单一数据库表记录商品变更，但随着数据量的激增，这种方法面临性能低下和扩展性差的问题。随后，携程通过引入ES（Elasticsearch）和HBase的组合，解决了海量数据的存储和查询问题。这一平台化解决方案不仅提高了查询效率，还通过异步处理和日志服务API，实现了日志写入与业务逻辑的解耦。最终，通过横向扩容和索引优化，系统支持了更高效的数据管理和查询，同时提供了供应商和业务人员友好的查询界面，实现了对业务的赋能和数据查询的简化。目前，该日志系统已成功支持千亿级数据的存储和查询，响应时间在500毫秒以内。</p>
 </blockquote>
 <h2>开源项目</h2>
-<h3><a class="header-anchor" href="#deep-live-cam"><span></span></a><a href="https://github.com/hacksider/Deep-Live-Cam" target="_blank" rel="noopener noreferrer">Deep-Live-Cam</a></h3>
+<h3><a class="header-anchor" href="#deep-live-cam-ai生成媒体工具"><span></span></a><a href="https://github.com/hacksider/Deep-Live-Cam" target="_blank" rel="noopener noreferrer">Deep-Live-Cam：AI生成媒体工具</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252315181.png" alt=""></p>
 <blockquote>
 <p>Deep-Live-Cam是一个开源的AI生成媒体工具，旨在帮助艺术家进行动画制作或服装模特等任务，同时内置检查机制防止不适当内容的生成。用户在使用时需要遵守法律法规，确保使用真人面孔时获得同意并明确标注为深度伪造内容。项目提供了详细的安装和使用指南，支持多种执行提供者，包括CPU、CUDA、CoreML等，并提供了命令行参数以调整程序行为。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#rustdesk"><span></span></a><a href="https://github.com/rustdesk/rustdesk" target="_blank" rel="noopener noreferrer">RustDesk</a></h3>
+<h3><a class="header-anchor" href="#rustdesk-远程桌面软件"><span></span></a><a href="https://github.com/rustdesk/rustdesk" target="_blank" rel="noopener noreferrer">RustDesk：远程桌面软件</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252315182.png" alt=""></p>
 <blockquote>
 <p>RustDesk是一个开源的远程桌面软件，使用Rust语言编写，支持无需配置即可使用，用户可以完全控制自己的数据，无需担心安全问题。它提供了自由选择使用公共服务器、搭建私有服务器或编写自定义服务器的功能。项目欢迎任何形式的贡献，并提供了构建和使用指南。</p>
 </blockquote>
-<h2>观点</h2>
+<h2>随便看看</h2>
 <h3><a class="header-anchor" href="#数字化时代如何保存历史"><span></span></a><a href="https://www.mittrchina.com/news/detail/13685" target="_blank" rel="noopener noreferrer">数字化时代如何保存历史？</a></h3>
 <blockquote>
 <p>在数字化时代，我们面临着如何保存历史的挑战。随着数据量的激增，传统的存储方式已不再适用，数字存储的脆弱性也日益凸显。例如，MySpace意外删除了2016年之前的所有用户数据，而GeoCities的关闭则让数百万网页面临消失的风险。幸运的是，有像Jason Scott领导的"Archive Team"这样的志愿者团队，他们成功地保存了GeoCities的大部分内容。</p>
@@ -1711,7 +1702,7 @@
 </ul>
 <p>文章最后强调，服务性能优化应结合具体的服务架构进行，通过分析服务调用链和CPU消耗来识别瓶颈，并优化有问题的RPC调用和函数。通过学习中间件的底层设计思想，可以在架构选型和性能优化中做出更明智的决策。</p>
 </blockquote>
-<h2>观点</h2>
+<h2>随便看看</h2>
 <h3><a class="header-anchor" href="#李沐-创业一年-人间三年"><span></span></a><a href="https://www.jiqizhixin.com/articles/2024-08-15" target="_blank" rel="noopener noreferrer">李沐：创业一年，人间三年</a></h3>
 <blockquote>
 <p>李沐在创业一年后分享了他在BosonAI的经历和反思。他曾在Amazon工作，后因疫情推迟了创业计划，但最终决定离职创业。公司名字BosonAI来源于量子物理中的玻色子，象征着合作与联合。在融资过程中，他们经历了领投方在签字前退出的挫折，但最终成功完成融资。公司在购买GPU时遇到了许多技术问题，但通过积极沟通和创新解决了这些问题。商业上，BosonAI第一年实现了收支平衡，主要收入来源于为大客户定制模型。李沐认为，随着技术成本降低和行业领先者推动，将有更多公司尝试使用LLM。</p>
@@ -1820,17 +1811,17 @@
 <p>最后，文章总结了SQL限流功能的设计和实现，强调了其嵌入原生MySQL执行原理和字符串匹配规则的实现方式，以及其对原生MySQL的修改较少，功能模块独立且安全可控的特点。作者Peter代表得物技术，声明文章为原创内容，并保留版权。</p>
 </blockquote>
 <h2>开源项目</h2>
-<h3><a class="header-anchor" href="#kazumi"><span></span></a><a href="https://github.com/Predidit/Kazumi" target="_blank" rel="noopener noreferrer">Kazumi</a></h3>
+<h3><a class="header-anchor" href="#kazumi-跨平台番剧采集与在线观看应用程序"><span></span></a><a href="https://github.com/Predidit/Kazumi" target="_blank" rel="noopener noreferrer">Kazumi：跨平台番剧采集与在线观看应用程序</a></h3>
 <blockquote>
 <p>Kazumi是一个使用Flutter框架开发的跨平台番剧采集与在线观看应用程序，支持自定义规则和Xpath语法选择器，允许用户构建和分享规则。应用程序支持多种功能，包括规则编辑器、视频播放、弹幕、下载等。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#wiseflow"><span></span></a><a href="https://github.com/TeamWiseFlow/wiseflow" target="_blank" rel="noopener noreferrer">wiseflow</a></h3>
+<h3><a class="header-anchor" href="#wiseflow-信息提取工具"><span></span></a><a href="https://github.com/TeamWiseFlow/wiseflow" target="_blank" rel="noopener noreferrer">wiseflow：信息提取工具</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252314693.png" alt=""></p>
 <blockquote>
 <p>Wiseflow是一个敏捷的信息提取工具，能够从网站、微信公众号和社交媒体平台等多种来源中根据预设的关注点精炼信息，自动分类标签，并上传到数据库。该工具从2024年6月25日起，利用几个大型语言模型（LLM）的在线推理服务，实现“零成本”的信息挖掘。</p>
 </blockquote>
 <h2>学习资源</h2>
-<h3><a class="header-anchor" href="#developer2gwy"><span></span></a><a href="https://github.com/miss-mumu/developer2gwy" target="_blank" rel="noopener noreferrer">developer2gwy</a></h3>
+<h3><a class="header-anchor" href="#developer2gwy-程序员转公务员指南"><span></span></a><a href="https://github.com/miss-mumu/developer2gwy" target="_blank" rel="noopener noreferrer">developer2gwy：程序员转公务员指南</a></h3>
 <blockquote>
 <p>这份开源指南是为程序员转公务员的群体量身定制的，涵盖了从备考到上岸的全过程，包括公考知识汇总、备考最佳实践、问题手册以及体制内工作生活访谈等。项目由一群有共同经历的程序员共同参与，分享他们的备考经历、体制内生活以及心路历程。项目旨在帮助备考者了解公务员职业的各个方面，提供实用的备考策略和生活指南。</p>
 </blockquote>
@@ -1942,7 +1933,7 @@
 <p>最后，文章探讨了数据分片技术，包括基于关键字区间和哈希值的分片策略，分片再平衡，以及请求路由问题，解释了如何通过不同的方法确保数据在分片间均匀分布并高效响应客户端请求。整体而言，文章提供了对存储引擎内部工作机制的深入理解，并探讨了构建高效、可靠和可扩展的数据存储系统的关键技术。</p>
 </blockquote>
 <h2>开源项目</h2>
-<h3><a class="header-anchor" href="#super-productivity"><span></span></a><a href="https://github.com/johannesjo/super-productivity" target="_blank" rel="noopener noreferrer">super-productivity</a></h3>
+<h3><a class="header-anchor" href="#super-productivit-高级待办事项列表"><span></span></a><a href="https://github.com/johannesjo/super-productivity" target="_blank" rel="noopener noreferrer">super-productivit：高级待办事项列表</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252313319.png" alt=""></p>
 <blockquote>
 <p>Super Productivity是一个高级待办事项列表应用程序，具备时间框定和时间跟踪功能，支持从日历、Jira、GitHub等集成导入任务。它提供了组织和专注的计划工具，包括子任务、项目、标签和颜色编码，以及健康和生产力习惯的辅助功能，如休息提醒、反拖延特性和番茄工作计时器。此外，它还提供了与Jira、GitHub、GitLab、Gitea和OpenProject的集成，可以自动导入分配给您的任务，计划细节，自动创建工作日志，并在有变更时立即通知。Super Productivity尊重用户隐私，不收集任何数据，无需注册账户，且是免费和开源的。</p>
@@ -1954,11 +1945,11 @@
 <p>Kimi与AiPPT合作推出了PPT助手功能，旨在简化PPT的制作过程。用户可以通过两种方式使用Kimi制作PPT：一是上传文档后一键转换为PPT；二是输入指令，一键生成PPT大纲和幻灯片。Kimi能够迅速构思出PPT框架，并提供多种模板供用户选择。尽管生成的PPT只是框架，需要用户添加详情和图片，但这一过程大大缩短了制作时间。此外，市场上还有多款AI生成PPT的应用，如Gamma、Tome、WPS AI、AiPPT、美图AI等，它们各具特色，提供从内容生成到模板选择的多种服务。尽管Kimi等工具不能完全替代人工制作PPT，但它们显著提高了效率，减少了制作时间。</p>
 </blockquote>
 <h2>学习资源</h2>
-<h3><a class="header-anchor" href="#java-design-patterns"><span></span></a><a href="https://github.com/iluwatar/java-design-patterns" target="_blank" rel="noopener noreferrer">java-design-patterns</a></h3>
+<h3><a class="header-anchor" href="#java-design-patterns-java实现各种设计模式"><span></span></a><a href="https://github.com/iluwatar/java-design-patterns" target="_blank" rel="noopener noreferrer">java-design-patterns：Java实现各种设计模式</a></h3>
 <blockquote>
 <p>提供了Java实现的各种设计模式。这些模式由经验丰富的程序员和架构师开发，并通过开源社区进行维护。项目包括详细的代码示例和教程，遵循简单性原则，</p>
 </blockquote>
-<h3><a class="header-anchor" href="#coding-interview-university"><span></span></a><a href="https://github.com/jwasham/coding-interview-university" target="_blank" rel="noopener noreferrer">coding-interview-university</a></h3>
+<h3><a class="header-anchor" href="#coding-interview-university-全面的软件工程面试准备计划"><span></span></a><a href="https://github.com/jwasham/coding-interview-university" target="_blank" rel="noopener noreferrer">coding-interview-university：全面的软件工程面试准备计划</a></h3>
 <blockquote>
 <p>一份全面的软件工程面试准备计划，由John Washam创建，旨在帮助读者通过自学成为软件工程师。文档提供了一个详细的学习路线图，包括数据结构、算法、系统设计、编程面试技巧等，以及如何有效准备简历和面试。此外，还推荐了大量学习资源和工具，适合希望在技术面试中表现出色的求职者。</p>
 </blockquote>
@@ -1966,7 +1957,7 @@
 <blockquote>
 <p>一套关于逆向工程的教程集，涵盖了x86、x64以及32位和64位ARM架构。旨在简化逆向工程的学习过程，适合初学者和需要复习相关知识的人员。教程从基础到中级，适合网络安全领域的专业人士。提供PDF和MOBI格式的电子书下载。</p>
 </blockquote>
-<h2>其他值得看</h2>
+<h2>随便看看</h2>
 <h3><a class="header-anchor" href="#韩国人不生小孩-没你想的那么简单"><span></span></a><a href="https://36kr.com/p/2890286663539589" target="_blank" rel="noopener noreferrer">韩国人不生小孩，没你想的那么简单</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252313321.png" alt=""></p>
 <blockquote>
@@ -1984,6 +1975,7 @@
 <p>文章通过这些故事，展示了图书馆在失业者生活中扮演的角色。它不仅是一个提供知识和信息的地方，更是一个给予安慰、支持和希望的空间。失业者在这里找到了一种新的生活方式，帮助他们面对生活的挑战，保持积极的生活态度。</p>
 <p>同时，这些故事也反映了当前就业市场的一些挑战，以及人们如何在逆境中寻找出路。图书馆成为了他们自我提升和心理调适的场所，帮助他们在失业期间保持积极和前进的动力。尽管面临不确定性和压力，图书馆的宁静环境和丰富资源，为他们提供了一个理想的避风港。</p>
 </blockquote>
+<h2>其他周刊</h2>
 <h3><a class="header-anchor" href="#科技爱好者周刊-第-311-期-低利率与长期项目"><span></span></a><a href="https://www.ruanyifeng.com/blog/2024/08/weekly-issue-311.html" target="_blank" rel="noopener noreferrer">科技爱好者周刊（第 311 期）：低利率与长期项目</a></h3>
 <blockquote>
 <p>文章提到进入低利率时代，传统高回报项目难以寻找且风险较高。低利率环境促使人们重视并投资于长期项目，因其未来收益现值增加，缩小了与即时收益的差异。张五常认为，低利率利于年轻人选择学医等长期职业。周刊还强调，长期项目虽困难但能带来更大优势，建议选择重要事务进行长期规划。</p>
@@ -2046,28 +2038,28 @@
 <p>文章强调了索引在提高数据库查询性能中的重要性，并提供了一系列的索引设计和优化策略，以帮助开发者更好地利用MySQL索引功能。</p>
 </blockquote>
 <h2>开源项目</h2>
-<h3><a class="header-anchor" href="#trufflesecurity-trufflehog"><span></span></a><a href="https://github.com/trufflesecurity/trufflehog" target="_blank" rel="noopener noreferrer">trufflesecurity / trufflehog</a></h3>
+<h3><a class="header-anchor" href="#trufflehog-测代码库中的泄露凭证"><span></span></a><a href="https://github.com/trufflesecurity/trufflehog" target="_blank" rel="noopener noreferrer">trufflehog：测代码库中的泄露凭证</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252313915.svg" alt=""></p>
 <blockquote>
 <p>TruffleHog 是一个开源工具，专门用于检测代码库中的泄露凭证。它支持多种数据源，包括 Git、GitHub、GitLab、Docker、S3 等，并能通过 API 验证凭证的有效性。TruffleHog 还提供了企业版，增加了对 Git、Jira、Slack 等平台的持续监控功能。此外，TruffleHog 还提供了 GitHub Action 和 GitLab CI 的集成方式，支持自定义正则表达式检测器，并鼓励社区贡献。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#immich-app-immich"><span></span></a><a href="https://github.com/immich-app/immich" target="_blank" rel="noopener noreferrer">immich-app / immich</a></h3>
+<h3><a class="header-anchor" href="#immich-照片和视频管理"><span></span></a><a href="https://github.com/immich-app/immich" target="_blank" rel="noopener noreferrer">immich：照片和视频管理</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252313916.png" alt=""></p>
 <blockquote>
 <p>immich-app是一个高性能的自托管照片和视频管理解决方案，目前处于非常活跃的开发状态。项目提供了多语言支持，包括中文、俄文、阿拉伯语等，并强调了备份的重要性。主要功能包括上传和查看照片视频、防止资产重复、多用户支持、元数据查看等。项目文档和安装指南可在immich.app上找到。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#stirling-tools-stirling-pdf"><span></span></a><a href="https://github.com/Stirling-Tools/Stirling-PDF" target="_blank" rel="noopener noreferrer">Stirling-Tools / Stirling-PDF</a></h3>
+<h3><a class="header-anchor" href="#stirling-pdf-pdf操作工具"><span></span></a><a href="https://github.com/Stirling-Tools/Stirling-PDF" target="_blank" rel="noopener noreferrer">Stirling-PDF：PDF操作工具</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252313917.png" alt=""></p>
 <blockquote>
 <p>Stirling-PDF是一个本地托管的基于Web的PDF操作工具，使用Docker部署。它支持PDF文件的分割、合并、转换、重组、添加图片、旋转、压缩等多种操作。该工具完全在本地运行，不进行任何外发记录或跟踪，所有文件和PDF在任务执行期间仅存在于服务器内存中或临时文件中，并在下载后从服务器删除。它提供了丰富的特性，包括暗模式支持、自定义下载选项、并行文件处理和下载、API集成等。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#composio"><span></span></a><a href="https://docs.composio.dev/" target="_blank" rel="noopener noreferrer">composio</a></h3>
+<h3><a class="header-anchor" href="#composio-ai代理就绪工具集"><span></span></a><a href="https://docs.composio.dev/" target="_blank" rel="noopener noreferrer">composio：AI代理就绪工具集</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252313918.png" alt=""></p>
 <blockquote>
 <p>Composio是一个为AI代理提供生产就绪工具集的开源项目，旨在简化AI代理与各种工具和框架的集成。它支持100多种工具，提供管理授权、提高准确性、可嵌入和可扩展性等特点。项目提供了详细的Python和JavaScript入门指南，以及丰富的示例和文档。</p>
 </blockquote>
 <h2>学习资源</h2>
-<h3><a class="header-anchor" href="#_89-things-i-know-about-git-commits"><span></span></a><a href="https://www.jvt.me/posts/2024/07/12/things-know-commits/" target="_blank" rel="noopener noreferrer">89 things I know about Git commits</a></h3>
+<h3><a class="header-anchor" href="#关于git提交的89件事-英文"><span></span></a><a href="https://www.jvt.me/posts/2024/07/12/things-know-commits/" target="_blank" rel="noopener noreferrer">关于Git提交的89件事（英文）</a></h3>
 <blockquote>
 <p>Jamie Tanna 在 2024 年 7 月 12 日发表了一篇关于 Git 提交的文章，分享了他在过去 12 年中积累的一些见解。以下是文章的要点总结：</p>
 <ul>
@@ -2084,7 +2076,7 @@
 </ul>
 <p>文章强调了良好的提交习惯和文档编写对于代码维护和团队协作的重要性。</p>
 </blockquote>
-<h2>其他值得看</h2>
+<h2>其他周刊</h2>
 <h3><a class="header-anchor" href="#科技爱好者周刊-第-310-期-内容农场的-ai-赚钱术"><span></span></a><a href="https://www.ruanyifeng.com/blog/2024/07/weekly-issue-310.html" target="_blank" rel="noopener noreferrer">科技爱好者周刊（第 310 期）：内容农场的 AI 赚钱术）</a></h3>
 <blockquote>
 <p>本期周刊聚焦了内容农场利用AI技术快速生成文章以骗取点击和流量的现象。内容农场通过AI在极短时间内生成大量含有广告的文章，利用SEO技巧吸引读者，而AI生成内容的成本极低，使得这种模式利润可观。例如，使用国产AI生成一篇文章的成本仅为0.00138元人民币，而单次页面浏览的广告收入即可覆盖成本。</p>
@@ -2157,26 +2149,24 @@
 <p>最后，文章通过代码示例和模式，展示了如何在实际开发中应用这些知识，以及如何避免常见的陷阱和问题。通过这些实践，开发者可以更有效地利用多线程编程，构建高性能和高稳定性的软件系统。</p>
 </blockquote>
 <h2>开源项目</h2>
-<h3><a class="header-anchor" href="#tabbyml-tabby"><span></span></a><a href="https://github.com/TabbyML/tabby" target="_blank" rel="noopener noreferrer">TabbyML / tabby</a></h3>
+<h3><a class="header-anchor" href="#tabby-ai编码助手"><span></span></a><a href="https://github.com/TabbyML/tabby" target="_blank" rel="noopener noreferrer">tabby：AI编码助手</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252311212.gif" alt=""></p>
 <blockquote>
 <p><strong>Tabby</strong>是一个开源的自托管AI编码助手，提供给开发者一个不依赖于数据库管理系统或云服务的GitHub Copilot替代方案。它支持消费者级GPU，并通过OpenAPI接口易于与现有基础设施集成。最新版本引入了Answer Engine，一个为内部工程团队设计的中央知识引擎，以及VSCode 1.7中的全新聊天体验。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#opendatalab-mineru"><span></span></a><a href="https://github.com/opendatalab/MinerU" target="_blank" rel="noopener noreferrer">opendatalab / MinerU</a></h3>
+<h3><a class="header-anchor" href="#mineru-一站式数据提取工具"><span></span></a><a href="https://github.com/opendatalab/MinerU" target="_blank" rel="noopener noreferrer">MinerU：一站式数据提取工具</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252311213.gif" alt=""></p>
 <blockquote>
 <p><strong>MinerU</strong>是一个开源的一站式数据提取工具，支持从PDF、网页和电子书中提取数据并转换为Markdown格式。它基于PDF-Extract-Kit，具备多种前端模型输入支持、去除页眉页脚、保留文档结构和格式、提取图像和表格、转换公式为LaTeX格式等功能。支持CPU和GPU加速，并兼容Windows、Linux和macOS平台。</p>
 </blockquote>
 <h2>学习资源</h2>
-<h3><a class="header-anchor" href="#krahets-hello-algo"><span></span></a><a href="https://github.com/krahets/hello-algo" target="_blank" rel="noopener noreferrer">krahets / hello-algo</a></h3>
+<h3><a class="header-anchor" href="#hello-algo-hello算法"><span></span></a><a href="https://github.com/krahets/hello-algo" target="_blank" rel="noopener noreferrer">hello-algo：Hello算法</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252311214.gif" alt=""></p>
 <blockquote>
 <p>《Hello 算法》是一本开源免费、面向初学者的动画图解数据结构与算法教程。它采用清晰易懂的动画和图解，帮助读者平滑学习曲线，深入理解算法和数据结构。</p>
 </blockquote>
-<h2>其他值得看</h2>
-<ul>
-<li><a href="https://www.mittrchina.com/news/detail/13530" target="_blank" rel="noopener noreferrer">从四大趋势看芯片产业的发展</a></li>
-</ul>
+<h2>随便看看</h2>
+<h3><a class="header-anchor" href="#从四大趋势看芯片产业的发展"><span></span></a><a href="https://www.mittrchina.com/news/detail/13530" target="_blank" rel="noopener noreferrer">从四大趋势看芯片产业的发展</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252311215.png" alt=""></p>
 <blockquote>
 <p>本文探讨了芯片产业的四大发展趋势。首先，全球多个国家通过《芯片法案》（CHIPS Acts）投资芯片产业，以减少对中国的依赖，推动本土芯片制造能力的提升。美国、日本、欧洲和印度都推出了相应的资金支持计划。</p>
@@ -2184,6 +2174,7 @@
 <p>第三，大型科技公司如亚马逊、谷歌和微软正在进入芯片制造领域，以减少对外部供应商的依赖，提高利润率。这些企业推出了自己的AI芯片，可能对英伟达的市场地位构成挑战。最后，初创企业也积极投身于芯片创新，尽管面临英伟达等巨头的竞争，但它们通过采用新型计算技术，如量子计算、光子学和可逆计算，寻求在特定细分市场中取得突破。</p>
 <p>整体来看，芯片产业正经历着政府支持、技术创新和市场竞争的多重影响，预示着未来将有更多的创新和变革。</p>
 </blockquote>
+<h2>其他周刊</h2>
 <h3><a class="header-anchor" href="#科技爱好者周刊-第-309-期"><span></span></a><a href="https://www.ruanyifeng.com/blog/2024/07/weekly-issue-309.html" target="_blank" rel="noopener noreferrer">科技爱好者周刊（第 309 期）</a></h3>
 <blockquote>
 <p>本期周刊聚焦了无人驾驶出租车在中国的快速发展，特别是武汉地区“萝卜快跑”公司的无人驾驶出租车服务。武汉因政策支持成为首个实现全市范围内7X24小时无人驾驶出租车运营的城市。尽管无人驾驶技术带来产业升级和国家竞争力提升，但也引发了对司机失业的担忧。文章提出几点建议，如优先发展货运无人驾驶、郊区和农村的应用等，以及政府应对措施。</p>
@@ -2243,7 +2234,7 @@
 </ul>
 </blockquote>
 <h2>开源项目</h2>
-<h3><a class="header-anchor" href="#airbnb-javascript"><span></span></a><a href="https://github.com/airbnb/javascript" target="_blank" rel="noopener noreferrer">airbnb / javascript</a></h3>
+<h3><a class="header-anchor" href="#javascript-airbnb的js编程风格指南"><span></span></a><a href="https://github.com/airbnb/javascript" target="_blank" rel="noopener noreferrer">javascript：Airbnb的JS编程风格指南</a></h3>
 <blockquote>
 <p>Airbnb 的 JavaScript 编程风格指南，提供了关于 JavaScript 编程的详细规范和最佳实践。指南涵盖了变量声明、函数、对象、数组、字符串、类、模块、迭代器、生成器、属性、事件、性能、测试等多个方面的建议和规则，旨在帮助开发者编写清晰、一致、可维护的代码。</p>
 </blockquote>
@@ -2258,26 +2249,26 @@
 <p>Kimi插件的全文总结功能同样令人印象深刻，能够将长篇文章进行有效总结，帮助用户快速把握文章要点。同时，用户还可以通过Kimi插件对特定词汇或句子进行深入探究，满足好奇心，构建知识库。Kimi插件的设计理念是将AI技术嵌入到用户的日常使用场景中，提高用户体验。</p>
 <p>总的来说，Kimi插件是一款实用、高效的浏览器辅助工具，能够帮助用户在信息爆炸的时代中快速获取所需信息，提高工作效率和学习效率。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#stanford-oval-storm"><span></span></a><a href="https://github.com/stanford-oval/storm" target="_blank" rel="noopener noreferrer">stanford-oval / storm</a></h3>
+<h3><a class="header-anchor" href="#storm-利用llm自动生成类似维基百科文章"><span></span></a><a href="https://github.com/stanford-oval/storm" target="_blank" rel="noopener noreferrer">storm：利用LLM自动生成类似维基百科文章</a></h3>
 <p><img src="https://storm.genie.stanford.edu/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FSTORM_demo.742c6923.gif&amp;w=3840&amp;q=75" alt=""></p>
 <blockquote>
 <p><strong>STORM</strong>是一个利用大型语言模型(LLM)的系统，它能够基于互联网搜索从零开始撰写类似维基百科的文章。系统分为预写阶段和写作阶段，通过互联网研究收集参考资料并生成大纲，然后利用这些信息生成带引用的全文。STORM通过视角引导提问和模拟对话来提高问题的质量，支持自定义检索器和语言模型，以适应不同的使用场景。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#public-apis-public-apis"><span></span></a><a href="https://github.com/public-apis/public-apis" target="_blank" rel="noopener noreferrer">public-apis / public-apis</a></h3>
+<h3><a class="header-anchor" href="#public-apis-免费公共api"><span></span></a><a href="https://github.com/public-apis/public-apis" target="_blank" rel="noopener noreferrer">public-apis：免费公共API</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252313055.png" alt=""></p>
 <blockquote>
 <p>集合了<strong>大量免费公共API</strong>资源的存储库，由APILayer.com维护，旨在帮助开发者和社区成员轻松找到所需的API服务。这些API覆盖了从天气、地图、金融、体育到娱乐等多个领域，支持HTTPS和CORS，部分API需要apiKey或OAuth认证。</p>
 </blockquote>
 <h2>学习资源</h2>
-<h3><a class="header-anchor" href="#freecodecamp-freecodecamp"><span></span></a><a href="https://github.com/freeCodeCamp/freeCodeCamp" target="_blank" rel="noopener noreferrer">freeCodeCamp / freeCodeCamp</a></h3>
+<h3><a class="header-anchor" href="#freecodecamp-全栈web开发和机器学习课程"><span></span></a><a href="https://github.com/freeCodeCamp/freeCodeCamp" target="_blank" rel="noopener noreferrer">freeCodeCamp：全栈web开发和机器学习课程</a></h3>
 <blockquote>
 <p>freeCodeCamp提供<strong>全栈 web 开发和机器学习课程</strong>，完全免费且自学导向。该社区已经帮助超过 40,000 人获得了他们的第一份开发工作。freeCodeCamp 提供了多种免费的开发者认证，每个认证都涉及构建 5 个必要的 web 应用项目，以及数百个可选的编码挑战，以帮助准备这些项目。每个认证预计需要初学者程序员大约 300 小时才能获得。freeCodeCamp 的课程包括前端开发、JavaScript 算法和数据结构、前端库、数据可视化、关系数据库、后端开发和 API、质量保证、Python 科学计算、Python 数据分析、信息安全、Python 机器学习以及 Python 学院代数等认证。此外，freeCodeCamp 还提供了一些旧版认证和与微软合作的专业认证，例如基础 C# 认证。社区还拥有论坛、YouTube 频道、技术出版物和 Discord 服务器，供学习者交流和获取帮助。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#d2l-ai-d2l-zh"><span></span></a><a href="https://github.com/d2l-ai/d2l-zh" target="_blank" rel="noopener noreferrer">d2l-ai / d2l-zh</a></h3>
+<h3><a class="header-anchor" href="#d2l-zh-动手学深度学习"><span></span></a><a href="https://github.com/d2l-ai/d2l-zh" target="_blank" rel="noopener noreferrer">d2l-zh：动手学深度学习</a></h3>
 <blockquote>
 <p>《动手学深度学习》是一个开源项目，旨在通过提供概念、背景知识和代码，帮助读者理解并应用深度学习。该项目提供了技术深度，包含可运行的代码，允许快速迭代内容，并由论坛补充技术细节问答，已被多国大学用于教学。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#sindresorhus-awesome"><span></span></a><a href="https://github.com/sindresorhus/awesome" target="_blank" rel="noopener noreferrer">sindresorhus / awesome</a></h3>
+<h3><a class="header-anchor" href="#awesome-各种有趣主题的精选资源"><span></span></a><a href="https://github.com/sindresorhus/awesome" target="_blank" rel="noopener noreferrer">awesome：各种有趣主题的精选资源</a></h3>
 <blockquote>
 <p>提供了各种有趣主题的精选列表。这些列表涵盖了从编程语言、前端开发、后端开发到计算机科学、大数据、游戏开发、数据库、安全、内容管理系统、硬件、商业、工作、网络、分散系统、健康和社会科学、事件、测试等多个领域的资源和工具。</p>
 <p>在<strong>编程语言</strong>部分，包括了 JavaScript、Python、Ruby、Java、C、C++、Rust、Haskell、Go、Scala、Swift 等多种语言及其相关工具和资源。前端开发部分则涵盖了 React、Vue.js、Angular、CSS、HTML5 等技术栈。后端开发部分包括了 Flask、Docker、Pyramid、CakePHP、Symfony 等框架和工具。</p>
@@ -2286,7 +2277,7 @@
 <p><strong>硬件部分</strong>涵盖了机器人技术、物联网、电子工程等领域的项目和资源。商业部分则提供了关于开放公司、创业、管理、工具、清洁技术、社会企业、工程团队管理等主题的资源。</p>
 <p>此外，该项目还包含了关于<strong>健康和社会科学</strong>的资源，如生物医学信息提取、计算神经科学、数字历史、人文学科、健康科技等。事件部分则提供了关于创意科技活动、意大利科技活动、荷兰科技活动等的信息。</p>
 </blockquote>
-<h2>其他值得看</h2>
+<h2>随便看看</h2>
 <h3><a class="header-anchor" href="#锻炼大脑-这里有一套全指南"><span></span></a><a href="https://36kr.com/p/2857916221541250" target="_blank" rel="noopener noreferrer">锻炼大脑，这里有一套全指南</a></h3>
 <blockquote>
 <p>文章主要探讨了如何通过一系列方法来锻炼和提高大脑的前额叶皮层，这是大脑中负责思考、决策和理性的关键区域。前额叶皮层不仅控制我们的行为和情绪反应，而且影响我们的人格和认知能力。文章指出，前额叶皮层的发育从青少年时期开始，直到25-30岁才完全成熟。作者提出了九种锻炼前额叶皮层的方法，包括：</p>
@@ -2303,6 +2294,7 @@
 </ol>
 <p>文章强调，通过这些方法，我们不仅能够锻炼大脑，还能提高生活质量和幸福感。同时，作者提醒读者，这些方法需要持之以恒地实践，以达到最佳效果。</p>
 </blockquote>
+<h2>其他周刊</h2>
 <h3><a class="header-anchor" href="#科技爱好者周刊-第-308-期"><span></span></a><a href="https://www.ruanyifeng.com/blog/2024/07/weekly-issue-308.html" target="_blank" rel="noopener noreferrer">科技爱好者周刊（第 308 期）</a></h3>
 <blockquote>
 <p>本期封面故事关注北京怀柔箭扣长城的保护修缮项目，预计将在2026年完成。</p>
@@ -2382,7 +2374,7 @@
 <p>携程门票预订交易系统通过一系列技术策略和治理措施，成功应对了秒杀活动中的各种挑战，实现了高并发下的系统稳定性和数据一致性，为用户提供了流畅的预订体验。</p>
 </blockquote>
 <h2>开源项目</h2>
-<h3><a class="header-anchor" href="#naibowang-easyspider"><span></span></a><a href="https://github.com/NaiboWang/EasySpider" target="_blank" rel="noopener noreferrer">NaiboWang / EasySpider</a></h3>
+<h3><a class="header-anchor" href="#easyspider-可视化爬虫软件"><span></span></a><a href="https://github.com/NaiboWang/EasySpider" target="_blank" rel="noopener noreferrer">EasySpider：可视化爬虫软件</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252309551.png" alt=""></p>
 <blockquote>
 <p>EasySpider是一款可视化的无代码网页自动化测试、数据采集和爬虫软件。用户可以通过图形化界面设计和执行爬虫任务，无需编写代码。软件能够自动识别网页上的同类型元素，并支持命令行执行，方便嵌入其他系统。</p>
@@ -2399,23 +2391,23 @@
 <p>第一在线工具是一个提供免费在线工具和分享优质软件、优秀网站的网站。它包括多种AI工具，如AI文字识别（OCR）、AI在线翻译、一键背景去除工具等。此外，还有文字类游戏如脑筋急转弯和成语大全，以及开发类工具如HTML转Markdown转换器、Markdown转HTML转换器、文本差异对比和精选渐变背景色CSS代码合集。优秀软件包括Caesium、Keynote、QuickRecorder、入梦工具箱、ScreenToGif和Snipaste等。实用网址有CSS Loaders、DesignEvo、TrasHTTPandas、iconfont.cn、iconify和Loading.io等。</p>
 </blockquote>
 <h2>学习资源</h2>
-<h3><a class="header-anchor" href="#microsoft-generative-ai-for-beginners"><span></span></a><a href="https://github.com/microsoft/generative-ai-for-beginners" target="_blank" rel="noopener noreferrer">microsoft / generative-ai-for-beginners</a></h3>
+<h3><a class="header-anchor" href="#generative-ai-for-beginners-生成性ai应用的基础知识"><span></span></a><a href="https://github.com/microsoft/generative-ai-for-beginners" target="_blank" rel="noopener noreferrer">generative-ai-for-beginners：生成性AI应用的基础知识</a></h3>
 <blockquote>
 <p>微软推出的“Generative AI for Beginners”课程是一个面向初学者的18课系列教程，由微软云倡导者讲授，旨在教授构建生成性AI应用的基础知识。课程内容涵盖从环境搭建到不同大型语言模型（LLMs）的探索、使用生成性AI的负责任实践、提示工程基础、创建高级提示、构建文本生成应用、聊天应用、搜索应用、图像生成应用、低代码AI应用、集成外部应用、AI应用的UX设计、安全性、生命周期管理、检索增强生成（RAG）和向量数据库、开源模型和Hugging Face、AI代理框架以及微调LLMs等多个方面。</p>
 <p>课程适合任何希望学习生成性AI的人士，每节课都提供视频介绍、书面教程、Python和TypeScript代码示例，以及额外的学习资源链接。学习者需要具备基本的Python或TypeScript知识，并且最好拥有访问Azure OpenAI服务或OpenAI API的权限。此外，课程鼓励学习者加入官方AI Discord服务器以获得支持和交流，对于正在构建初创公司的学习者，还可以通过Microsoft for Startups Founders Hub获得免费的OpenAI积分和高达150,000美元的Azure积分。</p>
 <p>该课程的资源在GitHub上以repo的形式提供，方便学习者fork到自己的GitHub账户中，并鼓励学习者给repo加星标以便于以后查找。课程还包括了对John Aziz的特别感谢，他为repo创建了所有的GitHub Actions和工作流。此外，该团队还制作了其他初学者课程，如机器学习、数据科学、网络安全、Web开发、物联网、XR开发等。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#asabeneh-30-days-of-python"><span></span></a><a href="https://github.com/Asabeneh/30-Days-Of-Python" target="_blank" rel="noopener noreferrer">Asabeneh / 30-Days-Of-Python</a></h3>
+<h3><a class="header-anchor" href="#_30-days-of-python-初学者学习python编程"><span></span></a><a href="https://github.com/Asabeneh/30-Days-Of-Python" target="_blank" rel="noopener noreferrer">30-Days-Of-Python：初学者学习Python编程</a></h3>
 <blockquote>
 <p>项目帮助初学者在30天内学习Python编程。这个项目通过每天一个主题的方式，涵盖了Python的基础知识和一些高级概念。内容从Python的安装开始，逐步深入到数据类型、控制结构、函数、模块、异常处理、文件操作、面向对象编程、网络编程、多线程和多进程等。此外，还包括了一些实际的编程练习和项目，帮助学习者巩固所学知识，并将其应用于实际问题解决中。该项目适合希望通过实践学习Python的新手，以及希望通过系统化学习加深对Python理解的中级开发者</p>
 </blockquote>
-<h3><a class="header-anchor" href="#kamranahmedse-developer-roadmap"><span></span></a><a href="https://github.com/kamranahmedse/developer-roadmap" target="_blank" rel="noopener noreferrer">kamranahmedse / developer-roadmap</a></h3>
+<h3><a class="header-anchor" href="#developer-roadmap-开发者的路线图"><span></span></a><a href="https://github.com/kamranahmedse/developer-roadmap" target="_blank" rel="noopener noreferrer">developer-roadmap：开发者的路线图</a></h3>
 <blockquote>
 <p>提供了一系列针对开发者的路线图、文章和资源。这些路线图是交互式的，用户可以通过点击节点来获取更多关于主题的信息。目前，该项目包括前端、后端、DevOps、全栈、计算机科学、数据结构与算法、人工智能与数据科学、数据分析师、机器学习运维、QA、Python、软件架构、游戏开发、软件设计与架构、JavaScript、TypeScript、C++、React、React Native、Vue、Angular、Node.js、GraphQL、Android、Flutter、Go、Rust、Java、Spring Boot、设计系统、PostgreSQL、SQL、区块链、ASP.NET Core、系统设计、Kubernetes、网络安全、MongoDB、UX设计、Docker、Prompt工程和技术支持写作等多个领域的路线图。</p>
 <p>此外，该项目还提供了一些交互式的最佳实践，如后端性能最佳实践、前端性能最佳实践、代码审查最佳实践、API安全最佳实践和AWS最佳实践。还有一系列问题，帮助用户测试、评估和提高他们的知识，如JavaScript问题、Node.js问题和React问题。</p>
 <p>该项目鼓励社区成员分享他们的知识和经验，为路线图的发展做出贡献。开发者可以克隆仓库、安装依赖并启动应用程序来参与开发。此外，项目还提供了贡献文档，指导如何更新路线图、添加新内容、提出更改建议和讨论想法。</p>
 </blockquote>
-<h2>其他值得看</h2>
+<h2>随便看看</h2>
 <h3><a class="header-anchor" href="#git的故事-这一次没这么好玩"><span></span></a><a href="https://blog.brachiosoft.com/posts/git/" target="_blank" rel="noopener noreferrer">Git的故事：这一次没这么好玩</a></h3>
 <blockquote>
 <p>Linus Torvalds 创造的 Git，最初只是作为管理 Linux 内核代码的工具，但很快它就成为了全球软件开发者的标准配置。Git 的故事始于 Linux 内核开发社区的扩展问题，Linus 无法跟上社区代码修改的速度，成为瓶颈。1998 年，社区开始寻求解决方案，Larry McVoy 提出使用分散式版本控制系统 BitKeeper。BitKeeper 起初是为昇阳公司设计的，用以解决其内部工具 NSE 的效能问题。然而，2005 年，因自由软件社群的反对和法律问题，BitKeeper 停止了对 Linux 社区的免费授权，迫使 Linus 开发自己的版本控制系统，即 Git。</p>
@@ -2428,9 +2420,8 @@
 <blockquote>
 <p>艾伦·图灵在七十多年前提出了一种机制，解释了动物如何从均匀性中发展出各种图案。动物的斑纹多种多样，如条纹、斑点、菱形等，这些图案不仅美丽，也启发了科学家对动物斑纹的研究。图灵模式（Turing pattern）是其理论的核心，涉及两种关键物质：激活剂和抑制剂，它们在组织中以不同速度扩散，产生稳定的图案。然而，仅靠图灵的理论有时不足以解释自然中的复杂图案，科学家还需考虑细胞作用、额外的输送技巧等。例如，斑马鱼的条纹形成涉及色素细胞间的复杂相互作用，而箱鲀的六边形图案可能涉及扩散电泳现象。此外，一些动物如棕色安乐蜥和非洲条纹鼠的图案形成还涉及遗传学机制。科学家们继续探索图灵模式及其与其他因素结合的复杂性，以更深入地理解动物图案的逻辑。</p>
 </blockquote>
-<ul>
-<li><a href="http://www.ruanyifeng.com/blog/2024/07/weekly-issue-307.html" target="_blank" rel="noopener noreferrer">科技爱好者周刊（第 307 期）</a></li>
-</ul>
+<h2>其他周刊</h2>
+<h3><a class="header-anchor" href="#科技爱好者周刊-第-307-期"><span></span></a><a href="http://www.ruanyifeng.com/blog/2024/07/weekly-issue-307.html" target="_blank" rel="noopener noreferrer">科技爱好者周刊（第 307 期）</a></h3>
 <blockquote>
 <p>本期周刊主要内容包括：</p>
 <ol>
@@ -2550,7 +2541,7 @@
 <p>简而言之，大语言模型通过对海量数据的学习和训练，形成了强大的语言理解和生成能力，能够模拟人类的语言处理过程，并在各种应用场景中发挥作用。</p>
 </blockquote>
 <h2>开源项目</h2>
-<h3><a class="header-anchor" href="#sxyazi-yazi"><span></span></a><a href="https://github.com/sxyazi/yazi" target="_blank" rel="noopener noreferrer">sxyazi / yazi</a></h3>
+<h3><a class="header-anchor" href="#yazi-终端文件管理器"><span></span></a><a href="https://github.com/sxyazi/yazi" target="_blank" rel="noopener noreferrer">yazi：终端文件管理器</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252308558.png" alt=""></p>
 <blockquote>
 <p>Yazi是一个用Rust编写的<strong>终端文件管理器</strong>，基于非阻塞异步I/O。它旨在提供高效、用户友好和可定制的文件管理体验。Yazi具有以下特点：</p>
@@ -2584,19 +2575,19 @@
 </li>
 </ol>
 </blockquote>
-<h3><a class="header-anchor" href="#files-community-files"><span></span></a><a href="https://github.com/files-community/Files" target="_blank" rel="noopener noreferrer">files-community / Files</a></h3>
+<h3><a class="header-anchor" href="#files-windows文件管理应用程序"><span></span></a><a href="https://github.com/files-community/Files" target="_blank" rel="noopener noreferrer">Files：Windows文件管理应用程序</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252308559.png" alt=""></p>
 <blockquote>
 <p>Files是一款为Windows设计的终极<strong>文件管理应用程序</strong>。它具有时尚直观的设计，使浏览文件变得前所未有地容易。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#lissy93-web-check"><span></span></a><a href="https://github.com/Lissy93/web-check" target="_blank" rel="noopener noreferrer">Lissy93 / web-check</a></h3>
+<h3><a class="header-anchor" href="#web-check-开源情报工具"><span></span></a><a href="https://github.com/Lissy93/web-check" target="_blank" rel="noopener noreferrer">web-check：开源情报工具</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252308560.png" alt=""></p>
 <blockquote>
 <p>Web-Check是一个全面的<strong>开源情报工具</strong>，用于分析任何网站。它提供了对网站内部运作的洞察，包括潜在的攻击向量、服务器架构分析、安全配置查看以及网站使用的技术等。目前，仪表板显示的信息包括IP信息、SSL证书链、DNS记录、cookies、headers、域名信息、搜索爬虫规则、页面地图、服务器位置、重定向记录、开放端口、traceroute、DNS安全扩展、网站性能、追踪器、相关主机名和碳足迹等。该工具旨在帮助用户轻松理解、优化和保护他们的网站。</p>
 </blockquote>
-<h2>网站推荐</h2>
+<h2>工具推荐</h2>
 <ul>
-<li><a href="https://sinqi.tools/zh" target="_blank" rel="noopener noreferrer">sinqi tools</a></li>
+<li><a href="https://sinqi.tools/zh" target="_blank" rel="noopener noreferrer">sinqi tools：web开发相关精致工具集</a></li>
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252308561.png" alt=""></p>
 <blockquote>
@@ -2605,19 +2596,19 @@
 <p>此外，还有许多其他实用工具，如决策器、图像编辑器、虚拟键盘、BMI 计算器、密码生成器、贷款计算器、关系计算器、计数器、各种图案生成器、世界时钟、屏幕录像机、视频摄像头、语音录像机等。</p>
 </blockquote>
 <h2>学习资源</h2>
-<h3><a class="header-anchor" href="#ebookfoundation-free-programming-books"><span></span></a><a href="https://github.com/EbookFoundation/free-programming-books" target="_blank" rel="noopener noreferrer">EbookFoundation / free-programming-books</a></h3>
+<h3><a class="header-anchor" href="#free-programming-books-免费编程书籍"><span></span></a><a href="https://github.com/EbookFoundation/free-programming-books" target="_blank" rel="noopener noreferrer">free-programming-books：免费编程书籍</a></h3>
 <blockquote>
 <p>EbookFoundation的free-programming-books项目是一个收录了大量<strong>免费编程书籍</strong>资源的公共仓库。这些资源被分为不同的类别，包括按编程语言和主题分类的英文书籍、其他语言的书籍、速查表、免费在线课程、交互式编程资源、问题集和竞赛编程、播客和屏幕录制，以及编程游乐场等。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#donnemartin-system-design-primer"><span></span></a><a href="https://github.com/donnemartin/system-design-primer" target="_blank" rel="noopener noreferrer">donnemartin / system-design-primer</a></h3>
+<h3><a class="header-anchor" href="#system-design-primer-系统设计学习资源"><span></span></a><a href="https://github.com/donnemartin/system-design-primer" target="_blank" rel="noopener noreferrer">system-design-primer：系统设计学习资源</a></h3>
 <blockquote>
 <p>本项目帮助工程师学习如何设计大型系统并准备<strong>系统设计面试</strong>。该项目提供了一个资源的组织集合，包括Anki记忆卡片，涵盖从基础概念到高级主题的各个方面，如可扩展性、性能、延迟与吞吐量、CAP定理、一致性模式、可用性模式、负载均衡、缓存策略、异步处理等。此外，还提供了学习指南和面试准备材料，包括面向对象设计问题和解决方案。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#mehdihadeli-awesome-software-architecture"><span></span></a><a href="https://github.com/mehdihadeli/awesome-software-architecture" target="_blank" rel="noopener noreferrer">mehdihadeli / awesome-software-architecture</a></h3>
+<h3><a class="header-anchor" href="#awesome-software-architecture-软件架构、模式和原则学习资源"><span></span></a><a href="https://github.com/mehdihadeli/awesome-software-architecture" target="_blank" rel="noopener noreferrer">awesome-software-architecture：软件架构、模式和原则学习资源</a></h3>
 <blockquote>
 <p>精选的<strong>软件架构、模式和原则</strong>的学习资源列表。这个仓库会持续更新，旨在帮助人们共同提高知识水平。它包含了多个主题，如软件架构、Actor 模型架构、算法、Clean Architecture、洋葱架构、六边形架构、垂直切片架构、事件驱动架构、面向服务的架构、领域驱动设计、数据驱动设计、CQRS、微服务、模块化单体、架构设计原则、设计模式、云设计模式、云最佳实践、云原生、平台即服务、基础设施即服务、DevOps、反向代理-负载均衡、服务发现和注册、服务网格、面向对象设计、系统设计、扩展、背压、代码清洁、抽象、设计最佳实践、反模式、最终一致性、消息、分布式事务、分布式锁定、RESTful API 设计、gRPC、缓存、函数式编程、并发、分片、重构、NoSQL、关系数据库、Microsoft Azure 云、建模、开源、代码审查、面试、架构决策记录 (ADR)、微前端等。</p>
 </blockquote>
-<h2>其他值得看</h2>
+<h2>其他周刊</h2>
 <ul>
 <li><a href="https://www.ruanyifeng.com/blog/2024/06/weekly-issue-306.html" target="_blank" rel="noopener noreferrer">科技爱好者周刊（第 306 期）</a></li>
 </ul>
@@ -2702,11 +2693,11 @@
 <p>通过深入分析，文章为读者提供了对Spring异步处理机制更深层次的理解，帮助开发者更合理地使用@Async注解，避免可能遇到的问题。</p>
 </blockquote>
 <h2>开源项目</h2>
-<h3><a class="header-anchor" href="#hpcaitech-open-sora"><span></span></a><a href="https://github.com/hpcaitech/Open-Sora" target="_blank" rel="noopener noreferrer">hpcaitech / Open-Sora</a></h3>
+<h3><a class="header-anchor" href="#open-sora-开源视频生成项目"><span></span></a><a href="https://github.com/hpcaitech/Open-Sora" target="_blank" rel="noopener noreferrer">Open-Sora：开源视频生成项目</a></h3>
 <blockquote>
 <p>Open-Sora是一个致力于高效制作高质量视频的开源项目。它旨在通过提供模型、工具和所有细节，使先进的视频生成技术对所有人开放，同时提供一个简化复杂视频生成过程的流线型和用户友好的平台。Open-Sora鼓励创新、创造力和内容创作领域的包容性。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#iptv-org-iptv"><span></span></a><a href="https://github.com/iptv-org/iptv" target="_blank" rel="noopener noreferrer">iptv-org / iptv</a></h3>
+<h3><a class="header-anchor" href="#iptv-公开的iptv频道列表"><span></span></a><a href="https://github.com/iptv-org/iptv" target="_blank" rel="noopener noreferrer">iptv：公开的IPTV频道列表</a></h3>
 <blockquote>
 <p>提供了来自世界各地的公开可用的IPTV频道列表。这个项目由社区维护，旨在收集和分享免费的IPTV频道资源，方便用户能够通过IPTV服务观看电视节目和视频内容。用户可以根据自己的需求，选择合适的频道进行观看。由于IPTV技术允许通过互联网协议传输视频内容，因此这个项目为全球用户提供了一个便捷的方式来访问和享受电视节目。</p>
 </blockquote>
@@ -2714,27 +2705,24 @@
 <blockquote>
 <p>前端开发教程资源库，它提供了从入门到进阶的超详细图文教程。这个知识库旨在帮助初学者从零开始学习前端技术，并逐步成长为一名技术精湛、风格优雅的前端工程师。它涵盖了前端开发所需的各种知识点，适合那些希望深入理解并掌握前端技能的开发者使用。</p>
 </blockquote>
-<h2>网站推荐</h2>
-<ul>
-<li><a href="https://indiehackertools.net/" target="_blank" rel="noopener noreferrer">独立开发者出海工具箱</a></li>
-</ul>
+<h2>工具推荐</h2>
+<h3><a class="header-anchor" href="#独立开发者出海工具箱"><span></span></a><a href="https://indiehackertools.net/" target="_blank" rel="noopener noreferrer">独立开发者出海工具箱</a></h3>
 <blockquote>
 <p>独立开发者出海工具箱提供了多种资源和工具，旨在帮助开发者更高效地进行网站建设、推广、变现等。其中包括云端网站设计平台Webflow、全球VPS RackNerd、内置多种功能的ShipFast、SEO分析插件AITDK SEO Extension等。此外，还有灵感来源如V2EX和AI导航站，以及推广渠道1000UserGuide和中国独立开发者项目列表。变现方面，除了Google AdSense，还有AI生成壁纸工具站AI Wallpaper等精选模板。Logo制作、内容存储、AI开发资源、开发资源、域名购买、部署托管、SEO分析、支付方式和自媒体资讯等也一应俱全，为独立开发者提供了全方位的支持。</p>
 <p>独立开发者出海工具箱还提供了多种效率工具，如沉浸式翻译、长截图插件GoFullPage和网站图标探测器，进一步提高开发者的工作效率。通过这些工具和资源，独立开发者可以更专注于产品开发和创新，加速出海进程。</p>
 <p>总之，独立开发者出海工具箱为开发者提供了从建站、设计、推广、变现到效率提升的全方位支持，帮助他们更好地应对出海过程中的挑战，实现全球市场的拓展。</p>
 </blockquote>
-<h2>其他值得看</h2>
+<h2>随便看看</h2>
 <h3><a class="header-anchor" href="#睡眠不足正这样破坏你的记忆力-即使补觉也无法挽回"><span></span></a><a href="https://news.cnblogs.com/n/771611/" target="_blank" rel="noopener noreferrer">睡眠不足正这样破坏你的记忆力，即使补觉也无法挽回</a></h3>
 <blockquote>
 <p>睡眠不足会显著影响记忆力，即使补觉也难以完全恢复记忆损失。研究发现，大脑在睡眠中通过尖波涟漪（sharp-wave ripples）将短期记忆转移到长期记忆。尖波涟漪由海马体发出，是神经元同步放电产生的高频脑波。睡眠不足会降低尖波涟漪的质量，导致记忆重放过程受损。实验显示，睡眠不足的大鼠神经元放电强度减弱，尖波涟漪混乱，且难以恢复记忆形成所需的激活模式。补觉虽能部分恢复尖波涟漪质量，但难以达到正常睡眠水平。此外，尖波涟漪在筛选记忆和预测未来活动方面发挥重要作用，睡眠不足可能削弱大脑对将来经历的反应能力。因此，考前熬夜学习可能对当天早些时候学到的信息记忆不利，强调了充足睡眠对记忆形成的重要性。</p>
 </blockquote>
-<ul>
-<li><a href="https://www.ruanyifeng.com/blog/2024/06/weekly-issue-305.html" target="_blank" rel="noopener noreferrer">科技爱好者周刊（第 305 期）</a></li>
-</ul>
+<h2>其他周刊</h2>
+<h3><a class="header-anchor" href="#科技爱好者周刊-第-305-期"><span></span></a><a href="https://www.ruanyifeng.com/blog/2024/06/weekly-issue-305.html" target="_blank" rel="noopener noreferrer">科技爱好者周刊（第 305 期）</a></h3>
 <blockquote>
 <p>深入探讨了生成真正随机数的难题。伪随机数由算法生成，相同的种子值将产生相同的结果，不适用于对随机性有高要求的场合。真随机数需满足不可预测、不重复、均匀分布的条件，通常只能通过硬件获得。Random.org和Cloudflare通过大气无线电波、熔岩灯、单摆等物理现象生成真随机数，但存在成本问题。</p>
 <p>周刊还提到了即将举行的稀土开发者大会，涵盖了多个技术热点和前沿领域的70多场演讲。此外，报道了美国宇航局Starliner飞船的故障、澳大利亚发现的巨型鹅化石、眼球监控技术以及加沙地区的上网篮等科技动态。</p>
-<p>文章部分讨论了AI芯片的未来、个人博客引擎的开发、CSS 3D效果、Spotify的随机歌单算法等技术话题。工具部分介绍了Postgres.js、OpenccLint、BiliVideoDown等开源项目。AI相关部分推荐了Luma AI Video Generator、Stable Diffusion 3等AI工具。资源部分则分享了Unicode知识、CSS加载动画定制等学习资料。</p>
+<p>文章部分讨论了AI芯片的未来、个人博客引擎的开发、CSS 3D效果、Spotify的随机歌单算法等技术话题。工具部分介绍了Postgres.js、OpenccLint、BiliVideoDown等开源项目。AI相关部分推荐了Luma AI Video Generator、Stable Diffusion 3等AI工具。资源部分则分享了Unicode知识、CSS加载动画定制等学习资源。</p>
 <p>在言论部分，讨论了编程语言的发展、Excel世界锦标赛、宇宙年龄等话题。读者互动环节中，多位读者对随机数生成、AI技术、周刊内容等进行了讨论和建议。</p>
 <p>周刊通过分享科技资讯、技术文章、工具资源等内容，为科技爱好者提供了丰富的知识盛宴。同时，鼓励读者参与讨论，共同探索科技的奥秘。</p>
 </blockquote>
@@ -2805,19 +2793,19 @@
 <p>讨论了互联网信息的迅速更新迭代导致的"失忆症"现象。随着技术的发展，旧有的存储和传播方式被新媒介取代，很多历史信息和数据面临丢失的风险。文章提到，不仅是中国，全世界都面临着网页无法访问的问题，例如美国皮尤研究中心的调查显示，2013至2023年间有四分之一的网页已经无法访问。此外，提到了"数字黑暗时代"的概念，担心当前存储介质在未来可能无法读取，导致信息丢失。文章还探讨了信息孤岛化问题，即平台之间的信息不互通，以及个人和组织如何通过存档和建立档案馆等方式对抗数字信息的丢失。最后，呼吁每个人都应该做出选择，积极参与到保存数字遗产的行动中来。</p>
 </blockquote>
 <h2>开源项目</h2>
-<h3><a class="header-anchor" href="#idootop-mi-gpt"><span></span></a><a href="https://github.com/idootop/mi-gpt" target="_blank" rel="noopener noreferrer">idootop / mi-gpt</a></h3>
+<h3><a class="header-anchor" href="#mi-gpt-小爱音箱接入大模型"><span></span></a><a href="https://github.com/idootop/mi-gpt" target="_blank" rel="noopener noreferrer">mi-gpt：小爱音箱接入大模型</a></h3>
 <blockquote>
 <p>MiGPT是一个将小爱音箱与ChatGPT和豆包结合的项目，旨在打造一个更智能、更贴心的智能家居体验。通过这种方式，小爱音箱可以提供AI问答、角色扮演、流式响应、长短期记忆、自定义TTS等功能，让智能家居设备更懂用户需求。项目提供了Docker和Node.js两种启动方式，用户可以根据需要选择。同时，项目还提供了详细的文档和常见问题解答，方便用户学习和使用。需要注意的是，本项目仅供学习和研究目的，不得用于商业活动，使用者应自行承担使用风险。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#jordanbaird-ice"><span></span></a><a href="https://github.com/jordanbaird/Ice" target="_blank" rel="noopener noreferrer">jordanbaird / Ice</a></h3>
+<h3><a class="header-anchor" href="#ice-mac菜单栏管理工具"><span></span></a><a href="https://github.com/jordanbaird/Ice" target="_blank" rel="noopener noreferrer">Ice：Mac菜单栏管理工具</a></h3>
 <blockquote>
 <p>Ice是一款为macOS设计的强大的菜单栏管理工具，主要功能是隐藏和显示菜单栏项目。它目前处于积极开发中，一些功能尚未实现。用户可以通过手动下载安装包或使用Homebrew命令安装。Ice提供了丰富的菜单栏项目管理功能，如隐藏项目、自定义间距、布局配置文件、项目分组等。此外，它还支持自定义菜单栏外观，如颜色、阴影、边框和形状。Ice还提供了热键功能，允许用户快速切换菜单栏部分的显示状态。它还支持在登录时启动、自动更新和菜单栏小部件。Ice的名称来源于其设计理念，即让菜单栏项目像冰一样滑动隐藏。它仅支持macOS 14及以上版本，因为使用了该版本特有的系统API。Ice采用MIT许可证发布。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#jianchang512-pyvideotrans"><span></span></a><a href="https://github.com/jianchang512/pyvideotrans" target="_blank" rel="noopener noreferrer">jianchang512 / pyvideotrans</a></h3>
+<h3><a class="header-anchor" href="#pyvideotrans-视频翻译配音工具"><span></span></a><a href="https://github.com/jianchang512/pyvideotrans" target="_blank" rel="noopener noreferrer">pyvideotrans：视频翻译配音工具</a></h3>
 <blockquote>
 <p>这是一个视频翻译和配音工具，可以将一种语言的视频翻译成另一种语言并添加配音。它基于faster-whisper离线模型进行语音识别，并支持多种翻译渠道和文字合成语音技术。用户可以根据自己的需求进行各种设置，如翻译视频、提取字幕、合并字幕和视频、识别文字、合成语音等。软件提供了Windows预编译版exe下载，也可以通过源码部署。在使用过程中，用户需要注意一些问题，如设置代理、选择正确的模型、处理音视频对齐等。此外，软件还提供了CUDA加速支持，可以提高处理速度。最后，软件依赖于一些开源项目，如pydub、ffmpeg、PyQt5等。</p>
 </blockquote>
-<h2>其他值得看</h2>
+<h2>其他周刊</h2>
 <ul>
 <li><a href="https://www.ruanyifeng.com/blog/2024/06/weekly-issue-304.html" target="_blank" rel="noopener noreferrer">科技爱好者周刊（第 303 期）：技术封建主义</a></li>
 </ul>
@@ -2840,10 +2828,6 @@
 <blockquote>
 <p>分享了9个高质量的技术类信息源。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#developer-hotspots-summary生成周刊原始数据"><span></span></a><a href="https://github.com/Xiaoxie1994/developer-hotspots-summary/blob/main/result/2024-06-15%E7%94%9F%E6%88%90%E7%83%AD%E9%97%A8%E6%96%87%E7%AB%A0.md" target="_blank" rel="noopener noreferrer">developer-hotspots-summary生成周刊原始数据</a></h3>
-<blockquote>
-<p>未经过人工筛选抓取的原始文章和AI生成摘要。</p>
-</blockquote>
 ]]></content:encoded>
       <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252325571.jpg" type="image/jpeg"/>
     </item>
@@ -2861,6 +2845,9 @@
 <strong>订阅方式</strong>: 微信公众号“<strong>肖恩聊技术</strong>”，除周刊外还有更多原创技术博文~<br>
 <img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></p>
 </blockquote>
+<h2>开篇图</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/image-sjql.png" alt=""></p>
+<p>技术周刊，启航！</p>
 <h2>业界资讯</h2>
 <h3><a class="header-anchor" href="#马斯克旗下ai初创再吸金60亿美元-成立不到一年估值已超180亿美元"><span></span></a><a href="http://www.mittrchina.com/news/detail/13361" target="_blank" rel="noopener noreferrer">马斯克旗下AI初创再吸金60亿美元，成立不到一年估值已超180亿美元</a></h3>
 <blockquote>
@@ -2923,15 +2910,15 @@
 文章最后提出了一个关于RingBufferLogEvent中messageText字段占用内存空间的疑问，并鼓励读者参与讨论。作者还分享了排查过程中的参考资料，为读者提供了进一步学习log4j异步日志的途径。</p>
 </blockquote>
 <h2>开源项目</h2>
-<h3><a class="header-anchor" href="#chattts"><span></span></a><a href="https://github.com/2noise/ChatTTS" target="_blank" rel="noopener noreferrer">ChatTTS</a></h3>
+<h3><a class="header-anchor" href="#chattts-文本到语音模型"><span></span></a><a href="https://github.com/2noise/ChatTTS" target="_blank" rel="noopener noreferrer">ChatTTS：文本到语音模型</a></h3>
 <blockquote>
 <p>ChatTTS 是一个为对话场景设计的文本到语音合成模型，支持英语和中文。它经过超过10万小时的中英文数据训练，开源版本在 HuggingFace 上提供。模型特点包括对话式语音合成、精细的韵律控制和优于大多数开源模型的韵律表现。使用时需注意，该技术应负责任和道德地使用，以避免潜在的滥用。开发团队计划开源更多资源，并提供了基础和高级使用示例。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#syncthing"><span></span></a><a href="https://github.com/syncthing/syncthing" target="_blank" rel="noopener noreferrer">syncthing</a></h3>
+<h3><a class="header-anchor" href="#syncthing-文件同步工具"><span></span></a><a href="https://github.com/syncthing/syncthing" target="_blank" rel="noopener noreferrer">syncthing：文件同步工具</a></h3>
 <blockquote>
 <p>Syncthing 是一个开源的文件同步工具，旨在在多台设备间安全、自动地同步文件。它强调数据安全和用户隐私，易于使用且跨平台。用户可以通过 Docker 部署，或在不同操作系统上使用 GUI 客户端。项目提供详尽的文档和入门指南，支持通过论坛和邮件报告问题和安全漏洞。自 v0.10.15 起，发布版本通过 GPG 签名确保真实性，源代码遵循 MPLv2 许可证。</p>
 </blockquote>
-<h3><a class="header-anchor" href="#xiaoju-survey"><span></span></a><a href="https://github.com/didi/xiaoju-survey" target="_blank" rel="noopener noreferrer">xiaoju-survey</a></h3>
+<h3><a class="header-anchor" href="#xiaoju-survey-开源问卷系统"><span></span></a><a href="https://github.com/didi/xiaoju-survey" target="_blank" rel="noopener noreferrer">xiaoju-survey：开源问卷系统</a></h3>
 <blockquote>
 <p>Xiaoju Survey 是滴滴出行开发的开源问卷系统，提供轻量级、安全、多功能的在线调研解决方案。支持40+种题型和100+精选模板，适用于市场调研、客户满意度调研等场景。技术栈包括Vue3、ElementPlus、Nestjs和MongoDB。项目优势在于全面性、专业性、轻量化设计和低二次开发成本。提供快速启动指南和社区交流支持。</p>
 </blockquote>
@@ -2964,6 +2951,7 @@
 <h3><a class="header-anchor" href="#_05-27-06-02-老胡的周刊-第144期-md"><span></span></a><a href="https://weekly.howie6879.com/2024/05-27~06-02.%E8%80%81%E8%83%A1%E7%9A%84%E5%91%A8%E5%88%8A%EF%BC%88%E7%AC%AC144%E6%9C%9F%EF%BC%89.html" target="_blank" rel="noopener noreferrer">05-27~06-02.老胡的周刊（第144期）.md</a></h3>
 <h3><a class="header-anchor" href="#第85期-偷懒爱好者周刊-24-06-05"><span></span></a><a href="https://toolight.zhubai.love/posts/2410137135002001408" target="_blank" rel="noopener noreferrer">第85期 - 偷懒爱好者周刊 24/06/05</a></h3>
 ]]></content:encoded>
+      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/image-sjql.png" type="image/png"/>
     </item>
   </channel>
 </rss>
