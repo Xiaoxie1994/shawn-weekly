@@ -11,28 +11,30 @@ import path from 'path';
 const generateContentSidebar = () => {
   const contentDir = 'docs/content';
   const sidebar = [];
-  fs.readdirSync(contentDir).forEach(year => {
-    if (fs.statSync(path.join(contentDir, year)).isDirectory() && year !== 'picture') {
-      const yearSidebar = { text: year, prefix: `${year}/`, collapsible: true, children: [] };
-      fs.readdirSync(path.join(contentDir, year)).forEach(file => {
-        const filePath = path.join(contentDir, year, file);
-        const fileContent = fs.readFileSync(filePath, 'utf-8');
-        const titleMatch = fileContent.match(/^#\s+(.*)$/m);
-        let title = titleMatch ? titleMatch[1] : `第 ${path.basename(file, path.extname(file))} 期`;
-        // 如果标题为"肖恩技术周刊（第 X 期）：XXX"，则调整为"第 X 期：XXX"
-        const shortTitleMatch = title.match(/技术周刊（第 (\d+) 期）：(.+)/);
-        if (shortTitleMatch) {
-          title = `第 ${shortTitleMatch[1]} 期：${shortTitleMatch[2]}`;
-        }
-        yearSidebar.children.push({ text: title, link: `${path.basename(file, path.extname(file))}.md` });
-      });
-      yearSidebar.children.sort((a, b) => {
-        const numA = parseInt(a.text.match(/第 (\d+) 期/)[1], 10);
-        const numB = parseInt(b.text.match(/第 (\d+) 期/)[1], 10);
-        return numB - numA;
-      });
-      sidebar.push(yearSidebar);
-    }
+  const years = fs.readdirSync(contentDir)
+    .filter(year => fs.statSync(path.join(contentDir, year)).isDirectory() && year !== 'picture')
+    .sort((a, b) => parseInt(b) - parseInt(a));
+    
+  years.forEach(year => {
+    const yearSidebar = { text: year, prefix: `${year}/`, collapsible: true, children: [] };
+    fs.readdirSync(path.join(contentDir, year)).forEach(file => {
+      const filePath = path.join(contentDir, year, file);
+      const fileContent = fs.readFileSync(filePath, 'utf-8');
+      const titleMatch = fileContent.match(/^#\s+(.*)$/m);
+      let title = titleMatch ? titleMatch[1] : `第 ${path.basename(file, path.extname(file))} 期`;
+      // 如果标题为"肖恩技术周刊（第 X 期）：XXX"，则调整为"第 X 期：XXX"
+      const shortTitleMatch = title.match(/技术周刊（第 (\d+) 期）：(.+)/);
+      if (shortTitleMatch) {
+        title = `第 ${shortTitleMatch[1]} 期：${shortTitleMatch[2]}`;
+      }
+      yearSidebar.children.push({ text: title, link: `${path.basename(file, path.extname(file))}.md` });
+    });
+    yearSidebar.children.sort((a, b) => {
+      const numA = parseInt(a.text.match(/第 (\d+) 期/)[1], 10);
+      const numB = parseInt(b.text.match(/第 (\d+) 期/)[1], 10);
+      return numB - numA;
+    });
+    sidebar.push(yearSidebar);
   });
   return sidebar;
 };
