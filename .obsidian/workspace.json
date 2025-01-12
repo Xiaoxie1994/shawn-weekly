@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/content/2025/32.md",
+                "file": "docs/source/template.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "32"
+              "title": "template"
             }
           },
           {
@@ -91,8 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 416.5,
-    "collapsed": true
+    "width": 416.5
   },
   "right": {
     "id": "a90bf4c0fdb7c687",
@@ -190,10 +189,10 @@
   },
   "active": "ae760a3b6291f998",
   "lastOpenFiles": [
-    "docs/README.md",
     "docs/content/2025/32.md",
-    "docs/source/read_source.md",
     "docs/content/2025/31.md",
+    "docs/README.md",
+    "docs/source/read_source.md",
     "docs/source/template.md",
     "docs/collection/2024.md",
     "docs/content/2024/30.md",
