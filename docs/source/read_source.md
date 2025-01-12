@@ -4,7 +4,7 @@
 ### 每日快讯
 - [8点1氪](https://36kr.com/user/5652071)
 - [派早报](https://sspai.com/u/ee0vj778/updates)
-- [开源日报](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MjM5NzM0MjcyMQ==&scene=1&album_id=3354556061151870977&count=3&uin=&key=&devicetype=iMac+Mac16%2C1+OSX+OSX+15.0+build(24A8332)&version=13080810&lang=zh_CN&nettype=WIFI&ascene=0&fontScale=100)
+- [开源日报](https://my.oschina.net/hardbone?tab=news)
 - [博客园新闻日历](https://news.cnblogs.com/n/date/)
 - [ifanrnews每日早报](https://www.ifanr.com/)
 
