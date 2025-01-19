@@ -5,13 +5,14 @@
 - [8点1氪](https://36kr.com/user/5652071)
 - [派早报](https://sspai.com/u/ee0vj778/updates)
 - [开源日报](https://my.oschina.net/hardbone?tab=news)
-- [博客园新闻日历](https://news.cnblogs.com/n/date/)
 - [ifanrnews每日早报](https://www.ifanr.com/)
+- [readhub](https://readhub.cn/hot?type=weekly)
+- [博客园新闻日历](https://news.cnblogs.com/n/date/)
 
 ### 综合资讯
+- [bestblogs](https://www.bestblogs.dev/feeds?time=1w&language=all&sort=score_desc&featured=y)
 - [麻省理工科技评论](https://www.mittrchina.com/)
 - [InfoQ](https://www.infoq.cn/)
-- [readhub](https://readhub.cn/hot?type=weekly)
 - [人人都是产品经理 周榜](https://www.woshipm.com/)
 - [betterdev](https://betterdev.link/)
 - [ycombinator](https://news.ycombinator.com/)
