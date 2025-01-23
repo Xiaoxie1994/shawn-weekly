@@ -4,20 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "5cadac26be442b61",
+        "id": "200d1ca24afc7338",
         "type": "tabs",
         "children": [
           {
-            "id": "22a2293f1f7348b9",
+            "id": "3c9eca1cec8f1341",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
-                "file": "docs/content/2025/33.md",
-                "staged": false
+                "file": "docs/content/2024/24.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "git-pull-request",
-              "title": "Diff View (33)"
+              "icon": "lucide-file",
+              "title": "24"
             }
           }
         ]
@@ -72,8 +73,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -173,19 +173,35 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "22a2293f1f7348b9",
+  "active": "3c9eca1cec8f1341",
   "lastOpenFiles": [
-    "docs/README.md",
-    "README.md",
-    "docs/content/2025/32.md",
-    "docs/content/2025/33.md",
-    "docs/source/template.md",
-    "docs/source/read_source.md",
-    "docs/content/2025/31.md",
-    "docs/collection/2024.md",
-    "docs/content/2024/30.md",
-    "docs/content/未命名",
+    "docs/content/2024/23.md",
+    "docs/content/2024/22.md",
+    "docs/content/2024/21.md",
+    "docs/content/2024/20.md",
+    "docs/content/2024/19.md",
+    "docs/content/2024/18.md",
+    "docs/content/2024/17.md",
+    "docs/content/2024/16.md",
+    "docs/content/2024/15.md",
+    "docs/content/2024/14.md",
+    "docs/content/2024/13.md",
+    "docs/content/2024/12.md",
+    "docs/content/2024/11.md",
+    "docs/content/2024/10.md",
+    "docs/content/2024/9.md",
+    "docs/content/2024/8.md",
+    "docs/content/2024/7.md",
+    "docs/content/2024/6.md",
+    "docs/content/2024/5.md",
+    "docs/content/2024/4.md",
+    "docs/content/2024/3.md",
+    "docs/content/2024/2.md",
     "docs/content/2024/1.md",
+    "docs/content/2024/27.md",
+    "docs/content/2025/33.md",
+    "docs/content/2025/32.md",
+    "docs/content/未命名",
     "tools/theme/vintage.js",
     "tools/type-statistics.html",
     "tools/theme",
@@ -203,25 +219,9 @@
     "docs/collection/image-1.png",
     "docs/collection/combined_image.jpg",
     "未命名.canvas",
-    "docs/content/2024/29.md",
-    "docs/content/2024/2.md",
-    "docs/content/2024/3.md",
     "docs/content/picture/WechatIMG182.jpg",
     "docs/content/picture/intro-w25.png",
     "docs/content/picture/WechatIMG65.jpg",
-    "docs/content/2024/4.md",
-    "docs/content/2024/18.md",
-    "docs/content/2024/17.md",
-    "docs/content/2024/16.md",
-    "docs/content/2024/15.md",
-    "docs/content/2024/14.md",
-    "docs/content/2024/13.md",
-    "docs/content/2024/12.md",
-    "docs/content/2024/11.md",
-    "docs/content/2024/10.md",
-    "docs/content/2024/9.md",
-    "docs/content/2024/8.md",
-    "docs/content/2024/7.md",
     "未命名 1.canvas"
   ]
 }
