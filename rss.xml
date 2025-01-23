@@ -6,8 +6,8 @@
     <link>https://weekly.shawnxie.top/</link>
     <description>记录有价值的技术内容</description>
     <language>zh-CN</language>
-    <pubDate>Mon, 20 Jan 2025 12:04:54 GMT</pubDate>
-    <lastBuildDate>Mon, 20 Jan 2025 12:04:54 GMT</lastBuildDate>
+    <pubDate>Thu, 23 Jan 2025 15:56:15 GMT</pubDate>
+    <lastBuildDate>Thu, 23 Jan 2025 15:56:15 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <item>
@@ -27,43 +27,6 @@
 <h2>开篇图</h2>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412300006293.png" alt=""></p>
 <p>2024就要结束了，大家年初定的目标都完成了吗？俺今年达成了新“五子登科”中的第四子——<strong>孩子</strong>，就差一个票子了。不过最后这个难度太大，不知道什么时候才能俱全。</p>
-<h2>内容速览</h2>
-<blockquote>
-<p><strong>业界资讯</strong></p>
-<ul>
-<li>DeepSeek-V3 首个版本上线并开源</li>
-<li>维基百科2024年大事记</li>
-<li>人类最快探测器与太阳上演最近距离接触</li>
-</ul>
-<p><strong>技术博客</strong></p>
-<ul>
-<li>RAG七十二式：2024年度RAG清单</li>
-<li>Java程序中的潜在危机: 深入探讨NullPointerException</li>
-<li>揭秘 git 子模块</li>
-</ul>
-<p><strong>开源项目</strong></p>
-<ul>
-<li>univer：文档编辑软件全栈框架</li>
-<li>h5-Dooring：H5低代码平台</li>
-<li>PowerToys：Windows实用工具集</li>
-</ul>
-<p><strong>工具推荐</strong></p>
-<ul>
-<li>OldMapsOnline：世界历史地图集</li>
-<li>逗逗：AI游戏伙伴</li>
-<li>cobalt：简洁的媒体下载器</li>
-</ul>
-<p><strong>学习资源</strong></p>
-<ul>
-<li>anthropic-cookbook：Claude使用指南</li>
-</ul>
-<p><strong>随便看看</strong></p>
-<ul>
-<li>2024年AI盘点：投资高歌猛进、基础设施重构、技术采用加速</li>
-<li>编程十年的感悟</li>
-<li>长期软件开发</li>
-</ul>
-</blockquote>
 <h2>业界资讯</h2>
 <h3><a class="header-anchor" href="#deepseek-v3-首个版本上线并开源"><span></span></a><a href="https://www.oschina.net/news/326792" target="_blank" rel="noopener noreferrer">DeepSeek-V3 首个版本上线并开源</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412292304503.png" alt=""></p>
@@ -149,33 +112,6 @@
 <h2>开篇图</h2>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412222253270.png" alt=""></p>
 <p>陆陆续续各家年度报告发出来了，今年的就业情况依旧很惨烈，人才持续饱和，整体薪资下降。AIGC 虽然爆火，用用还行，要想入局门槛太高了。和一个朋友聊天，他公司一个AI岗，只有1个HC，但有6个人竞争，4个博士，另外两个硕士中有一个发了5篇CCF-A，其中三篇一作。这是什么竞争强度，不用过多描述了吧。或许趁现在还不到35，再琢磨琢磨出路，宇宙的尽头可能真得上岸。</p>
-<h2>内容速览</h2>
-<blockquote>
-<p><strong>业界资讯</strong></p>
-<ul>
-<li>OpenAI o3模型压轴登场，攻破极难数学题，执行一次任务数千美元</li>
-<li>中国工程院发布 2024 全球十大工程成就</li>
-<li>小米开源「Home Assistant 米家集成」</li>
-</ul>
-<p><strong>开源项目</strong></p>
-<ul>
-<li>viztracer：Python代码执行跟踪可视化工具</li>
-<li>awesome-cloudflare：精选的 Cloudflare 工具</li>
-<li>Gitako：GitHub文件树浏览器插件</li>
-<li>my-github-2024：个人Github活动统计</li>
-</ul>
-<p><strong>学习资源</strong></p>
-<ul>
-<li>devtoolstips：web开发者小贴士</li>
-<li>CoRecursive：代码背后的故事</li>
-<li>system-design-101：可视化理解复杂系统</li>
-</ul>
-<p><strong>随便看看</strong></p>
-<ul>
-<li>智能的代价：AI背后的能源消耗与环境危机</li>
-<li>情绪价值对用户体验的影响</li>
-</ul>
-</blockquote>
 <h2>业界资讯</h2>
 <h3><a class="header-anchor" href="#openai-o3模型压轴登场-攻破极难数学题-执行一次任务数千美元"><span></span></a><a href="https://www.mittrchina.com/news/detail/14191" target="_blank" rel="noopener noreferrer">OpenAI o3模型压轴登场，攻破极难数学题，执行一次任务数千美元</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412222210221.png" alt=""></p>
@@ -237,35 +173,6 @@
 <h2>开篇图</h2>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412152302237.png" alt=""></p>
 <p>TGA 2024最佳游戏离谱的给了《宇宙机器人》，然后菜鸟APP被狂刷负评，笑尿。</p>
-<h2>内容速览</h2>
-<blockquote>
-<p><strong>业界资讯</strong></p>
-<ul>
-<li>清华大学计算机教授、《数据结构》编著者严蔚敏去世，享年 86 岁</li>
-<li>离开 1620 天，Redis 创始人 antirez 宣布回归</li>
-</ul>
-<p><strong>技术博客</strong></p>
-<ul>
-<li>资金视角看支付系统架构设计</li>
-<li>5大常见高并发限流算法选型浅析</li>
-</ul>
-<p><strong>工具推荐</strong></p>
-<ul>
-<li>DrissionPage：网页自动化工具</li>
-<li>BPlusTree：B+树操作可视化</li>
-<li>AI 模型比较</li>
-</ul>
-<p><strong>学习资源</strong></p>
-<ul>
-<li>深入架构原理与实践</li>
-<li>硬核指南</li>
-</ul>
-<p><strong>随便看看</strong></p>
-<ul>
-<li>60张手绘高清大图理清支付系统最核心的概念</li>
-<li>可视化证明a^2 – b^2 = (a + b)(a – b)</li>
-</ul>
-</blockquote>
 <h2>业界资讯</h2>
 <h3><a class="header-anchor" href="#清华大学计算机教授、《数据结构》编著者严蔚敏去世-享年-86-岁"><span></span></a><a href="https://www.oschina.net/news/324630" target="_blank" rel="noopener noreferrer">清华大学计算机教授、《数据结构》编著者严蔚敏去世，享年 86 岁</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412152253421.png" alt=""></p>
@@ -323,27 +230,8 @@
 <img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></p>
 </blockquote>
 <h2>开篇图</h2>
-<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412082246717.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232321756.png" alt=""></p>
 <p>这周阅读量偏少，有了娃感觉时间根本不够用，凑合记录一些吧。周五下班出地铁看到了图中这辆带移动充电宝的小电驴，觉得蛮有意思的。能有效的解决时空问题，发现有机会的地方就可以摆过去试试，主打一个灵活。另外，成都的共享电瓶车也越来越多了，既然用电是不是也加一下手机充电功能啊，这样出门在外手机没电也能成为租电瓶车的原因了。</p>
-<h2>内容速览</h2>
-<blockquote>
-<p><strong>业界资讯</strong></p>
-<ul>
-<li>OpenAI 正式发布 o1 完整版，并上线每月 200 美元的「ChatGPT Pro」</li>
-<li>谷歌 DeepMind 宣布世界模型 Genie 2，可实时生成 3D 交互场景</li>
-<li>Spring Boot 3.4 正式发布</li>
-</ul>
-<p><strong>工具推荐</strong></p>
-<ul>
-<li>stock：股票量化投资辅助工具</li>
-<li>Random webSites Explorer：随机访问有趣的网站</li>
-<li>互乐吧：免费资源</li>
-</ul>
-<p><strong>学习资源</strong></p>
-<ul>
-<li>expert_readed_books：工程师阅读书单推荐</li>
-</ul>
-</blockquote>
 <h2>业界资讯</h2>
 <h3><a class="header-anchor" href="#openai-正式发布-o1-完整版-并上线每月-200-美元的「chatgpt-pro」"><span></span></a><a href="https://www.oschina.net/news/323622/openai-chatgpt-pro-n-o1" target="_blank" rel="noopener noreferrer">OpenAI 正式发布 o1 完整版，并上线每月 200 美元的「ChatGPT Pro」</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412082247990.png" alt=""></p>
@@ -368,7 +256,7 @@
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412082248547.png" alt=""></p>
 <p>汇总了2024年推荐的工程师阅读书单，涵盖计算机科学、软件技术、软件工程、创业、哲学、大佬书籍、历史、思想、数学、经济和小说等多个类别。</p>
 ]]></content:encoded>
-      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412082246717.png" type="image/png"/>
+      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501232321756.png" type="image/png"/>
     </item>
     <item>
       <title>肖恩技术周刊（第 26 期）：无痛写作</title>
@@ -388,36 +276,6 @@
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412012306767.png" alt=""></p>
 <p>写作相关的工具，这几个月可没少折腾。先是选了一个好用的笔记工具 Obsidian，并自建了图床解决了图片管理问题。写作时是舒坦了，但写作后除了push到Github外还需要手动发布到公众号和个人博客，还是比较痛苦。博客由于调整格式太麻烦，最近都放弃同步了。</p>
 <p>那如何解决这最后一环真正实现无痛写作呢？当然是基于Github变更能自动发布最好啦。这一周重新了解了一下静态网站建站工具和托管平台，之前逮到一个能用就咔咔搞了，也没有详细对比过，才发现原来静态博客除了域名不需要花一分就能搭建。接着也粗略了解了GitHub Actions，可以结合微信的API实现文章自动发布到草稿箱。是时候补齐写作工作流的最后一环，实现真正的无痛写作啦！</p>
-<h2>内容速览</h2>
-<blockquote>
-<p><strong>业界资讯</strong></p>
-<ul>
-<li>Chrome 牵头成立「浏览器选择联盟」，目标是 “反 Microsoft Edge”</li>
-<li>Deno 请求美国专利商标局撤销 Oracle 的 “JavaScript” 商标</li>
-<li>开源压缩软件 7-Zip 被曝严重安全漏洞</li>
-</ul>
-<p><strong>技术博客</strong></p>
-<ul>
-<li>代码千行不如架构图一张！论契约平台的设计与思考</li>
-<li>基于Redis内核的热key统计实现方案</li>
-</ul>
-<p><strong>开源项目</strong></p>
-<ul>
-<li>screenshot-to-code：截图生成前端代码</li>
-<li>rewrite：自动化代码重构工具</li>
-<li>marker：PDF快速转换成Markdown、JSON和HTML格式</li>
-</ul>
-<p><strong>学习资源</strong></p>
-<ul>
-<li>NVIDIA 新开发者福利：600元AI课程免费学，还有机会获得NVIDIA培训证书</li>
-<li>看见概率论：交互式学习概率论</li>
-</ul>
-<p><strong>随便看看</strong></p>
-<ul>
-<li>连接全球的海底光缆有多脆弱？</li>
-<li>1个数据集的100种可视化效果</li>
-</ul>
-</blockquote>
 <h2>业界资讯</h2>
 <h3><a class="header-anchor" href="#chrome-牵头成立「浏览器选择联盟」-目标是-反-microsoft-edge"><span></span></a><a href="https://www.oschina.net/news/322571/chrome-browserchoicealliance" target="_blank" rel="noopener noreferrer">Chrome 牵头成立「浏览器选择联盟」，目标是 “反 Microsoft Edge”</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412012226457.png" alt=""></p>
@@ -486,34 +344,6 @@
 <h2>开篇图</h2>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411250114961.png" alt=""></p>
 <p>娃是中年人的第一生产力。</p>
-<h2>内容速览</h2>
-<blockquote>
-<p><strong>业界资讯</strong></p>
-<ul>
-<li>谷歌被强制出售Chrome</li>
-<li>Linux Kernel 6.12 正式发布：真实时内核来了</li>
-<li>SpaceX 星舰第六次试飞圆满成功，超重型助推器完成软溅落后解体</li>
-</ul>
-<p><strong>技术博客</strong></p>
-<ul>
-<li>产品设计流程</li>
-</ul>
-<p><strong>工具推荐</strong></p>
-<ul>
-<li>allow-right-click：重启页面禁用的右键</li>
-<li>图片AI无损放大</li>
-</ul>
-<p><strong>学习资源</strong></p>
-<ul>
-<li>Best-websites-a-programmer-should-visit：推荐程序员应该访问的网站</li>
-<li>data-engineer-handbook：成为优秀数据工程师所需的资源</li>
-</ul>
-<p><strong>观点</strong></p>
-<ul>
-<li>大模型狂飙两年后，“六小龙”开始做减法</li>
-<li>我的工作期限为 5 年，少一点就是损失（英文）</li>
-</ul>
-</blockquote>
 <h2>业界资讯</h2>
 <h3><a class="header-anchor" href="#谷歌被强制出售chrome"><span></span></a><a href="https://mp.weixin.qq.com/s/B2QocjgMYVul05I8Jc57Og" target="_blank" rel="noopener noreferrer">谷歌被强制出售Chrome</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411242352381.png" alt=""></p>
@@ -581,31 +411,6 @@
 <h2>开篇图</h2>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241117233731.png" alt=""></p>
 <p>11月15日在华西LDR产房全程见证了媳妇的生产过程，不由感叹母亲真是世界上最伟大的人。整个分娩过程之煎熬（持续十二小时），痛苦之强烈，作为旁观者都能深深的感受到（汗流浃背）。当听到孩子的第一声哭啼，我的泪水止不住的往外涌。看着媳妇那虚脱的模样，特别心疼，要把这感受传达给小宝宝，明白生命的来之不易。</p>
-<h2>内容速览</h2>
-<blockquote>
-<p><strong>业界资讯</strong></p>
-<ul>
-<li>Cursor 母公司 Anysphere 收购 AI 编码助手 Supermaven</li>
-<li>避免内耗，吉利将整合极氪和领克两大品牌</li>
-<li>月之暗面发布k0-math推理模型，对标OpenAI o1系列</li>
-</ul>
-<p><strong>技术博客</strong></p>
-<ul>
-<li>大厂开始放弃ZooKeeper，还用学吗？</li>
-<li>得物精准测试平台设计与实现</li>
-<li>应用网关的演进历程和分类</li>
-</ul>
-<p><strong>工具推荐</strong></p>
-<ul>
-<li>302.AI: 全功能AI应用平台</li>
-<li>URL Parser Online: 将网页转换为更适合大型语言模型的输入格式</li>
-<li>Code Maat: 从版本控制系统中挖掘和分析数据</li>
-</ul>
-<p><strong>人物</strong></p>
-<ul>
-<li>回归即顶流，时代变了，李子柒没变</li>
-</ul>
-</blockquote>
 <h2>业界资讯</h2>
 <h3><a class="header-anchor" href="#cursor-母公司-anysphere-收购-ai-编码助手-supermaven"><span></span></a><a href="https://www.oschina.net/news/320498/anysphere-acquires-supermaven" target="_blank" rel="noopener noreferrer">Cursor 母公司 Anysphere 收购 AI 编码助手 Supermaven</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241117222204.png" alt=""></p>
@@ -657,25 +462,6 @@
 <strong>订阅方式</strong>: 微信公众号“<strong>肖恩聊技术</strong>”，除周刊外还有更多原创技术博文~<br>
 <img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></p>
 </blockquote>
-<h2>内容速览</h2>
-<blockquote>
-<p><strong>业界资讯</strong></p>
-<ul>
-<li>Linus:我略微出手修改几行内核代码就提升了2.6%性能</li>
-<li>仓颉编程语言官网正式上线，首个公测版本开放下载</li>
-<li>TIOBE 11月榜单：Go语言排名创新高</li>
-</ul>
-<p><strong>工具推荐</strong></p>
-<ul>
-<li>jsoncrack.com：JSON数据可视化工具</li>
-<li>I18n code Markdown：多语言内容转换工具</li>
-</ul>
-<p><strong>学习资源</strong></p>
-<ul>
-<li>系统设计面试：内幕指南</li>
-<li>ebooks：10万本电子书</li>
-</ul>
-</blockquote>
 <h2>开篇图</h2>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241110230042.png" alt="开篇图"></p>
 <p>恭喜川普，MAGA！</p>
@@ -718,28 +504,6 @@
 <strong>历史收录</strong>: <a href="https://github.com/Xiaoxie1994/shawn-weekly" target="_blank" rel="noopener noreferrer">shawn-weekly</a> <br>
 <strong>订阅方式</strong>: 微信公众号“<strong>肖恩聊技术</strong>”，除周刊外还有更多原创技术博文~<br>
 <img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></p>
-</blockquote>
-<h2>内容速览</h2>
-<blockquote>
-<p><strong>业界资讯</strong></p>
-<ul>
-<li>刚刚，阿里全球数学竞赛决赛结果公布，姜萍违反预选赛规则未获奖</li>
-<li>随着全球开发人员数量激增，AI 将 Python 引领至顶级语言</li>
-<li>Elasticsearch star 数一夜归零？</li>
-</ul>
-<p><strong>技术博客</strong></p>
-<ul>
-<li>单体架构比微服务架构更落后吗？</li>
-</ul>
-<p><strong>开源项目</strong></p>
-<ul>
-<li>OmniParser：屏幕解析工具</li>
-<li>drawdb：数据库设计工具</li>
-</ul>
-<p><strong>观点</strong></p>
-<ul>
-<li>如何思考产品的底层逻辑</li>
-</ul>
 </blockquote>
 <h2>开篇图</h2>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103235244.png" alt=""></p>
@@ -789,30 +553,6 @@
 <strong>历史收录</strong>: <a href="https://github.com/Xiaoxie1994/shawn-weekly" target="_blank" rel="noopener noreferrer">shawn-weekly</a> <br>
 <strong>订阅方式</strong>: 微信公众号“<strong>肖恩聊技术</strong>”，除周刊外还有更多原创技术博文~<br>
 <img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></p>
-</blockquote>
-<h2>内容速览</h2>
-<blockquote>
-<p><strong>业界资讯</strong></p>
-<ul>
-<li>华为正式发布原生鸿蒙系统</li>
-<li>Gartner 发布 2025 年十大战略技术趋势</li>
-<li>14岁男孩痴迷聊天机器人自杀身亡后，人工智能明星公司Character.AI遭起诉</li>
-</ul>
-<p><strong>技术博客</strong></p>
-<ul>
-<li>Apache Pulsar在小红书在线场景下的探索与实践</li>
-<li>增长在流量规则巡检的探索实践</li>
-</ul>
-<p><strong>开源项目</strong></p>
-<ul>
-<li>vue-fabric-editor：开源的图片编辑器</li>
-<li>text-behind-image：图片主体后加文字</li>
-</ul>
-<p><strong>学习资源</strong></p>
-<ul>
-<li>openbookshongkong：香港开源书籍</li>
-<li>awesome-low-level-design：学习低层次设计</li>
-</ul>
 </blockquote>
 <h2>开篇图</h2>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/WechatIMG65.png" alt="好天气"></p>
@@ -866,35 +606,6 @@
 <strong>历史收录</strong>: <a href="https://github.com/Xiaoxie1994/shawn-weekly" target="_blank" rel="noopener noreferrer">shawn-weekly</a> <br>
 <strong>订阅方式</strong>: 微信公众号“<strong>肖恩聊技术</strong>”，除周刊外还有更多原创技术博文~<br>
 <img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></p>
-</blockquote>
-<h2>内容速览</h2>
-<blockquote>
-<p><strong>业界资讯</strong></p>
-<ul>
-<li>首次！SpaceX完成「筷子夹火箭」式星舰回收，马斯克8年前设想成真</li>
-<li>零一万物发布最新旗舰模型，百万 token 仅 0.99 元！李开复：定价没有亏本</li>
-<li>《麻省理工科技评论》发布“值得关注的15家气候技术公司”榜单，比亚迪连续两年上榜</li>
-</ul>
-<p><strong>技术博客</strong></p>
-<ul>
-<li>一文搞懂第三方支付系统架构设计</li>
-</ul>
-<p><strong>开源项目</strong></p>
-<ul>
-<li>roughViz：可重复使用的手绘风JavaScript画图库</li>
-<li>graphql-editor：Graphql可视化编辑器</li>
-<li>googleapis：谷歌API原始接口定义</li>
-</ul>
-<p><strong>学习资源</strong></p>
-<ul>
-<li>机器学习系统：设计和实现</li>
-</ul>
-<p><strong>随便看看</strong></p>
-<ul>
-<li>国产操作系统的沉浮往事</li>
-<li>第一批摆摊的打工人，已经回去上班了</li>
-<li>“图灵诺奖双得主”、“AI教父”，至高荣誉加身，杰弗里·辛顿配吗？看了他的故事果然没人比他更合适</li>
-</ul>
 </blockquote>
 <h2>开篇图</h2>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262033362.jpg" alt=""></p>
@@ -957,25 +668,6 @@
 <strong>订阅方式</strong>: 微信公众号“<strong>肖恩聊技术</strong>”，除周刊外还有更多原创技术博文~<br>
 <img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></p>
 </blockquote>
-<h2>内容速览</h2>
-<blockquote>
-<p><strong>业界资讯</strong></p>
-<ul>
-<li>Kimi 探索版来了，最好的搜索是不用自己搜索</li>
-<li>2024年物理诺奖颁给“AI+物理”</li>
-<li>马斯克发布特斯拉Robotaxi</li>
-</ul>
-<p><strong>技术博客</strong></p>
-<ul>
-<li>一文探索应运而生的数据库们</li>
-<li>我的内容创作最强搭子——Kimi</li>
-</ul>
-<p><strong>开源项目</strong></p>
-<ul>
-<li>surya: 开源的文档OCR工具包</li>
-<li>PaddleOCR: 百度飞桨开源OCR工具库</li>
-</ul>
-</blockquote>
 <h2>开篇图</h2>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262344743.jpg" alt=""></p>
 <p>这周内容比较少，因为突然被安排周一去学校面试，得提前准备一下。本周最激动的事莫过于Kimi推出探索版了，体验还是很不错的，虽然有时候检索的网页数量没有达到预期并且每天只能体验5次，但瑕不掩瑜。探索版灰度周一就要推全了，还没有用过的小伙伴快去试试吧。</p>
@@ -1023,30 +715,6 @@
 <strong>历史收录</strong>: <a href="https://github.com/Xiaoxie1994/shawn-weekly" target="_blank" rel="noopener noreferrer">shawn-weekly</a> <br>
 <strong>订阅方式</strong>: 微信公众号“<strong>肖恩聊技术</strong>”，除周刊外还有更多原创技术博文~<br>
 <img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></p>
-</blockquote>
-<h2>内容速览</h2>
-<blockquote>
-<p><strong>业界资讯</strong></p>
-<ul>
-<li>TIOBE 10 月榜单：Rust稳步接近前10名！</li>
-<li>OpenAI Canvas</li>
-</ul>
-<p><strong>开源项目</strong></p>
-<ul>
-<li>kestra：开源的工作流自动化平台</li>
-<li>doocs/md：高度简洁的微信公众号排版工具</li>
-<li>OpenBB：免费且完全开源的金融平台</li>
-</ul>
-<p><strong>学习资源</strong></p>
-<ul>
-<li>100-exercises-to-learn-rust：100个练习学习Rust编程</li>
-<li>TheAlgorithms/Java：多种算法的Java实现</li>
-</ul>
-<p><strong>随便看看</strong></p>
-<ul>
-<li>逆向思维：拿走一些东西，你会做得更好</li>
-<li>“她们”越来越多了</li>
-</ul>
 </blockquote>
 <h2>开篇图</h2>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262348292.png" alt=""></p>
@@ -1105,44 +773,6 @@
 <strong>历史收录</strong>: <a href="https://github.com/Xiaoxie1994/shawn-weekly" target="_blank" rel="noopener noreferrer">shawn-weekly</a> <br>
 <strong>订阅方式</strong>: 微信公众号“<strong>肖恩聊技术</strong>”，除周刊外还有更多原创技术博文~<br>
 <img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></p>
-</blockquote>
-<h2>内容速览</h2>
-<blockquote>
-<ul>
-<li><strong>业界资讯</strong>
-<ul>
-<li>山姆·奥特曼罕见发长文，力推超级智能，百万人围观</li>
-<li>SB 1047尘埃落定！州长否决，李飞飞等人有了新使命</li>
-<li>字节版Sora终于来了！一口气两款视频模型，带来的震撼不只一点点</li>
-</ul>
-</li>
-<li><strong>技术博客</strong>
-<ul>
-<li>一文读懂 MySQL 并行查询 &amp; DDL</li>
-<li>深入理解Linux的TCP三次握手</li>
-<li>KLimiter自适应限流器</li>
-</ul>
-</li>
-<li><strong>开源项目</strong>
-<ul>
-<li>hercules：Git历史分析引擎</li>
-<li>supervision：开源的计算机视觉工具库</li>
-<li>mastering-bitcoin-3rd：精通比特币</li>
-</ul>
-</li>
-<li><strong>工具推荐</strong>
-<ul>
-<li>开源许可证选择器</li>
-</ul>
-</li>
-<li><strong>随便看看</strong>
-<ul>
-<li>尿酸危机，席卷中国</li>
-<li>Uber人类行为学研究：手机快没电时乘客愿付高价</li>
-<li>从北京到硅谷，“AI教母”李飞飞的传奇AI路</li>
-</ul>
-</li>
-</ul>
 </blockquote>
 <h2>开篇图</h2>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262331264.png" alt=""></p>
