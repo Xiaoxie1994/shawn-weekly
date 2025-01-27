@@ -6,16 +6,839 @@
     <link>https://weekly.shawnxie.top/</link>
     <description>记录有价值的技术内容</description>
     <language>zh-CN</language>
-    <pubDate>Sun, 26 Jan 2025 13:59:41 GMT</pubDate>
-    <lastBuildDate>Sun, 26 Jan 2025 13:59:41 GMT</lastBuildDate>
+    <pubDate>Mon, 27 Jan 2025 07:30:27 GMT</pubDate>
+    <lastBuildDate>Mon, 27 Jan 2025 07:30:27 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+    <item>
+      <title>肖恩技术周刊（第 34 期）：辞旧迎新</title>
+      <link>https://weekly.shawnxie.top/content/2025/34.html</link>
+      <guid>https://weekly.shawnxie.top/content/2025/34.html</guid>
+      <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 34 期）：辞旧迎新</source>
+      <description>肖恩技术周刊（第 34 期）：辞旧迎新 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 龙年最后一个工作日，极度...</description>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<blockquote>
+<p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。<br>
+<strong>更新时间</strong>: 周一<br>
+<strong>历史收录</strong>: <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwODY0ODQzOQ==&amp;action=getalbum&amp;album_id=3492416248238096386#wechat_redirect" target="_blank" rel="noopener noreferrer">技术周刊合集</a> <br>
+<strong>订阅方式</strong>: 微信公众号“<strong>肖恩聊技术</strong>”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~<br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></p>
+</blockquote>
+<h2>开篇图</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/2.png" alt=""></p>
+<p>龙年最后一个工作日，极度充实的一年马上就要结束啦。本周对一整年的经历做了回顾和总结，虽然知道事项不少，但真正罗列出来的时候，还是比预想的多一些，在工作、家庭和个人上都有不小的收获。等蛇年伊始把总结发出来（当然还有🧧），和大家一起辞旧迎新！</p>
+<h2>业界资讯</h2>
+<h3><a class="header-anchor" href="#刚刚-特朗普联手奥特曼-狂砸5000亿美元启动ai「星际之门」"><span></span></a><a href="https://www.jiqizhixin.com/articles/2025-01-22" target="_blank" rel="noopener noreferrer">刚刚，特朗普联手奥特曼，狂砸5000亿美元启动AI「星际之门」</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501261711659.png" alt=""></p>
+<p>2025 年 1 月 22 日，特朗普与 OpenAI CEO Sam Altman 等人联合宣布「星际之门」项目，计划 4 年内投资 5000 亿美元建设人工智能基础设施，首期投入 1000 亿美元，旨在确保美国在 AI 领域的领导地位，创造大量就业机会并带来全球经济效益。该项目由软银、OpenAI 等投资，孙正义任主席，Arm、微软等为技术合作伙伴，目前建设工作已展开，且与微软现有合作基础上继续增加合作。</p>
+<h3><a class="header-anchor" href="#openai-首个-l3-级智能体深夜觉醒-ai-自己玩电脑引爆全网"><span></span></a><a href="https://aiera.com.cn/2025/01/24/other/aiera-com-cn/14292/" target="_blank" rel="noopener noreferrer">OpenAI 首个 L3 级智能体深夜觉醒！AI 自己玩电脑引爆全网</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501261711857.png" alt=""></p>
+<p>OpenAI推出首个L3级智能体Operator，打破API局限，能像人类一样直接与界面交互，完成各类任务，如填写表单、购物等。其背后是Computer-Using Agent（CUA），通过处理屏幕像素数据，使用虚拟鼠标和键盘操作，具备多步骤任务执行、错误应对和适应变化的能力。在测试中，CUA在WebArena和WebVoyager等基准测试中刷新了SOTA，但与人类相比仍有差距。目前，Operator仅对美国Pro用户开放，但OpenAI计划扩展其动作空间并开放API接口，让开发者构建自定义智能体，这可能引发下一场人机交互革命。</p>
+<h2>技术博客</h2>
+<h3><a class="header-anchor" href="#iterm2-的一些鲜为人知的功能-英文"><span></span></a><a href="https://danielde.dev/blog/iterm2-features-i-find-useful" target="_blank" rel="noopener noreferrer">iTerm2 的一些鲜为人知的功能（英文）</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501261714866.png" alt=""></p>
+<p>文章介绍了iTerm2这款Mac终端软件的实用功能。支持显示时间戳（快捷键⌘+Shift+E切换），帮助用户跟踪日志时间；安装Shell Integration后，可在新提示时提醒用户（快捷键⌘+Option+A设置），便于跟踪长时间运行的命令。此外，用户可以通过快捷键在提示之间快速跳转（⌘+Shift+Up/Down），并使用热键重新排列标签（如Ctrl+Shift+B/F），无需离开键盘。</p>
+<p>iTerm2的复制模式（⌘+Shift+C进入）允许用户通过键盘选择和复制文本，支持箭头键或Vim键绑定操作。同时，按住⌘键可使链接和路径可点击，URL在浏览器中打开，路径在Finder中打开。选择文本时，iTerm2会自动将其复制到剪贴板，提升了操作效率。</p>
+<h3><a class="header-anchor" href="#linkedin-如何将用户限制系统扩展到每秒-500-万次查询-英文"><span></span></a><a href="https://blog.bytebytego.com/p/how-linkedin-scaled-user-restriction" target="_blank" rel="noopener noreferrer">LinkedIn 如何将用户限制系统扩展到每秒 500 万次查询（英文）</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501261713067.png" alt=""></p>
+<p>LinkedIn的用户限制系统（CASAL）经历了从关系型数据库到分布式NoSQL系统的多次架构演进，以应对高查询量、低延迟和大规模数据增长的挑战。最初，LinkedIn使用Oracle数据库管理限制数据，但随着用户增长和微服务架构的转型，关系型数据库在高查询量和低延迟方面逐渐力不从心。为此，LinkedIn引入了服务器端缓存和客户端缓存，通过缓存旁加载策略和布隆过滤器等技术，减少了对数据库的依赖，但这些方案仍存在内存占用大、重启时资源消耗高等问题。</p>
+<p>为应对高QPS、超低延迟和高可用性的需求，LinkedIn迁移到自建的Espresso分布式NoSQL系统，并与Kafka集成，实现实时数据同步。这一代系统通过水平扩展和内存查找显著提升了性能，但也面临重启时数据加载耗时和大规模增长处理的挑战。第三代系统进一步优化，采用堆外内存存储数据，减少垃圾回收（GC）事件对性能的影响。同时，引入Venice和DaVinci框架，通过预加载限制数据到内存并使用高效的bitset数据结构，实现了更快的启动过程和更强的弹性。</p>
+<p>LinkedIn用户限制系统的演变展示了其在技术创新和架构设计上的持续努力。通过从简单开始、主动识别问题、跨团队协作、基准测试和持续改进等原则，LinkedIn成功应对了用户增长和恶意活动带来的挑战，确保了平台的安全性和可靠性。</p>
+<h3><a class="header-anchor" href="#大模型综述"><span></span></a><a href="https://mp.weixin.qq.com/s/CsYzQUQKs98_yf0lWVWhpA" target="_blank" rel="noopener noreferrer">大模型综述</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501261713736.png" alt=""></p>
+<p>本文是一篇关于大模型的综述文章，介绍了大模型的背景、涌现能力、对NLP的影响、机制、预训练、高效训练、适配以及研究方向等内容。大模型在NLP任务中表现出色，展现出上下文学习、按指令执行、逐步推理等涌现能力，但也存在幻觉等问题。其发展经历了从深度学习到预训练模型，再到通用人工智能的范式转变，对NLP领域产生了深远影响，如中间任务消亡、技术路线统一等。大模型的可解释性、知识定位与修改、上下文学习等机制是研究重点。预训练包括数据收集、模型架构设计、任务设计等环节，高效训练技术如并行训练对大模型至关重要。大模型可通过指令微调、对齐微调等方式进行适配，以提升性能和符合人类价值观。未来研究方向涵盖大模型适配、网络架构探索、多模态融合、推理能力提升、规模天花板探索、数据工程、稀疏化等方面。</p>
+<h2>开源项目</h2>
+<h3><a class="header-anchor" href="#site-status-检测站点状态"><span></span></a><a href="https://github.com/imsyy/site-status" target="_blank" rel="noopener noreferrer">site-status：检测站点状态</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501261723626.png" alt=""></p>
+<p>基于UptimeRobot API的在线状态面板，用于监测网站的在线状态。</p>
+<h3><a class="header-anchor" href="#shadps4-ps4模拟器"><span></span></a><a href="https://github.com/shadps4-emu/shadPS4" target="_blank" rel="noopener noreferrer">shadPS4：PS4模拟器</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501261721046.png" alt=""></p>
+<p>开源的PlayStation 4（PS4）模拟器。</p>
+<h3><a class="header-anchor" href="#review-2024-年终总结汇总"><span></span></a><a href="https://github.com/saveweb/review-2024" target="_blank" rel="noopener noreferrer">review-2024：年终总结汇总</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501261722619.png" alt=""></p>
+<p>收集和展示不同个人或团队在2024年的年终总结。</p>
+<h2>工具推荐</h2>
+<h3><a class="header-anchor" href="#trae-ai代码编辑器"><span></span></a><a href="https://www.trae.ai/" target="_blank" rel="noopener noreferrer">Trae：AI代码编辑器</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501261727159.png" alt=""></p>
+<p>字节跳动推出的免费AI IDE，对标Cursor。支持原生中文，集成了Claude3.5和GPT-4o等主流Al模型，完全免费使用。Trae的主要功能包括Builder模式和Chat模式，其中Builder模式可帮助开发者从零开始构建项目，Chat模式支持对代码库或编程问题进行提问和优化。</p>
+<h3><a class="header-anchor" href="#wewe-rss-微信公众号rss生成"><span></span></a><a href="https://github.com/cooderl/wewe-rss" target="_blank" rel="noopener noreferrer">wewe-rss：微信公众号RSS生成</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501261730597.png" alt=""></p>
+<p>用于微信公众号订阅的工具，支持私有化部署和微信公众号RSS生成，基于微信读书实现。</p>
+<h3><a class="header-anchor" href="#wechatsync-文章多平台同步工具"><span></span></a><a href="https://github.com/wechatsync/Wechatsync" target="_blank" rel="noopener noreferrer">Wechatsync：文章多平台同步工具</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501261732999.png" alt=""></p>
+<p>浏览器插件，帮助自媒体创作者将文章一键同步到多个内容平台，以提高生产力并简化发布流程。</p>
+<h2>学习资源</h2>
+<h3><a class="header-anchor" href="#llm-cookbook-面向开发者的-llm-入门教程"><span></span></a><a href="https://github.com/datawhalechina/llm-cookbook" target="_blank" rel="noopener noreferrer">llm-cookbook：面向开发者的 LLM 入门教程</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501261732823.png" alt=""></p>
+<p>面向开发者的 LLM 入门教程，吴恩达大模型系列课程中文版。</p>
+<h3><a class="header-anchor" href="#build-your-own-x-造轮子指南"><span></span></a><a href="https://github.com/codecrafters-io/build-your-own-x" target="_blank" rel="noopener noreferrer">build-your-own-x：造轮子指南</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501261737168.png" alt=""></p>
+<p>集合了众多从零开始构建各种技术项目的教程的仓库。这些技术项目包括3D渲染器、区块链、数据库、操作系统、编程语言等众多领域，旨在通过实践学习帮助人们深入理解这些技术的内部原理和实现过程。</p>
+<h3><a class="header-anchor" href="#langchain-的中文入门教程"><span></span></a><a href="https://github.com/liaokongVFX/LangChain-Chinese-Getting-Started-Guide" target="_blank" rel="noopener noreferrer">LangChain 的中文入门教程</a></h3>
+<p>LangChain 是一个用于开发由语言模型驱动的应用程序的框架，项目提供了中文入门教程。</p>
+<h2>随便看看</h2>
+<h3><a class="header-anchor" href="#编写软件教程的规则-英文"><span></span></a><a href="https://refactoringenglish.com/chapters/rules-for-software-tutorials/" target="_blank" rel="noopener noreferrer">编写软件教程的规则（英文）</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501261734500.png" alt=""></p>
+<p>文章的核心内容是为软件开发者提供撰写高质量教程的指导原则，强调以初学者为受众，确保教程清晰、实用且易于跟随。这些规则包括写给初学者、在标题中承诺明确的结果、在引言中解释目标、展示最终结果、使代码片段可复制粘贴、使用命令行标志的长版本、区分用户定义的值和可重用逻辑、避免繁琐的任务、保持代码处于可工作状态、教授一件事、不要追求外表美观、最小化依赖、明确指定文件名、使用一致且描述性的标题、展示解决方案的有效性以及链接到完整示例。通过遵循这些规则，开发者可以提高教程的质量，帮助读者更有效地学习新技术。</p>
+]]></content:encoded>
+      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/2.png" type="image/png"/>
+    </item>
+    <item>
+      <title>肖恩技术周刊（第 33 期）：泼天流量？</title>
+      <link>https://weekly.shawnxie.top/content/2025/33.html</link>
+      <guid>https://weekly.shawnxie.top/content/2025/33.html</guid>
+      <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 33 期）：泼天流量？</source>
+      <description>肖恩技术周刊（第 33 期）：泼天流量？ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 这周瓜还挺多，TikT...</description>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<blockquote>
+<p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。<br>
+<strong>更新时间</strong>: 周一<br>
+<strong>历史收录</strong>: <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwODY0ODQzOQ==&amp;action=getalbum&amp;album_id=3492416248238096386#wechat_redirect" target="_blank" rel="noopener noreferrer">技术周刊合集</a> <br>
+<strong>订阅方式</strong>: 微信公众号“<strong>肖恩聊技术</strong>”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~<br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></p>
+</blockquote>
+<h2>开篇图</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501192303054.png" alt=""></p>
+<p>这周瓜还挺多，TikTok难民涌入小红书、TikTok宣布停止运营。虽说次元壁是破了，但事实上可能并没有媒体宣称的那么其乐融融，毕竟两国民众的意识形态和社会潜意识差太多了。放任发展可能会出现冲突（其实已经有不少了，幸好审核很严格），后续就看小红书的应对手段了。能否接住这波流量，拭目以待。</p>
+<h2>业界资讯</h2>
+<h3><a class="header-anchor" href="#字节跳动多个应用随tiktok在美同步停运"><span></span></a><a href="https://www.zaobao.com/realtime/china/story20250119-5756419" target="_blank" rel="noopener noreferrer">字节跳动多个应用随TikTok在美同步停运</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501192316168.png" alt=""></p>
+<p>字节跳动旗下短视频平台TikTok因美国“不卖就禁”法案，于2025年1月19日正式关闭在美服务，旗下剪映海外版CapCut、Lemon8、Gauth和Hypic等应用也同步停运，游戏子公司沐瞳科技下架两款手游。此前，特朗普曾主张禁TikTok，但因TikTok对其再次当选有功，他可能上任后为其争取时间或推替代方案。受此影响，大量美国用户涌入小红书，使其下载量飙升。</p>
+<h3><a class="header-anchor" href="#tiktok-难民-突然涌入小红书"><span></span></a><a href="https://www.oschina.net/news/329788" target="_blank" rel="noopener noreferrer">“TikTok 难民” 突然涌入小红书</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501192316449.png" alt=""></p>
+<p>TikTok“禁令”倒计时，许多美国网友涌入小红书，使其登顶美区App Store下载榜榜首，但小红书内部对此次事件观点不一，认为全球化挑战大于流量承接喜悦。此前小红书承接TikTok流量时DAU带动不明显，目前尚不清楚海外用户涌入数量及笔记量。国内互联网公司借机发英文贴揽客，如阿里巴巴、携程等。</p>
+<h3><a class="header-anchor" href="#支付宝回应重大-bug-不会向用户追款"><span></span></a><a href="https://www.oschina.net/news/330161" target="_blank" rel="noopener noreferrer">支付宝回应重大 Bug：不会向用户追款</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501192317657.png" alt=""></p>
+<p>支付宝在1月16日出现重大Bug，用户支付时可享受20%“政府补贴”减免。经确认，这是支付宝测试“国补”功能时误将测试环境部署到正常环境所致。支付宝表示不会追回已发出的营销优惠金，并提醒用户谨防资金追回诈骗短信。</p>
+<h2>技术博客</h2>
+<h3><a class="header-anchor" href="#海外泼天流量-浅谈全球化技术架构"><span></span></a><a href="https://mp.weixin.qq.com/s/Qwtr8nxyidKCP9eR-_317g" target="_blank" rel="noopener noreferrer">海外泼天流量｜浅谈全球化技术架构</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501192319716.png" alt=""></p>
+<p>本文聚焦于国内企业在出海过程中构建全球化技术架构的挑战与应对策略。文章指出，全球化给企业带来了运营和技术上的双重挑战。在运营方面，企业需严格遵守不同国家和地区的法律法规，升级内容审核与推荐算法，并支持多语言、多时区、多币种等功能。在技术层面，企业面临网络延迟、数据一致性、数据主权、高可用性、成本控制和安全防护等挑战。</p>
+<p>为应对这些挑战，云原生技术发挥了重要作用。企业通过应用高可用架构设计、容量管控、容错设计、容灾架构、灰度发布和可观测性等策略，提升系统的稳定性和可靠性。例如，全链路压测可模拟真实高峰流量，帮助识别系统瓶颈；混沌工程用于验证系统的容错能力；灰度发布则通过流量控制和监控，降低新版本发布的风险。</p>
+<p>在安全防护方面，企业需应对DDoS攻击、API滥用、爬虫攻击等威胁，通过流量清洗、限流、监控和数据合规性措施，保障系统的安全性。文章强调，全球化技术架构的构建需要综合考虑运营和技术的复杂性，通过云原生技术的应用和安全能力的提升，企业能够更好地应对全球化带来的挑战，实现业务的稳定发展。</p>
+<h3><a class="header-anchor" href="#ai-agent初体验-变革正悄然发生"><span></span></a><a href="https://mp.weixin.qq.com/s/vjY98XzLarJGbaP6sHiOHQ" target="_blank" rel="noopener noreferrer">AI Agent初体验：变革正悄然发生</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501192319560.png" alt=""></p>
+<p>本文聚焦于AI Agent的发展与应用。自ChatGPT推出后，众多AI工具涌现，涵盖写作、图像、视频等领域。文章首先介绍了大模型的特点，如参数众多、计算资源需求大、数据需求量大、复杂性与泛化能力强、可扩展性与成本高、环境影响大等，同时也指出了大模型存在的缺陷，包括信息偏差、知识更新滞后、内容不可追溯、领域专业知识欠缺、推理能力限制、应用场景受限、长文本处理弱等问题，并提出了缓解方法，如提示工程、模型开发等。</p>
+<p>接着，文章重点阐述了智能体（AI Agent）的概念，其是能感知环境并行动实现目标的系统，大模型智能体基于LLM构建，具备环境感知、自主理解、决策制定及执行行动的能力。智能体的技术架构从面向过程转向面向目标，紧密结合感知、思考与行动完成任务。其核心组成部分包括感知系统、认知系统、记忆系统、决策系统、行动系统、学习系统、交互系统、伦理和安全系统、用户界面、硬件平台等。</p>
+<p>文章还介绍了智能体的应用场景，如搜索智能体可自动检索总结内容，问答智能体基于本地知识库打造问答机器人，核心技术有提示词和RAG，可通过Ollama + AnythingLLM搭建本地知识库。编程智能体则辅助编程，提供代码自动生成等多功能，如Cline是开源编程智能体插件，Cursor是AI代码编辑器。最后，文章强调了拥抱AI的重要性。</p>
+<h2>开源项目</h2>
+<h3><a class="header-anchor" href="#resume-design-开源简历设计生成器"><span></span></a><a href="https://github.com/Hacker233/resume-design" target="_blank" rel="noopener noreferrer">resume-design：开源简历设计生成器</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501192321093.png" alt=""></p>
+<p>猫步简历是一个开源免费的简历设计制作平台，提供多种免费模板，支持自定义模板和主题，可导出PDF和JSON数据。</p>
+<h3><a class="header-anchor" href="#anything-llm-一体化ai桌面应用"><span></span></a><a href="https://github.com/Mintplex-Labs/anything-llm" target="_blank" rel="noopener noreferrer">anything-llm：一体化AI桌面应用</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501192323416.png" alt=""></p>
+<p>AnythingLLM是一个全栈AI应用，它集成了多种功能，如内置RAG（检索增强生成）、AI代理等，支持桌面和Docker部署，旨在让用户能够轻松地将任何文档、资源或内容转化为聊天时的上下文参考。</p>
+<h3><a class="header-anchor" href="#wechat-article-exporter-批量下载微信公众号文章"><span></span></a><a href="https://github.com/wechat-article/wechat-article-exporter" target="_blank" rel="noopener noreferrer">wechat-article-exporter：批量下载微信公众号文章</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501192326984.png" alt=""></p>
+<p>在线批量下载微信公众号文章，并支持导出阅读量、评论以及内嵌音视频等内容。</p>
+<h2>工具推荐</h2>
+<h3><a class="header-anchor" href="#staying-数据结构与算法可视化工具"><span></span></a><a href="https://staying.fun/zh" target="_blank" rel="noopener noreferrer">staying：数据结构与算法可视化工具</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501192326982.png" alt=""></p>
+<p>平台涵盖递归、二维数组、链表、队列、栈、二叉树、哈希表等数据结构与算法，通过交互式可视化帮助用户理解复杂问题的解决过程。</p>
+<h3><a class="header-anchor" href="#bestblogs-精选技术文章"><span></span></a><a href="https://www.bestblogs.dev/" target="_blank" rel="noopener noreferrer">bestblogs：精选技术文章</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501192324206.png" alt=""></p>
+<p>汇集顶级编程、人工智能、产品、科技文章，大语言模型摘要评分辅助阅读，探索编程和技术未来。</p>
+<h2>学习资源</h2>
+<h3><a class="header-anchor" href="#_1000-行代码实现操作系统-英文"><span></span></a><a href="https://operating-system-in-1000-lines.vercel.app/en/" target="_blank" rel="noopener noreferrer">1000 行代码实现操作系统（英文）</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501192329960.png" alt=""></p>
+<p>介绍了如何从零开始构建一个小型操作系统。尽管操作系统开发听起来复杂，但其基本功能其实相对简单。作者将指导读者使用C语言实现上下文切换、分页、用户模式、命令行外壳、磁盘驱动程序和文件读写操作，总共仅需1000行代码。</p>
+<h3><a class="header-anchor" href="#llm-course-大型语言模型课程"><span></span></a><a href="https://github.com/mlabonne/llm-course" target="_blank" rel="noopener noreferrer">llm-course：大型语言模型课程</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501192331202.png" alt=""></p>
+<p>使用 roadmaps 和 Colab 学习大型语言模型（LLM）。</p>
+<h3><a class="header-anchor" href="#domain-driven-hexagon-学习领域驱动设计"><span></span></a><a href="https://github.com/Sairyss/domain-driven-hexagon" target="_blank" rel="noopener noreferrer">domain-driven-hexagon：学习领域驱动设计</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501192331991.png" alt=""></p>
+<p>结合DDD、六边形架构和其他设计原则，提供了一套完整的软件设计指南。</p>
+<h2>随便看看</h2>
+<h3><a class="header-anchor" href="#自洽的程序员"><span></span></a><a href="https://self-consistent-coder.readthedocs.io/zh-cn/latest/" target="_blank" rel="noopener noreferrer">自洽的程序员</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501192333663.png" alt=""></p>
+<p>一本聚焦于程序员情绪管理和心态调整的书籍，旨在帮助程序员解决工作中的焦虑、倦怠、迷茫、抑郁等情绪问题，实现内心的自洽。</p>
+<h3><a class="header-anchor" href="#为什么ai编程能快速落地"><span></span></a><a href="https://www.mittrchina.com/news/detail/14313" target="_blank" rel="noopener noreferrer">为什么AI编程能快速落地？</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501192333831.png" alt=""></p>
+<p>2024年，AI编程工具在编程领域迅速发展，成为大模型落地的典型代表。市场表现突出，如Cursor的开发商Anysphere完成超1亿美元B轮融资，硅心科技也完成B轮融资。实际应用中，谷歌超25%新代码由AI生成，Github 30%新代码在Copilot辅助下完成，个人开发者借助AI工具显著提升开发效率。</p>
+<p>AI编程工具的发展呈现出从辅助到自主的自动化演进路径，可分为代码补全工具、半自动编程工具和全自动编程工具。尽管编程语言关键字少，规则固定，但代码生成难度并不低，因为代码要么能跑通，要么跑不通，对精确性要求极高。</p>
+<p>AI编程成功的核心在于其可信验证机制，具备客观性、即时性和确定性三个关键特征。这种机制从应用端为AI应用创造了近乎完美的用户体验闭环，从模型端保证了代码合成数据质量的下限，形成了良性循环，确保了模型在代码领域能持续提升。</p>
+<p>然而，AI编程仍存在问题，如代码生成质量有待提高，对语言支持不平衡，批处理式开发模式削弱了用户对代码变更的实时把控等。未来，随着技术发展，会出现更高级的可信验证方法，考虑更多因素，如性能隐患、安全漏洞等，将DevOps实践等现代化的软件工程实践方案引入AI辅助开发流程，建立更完善的代码质量保障体系。</p>
+<p>AI编程领域的成功经验启示我们，任何领域要想成功应用AI，都必须建立起有效的可信验证机制，借鉴编程领域的思路，建立适合各自领域特点的验证体系。</p>
+<h3><a class="header-anchor" href="#未来-1-年、3-年和-6-年的-ai-llm-预测-英文"><span></span></a><a href="https://simonwillison.net/2025/Jan/10/ai-predictions/" target="_blank" rel="noopener noreferrer">未来 1 年、3 年和 6 年的 AI / LLM 预测（英文）</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501192334606.png" alt=""></p>
+<p>在未来一年，他认为AI智能体技术不会实现，因为当前的LLM技术不可靠且易轻信，但代码助手和研究助手会取得进展。三年内，他预测有人会凭借AI辅助的调查性报道获得普利策奖，同时隐私法规将加强，以应对数据隐私和广告定位问题。六年后，他既期待AI在艺术创作上的突破，也担忧AGI/ASI可能导致的社会动荡。Simon强调自己对未来预测持谨慎态度，希望这些预测能引发对AI技术发展的深入思考。</p>
+]]></content:encoded>
+      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501192303054.png" type="image/png"/>
+    </item>
+    <item>
+      <title>肖恩技术周刊（第 32 期）：克隆声音</title>
+      <link>https://weekly.shawnxie.top/content/2025/32.html</link>
+      <guid>https://weekly.shawnxie.top/content/2025/32.html</guid>
+      <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 32 期）：克隆声音</source>
+      <description>肖恩技术周刊（第 32 期）：克隆声音 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 公众号朗读音色可以自定义...</description>
+      <pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<blockquote>
+<p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。<br>
+<strong>更新时间</strong>: 周一<br>
+<strong>历史收录</strong>: <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwODY0ODQzOQ==&amp;action=getalbum&amp;album_id=3492416248238096386#wechat_redirect" target="_blank" rel="noopener noreferrer">技术周刊合集</a> <br>
+<strong>订阅方式</strong>: 微信公众号“<strong>肖恩聊技术</strong>”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~<br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></p>
+</blockquote>
+<h2>开篇图</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501122357382.png" alt=""></p>
+<p>公众号朗读音色可以自定义了，克隆了自己的声音，还是蛮像的，哈哈。</p>
+<h2>业界资讯</h2>
+<h3><a class="header-anchor" href="#从黄仁勋ces演讲-看英伟达庞大ai棋局-物理ai、ai-pc、通用机器人"><span></span></a><a href="https://www.163.com/dy/article/JLEU1EUJ0511DTVV.html" target="_blank" rel="noopener noreferrer">从黄仁勋CES演讲,看英伟达庞大AI棋局:物理AI、AI PC、通用机器人</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501122341998.png" alt=""></p>
+<p>在CES 2025上，英伟达创始人黄仁勋发表了重要讲话，全面展示了英伟达在AI领域的战略布局与创新成果。他回顾了英伟达的发展历程，从1993年NV1到如今，英伟达不断推动计算技术的变革，将AI发展划分为感知AI、生成式AI、Agenic AI和物理AI四个阶段。</p>
+<p>黄仁勋发布了RTX Blackwell系列GPU新品，该系列GPU拥有920亿个晶体管，AI算力最高达4000 TOPS，美光G7内存，带宽可达每秒1.8 TB，包括RTX 5070、RTX 5070 Ti、RTX 5080、RTX 5090四种型号，搭载该系列GPU的笔记本电脑性能大幅提升，功耗降低。</p>
+<p>他还介绍了由72块Blackwell GPU组成的NVLink72巨型“盾牌”模型，其AI浮点运算性能是1.4 ExaFLOPS，内存带宽达到1.2 PB/s。针对Agenic AI，英伟达推出NVIDIA NIMS、NVIDIA NEMO以及一整套AI Blueprints等产品，助力企业实现Agenic AI变革，未来企业的IT部门将转变成AI智能体的HR部门。</p>
+<p>在个人电脑领域，黄仁勋提出将Windows PC转变为AI超级计算机，通过Windows WSL2解决方案，让所有AI工具都能在Windows PC上运行。此外，英伟达发布Cosmos，这是一个强大的、能理解物理世界的、全球基础模型，已学习2000万小时的视频，可生成训练数据、帮助开发更智能的机器人等，并将其开源与Omniverse结合。</p>
+<p>自动驾驶方面，英伟达展示了广泛合作成果，并发布新一代车载处理器Thor，其处理能力是上一代Orin的20倍，DRIVE OS获得ASIL-D认证。通用机器人领域，黄仁勋提出ISAAC Groot平台，加速从专用机器人向通用机器人的过渡。最后，他还介绍了“Project DIGITS”项目，展现了将企业级AI计算能力带入个人桌面的雄心，该产品预计2025年5月上市。</p>
+<h3><a class="header-anchor" href="#智源研究院发布2025十大ai技术趋势-安全科技与ai发展同等重要"><span></span></a><a href="https://www.mittrchina.com/news/detail/14266" target="_blank" rel="noopener noreferrer">智源研究院发布2025十大AI技术趋势，安全科技与AI发展同等重要</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501122342628.png" alt=""></p>
+<p>北京智源人工智能研究院发布了“2025十大AI技术趋势”，为行业指明了发展方向。主要包含：<strong>AI4S</strong>成为推动科学研究范式变革的关键力量，多模态大模型将融入科学研究，助力多领域研究开辟新方向。<strong>具身智能</strong>领域，2025年将从本体扩展到具身脑，行业格局或迎来洗牌，技术路线不断迭代，商业变现上将有更多工业场景应用出现。<strong>多模态大模型</strong>进化方面，原生多模态技术路线成重要方向，构建原生多模态大模型可实现多模态统一。<strong>Scaling Law扩展</strong>上，后训练与特定场景的Scaling Law不断被探索，强化学习将得到更多应用。<strong>世界模型</strong>发布，注重“因果”推理的世界模型将推动AI在前沿领域的深度应用。<strong>合成数据</strong>应用方面，其可降低数据治理成本、提升数据多样性、缓解数据垄断问题，促进大模型应用落地。<strong>推理优化</strong>迭代，算法加速和硬件优化技术持续迭代，助力AI Native应用落地。<strong>Agentic AI</strong>产品落地，更通用、自主的智能体将深入工作与生活场景，成大模型产品落地重要应用形态。AI应用热度攀升，生成式模型能力提升，技术持续发展，为<strong>AI超级应用</strong>落地积基树本。<strong>AI安全</strong>治理体系完善，需引入新技术监管方法，在人工监管上平衡行业发展和风险管控。</p>
+<h2>技术博客</h2>
+<h3><a class="header-anchor" href="#软件开发中认知负荷很重要-英文"><span></span></a><a href="https://minds.md/zakirullin/cognitive" target="_blank" rel="noopener noreferrer">软件开发中认知负荷很重要（英文）</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501122346625.png" alt=""></p>
+<p>本文着重强调了在软件开发中降低认知负荷的重要性。认知负荷分为内在和外在两种，其中外在认知负荷可通过优化代码结构和开发实践来减少。文章通过具体示例，如简化复杂条件语句、避免过度继承和过多小模块等，阐述了降低外在认知负荷的方法。同时指出，应关注模块对用户的单一职责，合理使用语言特性，避免过度抽象和滥用框架。文章还提到，项目熟悉度可能导致对代码复杂性的忽视，新成员的反馈有助于识别高负荷区域。保持低认知负荷可使新成员快速为代码库做出贡献，提高开发效率和代码可理解性。</p>
+<h3><a class="header-anchor" href="#从头到尾说一说java时间日期体系的前世今生"><span></span></a><a href="https://mp.weixin.qq.com/s/epbpOd8_G15oQbT5cIpVqg" target="_blank" rel="noopener noreferrer">从头到尾说一说Java时间日期体系的前世今生</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501122348654.png" alt=""></p>
+<p>文章全面回顾了Java时间日期体系的发展历程，从地球生命起源和宇宙大爆炸引出时间概念，进而聚焦于计算机领域的时间表示。文章指出1970年1月1日作为Unix时间纪元起点，与32位操作系统的时间表示能力密切相关。接着，文章介绍了GMT和UTC的概念，强调了UTC通过原子钟提高时间精度的重要性。</p>
+<p>文章对JDK中时间日期类的发展进行了批评与分析。java.util.Date类因存在诸多问题，如无法单独表示日期或时间、API设计不合理、缺乏时区支持以及可变性等，而受到诟病。Calendar类虽作为补充，但仍存在线程安全和API笨重等问题。文章重点介绍了Java 8中引入的JSR310规范，该规范由Joda-Time作者主导，包括Instant、LocalDateTime、Duration和ZonedDateTime等类，这些类在不可变性、时区处理和API设计上具有显著优势，有效解决了Date类的问题。</p>
+<p>此外，文章还探讨了夏令时和闰秒的概念，解释了它们的起源、实施情况以及对计算机系统的潜在影响。夏令时的调整可能导致时间计算错误，而闰秒的添加需要特别处理以保持时间准确性。文章最后强调了理解事物发展背景的重要性，并鼓励读者在设计新系统时考虑历史因素，避免重复过去的错误，体现了对历史设计意图的尊重和对未来设计的深思熟虑。</p>
+<h3><a class="header-anchor" href="#从原理出发-提示词如何影响大模型的输出"><span></span></a><a href="https://mp.weixin.qq.com/s/xYC6saH3PU6nJc9mzV5alw" target="_blank" rel="noopener noreferrer">从原理出发 - 提示词如何影响大模型的输出</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501122348209.png" alt=""></p>
+<p>这篇文章探讨了提示词如何影响大型语言模型的输出。提示词是模型的输入，用于引导生成特定回答。它包含指令、上下文、输入数据和输出指示器四个要素，其中指令最关键。优质提示词能清晰传达用户意图，而不良提示词可能导致模型误解。</p>
+<p>文章介绍了GPT模型的结构，包括掩码多头自注意力层和前置反馈网络层。自注意力层负责理解输入和捕捉上下文，前置反馈网络层提取高级特征。通过缩放点积注意力和多头注意力机制，模型从不同角度关注信息，生成上下文向量。</p>
+<p>最终，模型基于上下文向量生成输出，通过解码策略选择合适的词汇。文章强调AI是学习相关知识的有力工具。</p>
+<h2>开源项目</h2>
+<h3><a class="header-anchor" href="#wikichat-纠正大模型幻觉工具"><span></span></a><a href="https://github.com/stanford-oval/WikiChat" target="_blank" rel="noopener noreferrer">WikiChat：纠正大模型幻觉工具</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501122353429.png" alt=""></p>
+<p>WikiChat 是一个由斯坦福大学开发的开源项目，旨在通过从语料库中检索数据来减少大型语言模型（LLM）的幻觉问题。</p>
+<h3><a class="header-anchor" href="#roo-cline-编程智能体"><span></span></a><a href="https://github.com/RooVetGit/Roo-Cline" target="_blank" rel="noopener noreferrer">Roo-Cline：编程智能体</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501122355668.png" alt=""></p>
+<p>Cline的一个分支版本，带有一些额外的实验性功能。主要是在自我编写代码，偶尔会有一些人类的指导。</p>
+<h3><a class="header-anchor" href="#ai-rss-ai生成网页rss订阅源"><span></span></a><a href="https://github.com/easychen/ai-rss" target="_blank" rel="noopener noreferrer">ai-rss：AI生成网页RSS订阅源</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501122351562.png" alt=""></p>
+<p>ai-rss是一个利用人工智能技术将网页内容转换为RSS订阅源的工具。它由两部分组成：一个浏览器插件和一个服务器端应用。浏览器插件允许用户选择网页中的列表项并生成结构化数据描述（SDD）文件，而服务器端则负责读取SDD文件，抓取并分析网页内容，最终生成RSS订阅源。</p>
+<h2>工具推荐</h2>
+<h3><a class="header-anchor" href="#kenney-免费游戏素材"><span></span></a><a href="https://www.kenney.nl/" target="_blank" rel="noopener noreferrer">kenney：免费游戏素材</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501122359879.png" alt=""></p>
+<p>免费游戏素材，直接开始游戏创作之旅吧。</p>
+<h3><a class="header-anchor" href="#msty-本地大模型聊天软件"><span></span></a><a href="https://msty.app/" target="_blank" rel="noopener noreferrer">msty：本地大模型聊天软件</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501130000913.png" alt=""></p>
+<p>Msty是一款简化AI模型使用的应用程序，提供一键式设置和无需Docker或终端操作的便捷性。它支持离线和在线模式，可同时对比多个AI模型的响应，还具备实时数据检索、知识堆栈构建、多模型访问和提示库等特色功能，旨在提升用户的研究效率和隐私保护。</p>
+<h3><a class="header-anchor" href="#pensieve-自动截取屏幕并构建本地智能索引"><span></span></a><a href="https://github.com/arkohut/pensieve" target="_blank" rel="noopener noreferrer">pensieve：自动截取屏幕并构建本地智能索引</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501130001773.png" alt=""></p>
+<p>Pensieve是一个注重隐私的被动记录项目，能够自动记录屏幕内容、构建智能索引，并提供便捷的Web界面以检索历史记录。</p>
+<h2>学习资源</h2>
+<h3><a class="header-anchor" href="#brag-langchain-rag基础知识到高级实现指南"><span></span></a><a href="https://github.com/bRAGAI/bRAG-langchain" target="_blank" rel="noopener noreferrer">bRAG-langchain：RAG基础知识到高级实现指南</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501130005262.png" alt=""></p>
+<p>项目全面探索了检索增强生成（RAG）技术在多种应用中的使用。</p>
+<h3><a class="header-anchor" href="#embodied-ai-guide-具身智能入门指南"><span></span></a><a href="https://github.com/TianxingChen/Embodied-AI-Guide" target="_blank" rel="noopener noreferrer">Embodied-AI-Guide：具身智能入门指南</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501130003359.png" alt=""></p>
+<p>Embodied AI（具身智能）入门的路径以及高质量信息的总结，按照路线走完后，新手可以快速建立关于这个领域的认知。</p>
+<h3><a class="header-anchor" href="#google-智能体白皮书"><span></span></a><a href="https://www.kaggle.com/whitepaper-agents" target="_blank" rel="noopener noreferrer">Google：智能体白皮书</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501130004805.png" alt=""></p>
+<p>探讨了生成式人工智能模型如何通过使用外部工具来扩展其能力，类似于人类在进行复杂任务时借助工具的做法。文章详细介绍了生成式AI模型如何利用数据库检索工具、API调用等手段获取实时信息或执行实际操作，从而实现自主规划和执行任务的能力。这种结合推理、逻辑和外部信息访问的能力，使生成式AI模型具备了类似代理程序的功能，能够超越其本身的能力范围。</p>
+<h2>随便看看</h2>
+<h3><a class="header-anchor" href="#使用大模型编程经验-英文"><span></span></a><a href="https://crawshaw.io/blog/programming-with-llms" target="_blank" rel="noopener noreferrer">使用大模型编程经验（英文）</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501130008718.png" alt=""></p>
+<p>作者关于在编程中使用生成式语言模型（LLMs）的经验分享。作者对新技术充满好奇，主动探索LLMs在编程领域的应用，发现其对提升编程生产力有着显著作用，尤其在自动补全、搜索和聊天驱动编程这三个方面表现突出。</p>
+<p>在日常编程实践中，作者主要通过上述三种方式借助LLMs来辅助编程，其中聊天驱动编程为作者带来了最多的价值，不过这也要求作者调整自身的编程方式。通过聊天驱动编程，LLMs能够为作者生成编程初稿，虽然初稿中会存在一些错误，但相较于从零开始编写代码，修复这些错误要容易得多。这种方法特别适用于那些需要快速生成代码初稿的场景，比如在作者精力不足的时候，能够借助LLMs描述需求，进而获得一份代码初稿，有效节省时间和精力。</p>
+<p>LLMs在处理类似考试风格的问题时优势明显，当问题具有明确的目标且有充足的背景材料时，LLMs能够生成详尽的代码审查包，并且能够根据提问者的反馈进行相应的调整。此外，LLMs还使得编写更小且数量更多的代码包变得可行，因为这些小包可以独立编译和测试，而LLMs能够承担起额外的输入和管道工作，从而有助于提升代码的可读性。</p>
+<p>作者还介绍了正在开发的Go编程工具sketch.dev。该工具旨在为Go语言编程提供一个深度整合LLMs的平台，类似于Go Playground，但增添了聊天界面、UNIX环境、goimports和gopls集成以及自动模型反馈等诸多功能，目的是为了提高LLMs在编程过程中的应用效率。sketch.dev专注于特定的编程环境，对传统的IDE概念发起挑战，为LLMs打造了一个独立的“IDE”，以便更好地收集反馈信息，进而提升编程效率。</p>
+<h3><a class="header-anchor" href="#盘点2024年的-ai-事故-内容垃圾、幻觉与滥用"><span></span></a><a href="https://www.mittrchina.com/news/detail/14242" target="_blank" rel="noopener noreferrer">盘点2024年的“AI 事故”：内容垃圾、幻觉与滥用</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501130006883.png" alt=""></p>
+<p>2024年AI领域面临诸多问题，其中AI内容垃圾泛滥，生成式AI让内容创作变得容易，大量质量不佳的AI内容充斥互联网，从电子邮件新闻简报到社交媒体图片等，这不仅令人厌恶，还可能使依赖互联网数据训练的AI模型输出质量下降，形成有害反馈循环。超现实AI图像也开始渗透现实生活，如“Willy's Chocolate Experience”活动宣传材料与实际场地不符，都柏林不存在的万圣节游行误导民众聚集，暴露了公众对AI生成内容盲目信任的问题。</p>
+<p>xAI开发的Grok几乎无视生成内容的防护措施，可生成暴力、色情等有害图像，削弱了其他公司避免争议内容的努力，引发广泛争议，对行业规范造成挑战。歌手Taylor Swift的非自愿色情深伪图像在社交媒体平台传播，表明AI生成工具的防护措施可被技术性手段绕过，凸显了加强技术开发与法律保护的紧迫性，以防止类似事件再次发生。</p>
+<p>企业引入的AI聊天机器人常编造信息，如加拿大航空公司的聊天机器人建议客户按不存在的政策申请退款，快递公司DPD的聊天机器人用粗口回复等，凸显了其潜在风险，需谨慎设计和监控。Humane公司的Ai Pin和Rabbit公司的Rabbit R1等AI硬件产品销量惨淡，揭示了AI在硬件领域的应用需找到真正符合市场需求的方向。谷歌AI摘要功能曾给出荒唐建议，苹果应用通知摘要功能生成虚假新闻头条等，表明AI生成摘要虽能提高信息整理效率，但在准确性和可靠性方面存在缺陷，需加强审核和提升信息筛选能力。</p>
+]]></content:encoded>
+      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501122357382.png" type="image/png"/>
+    </item>
+    <item>
+      <title>肖恩技术周刊（第 31 期）：自力更生</title>
+      <link>https://weekly.shawnxie.top/content/2025/31.html</link>
+      <guid>https://weekly.shawnxie.top/content/2025/31.html</guid>
+      <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 31 期）：自力更生</source>
+      <description>肖恩技术周刊（第 31 期）：自力更生 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 从拼夕夕买了木板和连接片...</description>
+      <pubDate>Mon, 06 Jan 2025 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<blockquote>
+<p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。<br>
+<strong>更新时间</strong>: 周一<br>
+<strong>历史收录</strong>: <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwODY0ODQzOQ==&amp;action=getalbum&amp;album_id=3492416248238096386#wechat_redirect" target="_blank" rel="noopener noreferrer">技术周刊合集</a> <br>
+<strong>订阅方式</strong>: 微信公众号“<strong>肖恩聊技术</strong>”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~<br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></p>
+</blockquote>
+<h2>开篇图</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501052340615.png" alt=""></p>
+<p>从拼夕夕买了木板和连接片，自己动手拼装了洗衣柜，弄的时候有儿时玩沙子般快感了。</p>
+<h2>业界资讯</h2>
+<h3><a class="header-anchor" href="#_2024年度数据库回顾"><span></span></a><a href="https://mp.weixin.qq.com/s/pJcEo_8xBpCmeNVRSaNLZg" target="_blank" rel="noopener noreferrer">2024年度数据库回顾</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501052349240.png" alt=""></p>
+<p>2024年数据库领域发生了诸多重要事件，涉及许可证变动、收购案、新版本发布等，行业格局和商业模式不断演变。</p>
+<p><strong>许可证变动</strong>方面，Redis和Elasticsearch的调整引发广泛关注。2024年3月，Redis Ltd.将许可证从BSD-3改为Redis Source Available License和SSPL的双许可证，旨在保护其商业模式，却引发了社区的强烈反弹，导致Valkey和Redict等基于旧代码的分支涌现，社区分裂态势明显。而Elastic N.V.在2024年8月宣布不再使用双许可证，转而采用AGPL，以应对Amazon的OpenSearch分支竞争，这一调整也引发了社区的热烈讨论，影响了Elasticsearch的生态发展。</p>
+<p><strong>Databricks与Snowflake的竞争</strong>愈发激烈。在大模型领域，Databricks推出了1320亿参数的DBRX模型，而Snowflake紧随其后发布了4800亿参数的Arctic模型，两者在企业场景中展开激烈竞争，争夺市场份额和客户资源。此外，在元数据目录领域，Databricks和Snowflake也展开了暗战，Databricks收购了Tabular，Snowflake则推出了Polaris开源目录服务，进一步拓展各自的业务版图。</p>
+<p><strong>DuckDB在Postgres的集成</strong>成为一大亮点。2024年，Crunchy Data、ParadeDB等公司相继推出了将DuckDB集成到Postgres的扩展，如Crunchy Data的专有扩展、ParadeDB的pg_analytics等，这些扩展显著提升了Postgres在OLAP（在线分析处理）方面的能力，使其在数据分析和实时查询等场景中的表现更加出色，进一步巩固了Postgres在数据库市场的地位。</p>
+<p><strong>收购与融资</strong>方面，2024年数据库领域发生了多起重要收购案和融资事件。Databricks以20亿美元收购了Tabular，ClickHouse收购了PeerDB等，这些收购进一步整合了市场资源，推动了相关技术的发展和应用。同时，Databricks完成了100亿美元的J轮融资，其他如LanceDB、SDF等初创公司也获得了不同规模的融资，为数据库技术的创新和发展注入了新的活力。</p>
+<p>总体来看，2024年数据库领域呈现出多元化、竞争激烈的发展态势，云厂商与开源数据库公司的商业模式冲突成为行业焦点，未来数据库市场的格局将继续演变，技术革新和市场需求将推动行业不断前行。</p>
+<h3><a class="header-anchor" href="#top-15-中国互联网公司首次全部盈利-但姿势更受考验了"><span></span></a><a href="https://mp.weixin.qq.com/s/VaWJNoUcZG0KhaMsCC564Q" target="_blank" rel="noopener noreferrer">Top 15 中国互联网公司首次全部盈利，但姿势更受考验了</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501052349784.png" alt=""></p>
+<p>2024年，中国前15大互联网公司首次全部实现盈利，标志着行业的整体繁荣。腾讯、字节跳动、阿里巴巴等巨头凭借其在各自领域的卓越实力，取得了显著的盈利增长。腾讯控股净利润同比增长47%，达到532.3亿元，继续领跑行业；阿里巴巴和拼多多分别实现净利润435.47亿元和249.807亿元，同比增长63%和61%；美团更是以258%的净利润同比增长率，成为行业的一大亮点。然而，盈利的背后也隐藏着增长放缓和分配问题等挑战，互联网公司需要在创造经济价值的同时，积极回应社会对其平台责任的更高要求，如减少对平台参与者的抽成、提高其收入等。</p>
+<p>为了应对这些挑战，各大互联网公司纷纷采取了一系列措施。腾讯在微信推出“送礼物”功能，不追求爆发式增长，而是计划用五年时间慢慢打磨产品，与所有业务相融合，以稳健的方式拓展业务边界。字节跳动则通过AI技术重回一线，推出多款AI产品，覆盖各种使用场景，并在大模型、AI芯片、AI硬件等方面进行饱和式投入，以技术创新为驱动，增强公司的核心竞争力。阿里巴巴经过近两年的转型，重新定位淘宝，试图走出低价内卷，让商家因稳定经营利润而留下，从而实现平台的可持续发展。拼多多在投资者面前表达谨慎情绪，避免了成为行业第一的潜在麻烦，同时在三大主要业务上维持优势，以稳健的策略应对激烈的市场竞争。</p>
+<p>美团面对宏观环境变化，推出“神会员”和低价外卖“拼好饭”，通过平台补贴和优惠活动确保消费者付款低于常规价格，同时重组公司，合并到店、到家事业群及基础平台至“核心本地商业”板块，以提高运营效率和市场竞争力。 Shein在服饰行业天花板有限的情况下，尝试平台化，拓展非服饰品类，但面临Temu等竞争对手的挑战，需要不断创新以确保竞争优势。网易在游戏业务上遭遇挑战，丁磊重回业务一线，调整策略，减少小众项目，增加对大DAU项目的投入，以期在游戏行业中重新站稳脚跟。京东作为国补政策的最大受益者，通过派采销进工厂、给工厂确定性订单等方式，从生产环节上省成本，实现低价送货上门，以低价战略赢得消费者和商家的信任，推动平台的持续增长。</p>
+<p>总体来看，中国互联网公司在2024年取得了显著的盈利成绩，但同时也面临着诸多挑战。这些公司需要在追求增长的同时，积极适应社会对企业价值的重新评估，承担起更多的社会责任，以实现可持续发展。通过技术创新、业务调整和战略转型等多方面的努力，互联网公司有望在新的市场环境中找到新的增长点，为社会创造更大的价值。</p>
+<h3><a class="header-anchor" href="#谷歌研究科学家意外离世-两月前留下绝笔-从事大模型研究让我深陷抑郁症"><span></span></a><a href="https://www.jiqizhixin.com/articles/2025-01-03-8" target="_blank" rel="noopener noreferrer">谷歌研究科学家意外离世，两月前留下绝笔：从事大模型研究让我深陷抑郁症</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501052350767.png" alt=""></p>
+<p>谷歌 DeepMind 的研究科学家菲利克斯·希尔因长期与严重精神疾病斗争而意外去世。他生前在博客中表达了对人工智能行业压力的担忧，认为行业的快速发展给研究人员带来了巨大的期望和压力，不仅来自工作本身，还包括社交场合的不断关注。菲利克斯呼吁人工智能领域应注重合作与共同进步，而非恶性竞争，以减轻研究人员的压力和焦虑。他分享了自己在研究中经历的压力和焦虑，包括社交焦虑和工作压力，希望帮助其他研究人员应对类似挑战，共同创造一个更加健康和积极的研究环境。</p>
+<h2>技术博客</h2>
+<h3><a class="header-anchor" href="#nat-遍历的工作原理-英文"><span></span></a><a href="https://tailscale.com/blog/how-nat-traversal-works" target="_blank" rel="noopener noreferrer">NAT 遍历的工作原理（英文）</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501052357674.png" alt=""></p>
+<p>文章详细探讨了如何在复杂的网络环境中实现网络地址转换（NAT）穿越，以便设备之间能够建立直接的通信连接。文章首先指出，许多应用如VPN、WebRTC和VoIP需要设备之间进行直接通信，而NAT设备的存在使得这一过程变得复杂。为了实现NAT穿越，建议使用基于UDP的协议，因为UDP比TCP更简单且易于实现。如果需要流式连接，可以考虑使用QUIC协议，它基于UDP但提供了流式传输的功能。</p>
+<p>文章接着讨论了状态防火墙的挑战。状态防火墙会记录之前见过的数据包，并根据这些信息决定是否允许新的数据包通过。对于UDP，防火墙允许入站数据包的前提是之前有匹配的出站数据包。通过同时发送数据包来打开防火墙，设备可以在不需要手动配置防火墙的情况下实现互相通信。</p>
+<p>NAT设备的挑战在于它们会为每个不同的目的地创建不同的NAT映射，这使得直接通信变得困难。STUN协议被用于发现设备在互联网上的公共IP和端口。通过向STUN服务器发送请求，设备可以了解自己在外部网络中的映射信息。NAT设备根据其行为可以分为Endpoint-Independent Mapping（EIM）和Endpoint-Dependent Mapping（EDM）。EIM类型的NAT更容易穿越，而EDM类型的NAT更具挑战性。</p>
+<p>为了提高NAT穿越的成功率，文章介绍了生日悖论的应用。通过在硬NAT设备上打开多个端口，并让易NAT设备随机探测这些端口，可以提高成功穿越NAT的概率。此外，端口映射协议如UPnP IGD、NAT-PMP和PCP可以请求NAT设备创建端口映射，从而简化NAT穿越过程。</p>
+<p>在复杂网络环境下，设备可能位于多个NAT设备之后，这增加了NAT穿越的复杂性。CGNAT（运营商级NAT）是由于IPv4地址不足而产生的，它使得用户无法手动配置端口映射。尽管IPv6提供了解决NAT问题的潜力，但在当前的网络环境中，IPv6的普及程度有限，因此仍然需要处理IPv4和NAT的问题。</p>
+<p>最后，文章介绍了ICE协议，它通过尝试所有可能的路径，并选择最佳的工作路径来实现设备之间的通信。ICE协议提供了一种优雅的算法来确定最佳的通信路径，使得在大多数情况下可以实现设备之间的直接连接。对于无法直接连接的情况，可以使用中继服务器作为备份方案。文章强调，尽管NAT穿越的过程复杂且充满挑战，但通过结合多种技术和策略，可以在大多数情况下实现设备之间的直接连接。</p>
+<h2>开源项目</h2>
+<h3><a class="header-anchor" href="#cherry-studio-llm桌面客户端"><span></span></a><a href="https://github.com/CherryHQ/cherry-studio" target="_blank" rel="noopener noreferrer">cherry-studio：LLM桌面客户端</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501052352514.png" alt=""></p>
+<p>Cherry Studio 是一款支持多个大型语言模型 (LLM) 提供商的桌面客户端，适用于 Windows、Mac 和 Linux 系统。它集成了多种 AI 功能，包括预配置的 AI 助手、多模型对话、文档处理等，并提供了全局搜索、主题管理等实用工具。</p>
+<h3><a class="header-anchor" href="#cline-编程智能体插件"><span></span></a><a href="https://github.com/cline/cline" target="_blank" rel="noopener noreferrer">cline：编程智能体插件</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501052354558.png" alt=""></p>
+<p>Cline 是一款集成在开发环境中的 AI 助手，能够执行文件创建与编辑、终端命令执行、网页操作等多种任务。它借助 Claude 3.5 Sonnet 的能力，通过分析项目文件结构和代码抽象语法树等，快速熟悉现有项目，并在执行任务时实时监控并修复代码错误。Cline 还支持扩展自定义工具，以适应不同的工作流程需求，同时提供丰富的 API 集成选项，兼容 OpenRouter、OpenAI 等多种 API 服务，助力开发者高效完成复杂软件开发任务。</p>
+<h3><a class="header-anchor" href="#jan-本地ai助手"><span></span></a><a href="https://github.com/janhq/jan" target="_blank" rel="noopener noreferrer">jan：本地AI助手</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501052352477.png" alt=""></p>
+<p>Jan 是一个 ChatGPT 的替代方案，可以在桌面上 100% 离线运行。目标是让外行 1 轻松下载和运行 LLM，并在完全控制和隐私的情况下使用 AI。</p>
+<h2>工具推荐</h2>
+<h3><a class="header-anchor" href="#mac青桔-软件下载站"><span></span></a><a href="https://www.macqj.com/" target="_blank" rel="noopener noreferrer">MAC青桔：软件下载站</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501052357947.png" alt=""></p>
+<p>Mac青桔网是一个专注于苹果电脑用户的资源分享平台，提供各类Mac软件、游戏、插件、表盘和壁纸等资源。网站拥有丰富的资源分类，包括系统工具、图形设计、游戏等，致力于为用户提供便捷的下载服务。此外，网站还提供一些实用的教程和技巧文章，帮助用户更好地使用Mac电脑。用户可以通过签到获取桔币，兑换更多下载次数和权益，也可选择加入会员获取更多资源和服务。</p>
+<h3><a class="header-anchor" href="#moodist-白噪声"><span></span></a><a href="https://moodist.mvze.net/" target="_blank" rel="noopener noreferrer">Moodist：白噪声</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501052358729.png" alt=""></p>
+<p>Moodist是一款免费且开源的环境声音生成器，旨在通过78种精心策划的声音帮助用户放松和集中注意力。用户可以根据自己的需求选择和混合各种声音，如自然声音、城市声音和专注工具等，以创建个性化的音频体验。</p>
+<h3><a class="header-anchor" href="#babelduck-ai口语对话"><span></span></a><a href="https://duck.orenoid.com/" target="_blank" rel="noopener noreferrer">BabelDuck：AI口语对话</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501052359715.png" alt=""></p>
+<p>BabelDuck 是一款 AI 对话练习应用程序，专为所有熟练程度的语言学习者设计。除了常规的 AI 聊天功能外，还提供了一套专为口语练习场景设计的工具。</p>
+<h2>学习资源</h2>
+<h3><a class="header-anchor" href="#正确认识-git"><span></span></a><a href="https://www.atlassian.com/zh/git" target="_blank" rel="noopener noreferrer">正确认识 Git</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501060001987.png" alt=""></p>
+<p>通过教程、新闻和提示学习 Git。</p>
+<h3><a class="header-anchor" href="#cursor-教程"><span></span></a><a href="https://www.lookai.top/cn/cursor/instruction/instruction" target="_blank" rel="noopener noreferrer">Cursor 教程</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501060002527.png" alt=""></p>
+<p>Cursor的学习教程。</p>
+<h3><a class="header-anchor" href="#datawhale-开源ai学习"><span></span></a><a href="https://www.datawhale.cn/home" target="_blank" rel="noopener noreferrer">Datawhale：开源AI学习</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501052358560.png" alt=""></p>
+<p>Datawhale是一个致力于通过开源学习模式推动AI人才培养的平台。它为AI学习者提供多条学习路径，涵盖数据分析、计算机视觉、自然语言处理等领域。此外，Datawhale还提供了一系列AI学习课程，包括面向开发者的LLM入门课程、大模型应用开发教程等，旨在帮助不同水平的学习者快速掌握AI相关技能。平台还设有活动、认证和资讯板块，促进学习者之间的交流与合作。</p>
+<h2>随便看看</h2>
+<h3><a class="header-anchor" href="#图灵机-英文"><span></span></a><a href="https://samwho.dev/turing-machines/" target="_blank" rel="noopener noreferrer">图灵机（英文）</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501060006753.png" alt=""></p>
+<p>这篇文章详细介绍了图灵机的概念、工作原理以及其在计算理论中的重要性。图灵机是由艾伦·图灵在1936年提出的理论计算模型，旨在解决“判定问题”，即是否存在一个算法可以判断数学命题的正确性。图灵机由一个无限长的纸带、一个读写头、一个程序和一个状态组成，其基本操作包括打印符号、移动头、跳转状态和停止。</p>
+<p>文章通过具体的示例程序，展示了图灵机如何进行简单的计算任务，如打印数字和执行加法运算。这些示例说明了图灵机的基本操作和如何通过状态和符号的组合实现复杂的计算逻辑。图灵机的简单性和强大的计算能力使其成为研究可计算性问题的理想工具。</p>
+<p>可计算性是指如果存在一个算法可以从给定的输入得到预期的输出，则该问题是可计算的。图灵完备性是指一个系统能够模拟图灵机，从而能够执行任何可计算的计算。尽管图灵机在实际应用中并不实用，但其理论基础对现代计算机的发展具有重要意义。</p>
+<p>文章还探讨了现代计算机与图灵机的关系。现代计算机在某些方面与图灵机相似，例如使用二进制和通过简单的指令集进行计算。然而，现代计算机具有寄存器等额外功能，使其在执行复杂任务时更加高效。通过一个示例，文章展示了如何在图灵机上实现类似于现代汇编语言的操作，从而说明了图灵机与现代计算机之间的联系。</p>
+<p>最后，文章回顾了艾伦·图灵的生平和贡献。图灵是计算机科学的先驱之一，他在第二次世界大战期间参与了破解德国海军的恩尼格玛密码的工作。图灵的工作不仅在理论上奠定了计算机科学的基础，还对密码学和人工智能等领域产生了深远影响。尽管图灵在1954年因氰化物中毒而去世，但他的贡献仍然被广泛认可和纪念。文章还提供了进一步阅读的建议，以帮助读者更深入地了解图灵机和图灵的贡献。</p>
+<h3><a class="header-anchor" href="#我是如何从零开始手搓一个独立游戏并上架-steam-的"><span></span></a><a href="https://www.v2ex.com/t/1102126" target="_blank" rel="noopener noreferrer">我是如何从零开始手搓一个独立游戏并上架 Steam 的</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501060003808.png" alt=""></p>
+<p>本文详细记录了一位独立游戏开发者从构思到成功上架 Steam 的全过程。作者在 2019 年因对加班文化的不满，萌生了制作一款名为“中国式加班”的游戏的想法。最初，他尝试使用前端技术制作 DEMO，但由于美术资源成本高昂，项目一度搁浅。2022 年，作者利用 stable diffusion 和 Chatgpt 等 AI 技术，解决了美术资源的生成问题，降低了开发成本。他从头开发了一个简单的游戏引擎，核心是事件脚本系统，并使用 React 重构了游戏界面。</p>
+<p>在游戏开发过程中，作者设计了多个角色，每个角色都有独特的背景和剧情。但由于开发时间限制，最终减少了可游玩角色的数量。游戏以模拟经营为主，背景音乐和主题曲也通过 AI 生成，解决了传统音乐素材成本高的问题。为了支持多国语言，作者利用 AI 翻译工具批量翻译游戏文本，支持简体中文、繁体中文、英语和日语。此外，他还学习并使用 Cordova 将游戏移植到安卓平台，解决了兼容性问题。</p>
+<p>2025 年 1 月 1 日，游戏成功在 Steam 上线。作者注册了 Steamworks 账号，完成了税务信息和商店页面的制作，并经历了审核和修改的过程。游戏上线后，获得了玩家的好评。作者也分享了自己的发行经验和反思，强调了在开发过程中坚持和创新的重要性。通过这篇文章，读者可以深入了解独立游戏开发的艰辛与乐趣，以及 AI 技术在游戏开发中的应用前景。</p>
+<h3><a class="header-anchor" href="#_2024年大模型回顾-英文"><span></span></a><a href="https://simonwillison.net/2024/Dec/31/llms-in-2024/" target="_blank" rel="noopener noreferrer">2024年大模型回顾（英文）</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501060004868.png" alt=""></p>
+<p>2024 年，LLMs 在多个方面取得了显著进展。首先，GPT-4 的技术障碍被打破，18 个组织推出了更强大的模型，如 Google 的 Gemini 1.5 Pro，这些模型不仅在文本生成上表现出色，还引入了多模态能力，能够处理图像、音频和视频输入。其次，市场竞争和效率提升导致 LLM 使用成本大幅下降，例如 OpenAI 的 GPT-4o 模型价格比 GPT-4 便宜 12 倍，使得更多企业和个人能够负担得起高性能 LLMs 的费用。此外，LLMs 在应用生成方面的潜力得到了进一步挖掘，能够通过提示生成完整的交互式应用程序，如 Anthropic 的 Claude Artifacts。 尽管如此，LLMs 的快速发展也带来了环境和社会挑战，如数据中心建设对环境的影响以及“slop”现象的出现，即未请求且未经审核的 AI 生成内容可能导致信息泛滥和误导。此外，对 LLMs 的了解在不同人群中分布不均，需要更合理的批评和指导来帮助人们更好地理解和使用这些工具。</p>
+]]></content:encoded>
+      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202501052340615.png" type="image/png"/>
+    </item>
+    <item>
+      <title>2024年周刊合集（01期 - 30期）：AI！AI！还是XX的AI！</title>
+      <link>https://weekly.shawnxie.top/collection/2024.html</link>
+      <guid>https://weekly.shawnxie.top/collection/2024.html</guid>
+      <source url="https://weekly.shawnxie.top/rss.xml">2024年周刊合集（01期 - 30期）：AI！AI！还是XX的AI！</source>
+      <description>2024年周刊合集（01期 - 30期）：AI！AI！还是XX的AI！ 周刊更偏向阅读知识的沉淀，内容尽量保留原汁原味，但也缺少一些主观的思考。合集则主要对一年内的内容进行回顾，包含数据统计、精选内容呈现并规划来年计划等，会有笔者个人思考内容，欢迎大家交流讨论。 前言 24年结束啦，周刊跌跌撞撞也更新了30期，暂时还没有断更过，夸一夸自己，哈哈。其实在...</description>
+      <pubDate>Tue, 31 Dec 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<blockquote>
+<p>周刊更偏向阅读知识的沉淀，内容尽量保留原汁原味，但也缺少一些主观的思考。合集则主要对一年内的内容进行回顾，包含数据统计、精选内容呈现并规划来年计划等，会有笔者个人思考内容，欢迎大家交流讨论。</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302324786.jpg" alt=""></p>
+<h2>前言</h2>
+<p>24年结束啦，周刊跌跌撞撞也更新了30期，暂时还没有断更过，夸一夸自己，哈哈。其实在写第一期的时候根本没有想到能坚持这么久、能收获这么多。</p>
+<p>起因是一次AIGC使用方式的探索（回看☞<a href="https://mp.weixin.qq.com/s/qelnn3DWsOic0_5iXMKrJw" target="_blank" rel="noopener noreferrer">没时间了解技术热点？让大模型帮你整理重点吧！</a>），<strong>想在愈发内卷的行业中保持自己的竞争力，并给平淡的生活加一点糖</strong>。但光是收集信息还不够，想要将知识周期性的沉淀下来。周期该如何选择呢，每天整理太频繁会影响正常的工作，每月整理又太松散，阅读瞬时的想法早已遗忘。最后选择了以周为单位，有周末两天时间，不会影响工作，记忆也还足够新鲜。周刊的内容和格式前期也没有进行充分规划，现在回看第一期会觉得十分简陋（当然最新一期也没有好太多😁），但在持续更新中还是进行了不少的调整和优化，很享受这个过程。在这个过程中也阅读了很多其他周刊，吸收了大量养分。</p>
+<p>回看前30期内容，如果要凝练一个关键字，那非“<strong>AI</strong>”莫属。2022年12月OpenAI推出ChatGPT，经过2023一整年迭代和各方势力追赶，在24年迎来了集体的爆发。各式各样的工具层出不穷，从最开始的聊天机器人，到AI写作工具、AI图像工具、AI视频工具、AI幻灯片工具和AI编程工具等等。好像任何和内容创作相关的场景都可以和大模型挂钩，都能产生“化学反应”。但狂欢背后或许更需要一些冷静的思考，市面上的AI产品有多少是真正有价值的，多少能给普通人的生活方式带来深刻变革？不过作为用户确实是时候全面拥抱AI了，历史上的变革开始时都很缓慢，但当众人都察觉到时已经十分剧烈了，早点入局能掌握更多主动性。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302324787.png" alt=""></p>
+<p>当然25年会继续更新周刊，并打磨形式和内容，以<strong>提供更多有价值的技术内容</strong>。周刊撰写过程基本形成了<strong>创作工作流</strong>（信息收集 -&gt; 初筛 -&gt; 阅读打标 -&gt; 精筛 -&gt; 排版生成 -&gt; 发布），但80%工作仍依赖人工，自动化程度较低。明年将编写一些工具来处理重复和机械的动作，让个人精力更聚焦于内容生产。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302324788.png" alt=""></p>
+<p>接下来让我们回顾下24年周刊内容吧，看看是否遗漏了有意思的事情，错过了值得学习的知识。</p>
+<h2>数据分析</h2>
+<p>周刊起步半年，影响力有限，数据上仅做简要分析。截止2024年12月31日，共发表了<strong>30</strong>期周刊，累计<strong>87037</strong>字（仅统计汉字），各类内容共<strong>320</strong>条，公众号累计阅读<strong>1962</strong>人次。</p>
+<h3>阅读趋势</h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302324789.png" alt=""></p>
+<h3>内容占比</h3>
+<p>各类内容共<strong>320</strong>条，其中：业界资讯<strong>81</strong>条，技术博客<strong>56</strong>条，开源项目<strong>61</strong>条，工具推荐<strong>24</strong>条，学习资源<strong>37</strong>条，随便看看<strong>30</strong>条，其他周刊<strong>31</strong>条。
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302324790.png" alt=""></p>
+<h3>词云图</h3>
+<p>借助Kimi给出了周刊内容的关键字和权重，再使用wordcloud生成了词云图。从图片看，人工智能确实火热。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302324791.png" alt=""></p>
+<h2>呈现形式</h2>
+<p>提供了两种阅读方式，公众号方便且能订阅，个人站点则阅读体验更好。</p>
+<h3>公众号合集</h3>
+<p>传送门：<a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwODY0ODQzOQ==&amp;action=getalbum&amp;album_id=3492416248238096386#wechat_redirect" target="_blank" rel="noopener noreferrer">肖恩技术周刊公众号合集</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302325837.png" alt=""></p>
+<h3>个人站点</h3>
+<p>站点地址：https://weekly.shawnxie.top/</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302324792.png" alt=""></p>
+<h2>归纳&amp;规划</h2>
+<h3>FLAG回收</h3>
+<p>过去的30期中有立过一些FLAG，来看看回收情况如何，哈哈。</p>
+<h4>第3期：基于“智能体”创造自发展的冒险镇</h4>
+<p>毫无进展，甩锅给时间不够。不过最近接触了编程助手<strong>cursor和cline</strong>，或许是一个新思路，对于不熟悉的领域可以节约大量技术入门的时间，直接开始解决具体问题。25年继续跟进！</p>
+<h4>第14期：公众号阶段性总结</h4>
+<p>9月写了一篇“<a href="https://mp.weixin.qq.com/s/-7-J0KpzfCl5wX5Rum1ltw" target="_blank" rel="noopener noreferrer">现在才开始探索个人IP是不是晚了？</a>”，算是对副业探索做了阶段性总结吧，明年同一时间再看看有没啥进步。</p>
+<h4>第22期：知识管理实践</h4>
+<p>有一些基于<strong>Notion和Obsidian</strong>的初步实践，但不成体系，25年继续总结。</p>
+<h4>第26期：无痛写作</h4>
+<p>有一些尝试：</p>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/1ggWNxiTJKxkX_LxFPxNlw" target="_blank" rel="noopener noreferrer">文章图片自动管理方案</a></li>
+<li><a href="https://mp.weixin.qq.com/s/4Du8pyhz9357lxkG0Z8gpQ" target="_blank" rel="noopener noreferrer">md：超简洁的公众号排版工具</a></li>
+<li>基于Github Actions的静态网页自动部署</li>
+</ul>
+<p>但阅读写作并没有形成效率闭环，仍存在大量低效工作。近期也有了一些新输入，明年再实践实践，让创作更聚焦于内容生产本身。</p>
+<h3>来年规划</h3>
+<p>目前周刊有一些值得改善的地方：</p>
+<ul>
+<li><strong>内容收敛</strong>：内容有收敛趋势，最近几期文章出处一般不超过5个地方，不利于视野发散；</li>
+<li><strong>内容呆板</strong>：过度依赖AI总结，内容生成味较重，个人思考体现较少；</li>
+<li><strong>偏好不定</strong>：个人选择偏好难以明确，每期内容跳跃性比较大；</li>
+<li><strong>自动化程度低</strong>：信息收集、初筛等阶段耗费时间太多，影响了最终成稿的质量。</li>
+</ul>
+<p>针对这些问题，25年会进行一些改善：</p>
+<ul>
+<li><strong>信息源丰富</strong>：增加一些过国外的信息源，如medium等，提升内容的丰富度（如果有信息源可以通过<a href="https://github.com/Xiaoxie1994/shawn-weekly/issues" target="_blank" rel="noopener noreferrer">issue</a>推荐给我）；</li>
+<li><strong>更多的思考</strong>：降低AI生成依赖，在每期中更多的展示自己的思考和理解；</li>
+<li><strong>建立个人画像</strong>：数据比我更了解我自己，通过对往期数据分析建立个人画像；</li>
+<li><strong>自动化工具建设</strong>：参考内容推荐算法，打造周刊文章推荐系统。将信息收集、粗筛和推荐步骤自动化，让个人更聚焦于阅读和内容生产。</li>
+</ul>
+<h3>调查问卷</h3>
+<p>闭门造车当然是不行的，得听听大家的意见！（点击<a href="https://wj.qq.com/s2/17381830/a16c/" target="_blank" rel="noopener noreferrer">链接</a>或扫码填写问卷）</p>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412310014791.png" alt="问卷调查" width="300">
+<h2>内容精选</h2>
+<p>主题相近的内容聚集，但只对内容做罗列，建议点击链接阅读原文。</p>
+<h3>业界资讯</h3>
+<h4><a class="header-anchor" href="#刚刚-openai震撼发布o1大模型-强化学习突破llm推理极限"><span></span></a><a href="https://www.jiqizhixin.com/articles/2024-09-13-4" target="_blank" rel="noopener noreferrer">刚刚，OpenAI震撼发布o1大模型！强化学习突破LLM推理极限</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252317791.png" alt=""></p>
+<h4><a class="header-anchor" href="#openai-canvas"><span></span></a><a href="https://openai.com/index/introducing-canvas/" target="_blank" rel="noopener noreferrer">OpenAI Canvas</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262348295.png" alt=""></p>
+<h4><a class="header-anchor" href="#openai-正式发布-o1-完整版-并上线每月-200-美元的「chatgpt-pro」"><span></span></a><a href="https://www.oschina.net/news/323622/openai-chatgpt-pro-n-o1" target="_blank" rel="noopener noreferrer">OpenAI 正式发布 o1 完整版，并上线每月 200 美元的「ChatGPT Pro」</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412082247990.png" alt=""></p>
+<h4><a class="header-anchor" href="#openai-o3模型压轴登场-攻破极难数学题-执行一次任务数千美元"><span></span></a><a href="https://www.mittrchina.com/news/detail/14191" target="_blank" rel="noopener noreferrer">OpenAI o3模型压轴登场，攻破极难数学题，执行一次任务数千美元</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412222210221.png" alt=""></p>
+<h4><a class="header-anchor" href="#史上首位中专生-17-岁女学生姜萍冲进-2024-阿里巴巴全球数学竞赛决赛"><span></span></a><a href="https://m.ithome.com/html/774931.htm" target="_blank" rel="noopener noreferrer">史上首位中专生，17 岁女学生姜萍冲进 2024 阿里巴巴全球数学竞赛决赛</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302240532.png" alt=""></p>
+<h4><a class="header-anchor" href="#刚刚-阿里全球数学竞赛决赛结果公布-姜萍违反预选赛规则未获奖"><span></span></a><a href="https://www.jiqizhixin.com/articles/2024-11-03" target="_blank" rel="noopener noreferrer">刚刚，阿里全球数学竞赛决赛结果公布，姜萍违反预选赛规则未获奖</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103231836.png" alt=""></p>
+<h4><a class="header-anchor" href="#java-之父-james-gosling-宣布退休"><span></span></a><a href="https://www.oschina.net/news/300644/jamesgosling-retired" target="_blank" rel="noopener noreferrer">Java 之父 James Gosling 宣布退休</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252309550.png" alt=""></p>
+<h4><a class="header-anchor" href="#_2024年物理诺奖颁给-ai-物理-geoffrey-hinton和john-hopfield因人工神经网络成果获奖"><span></span></a><a href="https://www.mittrchina.com/news/detail/13858" target="_blank" rel="noopener noreferrer">2024年物理诺奖颁给“AI+物理”：Geoffrey Hinton和John Hopfield因人工神经网络成果获奖</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262344747.png" alt=""></p>
+<h4><a class="header-anchor" href="#首次-spacex完成「筷子夹火箭」式星舰回收-马斯克8年前设想成真"><span></span></a><a href="https://www.jiqizhixin.com/articles/2024-10-14-7" target="_blank" rel="noopener noreferrer">首次！SpaceX完成「筷子夹火箭」式星舰回收，马斯克8年前设想成真</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262033363.gif" alt=""></p>
+<h4><a class="header-anchor" href="#spacex-星舰第六次试飞圆满成功-超重型助推器完成软溅落后解体"><span></span></a><a href="https://www.ithome.com/0/811/766.htm" target="_blank" rel="noopener noreferrer">SpaceX 星舰第六次试飞圆满成功，超重型助推器完成软溅落后解体</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411242350486.png" alt=""></p>
+<h4><a class="header-anchor" href="#华为自研编程语言-仓颉-来了-鸿蒙终于有自己编程语言了"><span></span></a><a href="https://www.infoq.cn/article/ubFpRrzRbNuhY7E2PsKB" target="_blank" rel="noopener noreferrer">华为自研编程语言“仓颉”来了！鸿蒙终于有自己编程语言了</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252309549.png" alt=""></p>
+<h4><a class="header-anchor" href="#华为正式发布原生鸿蒙系统"><span></span></a><a href="https://www.oschina.net/news/317261" target="_blank" rel="noopener noreferrer">华为正式发布原生鸿蒙系统</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/image.png" alt=""></p>
+<h4><a class="header-anchor" href="#仓颉编程语言官网正式上线-首个公测版本开放下载"><span></span></a><a href="https://www.oschina.net/news/318801" target="_blank" rel="noopener noreferrer">仓颉编程语言官网正式上线，首个公测版本开放下载</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241110221655.png" alt=""></p>
+<h3>技术博客</h3>
+<h4><a class="header-anchor" href="#记一次疑似jvm内存泄漏的排查过程"><span></span></a><a href="https://juejin.im/post/7376186315644076041" target="_blank" rel="noopener noreferrer">记一次疑似JVM内存泄漏的排查过程</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302241815.png" alt=""></p>
+<h4><a class="header-anchor" href="#java-虚拟线程-案例研究"><span></span></a><a href="https://www.infoq.cn/article/MEEWNJi2f0P7tUEQeKP4" target="_blank" rel="noopener noreferrer">Java 虚拟线程：案例研究</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252317794.png" alt=""></p>
+<h4><a class="header-anchor" href="#浅析-jvm-invokedynamic-指令和-java-lambda-语法"><span></span></a><a href="https://my.oschina.net/u/5783135/blog/15527256" target="_blank" rel="noopener noreferrer">浅析 JVM invokedynamic 指令和 Java Lambda 语法</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252315692.png" alt=""></p>
+<h4><a class="header-anchor" href="#解密jvm崩溃-crash-如何通过日志分析揭开神秘面纱"><span></span></a><a href="https://mp.weixin.qq.com/s/_DOQGBmhfV-LUzb03RcTCQ" target="_blank" rel="noopener noreferrer">解密JVM崩溃(Crash)：如何通过日志分析揭开神秘面纱</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302242604.png" alt=""></p>
+<h4><a class="header-anchor" href="#java-原生化的未来-graal-aot-编译器"><span></span></a><a href="https://segmentfault.com/a/1190000045090468" target="_blank" rel="noopener noreferrer">Java 原生化的未来 Graal AOT 编译器</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252313914.png" alt=""></p>
+<h4><a class="header-anchor" href="#java程序中的潜在危机-深入探讨nullpointerexception"><span></span></a><a href="https://mp.weixin.qq.com/s/2AfUT0TcpOkZ34MSDgu1gA" target="_blank" rel="noopener noreferrer">Java程序中的潜在危机: 深入探讨NullPointerException</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302243377.png" alt=""></p>
+<h4><a class="header-anchor" href="#一文讲清多线程和多线程同步"><span></span></a><a href="https://mp.weixin.qq.com/s/a9BUf6N93uOw8JSAxza7cg" target="_blank" rel="noopener noreferrer">一文讲清多线程和多线程同步</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302244825.png" alt=""></p>
+<h4><a class="header-anchor" href="#消息队列选型看这一篇就够了"><span></span></a><a href="https://mp.weixin.qq.com/s/jWKHAic4Tt4Ohsj4pTmYFw" target="_blank" rel="noopener noreferrer">消息队列选型看这一篇就够了</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262354813.png" alt=""></p>
+<h4><a class="header-anchor" href="#图解kafka-架构设计、消息可靠、数据持久、高性能背后的底层原理"><span></span></a><a href="https://mp.weixin.qq.com/s/2PEYaSiKzNfB_Ijq69UOJQ" target="_blank" rel="noopener noreferrer">图解Kafka：架构设计、消息可靠、数据持久、高性能背后的底层原理</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252311211.png" alt=""></p>
+<h4><a class="header-anchor" href="#apache-pulsar在小红书在线场景下的探索与实践"><span></span></a><a href="https://mp.weixin.qq.com/s/aumDJcoKHklLo1QEp9otlg" target="_blank" rel="noopener noreferrer">Apache Pulsar在小红书在线场景下的探索与实践</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/image-3.png" alt=""></p>
+<h4><a class="header-anchor" href="#深入探索mysql索引策略"><span></span></a><a href="https://mp.weixin.qq.com/s/XpukKx9Ovl4bqil8cNDP0g" target="_blank" rel="noopener noreferrer">深入探索MySQL索引策略</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302245697.png" alt=""></p>
+<h4><a class="header-anchor" href="#从零开始深入理解存储引擎"><span></span></a><a href="https://mp.weixin.qq.com/s/sEml0lH2Zj-b_sIFRn2wzQ" target="_blank" rel="noopener noreferrer">从零开始深入理解存储引擎</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302246661.png" alt=""></p>
+<h4><a class="header-anchor" href="#读友好的缓存淘汰算法"><span></span></a><a href="https://my.oschina.net/u/4939618/blog/15169406" target="_blank" rel="noopener noreferrer">读友好的缓存淘汰算法</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252314691.png" alt=""></p>
+<h4><a class="header-anchor" href="#_10种数据库技术的发展历程与现状"><span></span></a><a href="https://mp.weixin.qq.com/s/AAxlJzX_S_-ScJRtUktm4g" target="_blank" rel="noopener noreferrer">10种数据库技术的发展历程与现状</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262354812.png" alt=""></p>
+<h4><a class="header-anchor" href="#一文读懂-mysql-并行查询-ddl"><span></span></a><a href="https://mp.weixin.qq.com/s/dmlT4htGVoXOOxrH02lxxA" target="_blank" rel="noopener noreferrer">一文读懂 MySQL 并行查询 &amp; DDL</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262331269.png" alt=""></p>
+<h4><a class="header-anchor" href="#基于redis内核的热key统计实现方案"><span></span></a><a href="https://mp.weixin.qq.com/s/RWQzLZq6X7B5ThaKX6U4SQ" target="_blank" rel="noopener noreferrer">基于Redis内核的热key统计实现方案</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412012220215.png" alt=""></p>
+<h4><a class="header-anchor" href="#无任何数学公式理解大模型基本原理"><span></span></a><a href="https://juejin.im/post/7383988944512483368" target="_blank" rel="noopener noreferrer">无任何数学公式理解大模型基本原理</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302247791.png" alt=""></p>
+<h4><a class="header-anchor" href="#检索增强生成-革命性技术还是过度承诺"><span></span></a><a href="https://www.infoq.cn/article/LvQs5lG7et17I3wxvTkO" target="_blank" rel="noopener noreferrer">检索增强生成：革命性技术还是过度承诺？</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252313317.png" alt=""></p>
+<h4><a class="header-anchor" href="#我的内容创作最强搭子——kimi"><span></span></a><a href="https://mp.weixin.qq.com/s/HDUjesD7Qs5o9qm3bPs_ZA" target="_blank" rel="noopener noreferrer">我的内容创作最强搭子——Kimi</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302248069.png" alt=""></p>
+<h4><a class="header-anchor" href="#rag七十二式-2024年度rag清单"><span></span></a><a href="https://mp.weixin.qq.com/s/_pnezCv-sKmzhho7Xw3D2g" target="_blank" rel="noopener noreferrer">RAG七十二式：2024年度RAG清单</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412292306549.png" alt=""></p>
+<h4><a class="header-anchor" href="#程序员必备linux性能分析工具和方法"><span></span></a><a href="https://mp.weixin.qq.com/s/B845AYy-TjOU2IXOgsRcSQ" target="_blank" rel="noopener noreferrer">程序员必备Linux性能分析工具和方法</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252313318.png" alt=""></p>
+<h4><a class="header-anchor" href="#深入理解linux的tcp三次握手"><span></span></a><a href="https://mp.weixin.qq.com/s/LIeb5DwMS6RS2YhEw47GDA" target="_blank" rel="noopener noreferrer">深入理解Linux的TCP三次握手</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262331270.png" alt=""></p>
+<h4><a class="header-anchor" href="#大厂开始放弃zookeeper-还用学吗"><span></span></a><a href="https://mp.weixin.qq.com/s/NfiMY5vlUIrsx8St5hUqcg" target="_blank" rel="noopener noreferrer">大厂开始放弃ZooKeeper，还用学吗？</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241117222751.png" alt=""></p>
+<h4><a class="header-anchor" href="#单体架构比微服务架构更落后吗"><span></span></a><a href="https://mp.weixin.qq.com/s/HvMlNYrJFQkqewD9Bwn8_w" target="_blank" rel="noopener noreferrer">单体架构比微服务架构更落后吗？</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103231724.png" alt=""></p>
+<h4><a class="header-anchor" href="#应用网关的演进历程和分类"><span></span></a><a href="https://my.oschina.net/u/3874284/blog/16510373" target="_blank" rel="noopener noreferrer">应用网关的演进历程和分类</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241117231657.png" alt=""></p>
+<h4><a class="header-anchor" href="#揭秘-git-子模块-英文"><span></span></a><a href="https://www.cyberdemon.org/2024/03/20/submodules.html" target="_blank" rel="noopener noreferrer">揭秘 git 子模块（英文）</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412292307472.png" alt=""></p>
+<h4><a class="header-anchor" href="#klimiter自适应限流器"><span></span></a><a href="https://mp.weixin.qq.com/s/kIdeQTLJQSGxvjj4bMHPOQ" target="_blank" rel="noopener noreferrer">KLimiter自适应限流器</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262331271.png" alt=""></p>
+<h4><a class="header-anchor" href="#_5大常见高并发限流算法选型浅析"><span></span></a><a href="https://mp.weixin.qq.com/s/93QNjdAuATTHp_axkgrblg" target="_blank" rel="noopener noreferrer">5大常见高并发限流算法选型浅析</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412152255477.png" alt=""></p>
+<h4><a class="header-anchor" href="#可观测性与传统监控的区别和联系"><span></span></a><a href="https://my.oschina.net/morflameblog/blog/15316524" target="_blank" rel="noopener noreferrer">可观测性与传统监控的区别和联系</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252317793.png" alt=""></p>
+<h4><a class="header-anchor" href="#智能精准测试-web-业务的新引擎"><span></span></a><a href="https://juejin.im/post/7376231612440887335" target="_blank" rel="noopener noreferrer">智能精准测试：Web 业务的新引擎</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302249504.png" alt=""></p>
+<h4><a class="header-anchor" href="#增长在流量规则巡检的探索实践"><span></span></a><a href="https://mp.weixin.qq.com/s/_-VHNG5IopTTXYTxxlQDLw" target="_blank" rel="noopener noreferrer">增长在流量规则巡检的探索实践</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/image-4.png" alt=""></p>
+<h4><a class="header-anchor" href="#得物精准测试平台设计与实现"><span></span></a><a href="https://mp.weixin.qq.com/s/qZZ5A1lkNpf_HqZgSJa4_A" target="_blank" rel="noopener noreferrer">得物精准测试平台设计与实现</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241117231824.png" alt=""></p>
+<h4><a class="header-anchor" href="#大众点评内容搜索算法优化的探索与实践"><span></span></a><a href="https://my.oschina.net/meituantech/blog/11048543" target="_blank" rel="noopener noreferrer">大众点评内容搜索算法优化的探索与实践</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302250816.png" alt=""></p>
+<h4><a class="header-anchor" href="#携程门票秒杀系统的设计与实践"><span></span></a><a href="https://www.51cto.com/article/792155.html" target="_blank" rel="noopener noreferrer">携程门票秒杀系统的设计与实践</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302250493.png" alt=""></p>
+<h4><a class="header-anchor" href="#一文搞懂第三方支付系统架构设计"><span></span></a><a href="https://mp.weixin.qq.com/s/Z2sNg-VjdmGD5kymZPrrYQ" target="_blank" rel="noopener noreferrer">一文搞懂第三方支付系统架构设计</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302251231.png" alt=""></p>
+<h4><a class="header-anchor" href="#代码千行不如架构图一张-论契约平台的设计与思考"><span></span></a><a href="https://mp.weixin.qq.com/s/tvfqfEddey_G4pJX9_XbYQ" target="_blank" rel="noopener noreferrer">代码千行不如架构图一张！论契约平台的设计与思考</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412012221756.png" alt=""></p>
+<h4><a class="header-anchor" href="#资金视角看支付系统架构设计"><span></span></a><a href="https://mp.weixin.qq.com/s/ceMKpO_5b0DAJyu-DUDC0g" target="_blank" rel="noopener noreferrer">资金视角看支付系统架构设计</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412152255645.png" alt=""></p>
+<h4><a class="header-anchor" href="#产品设计流程"><span></span></a><a href="https://uxplanet.org/product-design-process-e25d5b31c581" target="_blank" rel="noopener noreferrer">产品设计流程</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411250056082.png" alt=""></p>
+<h4><a class="header-anchor" href="#_60张手绘高清大图理清支付系统最核心的概念"><span></span></a><a href="https://www.woshipm.com/pd/6151400.html" target="_blank" rel="noopener noreferrer">60张手绘高清大图理清支付系统最核心的概念</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412152247032.png" alt=""></p>
+<h4><a class="header-anchor" href="#好的代码重构-vs-坏的代码重构-如何做出正确选择"><span></span></a><a href="https://www.51cto.com/article/796319.html" target="_blank" rel="noopener noreferrer">好的代码重构 vs 坏的代码重构：如何做出正确选择？</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252316874.png" alt=""></p>
+<h3>开源项目 &amp; 工具推荐</h3>
+<h4><a class="header-anchor" href="#chattts-文本到语音模型"><span></span></a><a href="https://github.com/2noise/ChatTTS" target="_blank" rel="noopener noreferrer">ChatTTS：文本到语音模型</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302252903.png" alt=""></p>
+<h4><a class="header-anchor" href="#mi-gpt-小爱音箱接入大模型"><span></span></a><a href="https://github.com/idootop/mi-gpt" target="_blank" rel="noopener noreferrer">mi-gpt：小爱音箱接入大模型</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302254729.png" alt=""></p>
+<h4><a class="header-anchor" href="#pyvideotrans-视频翻译配音工具"><span></span></a><a href="https://github.com/jianchang512/pyvideotrans" target="_blank" rel="noopener noreferrer">pyvideotrans：视频翻译配音工具</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302254955.png" alt=""></p>
+<h4><a class="header-anchor" href="#open-sora-开源视频生成项目"><span></span></a><a href="https://github.com/hpcaitech/Open-Sora" target="_blank" rel="noopener noreferrer">Open-Sora：开源视频生成项目</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302254598.png" alt=""></p>
+<h4><a class="header-anchor" href="#storm-利用llm自动生成类似维基百科文章"><span></span></a><a href="https://github.com/stanford-oval/storm" target="_blank" rel="noopener noreferrer">storm：利用LLM自动生成类似维基百科文章</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302256605.png" alt=""></p>
+<h4><a class="header-anchor" href="#tabby-ai编码助手"><span></span></a><a href="https://github.com/TabbyML/tabby" target="_blank" rel="noopener noreferrer">tabby：AI编码助手</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252311212.gif" alt=""></p>
+<h4><a class="header-anchor" href="#composio-ai代理就绪工具集"><span></span></a><a href="https://github.com/ComposioHQ/composio" target="_blank" rel="noopener noreferrer">composio：AI代理就绪工具集</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252313918.png" alt=""></p>
+<h4><a class="header-anchor" href="#deep-live-cam-ai生成媒体工具"><span></span></a><a href="https://github.com/hacksider/Deep-Live-Cam" target="_blank" rel="noopener noreferrer">Deep-Live-Cam：AI生成媒体工具</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252315181.png" alt=""></p>
+<h4><a class="header-anchor" href="#hivisionidphotos-轻量级的ai证件照制作工具"><span></span></a><a href="https://github.com/Zeyi-Lin/HivisionIDPhotos" target="_blank" rel="noopener noreferrer">HivisionIDPhotos：轻量级的AI证件照制作工具</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252316875.png" alt=""></p>
+<h4><a class="header-anchor" href="#hyperlpr-高性能的车牌识别框架"><span></span></a><a href="https://github.com/szad670401/HyperLPR" target="_blank" rel="noopener noreferrer">HyperLPR：高性能的车牌识别框架</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252317796.png" alt=""></p>
+<h4><a class="header-anchor" href="#surya-开源的文档ocr工具包"><span></span></a><a href="https://github.com/VikParuchuri/surya" target="_blank" rel="noopener noreferrer">surya: 开源的文档OCR工具包</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262344749.png" alt=""></p>
+<h4><a class="header-anchor" href="#paddleocr-百度飞桨开源ocr工具库"><span></span></a><a href="https://github.com/PaddlePaddle/PaddleOCR" target="_blank" rel="noopener noreferrer">PaddleOCR: 百度飞桨开源OCR工具库</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262344750.gif" alt=""></p>
+<h4><a class="header-anchor" href="#_302-ai-全功能ai应用平台"><span></span></a><a href="https://302.ai/" target="_blank" rel="noopener noreferrer">302.AI: 全功能AI应用平台</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241117231202.png" alt=""></p>
+<h4><a class="header-anchor" href="#逗逗-ai游戏伙伴"><span></span></a><a href="https://www.doudou.fun/" target="_blank" rel="noopener noreferrer">逗逗：AI游戏伙伴</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412292315844.png" alt=""></p>
+<h4><a class="header-anchor" href="#supervision-开源的计算机视觉工具库"><span></span></a><a href="https://github.com/roboflow/supervision" target="_blank" rel="noopener noreferrer">supervision：开源的计算机视觉工具库</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262331273.png" alt=""></p>
+<h4><a class="header-anchor" href="#图片ai无损放大"><span></span></a><a href="https://www.meijian.com/mj-box/ai-pic-zoom-intro" target="_blank" rel="noopener noreferrer">图片AI无损放大</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411250042655.png" alt=""></p>
+<h4><a class="header-anchor" href="#ai模型比较"><span></span></a><a href="https://countless.dev/" target="_blank" rel="noopener noreferrer">AI模型比较</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412152252586.png" alt=""></p>
+<h4><a class="header-anchor" href="#omniparser-屏幕解析工具"><span></span></a><a href="https://github.com/microsoft/OmniParser" target="_blank" rel="noopener noreferrer">OmniParser：屏幕解析工具</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103232358.png" alt=""></p>
+<h4><a class="header-anchor" href="#mineru-一站式数据提取工具"><span></span></a><a href="https://github.com/opendatalab/MinerU" target="_blank" rel="noopener noreferrer">MinerU：一站式数据提取工具</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252311213.gif" alt=""></p>
+<h4><a class="header-anchor" href="#marker-pdf快速转换成markdown、json和html格式"><span></span></a><a href="https://github.com/VikParuchuri/marker" target="_blank" rel="noopener noreferrer">marker：PDF快速转换成Markdown、JSON和HTML格式</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412012230300.png" alt=""></p>
+<h4><a class="header-anchor" href="#url-parser-online-将网页转换为更适合大型语言模型的输入格式"><span></span></a><a href="https://www.urlparser.online/" target="_blank" rel="noopener noreferrer">URL Parser Online: 将网页转换为更适合大型语言模型的输入格式</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241117231627.png" alt=""></p>
+<h4><a class="header-anchor" href="#syncthing-文件同步工具"><span></span></a><a href="https://github.com/syncthing/syncthing" target="_blank" rel="noopener noreferrer">syncthing：文件同步工具</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302257682.png" alt=""></p>
+<h4><a class="header-anchor" href="#yazi-终端文件管理器"><span></span></a><a href="https://github.com/sxyazi/yazi" target="_blank" rel="noopener noreferrer">yazi：终端文件管理器</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252308558.png" alt=""></p>
+<h4><a class="header-anchor" href="#files-windows文件管理应用程序"><span></span></a><a href="https://github.com/files-community/Files" target="_blank" rel="noopener noreferrer">Files：Windows文件管理应用程序</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252308559.png" alt=""></p>
+<h4><a class="header-anchor" href="#immich-照片和视频管理"><span></span></a><a href="https://github.com/immich-app/immich" target="_blank" rel="noopener noreferrer">immich：照片和视频管理</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252313916.png" alt=""></p>
+<h4><a class="header-anchor" href="#web-check-开源情报工具"><span></span></a><a href="https://github.com/Lissy93/web-check" target="_blank" rel="noopener noreferrer">web-check：开源情报工具</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252308560.png" alt=""></p>
+<h4><a class="header-anchor" href="#trufflehog-测代码库中的泄露凭证"><span></span></a><a href="https://github.com/trufflesecurity/trufflehog" target="_blank" rel="noopener noreferrer">trufflehog：测代码库中的泄露凭证</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252313915.svg" alt=""></p>
+<h4><a class="header-anchor" href="#easyspider-可视化爬虫软件"><span></span></a><a href="https://github.com/NaiboWang/EasySpider" target="_blank" rel="noopener noreferrer">EasySpider：可视化爬虫软件</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252309551.png" alt=""></p>
+<h4><a class="header-anchor" href="#wiseflow-信息提取工具"><span></span></a><a href="https://github.com/TeamWiseFlow/wiseflow" target="_blank" rel="noopener noreferrer">wiseflow：信息提取工具</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252314693.png" alt=""></p>
+<h4><a class="header-anchor" href="#hercules-git历史分析引擎"><span></span></a><a href="https://github.com/src-d/hercules" target="_blank" rel="noopener noreferrer">hercules：Git历史分析引擎</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262331272.png" alt=""></p>
+<h4><a class="header-anchor" href="#code-maat-从版本控制系统中挖掘和分析数据"><span></span></a><a href="https://github.com/adamtornhill/code-maat" target="_blank" rel="noopener noreferrer">code-maat：从版本控制系统中挖掘和分析数据</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241117235436.png" alt=""></p>
+<h4><a class="header-anchor" href="#rewrite-自动化代码重构工具"><span></span></a><a href="https://github.com/openrewrite/rewrite" target="_blank" rel="noopener noreferrer">rewrite：自动化代码重构工具</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412012234100.png" alt=""></p>
+<h4><a class="header-anchor" href="#viztracer-python代码执行跟踪可视化工具"><span></span></a><a href="https://github.com/gaogaotiantian/viztracer" target="_blank" rel="noopener noreferrer">viztracer：Python代码执行跟踪可视化工具</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412222249329.png" alt="">png)</p>
+<h4><a class="header-anchor" href="#graphql-editor-graphql可视化编辑器"><span></span></a><a href="https://github.com/graphql-editor/graphql-editor" target="_blank" rel="noopener noreferrer">graphql-editor：Graphql可视化编辑器</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262033367.gif" alt=""></p>
+<h4><a class="header-anchor" href="#openobserve-云原生的可观测性平台"><span></span></a><a href="https://github.com/openobserve/openobserve" target="_blank" rel="noopener noreferrer">openobserve：云原生的可观测性平台</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252315696.png" alt=""></p>
+<h4><a class="header-anchor" href="#linutil-linux工具箱"><span></span></a><a href="https://github.com/ChrisTitusTech/linutil" target="_blank" rel="noopener noreferrer">linutil：Linux工具箱</a></h4>
+<p><img src="https://raw.githubusercontent.com/ChrisTitusTech/linutil/refs/heads/main/.github/preview.gif" alt=""></p>
+<h4><a class="header-anchor" href="#googleapis-谷歌api原始接口定义"><span></span></a><a href="https://github.com/googleapis/googleapis" target="_blank" rel="noopener noreferrer">googleapis：谷歌API原始接口定义</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302259464.png" alt=""></p>
+<h4><a class="header-anchor" href="#drawdb-数据库设计工具"><span></span></a><a href="https://github.com/drawdb-io/drawdb" target="_blank" rel="noopener noreferrer">drawdb：数据库设计工具</a></h4>
+<p><img src="https://gw.alipayobjects.com/zos/k/e2/drawdb.gif" alt=""></p>
+<h4><a class="header-anchor" href="#jsoncrack-com-json数据可视化工具"><span></span></a><a href="https://github.com/AykutSarac/jsoncrack.com" target="_blank" rel="noopener noreferrer">jsoncrack.com：JSON数据可视化工具</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241110224711.png" alt=""></p>
+<h4><a class="header-anchor" href="#bplustree-b-树操作可视化"><span></span></a><a href="https://www.cs.usfca.edu/~galles/visualization/BPlusTree.html" target="_blank" rel="noopener noreferrer">BPlusTree：B+树操作可视化</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412152205423.png" alt=""></p>
+<h4><a class="header-anchor" href="#roughviz-可重复使用的手绘风javascript画图库"><span></span></a><a href="https://github.com/jwilber/roughViz" target="_blank" rel="noopener noreferrer">roughViz：可重复使用的手绘风JavaScript画图库</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262033366.webp" alt=""></p>
+<h4><a class="header-anchor" href="#pake-将任何网页转换成桌面应用程序"><span></span></a><a href="https://github.com/tw93/Pake" target="_blank" rel="noopener noreferrer">Pake：将任何网页转换成桌面应用程序</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262354815.png" alt=""></p>
+<h4><a class="header-anchor" href="#screenshot-to-code-截图生成前端代码"><span></span></a><a href="https://github.com/abi/screenshot-to-code" target="_blank" rel="noopener noreferrer">screenshot-to-code：截图生成前端代码</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412012231166.png" alt=""></p>
+<h4><a class="header-anchor" href="#h5-dooring-h5低代码平台"><span></span></a><a href="https://github.com/MrXujiang/h5-Dooring" target="_blank" rel="noopener noreferrer">h5-Dooring：H5低代码平台</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412292322244.png" alt=""></p>
+<h4><a class="header-anchor" href="#xiaoju-survey-开源问卷系统"><span></span></a><a href="https://github.com/didi/xiaoju-survey" target="_blank" rel="noopener noreferrer">xiaoju-survey：开源问卷系统</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302300769.png" alt=""></p>
+<h4><a class="header-anchor" href="#stirling-pdf-pdf操作工具"><span></span></a><a href="https://github.com/Stirling-Tools/Stirling-PDF" target="_blank" rel="noopener noreferrer">Stirling-PDF：PDF操作工具</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252313917.png" alt=""></p>
+<h4><a class="header-anchor" href="#super-productivit-高级待办事项列表"><span></span></a><a href="https://github.com/johannesjo/super-productivity" target="_blank" rel="noopener noreferrer">super-productivit：高级待办事项列表</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252313319.png" alt=""></p>
+<h4><a class="header-anchor" href="#rustdesk-远程桌面软件"><span></span></a><a href="https://github.com/rustdesk/rustdesk" target="_blank" rel="noopener noreferrer">RustDesk：远程桌面软件</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252315182.png" alt=""></p>
+<h4><a class="header-anchor" href="#appflowy-开源的notion替代品"><span></span></a><a href="https://github.com/AppFlowy-IO/AppFlowy" target="_blank" rel="noopener noreferrer">AppFlowy：开源的Notion替代品</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252315694.png" alt=""></p>
+<h4><a class="header-anchor" href="#affine-开源的notion替代品"><span></span></a><a href="https://github.com/toeverything/AFFiNE" target="_blank" rel="noopener noreferrer">AFFiNE：开源的Notion替代品</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252315695.png" alt=""></p>
+<h4><a class="header-anchor" href="#markmap-用纯文本创建思维导图"><span></span></a><a href="https://github.com/markmap/markmap" target="_blank" rel="noopener noreferrer">markmap：用纯文本创建思维导图</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252317797.png" alt=""></p>
+<h4><a class="header-anchor" href="#kestra-开源的工作流自动化平台"><span></span></a><a href="https://github.com/kestra-io/kestra" target="_blank" rel="noopener noreferrer">kestra：开源的工作流自动化平台</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262348296.png" alt=""></p>
+<h4><a class="header-anchor" href="#doocs-md-高度简洁的微信公众号排版工具"><span></span></a><a href="https://github.com/doocs/md" target="_blank" rel="noopener noreferrer">doocs/md：高度简洁的微信公众号排版工具</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262348297.png" alt=""></p>
+<h4><a class="header-anchor" href="#openbb-免费且完全开源的金融平台"><span></span></a><a href="https://github.com/OpenBB-finance/OpenBB" target="_blank" rel="noopener noreferrer">OpenBB：免费且完全开源的金融平台</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262348298.png" alt=""></p>
+<h4><a class="header-anchor" href="#vue-fabric-editor-开源的图片编辑器"><span></span></a><a href="https://github.com/ikuaitu/vue-fabric-editor" target="_blank" rel="noopener noreferrer">vue-fabric-editor：开源的图片编辑器</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/image-7.png" alt=""></p>
+<h4><a class="header-anchor" href="#i18n-code-markdown-多语言内容转换工具"><span></span></a><a href="https://www.i18ncode.com/zh/markdown" target="_blank" rel="noopener noreferrer">I18n code Markdown：多语言内容转换工具</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241110224614.png" alt=""></p>
+<h4><a class="header-anchor" href="#stock-股票量化投资辅助工具"><span></span></a><a href="https://github.com/myhhub/stock" target="_blank" rel="noopener noreferrer">stock：股票量化投资辅助工具</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412082247282.png" alt=""></p>
+<h4><a class="header-anchor" href="#allow-right-click-重启页面禁用的右键"><span></span></a><a href="https://github.com/lunu-bounir/allow-right-click" target="_blank" rel="noopener noreferrer">allow-right-click：重启页面禁用的右键</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411250038581.png" alt=""></p>
+<h4><a class="header-anchor" href="#drissionpage-网页自动化工具"><span></span></a><a href="https://github.com/g1879/DrissionPage" target="_blank" rel="noopener noreferrer">DrissionPage：网页自动化工具</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412152242459.png" alt=""></p>
+<h4><a class="header-anchor" href="#cobalt-简洁的媒体下载器"><span></span></a><a href="https://github.com/imputnet/cobalt" target="_blank" rel="noopener noreferrer">cobalt：简洁的媒体下载器</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412292316290.png" alt=""></p>
+<h4><a class="header-anchor" href="#gitako-github文件树浏览器插件"><span></span></a><a href="https://github.com/EnixCoda/Gitako" target="_blank" rel="noopener noreferrer">Gitako：GitHub文件树浏览器插件</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412222251473.png" alt=""></p>
+<h4><a class="header-anchor" href="#univer-文档编辑软件全栈框架"><span></span></a><a href="https://github.com/dream-num/univer" target="_blank" rel="noopener noreferrer">univer：文档编辑软件全栈框架</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412292324199.png" alt=""></p>
+<h4><a class="header-anchor" href="#ice-mac菜单栏管理工具"><span></span></a><a href="https://github.com/jordanbaird/Ice" target="_blank" rel="noopener noreferrer">Ice：Mac菜单栏管理工具</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302301596.png" alt=""></p>
+<h4><a class="header-anchor" href="#docker-osx-在docker容器中运行macos"><span></span></a><a href="https://github.com/sickcodes/Docker-OSX" target="_blank" rel="noopener noreferrer">Docker-OSX：在Docker容器中运行macOS</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252316876.png" alt=""></p>
+<h4><a class="header-anchor" href="#text-behind-image-图片主体后加文字"><span></span></a><a href="https://github.com/RexanWONG/text-behind-image" target="_blank" rel="noopener noreferrer">text-behind-image：图片主体后加文字</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/image-6.png" alt=""></p>
+<h4><a class="header-anchor" href="#iptv-公开的iptv频道列表"><span></span></a><a href="https://github.com/iptv-org/iptv" target="_blank" rel="noopener noreferrer">iptv：公开的IPTV频道列表</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302301883.png" alt=""></p>
+<h4><a class="header-anchor" href="#public-apis-免费公共api"><span></span></a><a href="https://github.com/public-apis/public-apis" target="_blank" rel="noopener noreferrer">public-apis：免费公共API</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252313055.png" alt=""></p>
+<h4><a class="header-anchor" href="#kazumi-跨平台番剧采集与在线观看应用程序"><span></span></a><a href="https://github.com/Predidit/Kazumi" target="_blank" rel="noopener noreferrer">Kazumi：跨平台番剧采集与在线观看应用程序</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302302691.png" alt=""></p>
+<h4><a class="header-anchor" href="#开源许可证选择器"><span></span></a><a href="https://open-source-license-chooser.toolsnav.top/zh/" target="_blank" rel="noopener noreferrer">开源许可证选择器</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262331274.png" alt=""></p>
+<h4><a class="header-anchor" href="#free-for-dev-分享各种对开发者有用的免费服务"><span></span></a><a href="https://github.com/ripienaar/free-for-dev" target="_blank" rel="noopener noreferrer">free-for-dev：分享各种对开发者有用的免费服务</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262354814.png" alt=""></p>
+<h4><a class="header-anchor" href="#独立开发者出海工具箱"><span></span></a><a href="https://indiehackertools.net/" target="_blank" rel="noopener noreferrer">独立开发者出海工具箱</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302303004.png" alt=""></p>
+<h4><a class="header-anchor" href="#sinqi-tools-web开发相关精致工具集"><span></span></a><a href="https://sinqi.tools/zh" target="_blank" rel="noopener noreferrer">sinqi tools：web开发相关精致工具集</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252308561.png" alt=""></p>
+<h4><a class="header-anchor" href="#沉浸式翻译"><span></span></a><a href="https://immersivetranslate.com/" target="_blank" rel="noopener noreferrer">沉浸式翻译</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252309552.png" alt=""></p>
+<h4><a class="header-anchor" href="#第一在线工具"><span></span></a><a href="https://d1tools.com/" target="_blank" rel="noopener noreferrer">第一在线工具</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252309553.png" alt=""></p>
+<h4><a class="header-anchor" href="#it-tools-多功能在线工具集"><span></span></a><a href="https://it-tools.tech/" target="_blank" rel="noopener noreferrer">it-tools：多功能在线工具集</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252316877.png" alt=""></p>
+<h4><a class="header-anchor" href="#random-websites-explorer-随机访问有趣的网站"><span></span></a><a href="https://random-websites.com/" target="_blank" rel="noopener noreferrer">Random webSites Explorer：随机访问有趣的网站</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412082248678.png" alt=""></p>
+<h4><a class="header-anchor" href="#互乐吧-免费资源"><span></span></a><a href="https://huleba.com/" target="_blank" rel="noopener noreferrer">互乐吧：免费资源</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412082251499.png" alt=""></p>
+<h4><a class="header-anchor" href="#awesome-cloudflare-精选的-cloudflare-工具"><span></span></a><a href="https://github.com/zhuima/awesome-cloudflare" target="_blank" rel="noopener noreferrer">awesome-cloudflare：精选的 Cloudflare 工具</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412222248807.png" alt=""></p>
+<h4><a class="header-anchor" href="#my-github-2024-个人github活动统计"><span></span></a><a href="https://github.com/WCY-dt/my-github-2024" target="_blank" rel="noopener noreferrer">my-github-2024：个人Github活动统计</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412222225611.png" alt=""></p>
+<h4><a class="header-anchor" href="#powertoys-windows实用工具集"><span></span></a><a href="https://github.com/microsoft/PowerToys" target="_blank" rel="noopener noreferrer">PowerToys：Windows实用工具集</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412292313991.png" alt=""></p>
+<h4><a class="header-anchor" href="#oldmapsonline-世界历史地图集"><span></span></a><a href="https://www.oldmapsonline.org/zh" target="_blank" rel="noopener noreferrer">OldMapsOnline：世界历史地图集</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412292314686.png" alt=""></p>
+<h3>学习资源</h3>
+<h4><a class="header-anchor" href="#free-programming-books-免费编程书籍"><span></span></a><a href="https://github.com/EbookFoundation/free-programming-books" target="_blank" rel="noopener noreferrer">free-programming-books：免费编程书籍</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302305121.png" alt=""></p>
+<h4><a class="header-anchor" href="#_70本经典程序员书单"><span></span></a><a href="https://pldb.io/books/index.html?continueFlag=680deb7516c156566f8eb73fdcc896ca" target="_blank" rel="noopener noreferrer">70本经典程序员书单</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252315697.png" alt=""></p>
+<h4><a class="header-anchor" href="#books-开发和编程相关的精选书籍"><span></span></a><a href="https://github.com/free-educa/books" target="_blank" rel="noopener noreferrer">books：开发和编程相关的精选书籍</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302305326.png" alt=""></p>
+<h4><a class="header-anchor" href="#openbookshongkong-香港开源书籍"><span></span></a><a href="https://openbookshongkong.com/book/" target="_blank" rel="noopener noreferrer">openbookshongkong：香港开源书籍</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/image-5.png" alt=""></p>
+<h4><a class="header-anchor" href="#ebooks-10万本电子书"><span></span></a><a href="https://github.com/kska32/ebooks" target="_blank" rel="noopener noreferrer">ebooks：10万本电子书</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302306855.png" alt=""></p>
+<h4><a class="header-anchor" href="#expert-readed-books-工程师阅读书单推荐"><span></span></a><a href="https://github.com/0voice/expert_readed_books" target="_blank" rel="noopener noreferrer">expert_readed_books：工程师阅读书单推荐</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412082248547.png" alt=""></p>
+<h4><a class="header-anchor" href="#best-websites-a-programmer-should-visit-推荐程序员应该访问的网站"><span></span></a><a href="https://github.com/sdmg15/Best-websites-a-programmer-should-visit" target="_blank" rel="noopener noreferrer">Best-websites-a-programmer-should-visit：推荐程序员应该访问的网站</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411250028141.png" alt=""></p>
+<h4><a class="header-anchor" href="#data-engineer-handbook-成为优秀数据工程师所需的资源"><span></span></a><a href="https://github.com/DataExpert-io/data-engineer-handbook" target="_blank" rel="noopener noreferrer">data-engineer-handbook：成为优秀数据工程师所需的资源</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302307591.png" alt=""></p>
+<h4><a class="header-anchor" href="#coding-interview-university-全面的软件工程面试准备计划"><span></span></a><a href="https://github.com/jwasham/coding-interview-university" target="_blank" rel="noopener noreferrer">coding-interview-university：全面的软件工程面试准备计划</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302307926.png" alt=""></p>
+<h4><a class="header-anchor" href="#system-design-primer-系统设计学习资源"><span></span></a><a href="https://github.com/donnemartin/system-design-primer" target="_blank" rel="noopener noreferrer">system-design-primer：系统设计学习资源</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302308377.png" alt=""></p>
+<h4><a class="header-anchor" href="#awesome-software-architecture-软件架构、模式和原则学习资源"><span></span></a><a href="https://github.com/mehdihadeli/awesome-software-architecture" target="_blank" rel="noopener noreferrer">awesome-software-architecture：软件架构、模式和原则学习资源</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302308406.png" alt=""></p>
+<h4><a class="header-anchor" href="#awesome-low-level-design-学习低层次设计"><span></span></a><a href="https://github.com/ashishps1/awesome-low-level-design" target="_blank" rel="noopener noreferrer">awesome-low-level-design：学习低层次设计</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302309532.png" alt=""></p>
+<h4><a class="header-anchor" href="#系统设计面试-内幕指南"><span></span></a><a href="https://learning-guide.gitbook.io/system-design-interview" target="_blank" rel="noopener noreferrer">系统设计面试：内幕指南</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241110225501.png" alt=""></p>
+<h4><a class="header-anchor" href="#深入架构原理与实践"><span></span></a><a href="https://github.com/isno/theByteBook" target="_blank" rel="noopener noreferrer">深入架构原理与实践</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302310171.png" alt=""></p>
+<h4><a class="header-anchor" href="#system-design-101-可视化理解复杂系统"><span></span></a><a href="https://github.com/ByteByteGoHq/system-design-101" target="_blank" rel="noopener noreferrer">system-design-101：可视化理解复杂系统</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412222246449.png" alt=""></p>
+<h4><a class="header-anchor" href="#generative-ai-for-beginners-生成性ai应用的基础知识"><span></span></a><a href="https://github.com/microsoft/generative-ai-for-beginners" target="_blank" rel="noopener noreferrer">generative-ai-for-beginners：生成性AI应用的基础知识</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302310456.png" alt=""></p>
+<h4><a class="header-anchor" href="#freecodecamp-全栈web开发和机器学习课程"><span></span></a><a href="https://github.com/freeCodeCamp/freeCodeCamp" target="_blank" rel="noopener noreferrer">freeCodeCamp：全栈web开发和机器学习课程</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302310937.png" alt=""></p>
+<h4><a class="header-anchor" href="#d2l-zh-动手学深度学习"><span></span></a><a href="https://github.com/d2l-ai/d2l-zh" target="_blank" rel="noopener noreferrer">d2l-zh：动手学深度学习</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302311231.png" alt=""></p>
+<h4><a class="header-anchor" href="#机器学习系统-设计和实现"><span></span></a><a href="https://openmlsys.github.io/index.html" target="_blank" rel="noopener noreferrer">机器学习系统：设计和实现</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262033368.jpeg" alt=""></p>
+<h4><a class="header-anchor" href="#nvidia-新开发者福利-600元ai课程免费学-还有机会获得nvidia培训证书"><span></span></a><a href="https://www.solidot.org/story?sid=79898" target="_blank" rel="noopener noreferrer">NVIDIA 新开发者福利：600元AI课程免费学，还有机会获得NVIDIA培训证书</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412012235780.png" alt=""></p>
+<h4><a class="header-anchor" href="#developer-roadmap-开发者的路线图"><span></span></a><a href="https://github.com/kamranahmedse/developer-roadmap" target="_blank" rel="noopener noreferrer">developer-roadmap：开发者的路线图</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302312491.png" alt=""></p>
+<h4><a class="header-anchor" href="#_30-days-of-python-初学者学习python编程"><span></span></a><a href="https://github.com/Asabeneh/30-Days-Of-Python" target="_blank" rel="noopener noreferrer">30-Days-Of-Python：初学者学习Python编程</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302313602.png" alt=""></p>
+<h4><a class="header-anchor" href="#_100-exercises-to-learn-rust-100个练习学习rust编程"><span></span></a><a href="https://github.com/mainmatter/100-exercises-to-learn-rust" target="_blank" rel="noopener noreferrer">100-exercises-to-learn-rust：100个练习学习Rust编程</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262348299.png" alt=""></p>
+<h4><a class="header-anchor" href="#java-design-patterns-java实现各种设计模式"><span></span></a><a href="https://github.com/iluwatar/java-design-patterns" target="_blank" rel="noopener noreferrer">java-design-patterns：Java实现各种设计模式</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302313123.png" alt=""></p>
+<h4><a class="header-anchor" href="#thealgorithms-java-多种算法的java实现"><span></span></a><a href="https://github.com/TheAlgorithms/Java" target="_blank" rel="noopener noreferrer">TheAlgorithms/Java：多种算法的Java实现</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262348300.png" alt=""></p>
+<h4><a class="header-anchor" href="#千古前端图文教程"><span></span></a><a href="https://github.com/qianguyihao/Web" target="_blank" rel="noopener noreferrer">千古前端图文教程</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302314259.png" alt=""></p>
+<h4><a class="header-anchor" href="#javascript-airbnb的js编程风格指南"><span></span></a><a href="https://github.com/airbnb/javascript" target="_blank" rel="noopener noreferrer">javascript：Airbnb的JS编程风格指南</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302315742.png" alt=""></p>
+<h4><a class="header-anchor" href="#awesome-各种有趣主题的精选资源"><span></span></a><a href="https://github.com/sindresorhus/awesome" target="_blank" rel="noopener noreferrer">awesome：各种有趣主题的精选资源</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302315431.png" alt=""></p>
+<h4><a class="header-anchor" href="#hello-algo-hello算法"><span></span></a><a href="https://github.com/krahets/hello-algo" target="_blank" rel="noopener noreferrer">hello-algo：Hello算法</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252311214.gif" alt=""></p>
+<h4><a class="header-anchor" href="#关于git提交的89件事-英文"><span></span></a><a href="https://www.jvt.me/posts/2024/07/12/things-know-commits/" target="_blank" rel="noopener noreferrer">关于Git提交的89件事（英文）</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302316248.png" alt=""></p>
+<h4><a class="header-anchor" href="#ohmygit-互动方式学习git"><span></span></a><a href="https://ohmygit.org/" target="_blank" rel="noopener noreferrer">ohmygit：互动方式学习Git</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252317798.png" alt=""></p>
+<h4><a class="header-anchor" href="#git-cheat-sheet-速查git命令"><span></span></a><a href="https://wizardzines.com/git-cheat-sheet.pdf" target="_blank" rel="noopener noreferrer">git-cheat-sheet：速查Git命令</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412012221429.png" alt=""></p>
+<h4><a class="header-anchor" href="#developer2gwy-程序员转公务员指南"><span></span></a><a href="https://github.com/miss-mumu/developer2gwy" target="_blank" rel="noopener noreferrer">developer2gwy：程序员转公务员指南</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302317510.png" alt=""></p>
+<h4><a class="header-anchor" href="#mastering-bitcoin-3rd-精通比特币"><span></span></a><a href="https://github.com/berryjam/mastering-bitcoin-3rd" target="_blank" rel="noopener noreferrer">mastering-bitcoin-3rd：精通比特币</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302318054.png" alt=""></p>
+<h4><a class="header-anchor" href="#看见概率论-交互式学习概率论"><span></span></a><a href="https://probability.visualized.fun/" target="_blank" rel="noopener noreferrer">看见概率论：交互式学习概率论</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412012223637.png" alt=""></p>
+<h4><a class="header-anchor" href="#硬核指南"><span></span></a><a href="https://yinghezhinan.com/" target="_blank" rel="noopener noreferrer">硬核指南</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412152245572.png" alt=""></p>
+<h4><a class="header-anchor" href="#devtoolstips-web开发者小贴士"><span></span></a><a href="https://devtoolstips.org/" target="_blank" rel="noopener noreferrer">devtoolstips：web开发者小贴士</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412222222330.png" alt=""></p>
+<h4><a class="header-anchor" href="#corecursive-代码背后的故事"><span></span></a><a href="https://corecursive.com/" target="_blank" rel="noopener noreferrer">CoRecursive：代码背后的故事</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412222233618.png" alt=""></p>
+<h4><a class="header-anchor" href="#anthropic-cookbook-claude使用指南"><span></span></a><a href="https://github.com/anthropics/anthropic-cookbook" target="_blank" rel="noopener noreferrer">anthropic-cookbook：Claude使用指南</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412292319844.png" alt=""></p>
+<h3>其他好文</h3>
+<h4><a class="header-anchor" href="#「树莓派」上市-一块「板子」的逆袭之路"><span></span></a><a href="https://news.cnblogs.com/n/771358/" target="_blank" rel="noopener noreferrer">「树莓派」上市，一块「板子」的逆袭之路</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302318802.png" alt=""></p>
+<h4><a class="header-anchor" href="#终于-我们都受够了互联网-失忆症"><span></span></a><a href="https://news.cnblogs.com/n/771381/" target="_blank" rel="noopener noreferrer">终于，我们都受够了互联网“失忆症”</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302319866.png" alt=""></p>
+<h4><a class="header-anchor" href="#睡眠不足正这样破坏你的记忆力-即使补觉也无法挽回"><span></span></a><a href="https://news.cnblogs.com/n/771611/" target="_blank" rel="noopener noreferrer">睡眠不足正这样破坏你的记忆力，即使补觉也无法挽回</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302320504.png" alt=""></p>
+<h4><a class="header-anchor" href="#git的故事-这一次没这么好玩"><span></span></a><a href="https://mp.weixin.qq.com/s/aQlknAL6k0u1TR6hNl5mBA" target="_blank" rel="noopener noreferrer">Git的故事：这一次没这么好玩</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302320055.png" alt=""></p>
+<h4><a class="header-anchor" href="#为啥动物的花纹奇奇怪怪-这事得问问数学家"><span></span></a><a href="https://www.ithome.com/0/780/077.htm" target="_blank" rel="noopener noreferrer">为啥动物的花纹奇奇怪怪？这事得问问数学家</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252309554.png" alt=""></p>
+<h4><a class="header-anchor" href="#锻炼大脑-这里有一套全指南"><span></span></a><a href="https://36kr.com/p/2857916221541250" target="_blank" rel="noopener noreferrer">锻炼大脑，这里有一套全指南</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302321973.png" alt=""></p>
+<h4><a class="header-anchor" href="#李政道逝世-生或死的道理-物理都知道"><span></span></a><a href="https://36kr.com/p/2895000265759364" target="_blank" rel="noopener noreferrer">李政道逝世：生或死的道理，物理都知道</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302322108.png" alt=""></p>
+<h4><a class="header-anchor" href="#李沐-创业一年-人间三年"><span></span></a><a href="https://www.jiqizhixin.com/articles/2024-08-15" target="_blank" rel="noopener noreferrer">李沐：创业一年，人间三年</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302323132.png" alt=""></p>
+<h4><a class="header-anchor" href="#今天出生的人未来会怎样"><span></span></a><a href="https://www.mittrchina.com/news/detail/13674" target="_blank" rel="noopener noreferrer">今天出生的人未来会怎样？</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252315267.png" alt=""></p>
+<h4><a class="header-anchor" href="#冯骥用《黑神话》杀死了2007年的自己"><span></span></a><a href="https://36kr.com/p/2918509981948805" target="_blank" rel="noopener noreferrer">冯骥用《黑神话》杀死了2007年的自己</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412252315183.png" alt=""></p>
+<h4><a class="header-anchor" href="#我们的一生-都在为认知买单"><span></span></a><a href="https://36kr.com/p/2958337573047560" target="_blank" rel="noopener noreferrer">我们的一生，都在为认知买单</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262354817.png" alt=""></p>
+<h4><a class="header-anchor" href="#尿酸危机-席卷中国"><span></span></a><a href="https://mp.weixin.qq.com/s/oiXz-dAJuP51rBDrZRL8mg" target="_blank" rel="noopener noreferrer">尿酸危机，席卷中国</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262331275.png" alt=""></p>
+<h4><a class="header-anchor" href="#从北京到硅谷-ai教母-李飞飞的传奇ai路"><span></span></a><a href="https://mp.weixin.qq.com/s/UWZEH056Tn84BQ9tGJhU2w" target="_blank" rel="noopener noreferrer">从北京到硅谷，“AI教母”李飞飞的传奇AI路</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262331276.png" alt=""></p>
+<h4><a class="header-anchor" href="#逆向思维-拿走一些东西-你会做得更好"><span></span></a><a href="https://36kr.com/p/2969575306236162" target="_blank" rel="noopener noreferrer">逆向思维：拿走一些东西，你会做得更好</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262348301.png" alt=""></p>
+<h4><a class="header-anchor" href="#国产操作系统的沉浮往事"><span></span></a><a href="https://36kr.com/p/2995474036846465" target="_blank" rel="noopener noreferrer">国产操作系统的沉浮往事</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262033369.png" alt=""></p>
+<h4><a class="header-anchor" href="#图灵诺奖双得主-、-ai教父-至高荣誉加身-杰弗里·辛顿配吗-看了他的故事果然没人比他更合适"><span></span></a><a href="https://mp.weixin.qq.com/s/1WCeLS47VErFFirRvAtBEw" target="_blank" rel="noopener noreferrer">“图灵诺奖双得主”、“AI教父”，至高荣誉加身，杰弗里·辛顿配吗？看了他的故事果然没人比他更合适</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411262033371.png" alt=""></p>
+<h4><a class="header-anchor" href="#如何思考产品的底层逻辑"><span></span></a><a href="https://www.woshipm.com/pd/6132516.html" target="_blank" rel="noopener noreferrer">如何思考产品的底层逻辑</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103232845.png" alt=""></p>
+<h4><a class="header-anchor" href="#大模型狂飙两年后-六小龙-开始做减法"><span></span></a><a href="https://36kr.com/p/3042747744009984" target="_blank" rel="noopener noreferrer">大模型狂飙两年后，“六小龙”开始做减法</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411242354148.png" alt=""></p>
+<h4><a class="header-anchor" href="#我的工作期限为-5-年-少一点就是损失-英文"><span></span></a><a href="https://www.joanwestenberg.com/i-work-on-a-5-year-time-frame-anything-less-is-a-loss/" target="_blank" rel="noopener noreferrer">我的工作期限为 5 年，少一点就是损失（英文）</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202411250040797.png" alt=""></p>
+<h4><a class="header-anchor" href="#连接全球的海底光缆有多脆弱"><span></span></a><a href="https://www.163.com/dy/article/JI2HH3730514R9OJ.html" target="_blank" rel="noopener noreferrer">连接全球的海底光缆有多脆弱？</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412012225857.png" alt=""></p>
+<h4><a class="header-anchor" href="#_1个数据集的100种可视化效果"><span></span></a><a href="https://100.datavizproject.com/" target="_blank" rel="noopener noreferrer">1个数据集的100种可视化效果</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412012223207.png" alt=""></p>
+<h4><a class="header-anchor" href="#可视化证明a-2-–-b-2-a-b-a-–-b"><span></span></a><a href="https://www.futilitycloset.com/2024/12/15/tidy-2/" target="_blank" rel="noopener noreferrer">可视化证明a^2 – b^2 = (a + b)(a – b)</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412152246946.png" alt=""></p>
+<h4><a class="header-anchor" href="#智能的代价-ai背后的能源消耗与环境危机"><span></span></a><a href="https://www.mittrchina.com/news/detail/14200" target="_blank" rel="noopener noreferrer">智能的代价：AI背后的能源消耗与环境危机</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302322488.png" alt=""></p>
+<h4><a class="header-anchor" href="#情绪价值对用户体验的影响"><span></span></a><a href="https://mp.weixin.qq.com/s/JrTHmvn0AEdirjWmApSkHw" target="_blank" rel="noopener noreferrer">情绪价值对用户体验的影响</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412222244974.png" alt=""></p>
+<h4><a class="header-anchor" href="#_2024年ai盘点-投资高歌猛进、基础设施重构、技术采用加速"><span></span></a><a href="https://mp.weixin.qq.com/s/p-t0Vl0Ua7zTa6LPvBeH9g" target="_blank" rel="noopener noreferrer">2024年AI盘点：投资高歌猛进、基础设施重构、技术采用加速</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412292257030.png" alt=""></p>
+<h4><a class="header-anchor" href="#编程十年的感悟"><span></span></a><a href="https://ramsayleung.github.io/zh/post/2024/%E7%BC%96%E7%A8%8B%E5%8D%81%E5%B9%B4%E7%9A%84%E6%84%9F%E6%82%9F/" target="_blank" rel="noopener noreferrer">编程十年的感悟</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302324683.png" alt=""></p>
+<h4><a class="header-anchor" href="#长期软件开发-英文"><span></span></a><a href="https://berthub.eu/articles/posts/on-long-term-software-development/" target="_blank" rel="noopener noreferrer">长期软件开发（英文）</a></h4>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412292258187.png" alt=""></p>
+]]></content:encoded>
+      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202412302324786.jpg" type="image/jpeg"/>
+    </item>
     <item>
       <title>肖恩技术周刊（第 30 期）：2024的尾声</title>
       <link>https://weekly.shawnxie.top/content/2024/30.html</link>
       <guid>https://weekly.shawnxie.top/content/2024/30.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 30 期）：2024的尾声</source>
       <description>肖恩技术周刊（第 30 期）：2024的尾声 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 2024就要结束了...</description>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。<br>
@@ -101,6 +924,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/29.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 29 期）：宇宙的尽头是上岸</source>
       <description>肖恩技术周刊（第 29 期）：宇宙的尽头是上岸 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 陆陆续续各家年度...</description>
+      <pubDate>Mon, 23 Dec 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。<br>
@@ -162,6 +986,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/28.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 28 期）：小机器人是什么鬼啊？</source>
       <description>肖恩技术周刊（第 28 期）：小机器人是什么鬼啊？ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 TGA 20...</description>
+      <pubDate>Mon, 16 Dec 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。<br>
@@ -221,6 +1046,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/27.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 27 期）：移动的移动充电宝</source>
       <description>肖恩技术周刊（第 27 期）：移动的移动充电宝 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 这周阅读量偏少，...</description>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。<br>
@@ -264,6 +1090,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/26.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 26 期）：无痛写作</source>
       <description>肖恩技术周刊（第 26 期）：无痛写作 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 写作相关的工具，这几个月...</description>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。<br>
@@ -333,6 +1160,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/25.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 25 期）：第一生产力</source>
       <description>肖恩技术周刊（第 25 期）：第一生产力 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 娃是中年人的第一生产力...</description>
+      <pubDate>Mon, 25 Nov 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。<br>
@@ -400,6 +1228,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/24.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 24 期）：伟大的母亲</source>
       <description>肖恩技术周刊（第 24 期）：伟大的母亲 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 11月15日在华西LD...</description>
+      <pubDate>Mon, 18 Nov 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。<br>
@@ -454,6 +1283,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/23.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 23 期）：MAGA!</source>
       <description>肖恩技术周刊（第 23 期）：MAGA! 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术...</description>
+      <pubDate>Mon, 11 Nov 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -497,6 +1327,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/22.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 22 期）：4 &amp;gt; 1</source>
       <description>肖恩技术周刊（第 22 期）：4 &amp;gt; 1 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术...</description>
+      <pubDate>Mon, 04 Nov 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -546,6 +1377,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/21.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 21 期）：惬意</source>
       <description>肖恩技术周刊（第 21 期）：惬意 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文~...</description>
+      <pubDate>Mon, 28 Oct 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -599,6 +1431,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/20.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 20 期）：折腾要趁早</source>
       <description>肖恩技术周刊（第 20 期）：折腾要趁早 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术...</description>
+      <pubDate>Mon, 21 Oct 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -660,6 +1493,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/19.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 19 期）：物理学不存在了</source>
       <description>肖恩技术周刊（第 19 期）：物理学不存在了 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创...</description>
+      <pubDate>Mon, 14 Oct 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -708,6 +1542,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/18.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 18 期）：啪的一下，假期就没了！</source>
       <description>肖恩技术周刊（第 18 期）：啪的一下，假期就没了！ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有...</description>
+      <pubDate>Mon, 07 Oct 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -766,6 +1601,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/17.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 17 期）：牛市来了？</source>
       <description>肖恩技术周刊（第 17 期）：牛市来了？ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术...</description>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -830,6 +1666,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/16.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 16 期）：白嫖AI的最佳时间</source>
       <description>肖恩技术周刊（第 16 期）：白嫖AI的最佳时间 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多...</description>
+      <pubDate>Sun, 22 Sep 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -888,6 +1725,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/15.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 15 期）：中秋节快乐</source>
       <description>肖恩技术周刊（第 15 期）：中秋节快乐 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术...</description>
+      <pubDate>Tue, 17 Sep 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -981,6 +1819,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/14.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 14 期）：什么是完美副业？</source>
       <description>肖恩技术周刊（第 14 期）：什么是完美副业？ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原...</description>
+      <pubDate>Sun, 08 Sep 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -1070,6 +1909,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/13.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 13 期）：肉，好次！</source>
       <description>肖恩技术周刊（第 13 期）：肉，好次！ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 公众号: 肖恩聊技术 公众号二维码 开篇图 周末见...</description>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -1177,6 +2017,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/12.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 12 期）：热 &amp; 累！</source>
       <description>肖恩技术周刊（第 12 期）：热 &amp; 累！ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 公众号: 肖恩聊技术 公众号二维码 开篇图 这周...</description>
+      <pubDate>Sun, 25 Aug 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -1267,6 +2108,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/11.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 11 期）：猴哥，我好急啊！</source>
       <description>肖恩技术周刊（第 11 期）：猴哥，我好急啊！ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 公众号: 肖恩聊技术 公众号二维码 开篇图 ...</description>
+      <pubDate>Sun, 18 Aug 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -1374,6 +2216,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/10.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 10 期）：太阳神鸟</source>
       <description>肖恩技术周刊（第 10 期）：太阳神鸟 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 公众号: 肖恩聊技术 公众号二维码 开篇图 周末去逛...</description>
+      <pubDate>Sun, 11 Aug 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -1496,6 +2339,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/9.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 9 期）：Queen Wen！！！</source>
       <description>肖恩技术周刊（第 9 期）：Queen Wen！！！ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具分享”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 公众号: 肖恩聊技术 公众号二维码 开...</description>
+      <pubDate>Sun, 04 Aug 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具分享”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -1622,6 +2466,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/8.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 8 期）：奥运会热度不高？</source>
       <description>肖恩技术周刊（第 8 期）：奥运会热度不高？ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创...</description>
+      <pubDate>Sun, 28 Jul 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -1729,6 +2574,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/7.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 7 期）：Fight！</source>
       <description>肖恩技术周刊（第 7 期）：Fight！ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术...</description>
+      <pubDate>Sun, 21 Jul 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -1825,6 +2671,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/6.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 6 期）：陶冶情操！</source>
       <description>肖恩技术周刊（第 6 期）：陶冶情操！ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博...</description>
+      <pubDate>Sun, 14 Jul 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -1949,6 +2796,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/5.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 5 期）：小魔女太可爱了！</source>
       <description>肖恩技术周刊（第 5 期）：小魔女太可爱了！ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具分享”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一（无特殊情况） 历史收录: shawn-weekly 订阅方式: 公众号: 肖恩聊技术 公众号二维...</description>
+      <pubDate>Sat, 06 Jul 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具分享”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -2081,6 +2929,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/4.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 4 期）：Steam夏季促销开始啦！</source>
       <description>肖恩技术周刊（第 4 期）：Steam夏季促销开始啦！ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具分享”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一（无特殊情况） 历史收录: shawn-weekly 订阅方式: 公众号: 肖恩聊技术 ...</description>
+      <pubDate>Sat, 29 Jun 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具分享”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -2261,6 +3110,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/3.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 3 期）：基于“智能体”创造自发展的冒险镇</source>
       <description>肖恩技术周刊（第 3 期）：基于“智能体”创造自发展的冒险镇 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 微信公众号“肖恩聊技术”，除周...</description>
+      <pubDate>Sat, 22 Jun 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -2369,6 +3219,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/2.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 2 期）：房地产降温</source>
       <description>肖恩技术周刊（第 2 期）：房地产降温 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博...</description>
+      <pubDate>Sat, 15 Jun 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
@@ -2467,6 +3318,7 @@
       <guid>https://weekly.shawnxie.top/content/2024/1.html</guid>
       <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 1 期）：起点！</source>
       <description>肖恩技术周刊（第 1 期）：起点！ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。 更新时间: 周一 历史收录: shawn-weekly 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文~...</description>
+      <pubDate>Sat, 08 Jun 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <blockquote>
 <p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“工具推荐”等。为减少阅读负担提高记忆留存率，每类下内容数一般不超过3条。<br>
