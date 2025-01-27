@@ -4,20 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "67b815aed11c434b",
+        "id": "20d677548c749bf6",
         "type": "tabs",
         "children": [
           {
-            "id": "c1e4336ced601265",
+            "id": "03159e2bbccf386f",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
-              "state": {
-                "file": "docs/source/read_source.md",
-                "staged": false
-              },
-              "icon": "git-pull-request",
-              "title": "Diff View (read_source)"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -172,7 +169,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c1e4336ced601265",
+  "active": "62196a9aacfdb958",
   "lastOpenFiles": [
     "docs/content/2025/34.md",
     "docs/content/2025/33.md",

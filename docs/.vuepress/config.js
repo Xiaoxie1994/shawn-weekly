@@ -133,12 +133,7 @@ export default defineUserConfig({
       hostname: 'https://weekly.shawnxie.top',
       rss: true,
       count: 100000,
-      filter: (page) => page.path.startsWith('/content/2024/'),
-      sorter: (pageA, pageB) => {
-        const numA = parseInt(pageA.title.match(/第 (\d+) 期/)[1], 10);
-        const numB = parseInt(pageB.title.match(/第 (\d+) 期/)[1], 10);
-        return numB - numA;
-      },
+      filter: (page) => page.path.startsWith('/content/') || page.path.startsWith('/collection/'),
     }),
     umamiAnalyticsPlugin({
       id: '3b366c06-d035-411e-a013-8efbabbdad43',

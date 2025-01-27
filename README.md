@@ -15,7 +15,9 @@
 <img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="400">
 
 ## 信息源
-内容信息源：[阅读信息源](./source/read_source.md)
+👉🏻 [阅读信息源](./source/ReadSource.opml) 👈🏻
+
+汇总100+ RSS订阅源，涵盖了行业资讯、技术周刊和各大互联网公司的技术博客等内容！
 
 ## 贡献
 如果您有私藏的资源可以分享给大家，欢迎以**Issue**方式推荐。
