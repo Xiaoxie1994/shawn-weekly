@@ -134,6 +134,9 @@ export default defineUserConfig({
       rss: true,
       count: 100000,
       filter: (page) => page.path.startsWith('/content/') || page.path.startsWith('/collection/'),
+      channel:{
+        description: 'feedId:106642906166709248+userId:73601809993285632'
+      }
     }),
     umamiAnalyticsPlugin({
       id: '3b366c06-d035-411e-a013-8efbabbdad43',
