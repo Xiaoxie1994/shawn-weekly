@@ -6,8 +6,8 @@
     <link>https://weekly.shawnxie.top/</link>
     <description>feedId:106642906166709248+userId:73601809993285632</description>
     <language>zh-CN</language>
-    <pubDate>Sun, 02 Feb 2025 13:00:11 GMT</pubDate>
-    <lastBuildDate>Sun, 02 Feb 2025 13:00:11 GMT</lastBuildDate>
+    <pubDate>Sun, 02 Feb 2025 13:15:09 GMT</pubDate>
+    <lastBuildDate>Sun, 02 Feb 2025 13:15:09 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <item>
@@ -27,9 +27,9 @@
 </blockquote>
 <h2>开篇图</h2>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202502021952745.png" alt=""></p>
-<p>春节快乐！还在假期，就简单写写吧。这几天逛公园听到大妈们都在聊DeepSeek，还讨论中国AI潜力如何大，聊的有板有眼的。自媒体春节也不休了，都加班加点发文章，生怕错过这波热度。就连朋友圈也是肉眼可见的热度，含AI量很高。</p>
-<p>但大家的关注点并非都在技术本身，还混合了中美博弈、民族主义等更复杂的情绪。西方的反应也很有意思，有赞美、惊讶、反思，当然还少不了诋毁，但不可否认的是这次DeepSeek真的火了。</p>
-<p>问DeepSeek-R1为啥它自己会火，经过一系列深度思考后给出的答案质只算是中规中矩吧。但它思考的过程挺有参考意义，是一套完整的问题求解思路，可以直接套用。</p>
+<p>春节快乐！还在假期，就简单写写吧。这几天逛公园听到大妈们都在聊DeepSeek，还讨论中国AI潜力如何大，聊的有板有眼的。自媒体春节也不休了，都加班加点发文章，生怕错过这波热度。就连朋友圈也是肉眼可见的含AI量很高。</p>
+<p>但大家的关注点并非都在技术本身，还混合了中美博弈、民族主义等更复杂的情绪。西方的反应也很有意思，有赞美、惊讶、反思，当然还少不了诋毁，这次看来真动到他们的蛋糕了。</p>
+<p>问DeepSeek-R1为啥它自己会火，经过一系列深度思考后给出的答案只算是中规中矩吧。但它思考的过程挺有参考意义，是一套完整的问题求解思路，可以直接套用。</p>
 <p>PS：本周重新整理了周刊<a href="https://github.com/Xiaoxie1994/shawn-weekly/blob/main/source/ReadSource.opml" target="_blank" rel="noopener noreferrer">信息源</a>，并添加了一些英文源，后续内容质量应该会有些许提升（前提是有时间阅读英文文章，毕竟读起来有点慢😂）。</p>
 <h2>业界资讯</h2>
 <h3><a class="header-anchor" href="#被deepseek逼急-openai-推出-o3-mini-ai-推理模型-免费用户可首次体验"><span></span></a><a href="https://openai.com/index/openai-o3-mini/" target="_blank" rel="noopener noreferrer">被DeepSeek逼急？OpenAI 推出 o3-mini AI 推理模型，免费用户可首次体验</a></h3>
