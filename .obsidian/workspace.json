@@ -11,10 +11,14 @@
             "id": "03159e2bbccf386f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "docs/content/2025/35.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "35"
             }
           }
         ]
@@ -73,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 416.5
+    "width": 416.5,
+    "collapsed": true
   },
   "right": {
     "id": "a90bf4c0fdb7c687",
@@ -169,9 +174,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "62196a9aacfdb958",
+  "active": "03159e2bbccf386f",
   "lastOpenFiles": [
     "docs/content/2025/34.md",
+    "docs/content/2025/35.md",
+    "source/Subscriptions-OnMyMac.opml",
+    "source/template.md",
     "docs/content/2025/33.md",
     "docs/README.md",
     "docs/source/read_source.md",
@@ -194,9 +202,6 @@
     "docs/content/2024/9.md",
     "docs/content/2024/8.md",
     "docs/content/2024/7.md",
-    "docs/content/2024/6.md",
-    "docs/content/2024/5.md",
-    "docs/content/2024/4.md",
     "docs/content/未命名",
     "tools/theme/vintage.js",
     "tools/type-statistics.html",
@@ -206,7 +211,6 @@
     "tools/echarts.js",
     "tools/combine_images.py",
     "tools/2024-keyword.txt",
-    "tools",
     "docs/collection/wordcloud.png",
     "docs/collection/image.png",
     "docs/collection/image-4.png",
