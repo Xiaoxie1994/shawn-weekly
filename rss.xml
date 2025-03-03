@@ -6,8 +6,8 @@
     <link>https://weekly.shawnxie.top/</link>
     <description>feedId:106642906166709248+userId:73601809993285632</description>
     <language>zh-CN</language>
-    <pubDate>Sun, 02 Mar 2025 15:18:52 GMT</pubDate>
-    <lastBuildDate>Sun, 02 Mar 2025 15:18:52 GMT</lastBuildDate>
+    <pubDate>Mon, 03 Mar 2025 12:33:31 GMT</pubDate>
+    <lastBuildDate>Mon, 03 Mar 2025 12:33:31 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <item>
@@ -68,13 +68,13 @@
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202503022250314.png" alt=""></p>
 <p>Docling是一个由IBM开发的开源工具，旨在简化文档处理流程。它支持多种文档格式（如PDF、DOCX、XLSX、HTML等）的解析，并提供与生成式人工智能生态系统的无缝集成。</p>
 <h2>学习资源</h2>
-<h3><a class="header-anchor" href="#ai-by-hand-excel"><span></span></a><a href="https://github.com/ImagineAILab/ai-by-hand-excel" target="_blank" rel="noopener noreferrer">ai-by-hand-excel</a></h3>
+<h3><a class="header-anchor" href="#ai-by-hand-excel-通过excel讲解ai原理"><span></span></a><a href="https://github.com/ImagineAILab/ai-by-hand-excel" target="_blank" rel="noopener noreferrer">ai-by-hand-excel：通过Excel讲解AI原理</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202503022249116.png" alt=""></p>
 <p>在Excel中学习AI。</p>
 <h3><a class="header-anchor" href="#linux101-docs-学习linux"><span></span></a><a href="https://github.com/ustclug/Linux101-docs" target="_blank" rel="noopener noreferrer">Linux101-docs：学习Linux</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202503022252557.png" alt=""></p>
 <p>中国科学技术大学 Linux 用户协会编写的Linux入门指南。</p>
-<h3><a class="header-anchor" href="#project-based-learning"><span></span></a><a href="https://github.com/practical-tutorials/project-based-learning" target="_blank" rel="noopener noreferrer">project-based-learning:</a></h3>
+<h3><a class="header-anchor" href="#project-based-learning-做项目学习编程"><span></span></a><a href="https://github.com/practical-tutorials/project-based-learning" target="_blank" rel="noopener noreferrer">project-based-learning:做项目学习编程</a></h3>
 <p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202503022256690.png" alt=""></p>
 <p>通过实际项目学习编程技能。</p>
 ]]></content:encoded>
