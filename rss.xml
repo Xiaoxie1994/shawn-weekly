@@ -6,8 +6,8 @@
     <link>https://weekly.shawnxie.top/</link>
     <description>feedId:106642906166709248+userId:73601809993285632</description>
     <language>zh-CN</language>
-    <pubDate>Mon, 03 Mar 2025 12:35:25 GMT</pubDate>
-    <lastBuildDate>Mon, 03 Mar 2025 12:35:25 GMT</lastBuildDate>
+    <pubDate>Sun, 09 Mar 2025 16:12:01 GMT</pubDate>
+    <lastBuildDate>Sun, 09 Mar 2025 16:12:01 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <item>
@@ -79,6 +79,83 @@
 <p>通过实际项目学习编程技能。</p>
 ]]></content:encoded>
       <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202503022307235.png" type="image/png"/>
+    </item>
+    <item>
+      <title>肖恩技术周刊（第 40 期）：智能体是通往AGI的必经之路吗？</title>
+      <link>https://weekly.shawnxie.top/content/2025/40.html</link>
+      <guid>https://weekly.shawnxie.top/content/2025/40.html</guid>
+      <source url="https://weekly.shawnxie.top/rss.xml">肖恩技术周刊（第 40 期）：智能体是通往AGI的必经之路吗？</source>
+      <description>肖恩技术周刊（第 40 期）：智能体是通往AGI的必经之路吗？ 周刊内容: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。 更新时间: 周一 历史收录: 技术周刊合集 订阅方式: 微信公众号“肖恩聊技术”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~ 公众号二维码 开篇图 ...</description>
+      <pubDate>Mon, 03 Mar 2025 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<blockquote>
+<p><strong>周刊内容</strong>: 对一周内阅读的资讯或技术内容精品（个人向）进行总结，分类大致包含“业界资讯”、“技术博客”、“开源项目”和“学习资源”等。<br>
+<strong>更新时间</strong>: 周一<br>
+<strong>历史收录</strong>: <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwODY0ODQzOQ==&amp;action=getalbum&amp;album_id=3492416248238096386#wechat_redirect" target="_blank" rel="noopener noreferrer">技术周刊合集</a> <br>
+<strong>订阅方式</strong>: 微信公众号“<strong>肖恩聊技术</strong>”，除周刊外还有更多原创技术博文，欢迎关注👏🏻~<br>
+<img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/20241103221454.png" alt="公众号二维码" width="300"></p>
+</blockquote>
+<h2>开篇图</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202503100007852.png" alt=""></p>
+<p>看了Manus的视频（邀请码就离谱，炒到了10万），感觉并没有给我当时GPT-3.5的那种震撼。必须承认，它把Agent做到了极致，产品力看起来非常的强。但智能体真的是通往AGI的必经之路吗？</p>
+<h2>业界资讯</h2>
+<h3><a class="header-anchor" href="#qwq-32b-领略强化学习之力"><span></span></a><a href="https://qwenlm.github.io/zh/blog/qwq-32b/" target="_blank" rel="noopener noreferrer">QwQ-32B: 领略强化学习之力</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202503092245579.png" alt=""></p>
+<p>QwQ-32B 拥有 320 亿参数，性能可与 6710 亿参数（370 亿被激活）的 DeepSeek - R1 媲美，凸显强化学习应用于大规模预训练基础模型的有效性，且集成 Agent 相关能力。该模型已在 Hugging Face 和 ModelScope 开源，采用 Apache 2.0 协议，可通过 Qwen Chat 体验。在冷启动基础上开展大规模强化学习，先针对数学和编程任务训练，通过校验答案和评估代码给予反馈；之后增加针对通用能力的 RL，提升通用能力且不影响前两者性能。同时展示了使用 OpenAI 库调用 QwQ-32B 的 API 示例代码。未来，团队计划结合更强大基础模型与规模化计算的 RL，探索智能体与 RL 集成实现长时推理，迈向通用人工智能。</p>
+<h3><a class="header-anchor" href="#manus-真正干活的智能体"><span></span></a><a href="https://manus.im/" target="_blank" rel="noopener noreferrer">Manus，真正干活的智能体？</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202503092333791.png" alt=""></p>
+<p>3月6日凌晨，来自中国的初创公司BUTTERFLY EFFECT（蝴蝶效应）通过一部全英文的宣传片正式对外发布通用型AI Agent产品Manus，官方称它为“全球首个通用 Agent”。据其团队介绍，与传统AI助手不同，Manus不仅能提供建议或答案，还能直接交付完整的任务成果。据团队发布的案例，Manus可以进行简历筛选、房产研究、股票分析。</p>
+<h3><a class="header-anchor" href="#刚刚-2024图灵奖颁给了强化学习之父richard-sutton与导师andrew-barto"><span></span></a><a href="https://www.jiqizhixin.com/articles/2025-03-05-16" target="_blank" rel="noopener noreferrer">刚刚，2024图灵奖颁给了强化学习之父Richard Sutton与导师Andrew Barto</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202503092338455.png" alt=""></p>
+<p>2024 年图灵奖授予强化学习先驱 Andrew Barto 和 Richard Sutton。他们自 1980 年代起提出强化学习主要思想，构建数学基础，开发重要算法，合著经典教材。强化学习是当今 AI 突破的原点，如 DeepSeek R1 的 GRPO 算法、AlphaGo 的自我博弈训练等都离不开它。强化学习结合深度学习后，应用领域广泛，包括机器人运动技能学习、网络拥堵控制等，还助力神经科学发展。获奖者 Barto 和 Sutton 在学术界和业界都有重要地位，他们的工作推动了 AI 领域进步，为未来计算及其他学科发展提供潜力。</p>
+<h2>技术博客</h2>
+<h3><a class="header-anchor" href="#基于antlr4的大数据sql编辑器解析引擎实践"><span></span></a><a href="https://mp.weixin.qq.com/s/ZLib4B6MMoCwVD60i03SQg" target="_blank" rel="noopener noreferrer">基于ANTLR4的大数据SQL编辑器解析引擎实践</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202503092355286.png" alt=""></p>
+<p>随着得物离线业务增长，公司开展大数据 Galaxy 开源演进项目，离线开发治理套件中的 SQL 编辑器至关重要。为此，项目选用 ANTLR4 作为 SQL 解析引擎底座，以满足适配自研 Spark 引擎的多种功能需求。</p>
+<p>ANTLR4 是强大的解析器生成器，具有强大的文法定义、抽象语法树遍历、自动语法错误处理、可扩展性等特性，在 Apache Spark、Twitter、IBM 等多领域广泛应用。SparkSQL 作为 Apache Spark 处理结构化数据的模块，具备高效查询执行、与 Hive 兼容、支持多种数据源的特点。</p>
+<p>在技术实现方面，基于 ANTLR4 进行语法设计，通过 ANTLR4 生成的代码和相关工具实现语法补全、校验等功能。以字段补全为例，利用 ANTLR - C3 引擎和 ANTLR 生成的 AST 解决推荐语法类型和精准推荐问题。ANTLR4 生成的语法分析器内置错误报告和恢复策略，但在复杂场景下性能和错误恢复存在挑战，可从缓存、语法、预测模型选择等方面优化。同时，编辑器集成 MonacoEditor，提供辅助编程功能。</p>
+<p>大模型发展促使 SQL 编辑器应用变革，如阿里云 DataWorks 推出 Copilot 产品。然而，SQL 代码补全因上下文依赖、语义多样等因素颇具挑战，成熟场景集中在有规律的代码推荐。</p>
+<p>目前，Galaxy 数据研发 IDE 借助 SQL 引擎建设实现个性化词法规则定制和辅助编程功能。未来计划接入大模型能力并重构基础语法定义，以应对解析器开发难题，更好地满足复杂业务需求。</p>
+<h3><a class="header-anchor" href="#通过微调嵌入模型获得更好的检索增强生成-rag"><span></span></a><a href="https://redis.io/blog/get-better-rag-by-fine-tuning-embedding-models/" target="_blank" rel="noopener noreferrer">通过微调嵌入模型获得更好的检索增强生成（RAG）</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202503092357241.png" alt=""></p>
+<p>本文聚焦于领域特定嵌入模型微调，探讨其在金融问答系统等自然语言处理（NLP）任务中的关键作用。通用嵌入模型缺乏领域知识，难以准确检索信息，而微调嵌入模型可解决此问题。嵌入是将文本、图像等映射到多维空间的数值表示，能捕捉语义关系，在语义相似性计算、文本分类、问答和检索增强生成等NLP任务中至关重要。</p>
+<p>以BAAI/bge-base-en-v1.5模型为例，针对特定领域微调嵌入模型，可使模型的相似性度量与领域上下文和语言对齐，提升相关文档的检索效果，进而得到更准确合适的回复。文中介绍了多种数据集格式，如正样本对、三元组、带相似性分数的句子对和带类别的文本等，不同格式对应不同的损失函数，像三元组损失、对比损失等，这些损失函数用于在训练中引导模型调整权重。</p>
+<p>在代码示例部分，通过unstructured库提取PDF文本和表格，利用LangChain分块处理，借助Hugging Face Llama模型生成问答对，将数据处理为合适格式后加载到HuggingFace数据集，完成模型微调。微调后bge-base-en_dot_ndcg@10指标显著提升，证明了微调的有效性。总之，微调领域特定嵌入模型可提升NLP应用的准确性，构建模型时要利用如MRL等技术和强大模型。NLP发展迅速，持续关注新进展有助于构建更智能高效的领域应用。</p>
+<h3><a class="header-anchor" href="#一些关于大语言模型-提示词-优化的经验谈"><span></span></a><a href="https://mp.weixin.qq.com/s/oeKp0nFPd3O5zAEgsJZ42w" target="_blank" rel="noopener noreferrer">一些关于大语言模型 “提示词” 优化的经验谈</a></h3>
+<p>本文围绕自然语言处理项目中使用大语言模型的经验展开，着重分享了提示词优化技巧。在项目实践中，团队发现发挥大语言模型潜力需深入了解其运作机制。大语言模型本质是统计模型，通过学习海量文本数据捕捉模式和关联，具备语义相似性识别、熟悉常见语法结构、掌握部分专业术语等特点，但对知识逻辑的理解存在局限。其输出是条件概率计算过程，而COT（思维链）能提升输出准确性。</p>
+<p>提示词优化至关重要，它是与大语言模型交互的关键。大语言模型常出现理解偏差、信息不足、逻辑错误、推理不足和关注重点不一致等问题。针对这些问题，文章分享了一系列优化经验：让模型先输出结果再解释原因，以便分析错误、针对性优化提示词；基于模型解释添加提示词，解决理解偏差和信息不足问题；将COT编码到提示词中，通过分析错误用例解释的共性来提高正确率，解决逻辑错误和推理不足问题；把分析性提示词放在后面，可提升约5％的正确率；保持英文和中文一致性，避免隐性差异，解决关注重点不一致问题；使用简洁严谨的语言风格，使模型专注任务、节省token并加快响应速度。</p>
+<p>总之，大语言模型应用广泛，但需调教，文中的理解和提示词设计经验有助于更好地发挥其作用。</p>
+<h2>开源项目</h2>
+<h3><a class="header-anchor" href="#sqlchat-ai聊天sql客户端"><span></span></a><a href="https://github.com/sqlchat/sqlchat" target="_blank" rel="noopener noreferrer">sqlchat：AI聊天SQL客户端</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202503092327632.png" alt=""></p>
+<p>SQL Chat 是一款基于聊天的 SQL 客户端，能通过自然语言与数据库交互，实现数据库的查询、修改、添加和删除等操作。</p>
+<h3><a class="header-anchor" href="#diffrhythm-音乐生成模型"><span></span></a><a href="https://github.com/ASLP-lab/DiffRhythm" target="_blank" rel="noopener noreferrer">DiffRhythm：音乐生成模型</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202503092334097.png" alt=""></p>
+<p>DiffRhythm 是首个开源的基于扩散模型的全长歌曲生成模型，为 AI 音乐创作带来新可能。</p>
+<h3><a class="header-anchor" href="#repomix-将代码库转换为ai易处理文件"><span></span></a><a href="https://github.com/yamadashy/repomix" target="_blank" rel="noopener noreferrer">repomix：将代码库转换为AI易处理文件</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202503092329725.png" alt=""></p>
+<p>Repomix 是一款强大工具，可将整个代码库打包成便于 AI 处理的单个文件，适用于多种 AI 工具，如 Claude、ChatGPT 等</p>
+<h2>学习资源</h2>
+<h3><a class="header-anchor" href="#shell-脚本教程-英文"><span></span></a><a href="https://www.shellscript.sh/" target="_blank" rel="noopener noreferrer">Shell 脚本教程（英文）</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202503092252000.png" alt=""></p>
+<p>帮助人们理解 Shell 脚本编程基础。</p>
+<h3><a class="header-anchor" href="#以生成-ai-为主题的机器学习简介-英文"><span></span></a><a href="https://www.youtube.com/watch?v=tmB5JIX3Lxk" target="_blank" rel="noopener noreferrer">以生成 AI 为主题的机器学习简介（英文）</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202503092251875.png" alt=""></p>
+<p>课程从基础开始，涵盖什么是机器学习，它与传统方法有何不同，以及它的用途。然后深入研究机制，探索不同的模型、算法和训练过程。接下来，它介绍了生成人工智能，解释了它如何创建新内容，然后总结了人工智能系统的架构以及如何有效地设计和部署它们。</p>
+<h3><a class="header-anchor" href="#ai-engineering-hub-人工智能工程资源库"><span></span></a><a href="https://github.com/patchy631/ai-engineering-hub" target="_blank" rel="noopener noreferrer">ai-engineering-hub：人工智能工程资源库</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202503092335976.png" alt=""></p>
+<p>AI Engineering Hub 是一个聚焦人工智能工程的资源库，为不同技能水平的人员提供 AI 工程相关资源。</p>
+<h2>随便看看</h2>
+<h3><a class="header-anchor" href="#一个提示词-claude-生成一个-app-的-ui-ux"><span></span></a><a href="https://ew6rccvpnmz.feishu.cn/wiki/ILO2waqXLi1EvqkuKHvcceMOnVd" target="_blank" rel="noopener noreferrer">一个提示词 claude 生成一个 app 的 ui/ux</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202503092304587.png" alt=""></p>
+<p>本文聚焦利用 Claude 生成 app 的 UI/UX 实践，为相关开发者提供了极具价值的参考。在工具选择上，推荐使用 Claude3.7，可通过官网或 Cursor 操作，Cursor 需切换至 Ask 模式（旧版为 Chat） ，禁用 Agent 或 Composer 模式。实践过程分阶段推进，1.0 版本按特定结构编写提示词，添加 “优秀 html 案例” 能优化效果，代码过长时多次输入 “继续” 获取完整代码。2.0 版本引入 tailwindcss 简化代码，Ask 模式稳定性更高，生成复杂 UI 后可引导调整。3.0 版本借助特定提示词，实现 Cursor 与设计软件协作生成 SVG 文件，优化提示词能规避文字、图片问题。此外，文中还分享了成功变现案例，有人用生成的 html 设计稿完成软件外包项目，同时展示了多个不同功能 app 的提示词及生成效果，助力开发者高效生成理想的 UI/UX 设计。</p>
+<h3><a class="header-anchor" href="#linux-的早期-英文"><span></span></a><a href="https://lwn.net/Articles/928581/" target="_blank" rel="noopener noreferrer">Linux 的早期（英文）</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202503092330000.png" alt=""></p>
+<p>本文是Lars Wirzenius对Linux早期发展的回忆，讲述了Linux从诞生到逐步发展壮大的历程。1988年，Lars与Linus在赫尔辛基大学学习计算机科学，偶然发现Usenet。1990年，他们学习C和Unix编程后，对操作系统构建产生兴趣。1991年，Linus购买386 CPU的PC，玩游戏、学习MINIX后，开始学习英特尔汇编语言，编写了实现多任务的程序，这是Linux内核雏形。Lars还为其编写sprintf()函数，后演变为内核中的snprintf()。</p>
+<p>同年8月，Linus在新闻组首次提及新内核，最初名为Freax，后被命名为Linux。Linux最初版本采用禁止商业使用的许可证，在多方影响下，1992年初改用GNU GPL许可证 。1992年，Linux与Andrew Tanenbaum展开辩论，X11系统移植使其成为桌面系统，首个Linux发行版SLS出现。1993年，Linus和Lars成为大学助教，Linux支持以太网和TCP/IP，但早期网络代码有问题。1994年，他们认为Linux已完善，发布1.0版本。</p>
+<p>此后，Linux不断发展，被移植到新架构，“开源”概念兴起，IBM投资，Linux应用范围不断扩大。从最初屏幕上交替显示的“A”和“B”，到如今在全球数十亿设备上运行，Linux的发展堪称传奇。</p>
+]]></content:encoded>
+      <enclosure url="https://cdn.jsdelivr.net/gh/Xiaoxie1994/images/images/202503100007852.png" type="image/png"/>
     </item>
     <item>
       <title>肖恩技术周刊（第 38 期）：陪伴</title>
