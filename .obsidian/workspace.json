@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 416.5
+    "width": 416.5,
+    "collapsed": true
   },
   "right": {
     "id": "a90bf4c0fdb7c687",
@@ -176,11 +177,12 @@
   },
   "active": "de1c9d9d9560a6b6",
   "lastOpenFiles": [
-    "docs/content/2025/38.md",
+    "docs/content/2025/40.md",
+    "source/template.md",
     "docs/content/2025/39.md",
+    "docs/content/2025/38.md",
     "docs/README.md",
     "docs/content/2025/37.md",
-    "source/template.md",
     "README.md",
     "docs/content/2025/36.md",
     "文章链接.md",
@@ -202,7 +204,6 @@
     "docs/content/2024/15.md",
     "docs/content/2024/14.md",
     "docs/content/2024/13.md",
-    "docs/content/2024/12.md",
     "docs/content/未命名",
     "tools/theme/vintage.js",
     "tools/type-statistics.html",
